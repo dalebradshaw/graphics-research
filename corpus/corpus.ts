@@ -1,0 +1,306 @@
+export type Category =
+  | "threejs"
+  | "react-three-fiber"
+  | "webgl"
+  | "shaders"
+  | "graphics"
+  | "blender"
+  | "design"
+  | "tooling"
+  | "ai-tools";
+
+export type Urls = {
+  tweet?: string;
+  demo?: string;
+  live?: string;
+  code?: string;
+  docs?: string;
+  article?: string;
+  pr?: string;
+  misc?: string;
+  video?: string;
+  transcript?: string;
+};
+
+export type Entry = {
+  id: string;
+  category: Category;
+  title: string;
+  description: string;
+  urls: Urls;
+  tags: string[];
+  createdAt?: string;
+  summary?: string;
+};
+
+export const corpus: Entry[] = [
+  {
+    "id": "1956958707582980193",
+    "category": "threejs",
+    "title": "GAIA starfield (Three.js + TSL + WebGPU)",
+    "description": "Streams GAIA DR3 stars (100k chunks), brightest-first; auto-exposure for additive blending.",
+    "urls": {
+      "tweet": "https://twitter.com/codetarded/status/1956958707582980193",
+      "demo": "http://vibe-coded.com/scenes/threejs-gaia"
+    },
+    "tags": [
+      "threejs",
+      "webgpu",
+      "tsl",
+      "astronomy",
+      "points",
+      "hdr"
+    ],
+    "createdAt": "2025-08-17T05:58:09Z"
+  },
+  {
+    "id": "yt-t61gMdBXjQw",
+    "category": "blender",
+    "title": "Parasite effect with Geometry Nodes (Blender 3.3 tutorial)",
+    "description": "Create a parasite-style looping animation using volume cube, 4D noise, instancing, and emissive materials.",
+    "summary": "Volume cube → spherical gradient → noise driven distortion, instanced cage, looped 4D noise animation, emissive materials, volumetric lighting, and render tips.",
+    "urls": {
+      "video": "https://www.youtube.com/watch?v=t61gMdBXjQw&list=PLNShHVjao84dTJDUQA9dPNTGsox16p1iV",
+      "transcript": "transcripts/t61gMdBXjQw.md"
+    },
+    "tags": [
+      "blender",
+      "geometry-nodes",
+      "animation",
+      "shader",
+      "materials",
+      "lighting"
+    ],
+    "createdAt": "2025-08-17"
+  },
+  {
+    "id": "1956298294583271809",
+    "category": "tooling",
+    "title": "Tailwind CSS `initial:` variant tip",
+    "description": "Technique for defining base styles that utility classes can override.",
+    "urls": {
+      "tweet": "https://twitter.com/joebell_/status/1956298294583271809"
+    },
+    "tags": [
+      "tailwind",
+      "css",
+      "design-system"
+    ],
+    "createdAt": "2025-08-15T10:13:54Z"
+  },
+  {
+    "id": "1955659484862489009",
+    "category": "shaders",
+    "title": "Procedural wood materials via TSL (PR)",
+    "description": "Procedural maple, oak, walnut, cedar, poplar, and cherry wood materials in TSL.",
+    "urls": {
+      "tweet": "https://twitter.com/benhouston3d/status/1955659484862489009",
+      "pr": "https://github.com/mrdoob/three.js/pull/31640"
+    },
+    "tags": [
+      "threejs",
+      "tsl",
+      "materials",
+      "procedural",
+      "wood"
+    ],
+    "createdAt": "2025-08-13T15:55:30Z"
+  },
+  {
+    "id": "1955544346654281808",
+    "category": "threejs",
+    "title": "Troika Three Text",
+    "description": "High-quality SDF-based 3D text rendering utility for Three.js.",
+    "urls": {
+      "tweet": "https://twitter.com/threejsresource/status/1955544346654281808",
+      "docs": "https://threejsresources.com/tool/troika-three-text"
+    },
+    "tags": [
+      "threejs",
+      "text",
+      "typography",
+      "sdf"
+    ],
+    "createdAt": "2025-08-13T08:17:59Z"
+  },
+  {
+    "id": "1955322927886274928",
+    "category": "ai-tools",
+    "title": "VS Code: agent prompt upgrades",
+    "description": "Copilot agent improvements with higher completion rates and todoList tool hooks.",
+    "urls": {
+      "tweet": "https://twitter.com/code/status/1955322927886274928",
+      "docs": "http://github.copilot.chat"
+    },
+    "tags": [
+      "vscode",
+      "copilot",
+      "agents"
+    ],
+    "createdAt": "2025-08-12T17:38:08Z"
+  },
+  {
+    "id": "1955147866546036901",
+    "category": "shaders",
+    "title": "Dissolve effect with Three.js TSL",
+    "description": "Mesh dissolve shader tutorial with article, live demo, and source code.",
+    "urls": {
+      "tweet": "https://twitter.com/PMazhuga/status/1955147866546036901",
+      "article": "https://tympanus.net/codrops/2025/02/17/implementing-a-dissolve-effect-with-shaders-and-particles-in-three-js/",
+      "live": "https://pavelmazhuga.com/lab/dissolve",
+      "code": "https://github.com/pavel-mazhuga/portfolio/tree/main/src/app/lab/dissolve"
+    },
+    "tags": [
+      "threejs",
+      "tsl",
+      "shader",
+      "fx",
+      "particles"
+    ],
+    "createdAt": "2025-08-12T06:02:30Z"
+  },
+  {
+    "id": "1954969542645412175",
+    "category": "graphics",
+    "title": "RetroScroller (C64/Amiga-inspired effects)",
+    "description": "Retro scroller demo scene effect repository with classic machine vibes.",
+    "urls": {
+      "tweet": "https://twitter.com/rariancom/status/1954969542645412175",
+      "code": "https://github.com/rariancom/RetroScroller/tree/main"
+    },
+    "tags": [
+      "effects",
+      "retro",
+      "scroll",
+      "demo-scene"
+    ],
+    "createdAt": "2025-08-11T18:13:55Z"
+  },
+  {
+    "id": "1954932591272006013",
+    "category": "react-three-fiber",
+    "title": "Ocean waves (R3F + Next.js)",
+    "description": "OrbitControls + realistic water shader packaged as a minimal landing page scene.",
+    "urls": {
+      "tweet": "https://twitter.com/sujitkumarrdev/status/1954932591272006013",
+      "live": "https://ocean-wave-landing.vercel.app/",
+      "code": "https://github.com/sujitkumarrdev/ocean-wave-landing"
+    },
+    "tags": [
+      "react-three-fiber",
+      "threejs",
+      "nextjs",
+      "water",
+      "shader"
+    ],
+    "createdAt": "2025-08-11T15:47:05Z"
+  },
+  {
+    "id": "1954921942416609297",
+    "category": "shaders",
+    "title": "Animated gradient tool (WebGL + GUI)",
+    "description": "Gradient playground with expansive controls for color animation exploration.",
+    "urls": {
+      "tweet": "https://twitter.com/artcreativecode/status/1954921942416609297",
+      "live": "https://craft-gradients.artcreativecode.com"
+    },
+    "tags": [
+      "webgl",
+      "shader",
+      "gui",
+      "gradients"
+    ],
+    "createdAt": "2025-08-11T15:04:46Z"
+  },
+  {
+    "id": "1953870795060437384",
+    "category": "graphics",
+    "title": "Animation timing libraries (timeline.js, keytime)",
+    "description": "Lightweight libraries for time-based animation sequencing control.",
+    "urls": {
+      "tweet": "https://twitter.com/dr_okra/status/1953870795060437384",
+      "code": "https://github.com/vorg/timeline.js/",
+      "misc": "https://github.com/mattdesl/keytime"
+    },
+    "tags": [
+      "animation",
+      "timing",
+      "sequencing",
+      "library"
+    ],
+    "createdAt": "2025-08-08T17:27:53Z"
+  },
+  {
+    "id": "1953794724881408008",
+    "category": "blender",
+    "title": "Geometry Nodes: Bundles & Closures update",
+    "description": "Overview of new high-level node asset patterns for flexible Blender setups.",
+    "urls": {
+      "tweet": "https://twitter.com/JacquesLucke/status/1953794724881408008",
+      "article": "https://code.blender.org/2025/08/bundles-and-closures/"
+    },
+    "tags": [
+      "blender",
+      "geometry-nodes",
+      "procedural"
+    ],
+    "createdAt": "2025-08-08T12:25:36Z"
+  },
+  {
+    "id": "1953746548938223720",
+    "category": "design",
+    "title": "Helsinki XXL (Free Font Friday)",
+    "description": "Typeface resource suitable for 3D text compositions with Troika.",
+    "urls": {
+      "tweet": "https://twitter.com/ilovetypography/status/1953746548938223720",
+      "docs": "https://fonts.ilovetypography.com/fonts/ludwig-type/helsinki-xxl"
+    },
+    "tags": [
+      "typography",
+      "font",
+      "design"
+    ],
+    "createdAt": "2025-08-08T09:14:10Z"
+  },
+  {
+    "id": "1953682866640204079",
+    "category": "blender",
+    "title": "Geometry Nodes tutorial (CrossMind Studio)",
+    "description": "Beginner-friendly node setup walkthrough for quick procedural effects.",
+    "urls": {
+      "tweet": "https://twitter.com/CrossmindStudio/status/1953682866640204079",
+      "live": "https://youtu.be/yknvqlfokQk"
+    },
+    "tags": [
+      "blender",
+      "geometry-nodes",
+      "tutorial"
+    ],
+    "createdAt": "2025-08-08T05:01:07Z"
+  },
+  {
+    "id": "1953485861514797367",
+    "category": "ai-tools",
+    "title": "Vercel AI SDK — Elements",
+    "description": "UI elements for AI applications alongside the official changelog entry.",
+    "urls": {
+      "tweet": "https://twitter.com/aisdk/status/1953485861514797367",
+      "docs": "https://vercel.com/changelog/introducing-ai-elements",
+      "misc": "https://ai-sdk.dev/elements/overview"
+    },
+    "tags": [
+      "ai-sdk",
+      "ui",
+      "vercel"
+    ],
+    "createdAt": "2025-08-07T15:58:18Z"
+  }
+];
+
+export const byTag = (tag: string) =>
+  corpus.filter((entry) =>
+    entry.tags.map((t) => t.toLowerCase()).includes(tag.toLowerCase())
+  );
+
+export const byCategory = (category: Category) =>
+  corpus.filter((entry) => entry.category === category);

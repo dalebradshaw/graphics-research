@@ -1,0 +1,54 @@
+name: Ingest YouTube Transcript
+description: Add a YouTube tutorial or talk to the graphics research corpus.
+title: "[YouTube] "
+labels:
+  - ingest:youtube
+body:
+  - type: input
+    id: url
+    attributes:
+      label: Video URL
+      description: Paste the full YouTube URL.
+      placeholder: https://www.youtube.com/watch?v=...
+    validations:
+      required: true
+  - type: input
+    id: title
+    attributes:
+      label: Title
+      description: How should this appear inside the corpus?
+    validations:
+      required: true
+  - type: dropdown
+    id: category
+    attributes:
+      label: Category
+      options:
+        - threejs
+        - react-three-fiber
+        - webgl
+        - shaders
+        - graphics
+        - blender
+        - design
+        - tooling
+        - ai-tools
+    validations:
+      required: true
+  - type: input
+    id: tags
+    attributes:
+      label: Tags
+      description: Comma-separated keywords (e.g. blender,geometry-nodes,looping)
+  - type: textarea
+    id: summary
+    attributes:
+      label: Summary
+      description: Short summary or key bullet points.
+      render: markdown
+  - type: textarea
+    id: transcript
+    attributes:
+      label: Transcript
+      description: Paste the cleaned transcript (or leave blank if attaching a file in the issue).
+      render: markdown

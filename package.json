@@ -1,0 +1,20 @@
+{
+  "name": "threejs-r3f-research",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build:md": "tsx scripts/build-md.ts",
+    "add:x": "tsx scripts/add-from-x-export.ts",
+    "add:yt": "tsx scripts/add-youtube-transcript.ts",
+    "add:gh": "tsx scripts/add-github-resource.ts",
+    "search": "tsx src/search.ts"
+  },
+  "dependencies": {
+  },
+  "devDependencies": {
+    "@types/node": "^22.7.5",
+    "tsx": "^4.19.0",
+    "typescript": "^5.4.5"
+  }
+}

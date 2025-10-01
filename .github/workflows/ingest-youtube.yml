@@ -1,0 +1,43 @@
+name: Ingest YouTube Entry
+
+on:
+  issues:
+    types: [labeled]
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  ingest:
+    if: github.event.label.name == 'ingest:youtube'
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Ingest YouTube issue
+        env:
+          ISSUE_JSON: ${{ toJson(github.event.issue) }}
+        run: node .github/scripts/ingest-youtube.js "$ISSUE_JSON"
+
+      - name: Regenerate Markdown
+        run: npx tsx scripts/build-md.ts
+
+      - name: Create pull request
+        uses: peter-evans/create-pull-request@v6
+        with:
+          branch: ingest/youtube-${{ github.event.issue.number }}
+          title: "Ingest YouTube: #${{ github.event.issue.number }}"
+          body: |
+            Closes #${{ github.event.issue.number }}
+          labels: ingestion
