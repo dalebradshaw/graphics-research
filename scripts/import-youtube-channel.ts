@@ -29,6 +29,11 @@ interface FeedVideo {
   description: string;
 }
 
+interface FeedResult {
+  title?: string;
+  videos: FeedVideo[];
+}
+
 const VALID_CATEGORIES = new Set([
   "threejs",
   "react-three-fiber",
@@ -155,10 +160,41 @@ function baseChannelUrl(raw: string): string {
   if (/\/videos/.test(url.pathname)) {
     url.pathname = url.pathname.replace(/\/videos.*$/, "");
   }
-  if (url.pathname === "") {
+  if (!url.pathname || url.pathname === "") {
     url.pathname = "/";
   }
+  if (!url.pathname.startsWith("/")) {
+    url.pathname = `/${url.pathname}`;
+  }
   return url.toString();
+}
+
+function buildAttemptUrl(base: string, suffix = ""): string {
+  const baseUrl = new URL(base);
+  const stripped = baseUrl.pathname.replace(/\/$/, "");
+  baseUrl.pathname = `${stripped}${suffix}` || "/";
+  if (!baseUrl.searchParams.has("hl")) {
+    baseUrl.searchParams.set("hl", "en");
+  }
+  return baseUrl.toString();
+}
+
+function findChannelId(html: string): string | undefined {
+  const patterns = [
+    /"channelId":"(UC[^"]+)"/,
+    /"externalId":"(UC[^"]+)"/,
+    /"externalChannelId":"(UC[^"]+)"/,
+    /"browseId":"(UC[^"]+)"/,
+    /data-channel-external-id="(UC[^"]+)"/,
+    /"canonicalUrl":"https:\/\/www\.youtube\.com\/channel\/(UC[^"]+)"/
+  ];
+  for (const pattern of patterns) {
+    const match = pattern.exec(html);
+    if (match && match[1]) {
+      return match[1];
+    }
+  }
+  return undefined;
 }
 
 function extractFirst(matchers: Array<RegExpExecArray | null | undefined>): string | undefined {
@@ -171,42 +207,78 @@ function extractFirst(matchers: Array<RegExpExecArray | null | undefined>): stri
 }
 
 async function resolveChannelInfo(rawUrl: string): Promise<ChannelInfo> {
-  const channelPage = baseChannelUrl(rawUrl);
-  const html = await fetchText(channelPage);
+  const base = baseChannelUrl(rawUrl);
+  const attemptSuffixes = ["", "/about", "/videos"];
+  const attempted: Array<{ url: string; html: string }> = [];
 
-  const channelIdMatch = /"channelId":"(UC[^"]+)"/.exec(html)
-    || /<meta itemprop="channelId" content="(UC[^"]+)"/i.exec(html);
-  if (!channelIdMatch) {
-    throw new Error(`Unable to resolve channelId from ${channelPage}`);
+  for (const suffix of attemptSuffixes) {
+    try {
+      const attemptUrl = buildAttemptUrl(base, suffix);
+      const html = await fetchText(attemptUrl);
+      attempted.push({ url: attemptUrl, html });
+      const channelId = findChannelId(html);
+      if (channelId) {
+        const name = extractFirst([
+          /"ownerChannelName":"([^"]+)"/.exec(html),
+          /"title":"([^"]+)"/.exec(html),
+          /<meta itemprop="name" content="([^"]+)"/i.exec(html)
+        ]) || channelId;
+
+        const handle = extractFirst([/"handle":"(@[^"]+)"/.exec(html)])
+          || (/@[A-Za-z0-9_\-\.]+/.exec(base)?.[0]);
+
+        const canonicalPatterns = [
+          new RegExp('<link rel="canonical" href="https://www\\.youtube\\.com/channel/([A-Za-z0-9_-]+)"', 'i'),
+          new RegExp('"canonicalUrl":"https://www\\.youtube\\.com/channel/([A-Za-z0-9_-]+)"')
+        ];
+        const canonicalMatch = canonicalPatterns
+          .map((pattern) => pattern.exec(html))
+          .find((match) => match && match[1]);
+        const canonicalUrl = canonicalMatch
+          ? `https://www.youtube.com/channel/${canonicalMatch[1]}`
+          : `https://www.youtube.com/channel/${channelId}`;
+
+        return {
+          id: channelId,
+          name,
+          url: canonicalUrl,
+          handle
+        };
+      }
+    } catch (error) {
+      // continue to next attempt
+    }
   }
-  const channelId = channelIdMatch[1];
 
-  const name = extractFirst([
-    /"ownerChannelName":"([^"]+)"/.exec(html),
-    /"title":"([^"]+)"/.exec(html),
-    /<meta itemprop="name" content="([^"]+)"/i.exec(html)
-  ]) || channelId;
-
-  const handle = extractFirst([/"handle":"(@[^"]+)"/.exec(html)]);
-
-  const canonicalMatch = /<link rel="canonical" href="https:\/\/www\.youtube\.com\/channel\/([A-Za-z0-9_-]+)"/i.exec(html);
-  const canonicalUrl = canonicalMatch
-    ? `https://www.youtube.com/channel/${canonicalMatch[1]}`
-    : `https://www.youtube.com/channel/${channelId}`;
-
-  return {
-    id: channelId,
-    name,
-    url: canonicalUrl,
-    handle
-  };
+  const attemptedUrls = attempted.map((item) => item.url).join(", ");
+  throw new Error(`Unable to resolve channelId from ${base} (attempted: ${attemptedUrls || base})`);
 }
 
 function matchTag(xml: string, tag: string): string | undefined {
-  const regex = new RegExp(`<${tag}[^>]*>([\s\S]*?)<\/${tag}>`, "i");
-  const match = regex.exec(xml);
-  if (!match) return undefined;
-  return cleanText(match[1]);
+  const regex = new RegExp(String.raw`<${tag}[^>]*>([\s\S]*?)</${tag}>`, "i");
+  if (process.env.DEBUG_IMPORT) {
+    console.log("Primary regex:", regex);
+  }
+  let match = regex.exec(xml);
+  if (!match && tag.includes(":")) {
+    const local = tag.split(":").pop() ?? tag;
+    const fallback = new RegExp(String.raw`<[^>]*${local}[^>]*>([\s\S]*?)</[^>]*${local}>`, "i");
+    match = fallback.exec(xml);
+    if (process.env.DEBUG_IMPORT) {
+      console.log(`Fallback regex for ${tag}:`, fallback, 'match:', match?.[1]);
+    }
+  }
+  if (!match) {
+    if (process.env.DEBUG_IMPORT) {
+      console.log(`matchTag(${tag}) -> no match`);
+    }
+    return undefined;
+  }
+  const value = cleanText(match[1]);
+  if (process.env.DEBUG_IMPORT) {
+    console.log(`matchTag(${tag}) ->`, value);
+  }
+  return value;
 }
 
 function matchAttr(xml: string, tag: string, attr: string): string | undefined {
@@ -216,13 +288,28 @@ function matchAttr(xml: string, tag: string, attr: string): string | undefined {
   return decodeHtmlEntities(match[1]);
 }
 
-async function fetchChannelFeed(channelId: string, limit: number): Promise<FeedVideo[]> {
+async function fetchChannelFeed(channelId: string, limit: number): Promise<FeedResult> {
   const feedUrl = `https://www.youtube.com/feeds/videos.xml?channel_id=${channelId}`;
   const xml = await fetchText(feedUrl);
+  if (process.env.DEBUG_IMPORT) {
+    console.log("Fetched feed", feedUrl);
+  }
   const entries = Array.from(xml.matchAll(/<entry>([\s\S]*?)<\/entry>/g));
-  return entries.slice(0, limit).map((entry) => {
+  if (process.env.DEBUG_IMPORT) {
+    console.log(`Feed entries found: ${entries.length}`);
+    if (entries[0]) {
+      console.log("First entry snippet:", entries[0][1].slice(0, 200));
+    }
+  }
+  const videos = entries.slice(0, limit).map((entry) => {
     const entryXml = entry[1];
+    if (process.env.DEBUG_IMPORT) {
+      console.log("entryXml raw:", entryXml);
+    }
     const id = matchTag(entryXml, "yt:videoId");
+    if (process.env.DEBUG_IMPORT) {
+      console.log("Parsing entry", { id });
+    }
     if (!id) {
       return undefined;
     }
@@ -232,6 +319,12 @@ async function fetchChannelFeed(channelId: string, limit: number): Promise<FeedV
     const description = matchTag(entryXml, "media:description") || "";
     return { id, url, title, published, description } as FeedVideo;
   }).filter((video): video is FeedVideo => Boolean(video));
+
+  const channelTitle = matchTag(xml, "title");
+  return {
+    title: channelTitle,
+    videos
+  };
 }
 
 async function fetchTranscript(videoId: string, lang?: string): Promise<string> {
@@ -272,7 +365,13 @@ async function main() {
   const options = parseArgs();
   const tmpDir = await ensureTmpDir();
   const channel = await resolveChannelInfo(options.url);
-  const videos = await fetchChannelFeed(channel.id, options.limit);
+  if (process.env.DEBUG_IMPORT) {
+    console.log("Resolved channel", channel);
+  }
+  const { videos, title: feedTitle } = await fetchChannelFeed(channel.id, options.limit);
+  if (feedTitle && (!channel.name || /home/i.test(channel.name))) {
+    channel.name = feedTitle;
+  }
 
   if (!videos.length) {
     console.log("No videos found for channel feed");
