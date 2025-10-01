@@ -8,9 +8,12 @@
     "add:x": "tsx scripts/add-from-x-export.ts",
     "add:yt": "tsx scripts/add-youtube-transcript.ts",
     "add:gh": "tsx scripts/add-github-resource.ts",
+    "import:channel": "tsx scripts/import-youtube-channel.ts",
     "search": "tsx src/search.ts"
   },
   "dependencies": {
+    "youtube-sr": "^4.3.12",
+    "youtube-transcript": "^1.2.1"
   },
   "devDependencies": {
     "@types/node": "^22.7.5",

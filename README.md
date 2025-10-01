@@ -40,6 +40,13 @@ pbpaste | npm run add:gh -- \
   --summary "Instanced meshes + batching patterns for R3F." \
   --build
 
+# grab the newest channel uploads (defaults to 10) and ingest transcripts automatically
+npm run import:channel -- \
+  --url "https://www.youtube.com/@TheDucky3D/videos" \
+  --category blender \
+  --tags "blender,geometry-nodes" \
+  --limit 10
+
 # quick search
 echo "tsl" | npm run search -- --tag tsl
 npm run search -- "geometry nodes"
