@@ -24,6 +24,8 @@ type CliArgs = {
   tags: string[];
   summary?: string;
   summaryFile?: string;
+  notes?: string;
+  notesFile?: string;
   transcriptFile?: string;
   createdAt?: string;
   id?: string;
@@ -70,6 +72,9 @@ function parseArgs(): CliArgs {
     summary: typeof result.summary === "string" ? result.summary : undefined,
     summaryFile:
       typeof result.summaryFile === "string" ? result.summaryFile : undefined,
+    notes: typeof result.notes === "string" ? result.notes : undefined,
+    notesFile:
+      typeof result.notesFile === "string" ? result.notesFile : undefined,
     transcriptFile:
       typeof result.transcriptFile === "string"
         ? result.transcriptFile
@@ -115,6 +120,15 @@ async function readSummary(args: CliArgs): Promise<string | undefined> {
     return fileSummary.trim() || undefined;
   }
   if (args.summary) return args.summary;
+  return undefined;
+}
+
+async function readNotes(args: CliArgs): Promise<string | undefined> {
+  if (args.notesFile) {
+    const fileNotes = await fs.readFile(path.resolve(args.notesFile), "utf-8");
+    return fileNotes.trim() || undefined;
+  }
+  if (args.notes) return args.notes;
   return undefined;
 }
 
@@ -167,6 +181,7 @@ function buildTranscriptMarkdown(params: {
   url: string;
   title: string;
   summary?: string;
+  notes?: string;
   transcript: string;
 }): string {
   const lines: string[] = [];
@@ -177,6 +192,11 @@ function buildTranscriptMarkdown(params: {
     lines.push("");
     lines.push("## Summary");
     lines.push(params.summary.trim());
+  }
+  if (params.notes) {
+    lines.push("");
+    lines.push("## Notes");
+    lines.push(params.notes.trim());
   }
   if (params.transcript.trim()) {
     lines.push("");
@@ -193,6 +213,7 @@ async function main() {
   const videoId = args.id ?? extractVideoId(args.url);
   const transcriptText = (await readTranscriptText(args)).trim();
   const summary = await readSummary(args);
+  const notes = await readNotes(args);
 
   const transcriptPath = path.join(TRANSCRIPTS_DIR, `${videoId}.md`);
   const relativeTranscript = path.relative(ROOT, transcriptPath);
@@ -202,6 +223,7 @@ async function main() {
     url: args.url,
     title: args.title,
     summary,
+    notes,
     transcript: transcriptText
   });
   await fs.writeFile(transcriptPath, transcriptMarkdown, "utf-8");
@@ -214,6 +236,7 @@ async function main() {
     title: args.title,
     description,
     summary,
+    notes,
     urls: {
       video: args.url,
       transcript: `transcripts/${videoId}.md`

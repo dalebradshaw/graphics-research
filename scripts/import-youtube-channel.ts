@@ -29,6 +29,11 @@ interface FeedVideo {
   description: string;
 }
 
+interface SummaryData {
+  summary: string;
+  notes?: string;
+}
+
 interface FeedResult {
   title?: string;
   videos: FeedVideo[];
@@ -352,13 +357,26 @@ async function writeTempFile(tmpDir: string, name: string, content: string): Pro
   return filePath;
 }
 
-function normaliseSummary(description: string, fallback: string): string {
-  const firstLine = description
+function createSummary(description: string, fallback: string): SummaryData {
+  const cleaned = description
     .split(/\r?\n/)
     .map((line) => line.trim())
-    .find((line) => line.length > 0);
-  if (firstLine) return firstLine;
-  return fallback;
+    .filter((line) => line.length > 0)
+    .join(" ");
+  const sentence = cleaned
+    .split(/(?<=[.!?])\s+/)
+    .map((part) => part.trim())
+    .find((part) => part.length > 0);
+  const summary = sentence || fallback;
+  return {
+    summary,
+    notes: cleaned || (summary !== fallback ? summary : undefined)
+  };
+}
+
+function extractHashtags(description: string): string[] {
+  const matches = description.match(/#([A-Za-z0-9_\-]+)/g) || [];
+  return Array.from(new Set(matches.map((tag) => tag.replace(/^#/, "").toLowerCase())));
 }
 
 async function main() {
@@ -384,7 +402,11 @@ async function main() {
 
   for (const [index, video] of videos.entries()) {
     const createdAt = new Date(video.published).toISOString().slice(0, 10);
-    const summary = normaliseSummary(video.description, `Auto-ingested from channel ${channel.name}.`);
+    const { summary, notes } = createSummary(
+      video.description,
+      `Auto-ingested from channel ${channel.name}.`
+    );
+    const hashtags = extractHashtags(video.description);
 
     console.log(`\n[${index + 1}/${videos.length}] ${video.title}`);
     console.log(`  URL: ${video.url}`);
@@ -426,14 +448,28 @@ async function main() {
       createdAt
     ];
 
-    if (options.tags.length) {
-      args.push("--tags", options.tags.join(","));
+    const combinedTags = new Set<string>([
+      ...options.tags.map((tag) => tag.toLowerCase()),
+      ...hashtags
+    ]);
+    if (combinedTags.size) {
+      args.push("--tags", Array.from(combinedTags).join(","));
     }
 
     if (summaryFile) {
       args.push("--summaryFile", summaryFile);
     } else if (summary) {
       args.push("--summary", summary);
+    }
+
+    const notesFile = notes
+      ? await writeTempFile(tmpDir, `${video.id}-notes.md`, notes)
+      : undefined;
+
+    if (notesFile) {
+      args.push("--notesFile", notesFile);
+    } else if (notes) {
+      args.push("--notes", notes);
     }
 
     if (transcriptFile) {

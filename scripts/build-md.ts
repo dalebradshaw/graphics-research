@@ -35,6 +35,7 @@ interface Entry {
   tags: string[];
   createdAt?: string;
   summary?: string;
+  notes?: string;
 }
 
 type Corpus = Entry[];
@@ -134,6 +135,7 @@ export type Entry = {
   tags: string[];
   createdAt?: string;
   summary?: string;
+  notes?: string;
 };
 
 export const corpus: Entry[] = ${data};
