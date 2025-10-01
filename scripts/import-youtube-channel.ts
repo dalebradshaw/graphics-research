@@ -452,6 +452,9 @@ async function main() {
       ...options.tags.map((tag) => tag.toLowerCase()),
       ...hashtags
     ]);
+    if (!transcript) {
+      combinedTags.add("needs-transcript");
+    }
     if (combinedTags.size) {
       args.push("--tags", Array.from(combinedTags).join(","));
     }

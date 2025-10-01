@@ -47,6 +47,9 @@ npm run import:channel -- \
   --tags "blender,geometry-nodes" \
   --limit 10
 
+# finish missing transcripts manually (placeholder lives in transcripts/<id>.md)
+npx tsx scripts/add-youtube-transcript.ts --url "https://www.youtube.com/watch?v=<id>" --title "..." --category blender --tags "needs-transcript" --transcriptFile path/to/captions.txt --build
+
 # quick search
 echo "tsl" | npm run search -- --tag tsl
 npm run search -- "geometry nodes"
@@ -56,6 +59,7 @@ npm run search -- "geometry nodes"
 - Scripts accept `--summaryFile` / `--transcriptFile` / `--readmeFile` so large content can be stored in temporary files.
 - Auto-tagging heuristics look for common graphics keywords (three.js, R3F, shaders, Blender, instancing, WebGPU) and merge with any tags you pass in.
 - `--build` triggers `scripts/build-md.ts`, rebuilding both `corpus.md` and `corpus.ts` so everything stays consistent.
+- Missing captions are tracked automatically: entries get the `needs-transcript` tag and the transcript Markdown includes a placeholder so you can drop in text later.
 
 ## GitHub automation (official workflow)
 1. Push this repo to GitHub.

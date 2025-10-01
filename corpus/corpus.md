@@ -44,27 +44,27 @@
 - **Powerful Generative Landscape Animations (Blender Tutorial)￼**  
   In this tutorial we will be using geometry nodes to create a generative topographic landscape animation in blender.  
   Video: https://www.youtube.com/watch?v=7dm776rZz-s · Transcript: transcripts/7dm776rZz-s.md  
-  Tags: blender, geometry-nodes, geometrynodes, blender3d, tutorial
+  Tags: blender, geometry-nodes, geometrynodes, blender3d, tutorial, needs-transcript
 - **How Beautiful Light Trails Are Made in Blender 4.5 ￼**  
   In this blender tutorial we will be using geometry nodes to create light trails.  
   Video: https://www.youtube.com/watch?v=SerF_8yCVDA · Transcript: transcripts/SerF_8yCVDA.md  
-  Tags: blender, geometry-nodes, geometrynodes, blender3d, tutorial
+  Tags: blender, geometry-nodes, geometrynodes, blender3d, tutorial, needs-transcript
 - **Shading Makes Powerful Animations (Blender Tutorial)**  
   In this blender tutorial we will be making a beautiful animation made entirely in the shader editor.  
   Video: https://www.youtube.com/watch?v=syfDKEpSf54 · Transcript: transcripts/syfDKEpSf54.md  
-  Tags: blender, geometry-nodes
+  Tags: blender, geometry-nodes, needs-transcript
 - **Powerful Light Trails in Blender 4.5 (tutorial)**  
   In this blender tutorial we will be using geometry nodes to create light trails that draw geometry as the camera moves.  
   Video: https://www.youtube.com/watch?v=965bgIUHoxA · Transcript: transcripts/965bgIUHoxA.md  
-  Tags: blender, geometry-nodes, geometrynodes, blender3d, tutorial
+  Tags: blender, geometry-nodes, geometrynodes, blender3d, tutorial, needs-transcript
 - **Abstract Particle Flow Tutorial in Blender 4.5**  
   In this Blender tutorial we will be using geometry nodes to make thousands of particles (points) in geometry nodes form around any logo we want to.  
   Video: https://www.youtube.com/watch?v=dhYL2OTMR9o · Transcript: transcripts/dhYL2OTMR9o.md  
-  Tags: blender, geometry-nodes
+  Tags: blender, geometry-nodes, needs-transcript
 - **Powerful Particle Systems in Blender**  
   Particle systems are used in motion graphics, environments, VFX & movies.  
   Video: https://www.youtube.com/watch?v=45HruJxNBcY · Transcript: transcripts/45HruJxNBcY.md  
-  Tags: blender, geometry-nodes, geometrynodes, motiongraphics, particles
+  Tags: blender, geometry-nodes, geometrynodes, motiongraphics, particles, needs-transcript
 - **Parasite effect with Geometry Nodes (Blender 3.3 tutorial)**  
   Create a parasite-style looping animation using volume cube, 4D noise, instancing, and emissive materials.  
   Video: https://www.youtube.com/watch?v=t61gMdBXjQw&list=PLNShHVjao84dTJDUQA9dPNTGsox16p1iV · Transcript: transcripts/t61gMdBXjQw.md  
@@ -72,7 +72,7 @@
 - **Should You Learn Geometry Nodes?**  
   Recently there has been a lot of discourse about #geometrynodes and if you should learn it.  
   Video: https://www.youtube.com/watch?v=x07cPMM6A-Q · Transcript: transcripts/x07cPMM6A-Q.md  
-  Tags: blender, geometry-nodes, geometrynodes
+  Tags: blender, geometry-nodes, geometrynodes, needs-transcript
 - **Geometry Nodes: Bundles & Closures update**  
   Overview of new high-level node asset patterns for flexible Blender setups.  
   Tweet: https://twitter.com/JacquesLucke/status/1953794724881408008 · Article: https://code.blender.org/2025/08/bundles-and-closures/  
@@ -84,35 +84,35 @@
 - **Photorealistic Sci-Fi environment Blender tutorial!**  
   In this tutorial we are going to be building a photo of realistic sci-fi environment in geometry nodes.  
   Video: https://www.youtube.com/watch?v=lI1DMK9TCeg · Transcript: transcripts/lI1DMK9TCeg.md  
-  Tags: blender, geometry-nodes
+  Tags: blender, geometry-nodes, needs-transcript
 - **The Thing Holding Your 3D Art Back!**  
   Visual clutter can be your worst enemy when making 3D art.  
   Video: https://www.youtube.com/watch?v=FJ6nEmjGWa8 · Transcript: transcripts/FJ6nEmjGWa8.md  
-  Tags: blender, geometry-nodes
+  Tags: blender, geometry-nodes, needs-transcript
 - **Another Blender String Tutorial....But even Better This Time!**  
   In this #blender #MotionGraphics tutorial we will be using simulation zones to make an array of curves.  
   Video: https://www.youtube.com/watch?v=0lBaaCMpZGs · Transcript: transcripts/0lBaaCMpZGs.md  
-  Tags: blender, geometry-nodes, motiongraphics, geometrynodes
+  Tags: blender, geometry-nodes, motiongraphics, geometrynodes, needs-transcript
 - **When Tutorials Aren't helpful Anymore, How Do You Keep Learning?**  
   After watching tutorials for a few years you might start to loose interest in them and they stop being useful.  
   Video: https://www.youtube.com/watch?v=jUPqd8_Ig7g · Transcript: transcripts/jUPqd8_Ig7g.md  
-  Tags: blender, geometry-nodes
+  Tags: blender, geometry-nodes, needs-transcript
 - **6 Ways Blender Makes Amazing Logo Renders!**  
   3D Logos are an incredible way to bring a brand to love, and there are hundreds of directions to take that idea in your #motiongraphics Today i want to show you 6 concepts and how to achieve those ideas in blender so you can take them and make your own awesome logo renders and animations!  
   Video: https://www.youtube.com/watch?v=cbS86G0mqrU · Transcript: transcripts/cbS86G0mqrU.md  
-  Tags: blender, geometry-nodes, motiongraphics
+  Tags: blender, geometry-nodes, motiongraphics, needs-transcript
 - **Particle Flow Logo Animation in Blender (Geometry Nodes Tutorial)**  
   In this Blender tutorial we will be taking any logo, converting it to a bunch of particles in geometry nodes.  
   Video: https://www.youtube.com/watch?v=oC6guqEK9J4 · Transcript: transcripts/oC6guqEK9J4.md  
-  Tags: blender, geometry-nodes
+  Tags: blender, geometry-nodes, needs-transcript
 - **Using Blender like its Adobe After Effects**  
   You man have seen a effect in touch designer called blob tracking, its really cool, but if you don't know how to use touch designer or just don't want to buy it.  
   Video: https://www.youtube.com/watch?v=nJ1TWyYvgco · Transcript: transcripts/nJ1TWyYvgco.md  
-  Tags: blender, geometry-nodes
+  Tags: blender, geometry-nodes, needs-transcript
 - **10 Minute Tutorial - Organic Cell Effect In Geometry Nodes (Blender Tutorial)**  
   In this Blender tutorial we will be making an abstract animation and that will mimic metaball behaviors in geometry nodes.  
   Video: https://www.youtube.com/watch?v=5ltTn77WaFo · Transcript: transcripts/5ltTn77WaFo.md  
-  Tags: blender, geometry-nodes
+  Tags: blender, geometry-nodes, needs-transcript
 
 ## Typography / Design
 - **Helsinki XXL (Free Font Friday)**  

@@ -7,3 +7,6 @@ In this tutorial we are going to be building a photo of realistic sci-fi environ
 
 ## Notes
 In this tutorial we are going to be building a photo of realistic sci-fi environment in geometry nodes. We will be creating several different levels of detail from geometry nodes to the shading. ￼ ----------------------------- Patreon - https://patreon.com/user?u=9011118&utm_medium=clipboard_copy&utm_source=copyLink&utm_campaign=creatorshare_creator&utm_content=join_link ----------------------------------------------- 🌐 Connect with me: - Instagram: https://www.instagram.com/ducky3d/ - Twitter: https://twitter.com/Ducky3d
+
+## Transcript
+Transcript not available yet. Capture captions manually and re-run `npm run add:yt` with --transcriptFile to replace this placeholder.

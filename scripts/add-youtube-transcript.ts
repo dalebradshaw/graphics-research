@@ -211,9 +211,14 @@ async function main() {
   const args = parseArgs();
   const category = ensureCategory(args.category);
   const videoId = args.id ?? extractVideoId(args.url);
-  const transcriptText = (await readTranscriptText(args)).trim();
+  const rawTranscript = await readTranscriptText(args);
+  const transcriptText = rawTranscript.trim();
   const summary = await readSummary(args);
   const notes = await readNotes(args);
+  const hasTranscript = transcriptText.length > 0;
+  const transcriptBody = hasTranscript
+    ? transcriptText
+    : "Transcript not available yet. Capture captions manually and re-run `npm run add:yt` with --transcriptFile to replace this placeholder.";
 
   const transcriptPath = path.join(TRANSCRIPTS_DIR, `${videoId}.md`);
   const relativeTranscript = path.relative(ROOT, transcriptPath);
@@ -224,7 +229,7 @@ async function main() {
     title: args.title,
     summary,
     notes,
-    transcript: transcriptText
+    transcript: transcriptBody
   });
   await fs.writeFile(transcriptPath, transcriptMarkdown, "utf-8");
 
@@ -237,6 +242,7 @@ async function main() {
     description,
     summary,
     notes,
+    hasTranscript,
     urls: {
       video: args.url,
       transcript: `transcripts/${videoId}.md`

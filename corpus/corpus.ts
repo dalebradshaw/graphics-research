@@ -32,6 +32,7 @@ export type Entry = {
   createdAt?: string;
   summary?: string;
   notes?: string;
+  hasTranscript?: boolean;
 };
 
 export const corpus: Entry[] = [
@@ -50,10 +51,12 @@ export const corpus: Entry[] = [
       "geometry-nodes",
       "geometrynodes",
       "blender3d",
-      "tutorial"
+      "tutorial",
+      "needs-transcript"
     ],
     "createdAt": "2025-09-29",
-    "notes": "In this tutorial we will be using geometry nodes to create a generative topographic landscape animation in blender. This is a very powerful motion graphics technique and there are a lot of things and this tutorial you can apply to original ideas and artwork. ￼ #geometrynodes #blender3d #tutorial ----------------------------- Patreon - https://patreon.com/user?u=9011118&utm_medium=clipboard_copy&utm_source=copyLink&utm_campaign=creatorshare_creator&utm_content=join_link ----------------------------------------------- 🌐 Connect with me: - Instagram: https://www.instagram.com/ducky3d/ - Twitter: https://twitter.com/Ducky3d"
+    "notes": "In this tutorial we will be using geometry nodes to create a generative topographic landscape animation in blender. This is a very powerful motion graphics technique and there are a lot of things and this tutorial you can apply to original ideas and artwork. ￼ #geometrynodes #blender3d #tutorial ----------------------------- Patreon - https://patreon.com/user?u=9011118&utm_medium=clipboard_copy&utm_source=copyLink&utm_campaign=creatorshare_creator&utm_content=join_link ----------------------------------------------- 🌐 Connect with me: - Instagram: https://www.instagram.com/ducky3d/ - Twitter: https://twitter.com/Ducky3d",
+    "hasTranscript": false
   },
   {
     "id": "yt-SerF_8yCVDA",
@@ -70,10 +73,12 @@ export const corpus: Entry[] = [
       "geometry-nodes",
       "geometrynodes",
       "blender3d",
-      "tutorial"
+      "tutorial",
+      "needs-transcript"
     ],
     "createdAt": "2025-09-26",
-    "notes": "In this blender tutorial we will be using geometry nodes to create light trails. We will be using curves and the shading system in combination to create this beautiful effect. This is a very powerful motion graphics technique that can be used in many different ways for your own original artwork. ￼￼ #geometrynodes #blender3d #tutorial ----------------------------- Patreon - https://patreon.com/user?u=9011118&utm_medium=clipboard_copy&utm_source=copyLink&utm_campaign=creatorshare_creator&utm_content=join_link ----------------------------------------------- 🌐 Connect with me: - Instagram: https://www.instagram.com/ducky3d/ - Twitter: https://twitter.com/Ducky3d"
+    "notes": "In this blender tutorial we will be using geometry nodes to create light trails. We will be using curves and the shading system in combination to create this beautiful effect. This is a very powerful motion graphics technique that can be used in many different ways for your own original artwork. ￼￼ #geometrynodes #blender3d #tutorial ----------------------------- Patreon - https://patreon.com/user?u=9011118&utm_medium=clipboard_copy&utm_source=copyLink&utm_campaign=creatorshare_creator&utm_content=join_link ----------------------------------------------- 🌐 Connect with me: - Instagram: https://www.instagram.com/ducky3d/ - Twitter: https://twitter.com/Ducky3d",
+    "hasTranscript": false
   },
   {
     "id": "yt-syfDKEpSf54",
@@ -87,9 +92,11 @@ export const corpus: Entry[] = [
     },
     "tags": [
       "blender",
-      "geometry-nodes"
+      "geometry-nodes",
+      "needs-transcript"
     ],
     "createdAt": "2025-09-23",
+    "hasTranscript": false,
     "notes": "In this blender tutorial we will be making a beautiful animation made entirely in the shader editor. This tutorial will show you how to create a highly detailed pattern, that with small subtle movements can make a beautiful motion graphics animation. ￼ ----------------------------- Patreon - https://patreon.com/user?u=9011118&utm_medium=clipboard_copy&utm_source=copyLink&utm_campaign=creatorshare_creator&utm_content=join_link ----------------------------------------------- 🌐 Connect with me: - Instagram: https://www.instagram.com/ducky3d/ - Twitter: https://twitter.com/Ducky3d"
   },
   {
@@ -107,10 +114,12 @@ export const corpus: Entry[] = [
       "geometry-nodes",
       "geometrynodes",
       "blender3d",
-      "tutorial"
+      "tutorial",
+      "needs-transcript"
     ],
     "createdAt": "2025-09-20",
-    "notes": "In this blender tutorial we will be using geometry nodes to create light trails that draw geometry as the camera moves. This is a powerful concept that you can use in many of your motion graphics animations and other related styles of animation￼. We will be using geometry nodes to create the curves, creating a mirror system in geometry notes so that the animation will be a stainless loop. And will be using transparency to reveal the geometry as the camera moves. ￼#geometrynodes #blender3d #tutorial ----------------------------- Patreon - https://patreon.com/user?u=9011118&utm_medium=clipboard_copy&utm_source=copyLink&utm_campaign=creatorshare_creator&utm_content=join_link ----------------------------------------------- 🌐 Connect with me: - Instagram: https://www.instagram.com/ducky3d/ - Twitter: https://twitter.com/Ducky3d"
+    "notes": "In this blender tutorial we will be using geometry nodes to create light trails that draw geometry as the camera moves. This is a powerful concept that you can use in many of your motion graphics animations and other related styles of animation￼. We will be using geometry nodes to create the curves, creating a mirror system in geometry notes so that the animation will be a stainless loop. And will be using transparency to reveal the geometry as the camera moves. ￼#geometrynodes #blender3d #tutorial ----------------------------- Patreon - https://patreon.com/user?u=9011118&utm_medium=clipboard_copy&utm_source=copyLink&utm_campaign=creatorshare_creator&utm_content=join_link ----------------------------------------------- 🌐 Connect with me: - Instagram: https://www.instagram.com/ducky3d/ - Twitter: https://twitter.com/Ducky3d",
+    "hasTranscript": false
   },
   {
     "id": "yt-dhYL2OTMR9o",
@@ -124,10 +133,12 @@ export const corpus: Entry[] = [
     },
     "tags": [
       "blender",
-      "geometry-nodes"
+      "geometry-nodes",
+      "needs-transcript"
     ],
     "createdAt": "2025-09-04",
-    "notes": "In this Blender tutorial we will be using geometry nodes to make thousands of particles (points) in geometry nodes form around any logo we want to. This is a very useful trick you can use in your motion graphics. Enjoy! ----------------------------- Patreon - https://patreon.com/user?u=9011118&utm_medium=clipboard_copy&utm_source=copyLink&utm_campaign=creatorshare_creator&utm_content=join_link ----------------------------------------------- 🌐 Connect with me: - Instagram: https://www.instagram.com/ducky3d/ - Twitter: https://twitter.com/Ducky3d"
+    "notes": "In this Blender tutorial we will be using geometry nodes to make thousands of particles (points) in geometry nodes form around any logo we want to. This is a very useful trick you can use in your motion graphics. Enjoy! ----------------------------- Patreon - https://patreon.com/user?u=9011118&utm_medium=clipboard_copy&utm_source=copyLink&utm_campaign=creatorshare_creator&utm_content=join_link ----------------------------------------------- 🌐 Connect with me: - Instagram: https://www.instagram.com/ducky3d/ - Twitter: https://twitter.com/Ducky3d",
+    "hasTranscript": false
   },
   {
     "id": "yt-45HruJxNBcY",
@@ -144,10 +155,12 @@ export const corpus: Entry[] = [
       "geometry-nodes",
       "geometrynodes",
       "motiongraphics",
-      "particles"
+      "particles",
+      "needs-transcript"
     ],
     "createdAt": "2025-08-25",
-    "notes": "Particle systems are used in motion graphics, environments, VFX & movies. Knowing how to build powerful and interesting particle systems is a huge benefit to any blender artist. In this video I want to show you all the ways that I create particle systems in geometry nodes and all the ways to build them, control them, make them look good, and like them. I hope you enjoy! #blender #geometrynodes #motiongraphics #particles ----------------------------- Patreon - https://patreon.com/user?u=9011118&utm_medium=clipboard_copy&utm_source=copyLink&utm_campaign=creatorshare_creator&utm_content=join_link ----------------------------------------------- 🌐 Connect with me: - Instagram: https://www.instagram.com/ducky3d/ - Twitter: https://twitter.com/Ducky3d"
+    "notes": "Particle systems are used in motion graphics, environments, VFX & movies. Knowing how to build powerful and interesting particle systems is a huge benefit to any blender artist. In this video I want to show you all the ways that I create particle systems in geometry nodes and all the ways to build them, control them, make them look good, and like them. I hope you enjoy! #blender #geometrynodes #motiongraphics #particles ----------------------------- Patreon - https://patreon.com/user?u=9011118&utm_medium=clipboard_copy&utm_source=copyLink&utm_campaign=creatorshare_creator&utm_content=join_link ----------------------------------------------- 🌐 Connect with me: - Instagram: https://www.instagram.com/ducky3d/ - Twitter: https://twitter.com/Ducky3d",
+    "hasTranscript": false
   },
   {
     "id": "1956958707582980193",
@@ -216,10 +229,12 @@ export const corpus: Entry[] = [
     "tags": [
       "blender",
       "geometry-nodes",
-      "geometrynodes"
+      "geometrynodes",
+      "needs-transcript"
     ],
     "createdAt": "2025-08-14",
-    "notes": "Recently there has been a lot of discourse about #geometrynodes and if you should learn it. In this video i want to address this idea and answer three questions. Who is geometry nodes for, when should you start to learn it, and how should you learn it. ----------------------------- project files - https://www.patreon.com/posts/cheat-project-136445059?utm_medium=clipboard_copy&utm_source=copyLink&utm_campaign=postshare_creator&utm_content=join_link ----------------------------- Patreon - https://patreon.com/user?u=9011118&utm_medium=clipboard_copy&utm_source=copyLink&utm_campaign=creatorshare_creator&utm_content=join_link ----------------------------------------------- 🌐 Connect with me: - Instagram: https://www.instagram.com/ducky3d/ - Twitter: https://twitter.com/Ducky3d"
+    "notes": "Recently there has been a lot of discourse about #geometrynodes and if you should learn it. In this video i want to address this idea and answer three questions. Who is geometry nodes for, when should you start to learn it, and how should you learn it. ----------------------------- project files - https://www.patreon.com/posts/cheat-project-136445059?utm_medium=clipboard_copy&utm_source=copyLink&utm_campaign=postshare_creator&utm_content=join_link ----------------------------- Patreon - https://patreon.com/user?u=9011118&utm_medium=clipboard_copy&utm_source=copyLink&utm_campaign=creatorshare_creator&utm_content=join_link ----------------------------------------------- 🌐 Connect with me: - Instagram: https://www.instagram.com/ducky3d/ - Twitter: https://twitter.com/Ducky3d",
+    "hasTranscript": false
   },
   {
     "id": "1955659484862489009",
@@ -440,10 +455,12 @@ export const corpus: Entry[] = [
     },
     "tags": [
       "blender",
-      "geometry-nodes"
+      "geometry-nodes",
+      "needs-transcript"
     ],
     "createdAt": "2025-07-26",
-    "notes": "In this tutorial we are going to be building a photo of realistic sci-fi environment in geometry nodes. We will be creating several different levels of detail from geometry nodes to the shading. ￼ ----------------------------- Patreon - https://patreon.com/user?u=9011118&utm_medium=clipboard_copy&utm_source=copyLink&utm_campaign=creatorshare_creator&utm_content=join_link ----------------------------------------------- 🌐 Connect with me: - Instagram: https://www.instagram.com/ducky3d/ - Twitter: https://twitter.com/Ducky3d"
+    "notes": "In this tutorial we are going to be building a photo of realistic sci-fi environment in geometry nodes. We will be creating several different levels of detail from geometry nodes to the shading. ￼ ----------------------------- Patreon - https://patreon.com/user?u=9011118&utm_medium=clipboard_copy&utm_source=copyLink&utm_campaign=creatorshare_creator&utm_content=join_link ----------------------------------------------- 🌐 Connect with me: - Instagram: https://www.instagram.com/ducky3d/ - Twitter: https://twitter.com/Ducky3d",
+    "hasTranscript": false
   },
   {
     "id": "yt-FJ6nEmjGWa8",
@@ -457,10 +474,12 @@ export const corpus: Entry[] = [
     },
     "tags": [
       "blender",
-      "geometry-nodes"
+      "geometry-nodes",
+      "needs-transcript"
     ],
     "createdAt": "2025-07-16",
-    "notes": "Visual clutter can be your worst enemy when making 3D art. But clutter dosnt always have to mean something bad. Sometimes it can just be a bunch of very cool details that need to be organized in a thoughtfulway. In this video I will show you a system of visual hierarchy to help you organize all yiur details in a beautiful way! ----------------------------- Patreon - https://patreon.com/user?u=9011118&utm_medium=clipboard_copy&utm_source=copyLink&utm_campaign=creatorshare_creator&utm_content=join_link ----------------------------------------------- 🌐 Connect with me: - Instagram: https://www.instagram.com/ducky3d/ - Twitter: https://twitter.com/Ducky3d"
+    "notes": "Visual clutter can be your worst enemy when making 3D art. But clutter dosnt always have to mean something bad. Sometimes it can just be a bunch of very cool details that need to be organized in a thoughtfulway. In this video I will show you a system of visual hierarchy to help you organize all yiur details in a beautiful way! ----------------------------- Patreon - https://patreon.com/user?u=9011118&utm_medium=clipboard_copy&utm_source=copyLink&utm_campaign=creatorshare_creator&utm_content=join_link ----------------------------------------------- 🌐 Connect with me: - Instagram: https://www.instagram.com/ducky3d/ - Twitter: https://twitter.com/Ducky3d",
+    "hasTranscript": false
   },
   {
     "id": "yt-0lBaaCMpZGs",
@@ -476,10 +495,12 @@ export const corpus: Entry[] = [
       "blender",
       "geometry-nodes",
       "motiongraphics",
-      "geometrynodes"
+      "geometrynodes",
+      "needs-transcript"
     ],
     "createdAt": "2025-06-30",
-    "notes": "In this #blender #MotionGraphics tutorial we will be using simulation zones to make an array of curves. we will then manipulate and animate them to behave like real strings with a few useful #geometryNodes tricks that makes this very powerful ----------------------------- Patreon - https://patreon.com/user?u=9011118&utm_medium=clipboard_copy&utm_source=copyLink&utm_campaign=creatorshare_creator&utm_content=join_link ----------------------------------------------- 🌐 Connect with me: - Instagram: https://www.instagram.com/ducky3d/ - Twitter: https://twitter.com/Ducky3d"
+    "notes": "In this #blender #MotionGraphics tutorial we will be using simulation zones to make an array of curves. we will then manipulate and animate them to behave like real strings with a few useful #geometryNodes tricks that makes this very powerful ----------------------------- Patreon - https://patreon.com/user?u=9011118&utm_medium=clipboard_copy&utm_source=copyLink&utm_campaign=creatorshare_creator&utm_content=join_link ----------------------------------------------- 🌐 Connect with me: - Instagram: https://www.instagram.com/ducky3d/ - Twitter: https://twitter.com/Ducky3d",
+    "hasTranscript": false
   },
   {
     "id": "yt-jUPqd8_Ig7g",
@@ -493,10 +514,12 @@ export const corpus: Entry[] = [
     },
     "tags": [
       "blender",
-      "geometry-nodes"
+      "geometry-nodes",
+      "needs-transcript"
     ],
     "createdAt": "2025-06-12",
-    "notes": "After watching tutorials for a few years you might start to loose interest in them and they stop being useful. And if you are not careful you can start to slow you learning down and hit a roadblock. When it came to me getting better at motion graphics in blender, this exact thing happened to me. Today i want to show you my method to self teach and move past being reliant on tutorials. ----------------------------- Patreon - https://patreon.com/user?u=9011118&utm_medium=clipboard_copy&utm_source=copyLink&utm_campaign=creatorshare_creator&utm_content=join_link ----------------------------------------------- 🌐 Connect with me: - Instagram: https://www.instagram.com/ducky3d/ - Twitter: https://twitter.com/Ducky3d"
+    "notes": "After watching tutorials for a few years you might start to loose interest in them and they stop being useful. And if you are not careful you can start to slow you learning down and hit a roadblock. When it came to me getting better at motion graphics in blender, this exact thing happened to me. Today i want to show you my method to self teach and move past being reliant on tutorials. ----------------------------- Patreon - https://patreon.com/user?u=9011118&utm_medium=clipboard_copy&utm_source=copyLink&utm_campaign=creatorshare_creator&utm_content=join_link ----------------------------------------------- 🌐 Connect with me: - Instagram: https://www.instagram.com/ducky3d/ - Twitter: https://twitter.com/Ducky3d",
+    "hasTranscript": false
   },
   {
     "id": "yt-cbS86G0mqrU",
@@ -511,10 +534,12 @@ export const corpus: Entry[] = [
     "tags": [
       "blender",
       "geometry-nodes",
-      "motiongraphics"
+      "motiongraphics",
+      "needs-transcript"
     ],
     "createdAt": "2025-05-24",
-    "notes": "3D Logos are an incredible way to bring a brand to love, and there are hundreds of directions to take that idea in your #motiongraphics Today i want to show you 6 concepts and how to achieve those ideas in blender so you can take them and make your own awesome logo renders and animations! ----------------------------- Patreon - https://patreon.com/user?u=9011118&utm_medium=clipboard_copy&utm_source=copyLink&utm_campaign=creatorshare_creator&utm_content=join_link ----------------------------------------------- 🌐 Connect with me: - Instagram: https://www.instagram.com/ducky3d/ - Twitter: https://twitter.com/Ducky3d"
+    "notes": "3D Logos are an incredible way to bring a brand to love, and there are hundreds of directions to take that idea in your #motiongraphics Today i want to show you 6 concepts and how to achieve those ideas in blender so you can take them and make your own awesome logo renders and animations! ----------------------------- Patreon - https://patreon.com/user?u=9011118&utm_medium=clipboard_copy&utm_source=copyLink&utm_campaign=creatorshare_creator&utm_content=join_link ----------------------------------------------- 🌐 Connect with me: - Instagram: https://www.instagram.com/ducky3d/ - Twitter: https://twitter.com/Ducky3d",
+    "hasTranscript": false
   },
   {
     "id": "yt-oC6guqEK9J4",
@@ -528,10 +553,12 @@ export const corpus: Entry[] = [
     },
     "tags": [
       "blender",
-      "geometry-nodes"
+      "geometry-nodes",
+      "needs-transcript"
     ],
     "createdAt": "2025-05-08",
-    "notes": "In this Blender tutorial we will be taking any logo, converting it to a bunch of particles in geometry nodes. Then animating all the particles to come together to form the exact shape of your logo. This is a very powerful process that can be used in many motion graphics contexts and can be used in many other ways, enjoy! ----------------------------- Patreon - https://patreon.com/user?u=9011118&utm_medium=clipboard_copy&utm_source=copyLink&utm_campaign=creatorshare_creator&utm_content=join_link ----------------------------------------------- 🌐 Connect with me: - Instagram: https://www.instagram.com/ducky3d/ - Twitter: https://twitter.com/Ducky3d"
+    "notes": "In this Blender tutorial we will be taking any logo, converting it to a bunch of particles in geometry nodes. Then animating all the particles to come together to form the exact shape of your logo. This is a very powerful process that can be used in many motion graphics contexts and can be used in many other ways, enjoy! ----------------------------- Patreon - https://patreon.com/user?u=9011118&utm_medium=clipboard_copy&utm_source=copyLink&utm_campaign=creatorshare_creator&utm_content=join_link ----------------------------------------------- 🌐 Connect with me: - Instagram: https://www.instagram.com/ducky3d/ - Twitter: https://twitter.com/Ducky3d",
+    "hasTranscript": false
   },
   {
     "id": "yt-nJ1TWyYvgco",
@@ -545,10 +572,12 @@ export const corpus: Entry[] = [
     },
     "tags": [
       "blender",
-      "geometry-nodes"
+      "geometry-nodes",
+      "needs-transcript"
     ],
     "createdAt": "2025-04-30",
-    "notes": "You man have seen a effect in touch designer called blob tracking, its really cool, but if you don't know how to use touch designer or just don't want to buy it. I can show you how to do blob tracking in blender, enjoy! ----------------------------- Patreon - https://patreon.com/user?u=9011118&utm_medium=clipboard_copy&utm_source=copyLink&utm_campaign=creatorshare_creator&utm_content=join_link ----------------------------------------------- 🌐 Connect with me: - Instagram: https://www.instagram.com/ducky3d/ - Twitter: https://twitter.com/Ducky3d"
+    "notes": "You man have seen a effect in touch designer called blob tracking, its really cool, but if you don't know how to use touch designer or just don't want to buy it. I can show you how to do blob tracking in blender, enjoy! ----------------------------- Patreon - https://patreon.com/user?u=9011118&utm_medium=clipboard_copy&utm_source=copyLink&utm_campaign=creatorshare_creator&utm_content=join_link ----------------------------------------------- 🌐 Connect with me: - Instagram: https://www.instagram.com/ducky3d/ - Twitter: https://twitter.com/Ducky3d",
+    "hasTranscript": false
   },
   {
     "id": "yt-5ltTn77WaFo",
@@ -562,10 +591,12 @@ export const corpus: Entry[] = [
     },
     "tags": [
       "blender",
-      "geometry-nodes"
+      "geometry-nodes",
+      "needs-transcript"
     ],
     "createdAt": "2025-04-19",
-    "notes": "In this Blender tutorial we will be making an abstract animation and that will mimic metaball behaviors in geometry nodes. ----------------------------- Patreon - https://patreon.com/user?u=9011118&utm_medium=clipboard_copy&utm_source=copyLink&utm_campaign=creatorshare_creator&utm_content=join_link ----------------------------------------------- 🌐 Connect with me: - Instagram: https://www.instagram.com/ducky3d/ - Twitter: https://twitter.com/Ducky3d"
+    "notes": "In this Blender tutorial we will be making an abstract animation and that will mimic metaball behaviors in geometry nodes. ----------------------------- Patreon - https://patreon.com/user?u=9011118&utm_medium=clipboard_copy&utm_source=copyLink&utm_campaign=creatorshare_creator&utm_content=join_link ----------------------------------------------- 🌐 Connect with me: - Instagram: https://www.instagram.com/ducky3d/ - Twitter: https://twitter.com/Ducky3d",
+    "hasTranscript": false
   }
 ];
 

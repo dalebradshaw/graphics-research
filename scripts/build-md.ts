@@ -36,6 +36,7 @@ interface Entry {
   createdAt?: string;
   summary?: string;
   notes?: string;
+  hasTranscript?: boolean;
 }
 
 type Corpus = Entry[];
@@ -136,6 +137,7 @@ export type Entry = {
   createdAt?: string;
   summary?: string;
   notes?: string;
+  hasTranscript?: boolean;
 };
 
 export const corpus: Entry[] = ${data};
