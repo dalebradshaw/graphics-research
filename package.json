@@ -12,7 +12,6 @@
     "search": "tsx src/search.ts"
   },
   "dependencies": {
-    "youtube-sr": "^4.3.12",
     "youtube-transcript": "^1.2.1"
   },
   "devDependencies": {

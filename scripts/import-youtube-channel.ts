@@ -2,7 +2,6 @@ import { promises as fs } from "fs";
 import os from "os";
 import path from "path";
 import { spawnSync } from "child_process";
-import { YouTube } from "youtube-sr";
 import { YoutubeTranscript } from "youtube-transcript";
 
 interface CliOptions {
@@ -13,6 +12,21 @@ interface CliOptions {
   lang?: string;
   build: boolean;
   dryRun: boolean;
+}
+
+interface ChannelInfo {
+  id: string;
+  name: string;
+  url: string;
+  handle?: string;
+}
+
+interface FeedVideo {
+  id: string;
+  url: string;
+  title: string;
+  published: string;
+  description: string;
 }
 
 const VALID_CATEGORIES = new Set([
@@ -59,7 +73,7 @@ function parseArgs(): CliOptions {
   }
 
   if (typeof result.url !== "string") {
-    throw new Error("Missing required --url (channel URL)");
+    throw new Error("Missing required --url (channel URL or handle)");
   }
   if (typeof result.category !== "string") {
     throw new Error("Missing required --category");
@@ -95,6 +109,131 @@ async function ensureTmpDir(): Promise<string> {
   return fs.mkdtemp(path.join(os.tmpdir(), "channel-import-"));
 }
 
+async function fetchText(url: string): Promise<string> {
+  const response = await fetch(url, {
+    headers: {
+      "user-agent":
+        "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.0 Safari/605.1.15"
+    }
+  });
+  if (!response.ok) {
+    throw new Error(`Failed to fetch ${url} (${response.status} ${response.statusText})`);
+  }
+  return response.text();
+}
+
+function decodeUnicode(input: string): string {
+  return input.replace(/\\u([0-9a-fA-F]{4})/g, (_, code) => String.fromCharCode(parseInt(code, 16)));
+}
+
+function decodeHtmlEntities(input: string): string {
+  return input
+    .replace(/&amp;/g, "&")
+    .replace(/&lt;/g, "<")
+    .replace(/&gt;/g, ">");
+}
+
+function cleanText(input?: string | null): string {
+  if (!input) return "";
+  return decodeHtmlEntities(decodeUnicode(input))
+    .replace(/\\n/g, "\n")
+    .replace(/\\t/g, " ")
+    .replace(/\s+/g, " ")
+    .trim();
+}
+
+function normaliseChannelUrl(raw: string): string {
+  if (raw.startsWith("http")) return raw;
+  if (raw.startsWith("@")) return `https://www.youtube.com/${raw}`;
+  return `https://www.youtube.com/${raw.replace(/^\/+/, "")}`;
+}
+
+function baseChannelUrl(raw: string): string {
+  const url = new URL(normaliseChannelUrl(raw));
+  url.search = "";
+  url.hash = "";
+  if (/\/videos/.test(url.pathname)) {
+    url.pathname = url.pathname.replace(/\/videos.*$/, "");
+  }
+  if (url.pathname === "") {
+    url.pathname = "/";
+  }
+  return url.toString();
+}
+
+function extractFirst(matchers: Array<RegExpExecArray | null | undefined>): string | undefined {
+  for (const match of matchers) {
+    if (match && match[1]) {
+      return cleanText(match[1]);
+    }
+  }
+  return undefined;
+}
+
+async function resolveChannelInfo(rawUrl: string): Promise<ChannelInfo> {
+  const channelPage = baseChannelUrl(rawUrl);
+  const html = await fetchText(channelPage);
+
+  const channelIdMatch = /"channelId":"(UC[^"]+)"/.exec(html)
+    || /<meta itemprop="channelId" content="(UC[^"]+)"/i.exec(html);
+  if (!channelIdMatch) {
+    throw new Error(`Unable to resolve channelId from ${channelPage}`);
+  }
+  const channelId = channelIdMatch[1];
+
+  const name = extractFirst([
+    /"ownerChannelName":"([^"]+)"/.exec(html),
+    /"title":"([^"]+)"/.exec(html),
+    /<meta itemprop="name" content="([^"]+)"/i.exec(html)
+  ]) || channelId;
+
+  const handle = extractFirst([/"handle":"(@[^"]+)"/.exec(html)]);
+
+  const canonicalMatch = /<link rel="canonical" href="https:\/\/www\.youtube\.com\/channel\/([A-Za-z0-9_-]+)"/i.exec(html);
+  const canonicalUrl = canonicalMatch
+    ? `https://www.youtube.com/channel/${canonicalMatch[1]}`
+    : `https://www.youtube.com/channel/${channelId}`;
+
+  return {
+    id: channelId,
+    name,
+    url: canonicalUrl,
+    handle
+  };
+}
+
+function matchTag(xml: string, tag: string): string | undefined {
+  const regex = new RegExp(`<${tag}[^>]*>([\s\S]*?)<\/${tag}>`, "i");
+  const match = regex.exec(xml);
+  if (!match) return undefined;
+  return cleanText(match[1]);
+}
+
+function matchAttr(xml: string, tag: string, attr: string): string | undefined {
+  const regex = new RegExp(`<${tag}[^>]*${attr}="([^"]+)"[^>]*>`, "i");
+  const match = regex.exec(xml);
+  if (!match) return undefined;
+  return decodeHtmlEntities(match[1]);
+}
+
+async function fetchChannelFeed(channelId: string, limit: number): Promise<FeedVideo[]> {
+  const feedUrl = `https://www.youtube.com/feeds/videos.xml?channel_id=${channelId}`;
+  const xml = await fetchText(feedUrl);
+  const entries = Array.from(xml.matchAll(/<entry>([\s\S]*?)<\/entry>/g));
+  return entries.slice(0, limit).map((entry) => {
+    const entryXml = entry[1];
+    const id = matchTag(entryXml, "yt:videoId");
+    if (!id) {
+      return undefined;
+    }
+    const title = matchTag(entryXml, "title") || id;
+    const published = matchTag(entryXml, "published") || new Date().toISOString();
+    const url = matchAttr(entryXml, "link", "href") || `https://www.youtube.com/watch?v=${id}`;
+    const description = matchTag(entryXml, "media:description") || "";
+    return { id, url, title, published, description } as FeedVideo;
+  }).filter((video): video is FeedVideo => Boolean(video));
+}
+
 async function fetchTranscript(videoId: string, lang?: string): Promise<string> {
   const langs = lang ? [lang, "en"] : ["en"];
   for (const candidate of langs) {
@@ -120,21 +259,23 @@ async function writeTempFile(tmpDir: string, name: string, content: string): Pro
   return filePath;
 }
 
+function normaliseSummary(description: string, fallback: string): string {
+  const firstLine = description
+    .split(/\r?\n/)
+    .map((line) => line.trim())
+    .find((line) => line.length > 0);
+  if (firstLine) return firstLine;
+  return fallback;
+}
+
 async function main() {
   const options = parseArgs();
   const tmpDir = await ensureTmpDir();
-  const channel = await YouTube.getChannel(options.url, {
-    fetchVideos: true,
-    sort: "newest"
-  });
+  const channel = await resolveChannelInfo(options.url);
+  const videos = await fetchChannelFeed(channel.id, options.limit);
 
-  if (!channel?.videos?.length) {
-    throw new Error("Failed to resolve channel information or no videos available");
-  }
-
-  const videos = channel.videos.slice(0, options.limit);
   if (!videos.length) {
-    console.log("No videos found for channel");
+    console.log("No videos found for channel feed");
     return;
   }
 
@@ -143,27 +284,25 @@ async function main() {
   const failures: string[] = [];
 
   for (const [index, video] of videos.entries()) {
-    const videoUrl = `https://www.youtube.com/watch?v=${video.id}`;
-    const createdAtIso = video.uploadedTimestamp
-      ? new Date(video.uploadedTimestamp).toISOString()
-      : new Date().toISOString();
-    const createdAt = createdAtIso.slice(0, 10);
-    const baseSummary = video.description?.split("\n").map((line) => line.trim()).filter(Boolean)[0];
-    const summary = baseSummary || `Auto-ingested from channel ${channel.name}.`;
+    const createdAt = new Date(video.published).toISOString().slice(0, 10);
+    const summary = normaliseSummary(video.description, `Auto-ingested from channel ${channel.name}.`);
 
     console.log(`\n[${index + 1}/${videos.length}] ${video.title}`);
-    console.log(`  URL: ${videoUrl}`);
+    console.log(`  URL: ${video.url}`);
+    console.log(`  Published: ${video.published}`);
 
     let transcript = "";
-    try {
-      transcript = await fetchTranscript(video.id, options.lang);
-      if (!transcript) {
-        console.warn("  ⚠️  No transcript available (skipping transcript file)");
-      } else {
-        console.log(`  Transcript length: ${transcript.length} characters`);
+    if (!options.dryRun) {
+      try {
+        transcript = await fetchTranscript(video.id, options.lang);
+        if (!transcript) {
+          console.warn("  ⚠️  No transcript available (skipping transcript file)");
+        } else {
+          console.log(`  Transcript length: ${transcript.length} characters`);
+        }
+      } catch (error) {
+        console.warn(`  ⚠️  Failed to fetch transcript: ${(error as Error).message}`);
       }
-    } catch (error) {
-      console.warn(`  ⚠️  Failed to fetch transcript: ${(error as Error).message}`);
     }
 
     if (options.dryRun) {
@@ -179,7 +318,7 @@ async function main() {
       "tsx",
       "scripts/add-youtube-transcript.ts",
       "--url",
-      videoUrl,
+      video.url,
       "--title",
       video.title,
       "--category",
@@ -204,7 +343,7 @@ async function main() {
 
     const result = spawnSync("npx", args, { stdio: "inherit" });
     if (result.status !== 0) {
-      failures.push(videoUrl);
+      failures.push(video.url);
     }
   }
 
