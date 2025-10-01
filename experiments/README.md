@@ -7,6 +7,7 @@ Experiments use the curated corpus as reference material. Each subdirectory capt
 - `notes.md` – observations, feedback, follow-ups.
 - `src/` – code, notebooks, prototype assets. Add README snippets or inline comments when you deviate from the referenced material.
 - `artefacts/` (optional) – renders, screenshots, exports. Use git LFS if binary assets get large.
+- `threejs-app/`, `r3f-app/`, `blender/` – optional sub-scaffolds for cross-tool workflows (see `2025-10-02-generative-landscape`).
 
 ## Workflow
 1. Create a new subdirectory with a date + slug (e.g., `2025-10-02-generative-landscape`).

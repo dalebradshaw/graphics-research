@@ -10,3 +10,5 @@
 ## Follow-ups
 - [ ] Capture missing transcript if manual captions become available (`needs-transcript` tag not set for `yt-7dm776rZz-s`, but cross-reference related tutorials).
 - [ ] Consider exporting a .blend with node group variations for sharing.
+- [ ] Wire Blender MCP exports into `threejs-app` via GLTFLoader + custom material mapping.
+- [ ] Mirror shader parameters between `threejs-app` and `r3f-app` to compare pipelines.
