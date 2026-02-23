@@ -37,11 +37,902 @@ export type Entry = {
 
 export const corpus: Entry[] = [
   {
+    "id": "exp-2026-02-02-ferrofluid",
+    "category": "threejs",
+    "title": "Ferrofluid Audio Visualizer - Real-time Audio Reactive 3D",
+    "description": "Web-based audio visualizer creating ferrofluid-like effects using Three.js particles and custom shaders. Responds to microphone input with frequency-based particle displacement.",
+    "urls": {
+      "code": "experiments/2026-02-02-ferrofluid-audio-visualizer/",
+      "live": "(run locally with npm run dev)",
+      "article": "experiments/2026-02-02-ferrofluid-audio-visualizer/README.md",
+      "tweet": "https://twitter.com/sabosugi/status/2015719730007490923"
+    },
+    "tags": [
+      "threejs",
+      "webgl",
+      "audio",
+      "visualizer",
+      "shaders",
+      "interactive",
+      "experiment"
+    ],
+    "createdAt": "2026-02-02"
+  },
+  {
+    "id": "2018043254986703167",
+    "category": "ai-tools",
+    "title": "Finding myself going back to RSS/Atom feeds a lot more recently. There's a lot more higher qual…",
+    "description": "Finding myself going back to RSS/Atom feeds a lot more recently. There's a lot more higher quality longform and a lot less slop intended to provoke. Any product that happens to look a bit different today but that has fundamentally the same…",
+    "urls": {
+      "tweet": "https://x.com/karpathy/status/2018043254986703167",
+      "misc": "https://t.co/dwAiIjlXet"
+    },
+    "tags": [
+      "ai",
+      "ai-tools"
+    ],
+    "createdAt": "2026-02-01T19:26:20.000Z"
+  },
+  {
+    "id": "2018037462560313384",
+    "category": "ai-tools",
+    "title": "An open source project developing a desktop “Pick-and-Place” machine.",
+    "description": "An open source project developing a desktop “Pick-and-Place” machine.\n(📍All of the source on GitHub)\n\nThe LumenPnP can be used for assembling electronic components onto circuit boards!\n\nThe project is getting a huge update with a whole ne…",
+    "urls": {
+      "tweet": "https://x.com/IlirAliu_/status/2018037462560313384",
+      "misc": "https://t.co/2MLe5cxlOM"
+    },
+    "tags": [
+      "ai",
+      "ai-tools"
+    ],
+    "createdAt": "2026-02-01T19:03:19.000Z"
+  },
+  {
+    "id": "2017865248934433260",
+    "category": "ai-tools",
+    "title": "Generates 3D from 2D videos using AI depth mapping",
+    "description": "Generates 3D from 2D videos using AI depth mapping\n\nhttps://t.co/PGdNlPyQog https://t.co/vOs6c8hq0K",
+    "urls": {
+      "tweet": "https://x.com/tom_doerr/status/2017865248934433260",
+      "misc": "https://t.co/PGdNlPyQog"
+    },
+    "tags": [
+      "ai",
+      "ai-tools"
+    ],
+    "createdAt": "2026-02-01T07:39:00.000Z"
+  },
+  {
+    "id": "2017636775347331276",
+    "category": "graphics",
+    "title": "Untitled",
+    "description": "https://t.co/6QshrLOdaZ",
+    "urls": {
+      "tweet": "https://x.com/nateliason/status/2017636775347331276",
+      "misc": "https://t.co/6QshrLOdaZ"
+    },
+    "tags": [],
+    "createdAt": "2026-01-31T16:31:07.000Z"
+  },
+  {
+    "id": "2017336221643772335",
+    "category": "ai-tools",
+    "title": "Introducing Muse. ",
+    "description": "Introducing Muse. \n\nAn AI agent for music composition, with a full multi-track MIDI editor and support for 50+ instruments. \n\nIt’s basically cursor for music. \n\nHere’s a demo: https://t.co/7hDldALsE5",
+    "urls": {
+      "tweet": "https://x.com/jakemclain_/status/2017336221643772335",
+      "misc": "https://t.co/7hDldALsE5"
+    },
+    "tags": [
+      "ai",
+      "ai-tools"
+    ],
+    "createdAt": "2026-01-30T20:36:50.000Z"
+  },
+  {
+    "id": "2017328971327607263",
+    "category": "graphics",
+    "title": "Untitled",
+    "description": "https://t.co/CCPewUG4xK",
+    "urls": {
+      "tweet": "https://x.com/cocktailpeanut/status/2017328971327607263",
+      "misc": "https://t.co/CCPewUG4xK"
+    },
+    "tags": [],
+    "createdAt": "2026-01-30T20:08:01.000Z"
+  },
+  {
+    "id": "2017289757965906201",
+    "category": "graphics",
+    "title": "codex cli pro tip:",
+    "description": "codex cli pro tip:\n\nget early access to plan mode by adding collaboration modes under features in ~/.codex/config.toml:\n\n[features]\ncollaboration_modes = true\n\nit's a bit rough around the edges right now, but asks good questions! https://t…",
+    "urls": {
+      "tweet": "https://x.com/iannuttall/status/2017289757965906201",
+      "misc": "https://t.co/bewunEAQ6D"
+    },
+    "tags": [],
+    "createdAt": "2026-01-30T17:32:12.000Z"
+  },
+  {
+    "id": "2017284946704867704",
+    "category": "graphics",
+    "title": "People always ask how long these illustrations take - turns out this one took 4 hours. ",
+    "description": "People always ask how long these illustrations take - turns out this one took 4 hours. \n\nHere's the whole process in 12minutes. https://t.co/2WXcsDYJVv",
+    "urls": {
+      "tweet": "https://x.com/DanHollick/status/2017284946704867704",
+      "misc": "https://t.co/2WXcsDYJVv"
+    },
+    "tags": [],
+    "createdAt": "2026-01-30T17:13:05.000Z"
+  },
+  {
+    "id": "2017157759880613929",
+    "category": "graphics",
+    "title": "It is time to invoke the council",
+    "description": "It is time to invoke the council\n\nhttps://t.co/PoQoxP4Mf0 https://t.co/KEqolr6BII",
+    "urls": {
+      "tweet": "https://x.com/rudrank/status/2017157759880613929",
+      "misc": "https://t.co/PoQoxP4Mf0"
+    },
+    "tags": [],
+    "createdAt": "2026-01-30T08:47:41.000Z"
+  },
+  {
+    "id": "2016875556982202817",
+    "category": "ai-tools",
+    "title": "ADD 3 things to your Agents .md file to get MASSIVE improvements with NEW frameworks (SwiftUI).",
+    "description": "ADD 3 things to your Agents .md file to get MASSIVE improvements with NEW frameworks (SwiftUI).\n \n1. Explore project first, then invoke skill.\n2. IMPORTANT: Prefer retrieval-led reasoning over pre-training-led reasoning for any SwiftUI tas…",
+    "urls": {
+      "tweet": "https://x.com/PaulSolt/status/2016875556982202817",
+      "misc": "https://t.co/CZqdkmaDzy"
+    },
+    "tags": [
+      "ai",
+      "ai-tools"
+    ],
+    "createdAt": "2026-01-29T14:06:19.000Z"
+  },
+  {
+    "id": "2016875256393175130",
+    "category": "ai-tools",
+    "title": "Moltworker is a middleware Worker and adapted scripts that allows running Moltbot (formerly Cla…",
+    "description": "Moltworker is a middleware Worker and adapted scripts that allows running Moltbot (formerly Clawdbot) on Cloudflare's Sandbox SDK and our Developer Platform APIs. So you can self-host an AI personal assistant — without any new hardware. ht…",
+    "urls": {
+      "tweet": "https://x.com/Cloudflare/status/2016875256393175130",
+      "misc": "https://t.co/BUlxsyu1fa"
+    },
+    "tags": [
+      "ai",
+      "ai-tools"
+    ],
+    "createdAt": "2026-01-29T14:05:07.000Z"
+  },
+  {
+    "id": "2016874814561046867",
+    "category": "graphics",
+    "title": "We spent some time getting @openclaw running on @CloudflareDev ",
+    "description": "We spent some time getting @openclaw running on @CloudflareDev \n\nhttps://t.co/Q5Xx0wHedw\n\nSorry if you bought a Mac Mini 😅",
+    "urls": {
+      "tweet": "https://x.com/chatsidhartha/status/2016874814561046867",
+      "misc": "https://t.co/Q5Xx0wHedw"
+    },
+    "tags": [],
+    "createdAt": "2026-01-29T14:03:22.000Z"
+  },
+  {
+    "id": "2016672171288846362",
+    "category": "threejs",
+    "title": "Three.js Daily Challenge - Interactive WebGL Demo",
+    "description": "A creative coding challenge demonstrating interactive 3D elements using Three.js and React Three Fiber",
+    "urls": {
+      "tweet": "https://x.com/mlperego/status/2016672171288846362",
+      "misc": "https://t.co/TNAKReoCET",
+      "code": "https://github.com/emmelleppi/threejs-challenge-0",
+      "live": "https://threejs-challenge-0.netlify.app/"
+    },
+    "tags": [
+      "threejs",
+      "r3f",
+      "webgl",
+      "interactive",
+      "demo",
+      "challenge"
+    ],
+    "createdAt": "2026-01-29T00:38:08.000Z"
+  },
+  {
+    "id": "2016520542723924279",
+    "category": "graphics",
+    "title": "Untitled",
+    "description": "https://t.co/7vXXecUtKN",
+    "urls": {
+      "tweet": "https://x.com/ryancarson/status/2016520542723924279",
+      "misc": "https://t.co/7vXXecUtKN"
+    },
+    "tags": [],
+    "createdAt": "2026-01-28T14:35:37.000Z"
+  },
+  {
+    "id": "2016435125748195360",
+    "category": "graphics",
+    "title": "Now all you need to make tactile sensors is a 3D printer, magnets, and magnetometers!",
+    "description": "Now all you need to make tactile sensors is a 3D printer, magnets, and magnetometers!\n[📍It’s open source!]\n\nA new tactile sensor, called e-Flesh, with a simple working principle… measure deformations in 3D printable microstructures.\n\nSinc…",
+    "urls": {
+      "tweet": "https://x.com/IlirAliu_/status/2016435125748195360",
+      "misc": "https://t.co/6h7wG08BpV"
+    },
+    "tags": [],
+    "createdAt": "2026-01-28T08:56:12.000Z"
+  },
+  {
+    "id": "2016340020471492687",
+    "category": "ai-tools",
+    "title": "so there’s a guy who just came straight out of the future to show us how to use AI",
+    "description": "so there’s a guy who just came straight out of the future to show us how to use AI\n\nif you’re looking for advanced AI workflows, \nfollow Dilum Sanjaya",
+    "urls": {
+      "tweet": "https://x.com/0xInk_/status/2016340020471492687"
+    },
+    "tags": [
+      "ai",
+      "ai-tools"
+    ],
+    "createdAt": "2026-01-28T02:38:17.000Z"
+  },
+  {
+    "id": "2016119000095469676",
+    "category": "threejs",
+    "title": "Three.js Resources - 3D Web Showcase",
+    "description": "Collection of websites demonstrating how interactive 3D elements elevate storytelling and user experience",
+    "urls": {
+      "tweet": "https://x.com/threejsresource/status/2016119000095469676",
+      "misc": "https://t.co/mlmsTeBkPt",
+      "live": "https://threejsresources.com/showcase",
+      "article": "https://threejsresources.com/"
+    },
+    "tags": [
+      "threejs",
+      "webgl",
+      "webgpu",
+      "showcase",
+      "resources"
+    ],
+    "createdAt": "2026-01-27T12:00:01.000Z"
+  },
+  {
+    "id": "2015877976689406013",
+    "category": "ai-tools",
+    "title": "if you do a lot of original research, I'd highly recommend using Claude Code with Obsidian. i'v…",
+    "description": "if you do a lot of original research, I'd highly recommend using Claude Code with Obsidian. i've been linking different ideas from reports using voice mode and it's been super useful.\n\nmy workflow: I use a markdown folder, populate it with…",
+    "urls": {
+      "tweet": "https://x.com/Ashwinreads/status/2015877976689406013"
+    },
+    "tags": [
+      "ai",
+      "ai-tools"
+    ],
+    "createdAt": "2026-01-26T20:02:17.000Z"
+  },
+  {
+    "id": "2015719730007490923",
+    "category": "threejs",
+    "title": "Ferrofluid Audio Visualizer",
+    "description": "Real-time audio-reactive ferrofluid simulation using Three.js with microphone input support",
+    "urls": {
+      "tweet": "https://x.com/sabosugi/status/2015719730007490923",
+      "misc": "https://t.co/enNClXpZso",
+      "demo": "https://codepen.io/sabosugi/full/XJKeqZj"
+    },
+    "tags": [
+      "threejs",
+      "audio",
+      "visualizer",
+      "webgl",
+      "interactive",
+      "simulation"
+    ],
+    "createdAt": "2026-01-26T09:33:28.000Z"
+  },
+  {
+    "id": "2015696442539868272",
+    "category": "threejs",
+    "title": "Gaussian Splat Lab - Post-processing and VFX",
+    "description": "Web-based gaussian splatting laboratory for post-processing effects and particle VFX using Spark/Three.js",
+    "urls": {
+      "tweet": "https://x.com/XRarchitect/status/2015696442539868272",
+      "misc": "https://t.co/KMNgxfZndY",
+      "live": "https://gaussian-splat-lab-cdzd.bolt.host"
+    },
+    "tags": [
+      "threejs",
+      "gaussian-splat",
+      "vfx",
+      "particles",
+      "post-processing",
+      "webgl"
+    ],
+    "createdAt": "2026-01-26T08:00:56.000Z"
+  },
+  {
+    "id": "2015621253890019685",
+    "category": "ai-tools",
+    "title": "How I leverage Codex GPT-5.2 and Xcode to actually ship iOS and macOS apps.",
+    "description": "How I leverage Codex GPT-5.2 and Xcode to actually ship iOS and macOS apps.\n\nFull workflow in the video. Bookmark this video. https://t.co/K4UAtYwpVy",
+    "urls": {
+      "tweet": "https://x.com/PaulSolt/status/2015621253890019685",
+      "misc": "https://t.co/K4UAtYwpVy"
+    },
+    "tags": [
+      "ai",
+      "ai-tools"
+    ],
+    "createdAt": "2026-01-26T03:02:10.000Z"
+  },
+  {
+    "id": "2015336852555755761",
+    "category": "graphics",
+    "title": "A new version (v0.1.8) of p5.plotSvg, my @p5xjs library for plotter-oriented SVG output, is now…",
+    "description": "A new version (v0.1.8) of p5.plotSvg, my @p5xjs library for plotter-oriented SVG output, is now out. It includes support for Inkscape layers and several bug fixes. https://t.co/jOXu1FKdum #plotterTwitter #creativeCoding #generativeArt",
+    "urls": {
+      "tweet": "https://x.com/golan/status/2015336852555755761",
+      "misc": "https://t.co/jOXu1FKdum"
+    },
+    "tags": [],
+    "createdAt": "2026-01-25T08:12:03.000Z"
+  },
+  {
+    "id": "2015055686791524652",
+    "category": "graphics",
+    "title": "@twannl Yo just a heads up, the terminal command should be: \"npx skills add  --skill swiftui-ex…",
+    "description": "@twannl Yo just a heads up, the terminal command should be: \"npx skills add https://t.co/fqGVa9au1J --skill swiftui-expert-skill\" (i.e. add \"-skill at the end)\n\nThis is awesome!",
+    "urls": {
+      "tweet": "https://x.com/JordanMorgan10/status/2015055686791524652",
+      "misc": "https://t.co/fqGVa9au1J"
+    },
+    "tags": [],
+    "createdAt": "2026-01-24T13:34:48.000Z"
+  },
+  {
+    "id": "2014812951564243243",
+    "category": "graphics",
+    "title": "a solid CSS technique for morphing surfaces 🧑‍🍳",
+    "description": "a solid CSS technique for morphing surfaces 🧑‍🍳\n\nanchor() + @​starting-style 💫\n\nhttps://t.co/gcPeXNlPJ8",
+    "urls": {
+      "tweet": "https://x.com/jh3yy/status/2014812951564243243",
+      "misc": "https://t.co/gcPeXNlPJ8"
+    },
+    "tags": [],
+    "createdAt": "2026-01-23T21:30:15.000Z"
+  },
+  {
+    "id": "2014794871962533970",
+    "category": "graphics",
+    "title": "📣 How we built the Codex agent loop",
+    "description": "📣 How we built the Codex agent loop\n\nEver wonder what Codex does between your prompt and its response?\n\nEach turn assembles inputs, runs inference, executes tools, and feeds the results back into context until the loop ends\n\nhttps://t.co/…",
+    "urls": {
+      "tweet": "https://x.com/OpenAIDevs/status/2014794871962533970",
+      "misc": "https://t.co/bJtbACRoJb"
+    },
+    "tags": [],
+    "createdAt": "2026-01-23T20:18:25.000Z"
+  },
+  {
+    "id": "2014765413020967340",
+    "category": "graphics",
+    "title": "Paper + project: ",
+    "description": "Paper + project: \nhttps://t.co/q5RmUWVtbw\nhttps://t.co/fbqZ8fQq5y\nCode: https://t.co/9ItfMxu6j6\nBenchmark: https://t.co/x5pGM0YgVD\nThis is an amazing collaboration with @shaofeng_y27736, @aomaru_21490, @ZhiruoW, @xiuyu_l, @Michael_J_Black,…",
+    "urls": {
+      "tweet": "https://x.com/HavenFeng/status/2014765413020967340",
+      "misc": "https://t.co/q5RmUWVtbw"
+    },
+    "tags": [],
+    "createdAt": "2026-01-23T18:21:21.000Z"
+  },
+  {
+    "id": "2014765400563781777",
+    "category": "blender",
+    "title": "✨Thinking with Blender~",
+    "description": "✨Thinking with Blender~\nMeet VIGA: a multimodal agent that autonomously codes 3D/4D blender scenes from any image, with no human, no training!\n@berkeley_ai #LLMs #Blender #Agent 🧵1/6",
+    "urls": {
+      "tweet": "https://x.com/HavenFeng/status/2014765400563781777"
+    },
+    "tags": [
+      "blender",
+      "geometry-nodes"
+    ],
+    "createdAt": "2026-01-23T18:21:18.000Z"
+  },
+  {
+    "id": "2014684979578732933",
+    "category": "ai-tools",
+    "title": "Robot's Node Editor Canvas is now open source.",
+    "description": "Robot's Node Editor Canvas is now open source.\nhttps://t.co/9pnVpdEp3P\n\nIt comes with Claude Code skills built in, describe how you want to shape it and it will give you better results.\n\nPull it, take it apart, make it better. I hope to se…",
+    "urls": {
+      "tweet": "https://x.com/creativedash/status/2014684979578732933",
+      "misc": "https://t.co/9pnVpdEp3P"
+    },
+    "tags": [
+      "ai",
+      "ai-tools"
+    ],
+    "createdAt": "2026-01-23T13:01:44.000Z"
+  },
+  {
+    "id": "2014684548005515690",
+    "category": "shaders",
+    "title": "float i,e,R,s;vec3 q,p,d=vec3(FC.xy/r*.6+vec2(-.3,.7),1);for(q.zy--;i++&lt;99.;){o.rgb+=.02-hsv…",
+    "description": "float i,e,R,s;vec3 q,p,d=vec3(FC.xy/r*.6+vec2(-.3,.7),1);for(q.zy--;i++&lt;99.;){o.rgb+=.02-hsv(R-.55,.6,min(e,d.y)/14.);s=5.,p=q+=d*e*R*.1;p=vec3(log2(R=length(p))-t*.5,exp(R-p.z/R*.1),atan(p.y,p.x)*3.-t*.5);for(e=--p.y;s&lt;8e2;s+=s)e+=d…",
+    "urls": {
+      "tweet": "https://x.com/YoheiNishitsuji/status/2014684548005515690",
+      "misc": "https://t.co/76AXSHW63f"
+    },
+    "tags": [
+      "shaders",
+      "shader"
+    ],
+    "createdAt": "2026-01-23T13:00:01.000Z"
+  },
+  {
+    "id": "2014638758004490375",
+    "category": "graphics",
+    "title": "My handbook on #GaussianSplatting is out!",
+    "description": "My handbook on #GaussianSplatting is out!\n\nSome of the content is in the thread 🧵 https://t.co/vOEa27wMHE",
+    "urls": {
+      "tweet": "https://x.com/GabRoXR/status/2014638758004490375",
+      "misc": "https://t.co/vOEa27wMHE"
+    },
+    "tags": [],
+    "createdAt": "2026-01-23T09:58:04.000Z"
+  },
+  {
+    "id": "2014499571129581826",
+    "category": "ai-tools",
+    "title": "Claude Code can generate and test your code itself using our browser CLI and skill",
+    "description": "Claude Code can generate and test your code itself using our browser CLI and skill\n\nAdd it easily with skills CLI.\n\nnpx skills add browserbase/agent-browse https://t.co/jBpNZitI5B",
+    "urls": {
+      "tweet": "https://x.com/kylejeong/status/2014499571129581826",
+      "misc": "https://t.co/jBpNZitI5B"
+    },
+    "tags": [
+      "ai",
+      "ai-tools"
+    ],
+    "createdAt": "2026-01-23T00:45:00.000Z"
+  },
+  {
+    "id": "2014466097391796497",
+    "category": "graphics",
+    "title": "CSSのdisplay: grid → flexにモーションを加え、",
+    "description": "CSSのdisplay: grid → flexにモーションを加え、\nレイアウト変更をオシャレに。\n\nAnime.jsで簡単に実現できました。 https://t.co/L2w6FCBYsq",
+    "urls": {
+      "tweet": "https://x.com/clockmaker/status/2014466097391796497",
+      "misc": "https://t.co/L2w6FCBYsq"
+    },
+    "tags": [],
+    "createdAt": "2026-01-22T22:31:59.000Z"
+  },
+  {
+    "id": "2014448291770220677",
+    "category": "graphics",
+    "title": "Introducing Context7 Skills.",
+    "description": "Introducing Context7 Skills.\n\n- Search across 24k+ skills\n- Install skills with single command\n- Generate your own skills using Context7 docs \n(coming soon)\n\n👇\nnpx ctx7 skills search \"Better Auth\"",
+    "urls": {
+      "tweet": "https://x.com/enesakar/status/2014448291770220677"
+    },
+    "tags": [],
+    "createdAt": "2026-01-22T21:21:14.000Z"
+  },
+  {
+    "id": "2014359058652745800",
+    "category": "ai-tools",
+    "title": "we just released 𝚙𝚘𝚜𝚝𝚐𝚛𝚎𝚜-𝚋𝚎𝚜𝚝-𝚙𝚛𝚊𝚌𝚝𝚒𝚌𝚎𝚜, inspired by Vercel's 𝚛𝚎𝚊𝚌𝚝-…",
+    "description": "we just released 𝚙𝚘𝚜𝚝𝚐𝚛𝚎𝚜-𝚋𝚎𝚜𝚝-𝚙𝚛𝚊𝚌𝚝𝚒𝚌𝚎𝚜, inspired by Vercel's 𝚛𝚎𝚊𝚌𝚝-𝚋𝚎𝚜𝚝-𝚙𝚛𝚊𝚌𝚝𝚒𝚌𝚎𝚜\n\nthese are the Agent Skills that we use on the supabase platform - including performance, security, &amp; schema des…",
+    "urls": {
+      "tweet": "https://x.com/kiwicopple/status/2014359058652745800",
+      "misc": "https://t.co/7GOYpuin6e"
+    },
+    "tags": [
+      "ai",
+      "ai-tools"
+    ],
+    "createdAt": "2026-01-22T15:26:39.000Z"
+  },
+  {
+    "id": "2014343603905085915",
+    "category": "graphics",
+    "title": "State of Agentic Coding with Armin and Ben now also on X :)",
+    "description": "State of Agentic Coding with Armin and Ben now also on X :) https://t.co/1JsuRl1dlZ",
+    "urls": {
+      "tweet": "https://x.com/mitsuhiko/status/2014343603905085915",
+      "misc": "https://t.co/1JsuRl1dlZ"
+    },
+    "tags": [],
+    "createdAt": "2026-01-22T14:25:14.000Z"
+  },
+  {
+    "id": "2014315695413076389",
+    "category": "graphics",
+    "title": "Summarize 0.10.0 is out! Get the gist out of any website, YouTube video, podcast or really any…",
+    "description": "Summarize 0.10.0 is out! Get the gist out of any website, YouTube video, podcast or really any file format.\n\nChrome, Firefox and terminal.\nNow even slides and an agent mode.\nhttps://t.co/lBtko2atTv https://t.co/XZqPo2JmCd",
+    "urls": {
+      "tweet": "https://x.com/steipete/status/2014315695413076389",
+      "misc": "https://t.co/lBtko2atTv"
+    },
+    "tags": [],
+    "createdAt": "2026-01-22T12:34:20.000Z"
+  },
+  {
+    "id": "2013794741092233539",
+    "category": "threejs",
+    "title": "Spatial Sampling and Volumetric Trails",
+    "description": "Exploring spatial sampling techniques and volumetric trail effects in the browser using Three.js with TSL",
+    "urls": {
+      "tweet": "https://x.com/separ8/status/2013794741092233539",
+      "misc": "https://t.co/XnLjXQo1q9",
+      "live": "https://gemini.google.com/share/bdda48404825"
+    },
+    "tags": [
+      "threejs",
+      "volumetric",
+      "trails",
+      "tsl",
+      "webgl",
+      "spatial"
+    ],
+    "createdAt": "2026-01-21T02:04:15.000Z"
+  },
+  {
+    "id": "2013756728286830762",
+    "category": "graphics",
+    "title": "📕",
+    "description": "📕 https://t.co/ynAxwCJ6T3",
+    "urls": {
+      "tweet": "https://x.com/_davideast/status/2013756728286830762",
+      "misc": "https://t.co/ynAxwCJ6T3"
+    },
+    "tags": [],
+    "createdAt": "2026-01-20T23:33:12.000Z"
+  },
+  {
+    "id": "2013725848818376955",
+    "category": "react-three-fiber",
+    "title": "🛠️11 React Three Fiber (R3F) skills for Claude Code and Codex: animation, shaders, physics, po…",
+    "description": "🛠️11 React Three Fiber (R3F) skills for Claude Code and Codex: animation, shaders, physics, postprocessing, and more.\n📂 Bookmark it!\n\nIncredibly useful to build 3D games or 3D websites with LLMs\n\ncontribute: https://t.co/v9BOk5HWfq\ninsta…",
+    "urls": {
+      "tweet": "https://x.com/NicolasZu/status/2013725848818376955",
+      "misc": "https://t.co/v9BOk5HWfq"
+    },
+    "tags": [
+      "react-three-fiber",
+      "threejs"
+    ],
+    "createdAt": "2026-01-20T21:30:30.000Z"
+  },
+  {
+    "id": "2013661584044827054",
+    "category": "graphics",
+    "title": "Docs: ",
+    "description": "Docs: https://t.co/PEhmEWr39M\nRelease notes: https://t.co/h1OOgujGWQ\n@CodePen examples: https://t.co/0QhGUHDNGS",
+    "urls": {
+      "tweet": "https://x.com/JulianGarnier/status/2013661584044827054",
+      "misc": "https://t.co/PEhmEWr39M"
+    },
+    "tags": [],
+    "createdAt": "2026-01-20T17:15:08.000Z"
+  },
+  {
+    "id": "2013601303172174143",
+    "category": "graphics",
+    "title": "Testing my 'lil Halftone Plugin for Fusion. Crazy fast and can achieve a number of CMYK halfton…",
+    "description": "Testing my 'lil Halftone Plugin for Fusion. Crazy fast and can achieve a number of CMYK halftone looks. ✌️ https://t.co/KXWLY0i6sZ",
+    "urls": {
+      "tweet": "https://x.com/cgpov/status/2013601303172174143",
+      "misc": "https://t.co/KXWLY0i6sZ"
+    },
+    "tags": [],
+    "createdAt": "2026-01-20T13:15:36.000Z"
+  },
+  {
+    "id": "2013585019608936500",
+    "category": "ai-tools",
+    "title": "Today we have a tutorial by Iqbal Muthahhary on creating smooth CSS Grid layout transitions wit…",
+    "description": "Today we have a tutorial by Iqbal Muthahhary on creating smooth CSS Grid layout transitions with the GSAP Flip plugin, showing how to resize and reorder items with minimal JavaScript while maintaining clean, continuous motion: https://t.co…",
+    "urls": {
+      "tweet": "https://x.com/codrops/status/2013585019608936500",
+      "misc": "https://t.co/85xQawcRmF"
+    },
+    "tags": [
+      "ai",
+      "ai-tools"
+    ],
+    "createdAt": "2026-01-20T12:10:53.000Z"
+  },
+  {
+    "id": "2013463029464342835",
+    "category": "design",
+    "title": "Design Engineer Resources Collection",
+    "description": "Curated collection of the most valuable learning resources for design engineers in 2026",
+    "urls": {
+      "tweet": "https://x.com/zayn_harris_dev/status/2013463029464342835",
+      "misc": "https://devouringdetails.com/",
+      "live": "https://animations.dev/",
+      "docs": "https://www.svg.guide/",
+      "article": "https://www.interfacecraft.dev/",
+      "code": "https://www.userinterface.wiki/"
+    },
+    "tags": [
+      "design",
+      "animation",
+      "ui",
+      "resources",
+      "learning"
+    ],
+    "createdAt": "2026-01-20T04:06:09.000Z"
+  },
+  {
+    "id": "design-resource-animations-dev",
+    "category": "design",
+    "title": "Animations.dev - Animation Library for Design Engineers",
+    "description": "Comprehensive animation library and learning resource for creating smooth, purposeful UI animations",
+    "urls": {
+      "live": "https://animations.dev/",
+      "tweet": "https://twitter.com/zayn_harris_dev/status/2013463029464342835"
+    },
+    "tags": [
+      "design",
+      "animation",
+      "ui",
+      "web",
+      "library"
+    ],
+    "createdAt": "2026-01-20"
+  },
+  {
+    "id": "design-resource-svg-guide",
+    "category": "design",
+    "title": "SVG Guide - Interactive SVG Learning Resource",
+    "description": "Comprehensive guide to SVG for design engineers with interactive examples and best practices",
+    "urls": {
+      "live": "https://www.svg.guide/",
+      "tweet": "https://twitter.com/zayn_harris_dev/status/2013463029464342835"
+    },
+    "tags": [
+      "design",
+      "svg",
+      "graphics",
+      "web",
+      "learning"
+    ],
+    "createdAt": "2026-01-20"
+  },
+  {
+    "id": "2013392049886654475",
+    "category": "graphics",
+    "title": "@samhenrigold MagazineLayout supports this well with its bottomToTop verticalLayoutDirection. S…",
+    "description": "@samhenrigold MagazineLayout supports this well with its bottomToTop verticalLayoutDirection. Some demo videos in this PR: https://t.co/mXoPKVC6su",
+    "urls": {
+      "tweet": "https://x.com/BKyourway19/status/2013392049886654475",
+      "misc": "https://t.co/mXoPKVC6su"
+    },
+    "tags": [],
+    "createdAt": "2026-01-19T23:24:06.000Z"
+  },
+  {
+    "id": "2013358306392449499",
+    "category": "threejs",
+    "title": "🧊 Threejs Skills for Claude Code to create 3D Web Design Elements",
+    "description": "🧊 Threejs Skills for Claude Code to create 3D Web Design Elements\n📂 Bookmark it\n\n- Give Claude Code base level of Three.js knowledge.\n- 10 skill files covering scene setup, shaders, animations, post-processing. \n- Claude Code will have t…",
+    "urls": {
+      "tweet": "https://x.com/cloudxdev/status/2013358306392449499",
+      "misc": "https://t.co/VhF2HH9sW5"
+    },
+    "tags": [
+      "threejs"
+    ],
+    "createdAt": "2026-01-19T21:10:01.000Z"
+  },
+  {
+    "id": "2013286077717426664",
+    "category": "graphics",
+    "title": "Demo and code on CodePen: ",
+    "description": "Demo and code on CodePen: https://t.co/ezOjW1G4Bg\nThe code is in an easy-to-embed single-file HTML format.",
+    "urls": {
+      "tweet": "https://x.com/techartist_/status/2013286077717426664",
+      "misc": "https://t.co/ezOjW1G4Bg"
+    },
+    "tags": [],
+    "createdAt": "2026-01-19T16:23:00.000Z"
+  },
+  {
+    "id": "2013154577064091750",
+    "category": "graphics",
+    "title": "Radiance for ComfyUI: It's massive! ",
+    "description": "Radiance for ComfyUI: It's massive! \nA pro HDR image processing suite; \n- ARRI LogC3/4, S-Log3, V-Log, ACEScct, \n- 30+ camera sensor, 20+ film stock, \n- GPU-accelerated,\n- 3D LUTs (.cube, .3dl), \n- Nuke-style viewer for industry-grade colo…",
+    "urls": {
+      "tweet": "https://x.com/wildmindai/status/2013154577064091750",
+      "misc": "https://t.co/JYdp34zfO0"
+    },
+    "tags": [],
+    "createdAt": "2026-01-19T07:40:28.000Z"
+  },
+  {
+    "id": "2013028659938947184",
+    "category": "ai-tools",
+    "title": "Ever wondered where words come from? 🗺️ built this app on @GoogleAIStudio called 'Wanderword'…",
+    "description": "Ever wondered where words come from? 🗺️ built this app on @GoogleAIStudio called 'Wanderword' to map the evolution of language through time and space.\n\nIt uses Gemini to trace linguistic roots and D3.js to animate the geographic migration…",
+    "urls": {
+      "tweet": "https://x.com/vamsibatchuk/status/2013028659938947184",
+      "misc": "https://t.co/WrEXUVYSa2"
+    },
+    "tags": [
+      "ai",
+      "ai-tools"
+    ],
+    "createdAt": "2026-01-18T23:20:07.000Z"
+  },
+  {
+    "id": "2013023687943860324",
+    "category": "graphics",
+    "title": "I forked this repo and had Opus 4.5 optimize the code and Gemini 3 to create more themes.",
+    "description": "I forked this repo and had Opus 4.5 optimize the code and Gemini 3 to create more themes.\n\nGive me a few cities to generate.\n\nhttps://t.co/cWrEwRdp6I https://t.co/pYewYDEdtM",
+    "urls": {
+      "tweet": "https://x.com/ImSh4yy/status/2013023687943860324",
+      "misc": "https://t.co/cWrEwRdp6I"
+    },
+    "tags": [],
+    "createdAt": "2026-01-18T23:00:22.000Z"
+  },
+  {
+    "id": "2012923718549352840",
+    "category": "graphics",
+    "title": "Visualize 350TB of LiDAR Point Clouds (75 Trillion Points in Your Browser!)  ",
+    "description": "Visualize 350TB of LiDAR Point Clouds (75 Trillion Points in Your Browser!)  \n\nLearn how to access and visualize massive USGS LiDAR datasets, including over 350TB and 75 trillion points, directly in your browser using two powerful open-sou…",
+    "urls": {
+      "tweet": "https://x.com/giswqs/status/2012923718549352840",
+      "misc": "https://t.co/N4cI7RVH0e"
+    },
+    "tags": [],
+    "createdAt": "2026-01-18T16:23:07.000Z"
+  },
+  {
+    "id": "2012547524813283473",
+    "category": "ai-tools",
+    "title": "honestly insane how fast everything is moving",
+    "description": "honestly insane how fast everything is moving\n\nit was barely a week ago when I was asking how to get good design outputs with Claude Code\n\nnow we have an entire stack for agentic UI",
+    "urls": {
+      "tweet": "https://x.com/justinmfarrugia/status/2012547524813283473"
+    },
+    "tags": [
+      "ai",
+      "ai-tools"
+    ],
+    "createdAt": "2026-01-17T15:28:15.000Z"
+  },
+  {
+    "id": "2011701638269190394",
+    "category": "graphics",
+    "title": "收集一下目前针对 design engineers 的 skills：",
+    "description": "收集一下目前针对 design engineers 的 skills：\n\n- UI Skills：https://t.co/3X5o3UyX3l\n- Vercel 之前那个 web interface guidelines 整合到这里了，还有最新的 React 最佳实践：https://t.co/7j3T3D88eW\n- Design Motion Principles，针对动效设计的：https://t.co/gazMmRlKdV\n- 主要检查 Accessibility…",
+    "urls": {
+      "tweet": "https://x.com/dingyi/status/2011701638269190394",
+      "misc": "https://t.co/3X5o3UyX3l"
+    },
+    "tags": [],
+    "createdAt": "2026-01-15T07:27:00.000Z"
+  },
+  {
+    "id": "2011522613991129265",
+    "category": "ai-tools",
+    "title": "okay, so @vercel's new agent browser is pretty stinkin great.",
+    "description": "okay, so @vercel's new agent browser is pretty stinkin great.\n\nhttps://t.co/FfyoARDd86\n\nsubstantially faster than playwright and is clearly optimized for AI use.\n\nwell done, folks!",
+    "urls": {
+      "tweet": "https://x.com/Shpigford/status/2011522613991129265",
+      "misc": "https://t.co/FfyoARDd86"
+    },
+    "tags": [
+      "ai",
+      "ai-tools"
+    ],
+    "createdAt": "2026-01-14T19:35:38.000Z"
+  },
+  {
+    "id": "2011521433382633914",
+    "category": "graphics",
+    "title": "@wquguru Thanks, I'll be adding them to our awesome Skills collection:",
+    "description": "@wquguru Thanks, I'll be adding them to our awesome Skills collection: https://t.co/XW7Tsq5z1s",
+    "urls": {
+      "tweet": "https://x.com/nozmen/status/2011521433382633914",
+      "misc": "https://t.co/XW7Tsq5z1s"
+    },
+    "tags": [],
+    "createdAt": "2026-01-14T19:30:56.000Z"
+  },
+  {
+    "id": "2011466886765248643",
+    "category": "graphics",
+    "title": "Untitled",
+    "description": "https://t.co/RMmc5VVyY1",
+    "urls": {
+      "tweet": "https://x.com/wquguru/status/2011466886765248643",
+      "misc": "https://t.co/RMmc5VVyY1"
+    },
+    "tags": [],
+    "createdAt": "2026-01-14T15:54:11.000Z"
+  },
+  {
+    "id": "2011309102279114802",
+    "category": "ai-tools",
+    "title": "我也分享一下我自己用的Skills",
+    "description": "我也分享一下我自己用的Skills\n\n1.Anthropic官方Skills，这里面我只安装了 skill-creator\nhttps://t.co/nWpEtHBcK6\n\n2.UI UX Pro Max，用来写前端的UI，非常好用\nhttps://t.co/bsmrS0WM5T\n\n3.seo-review，我用来做AI网站SEO审查的\nhttps://t.co/JWtSAjO1fc\n\n4.content-creator   这是根据关键词，然后进行创建博客文章的，也是用于…",
+    "urls": {
+      "tweet": "https://x.com/bozhou_ai/status/2011309102279114802",
+      "misc": "https://t.co/nWpEtHBcK6"
+    },
+    "tags": [
+      "ai",
+      "ai-tools"
+    ],
+    "createdAt": "2026-01-14T05:27:12.000Z"
+  },
+  {
+    "id": "2011304899149971944",
+    "category": "ai-tools",
+    "title": "Codex isn’t a mind reader.",
+    "description": "Codex isn’t a mind reader.\nIt’s a compiler for intent.\n\nIf you want it to behave like an engineer, give it engineering inputs.\n\nStep 1: Write the constitution once\nCreate `https://t.co/Y4cO4sjrdQ` with rules Codex can actually enforce:\n- h…",
+    "urls": {
+      "tweet": "https://x.com/OpenAICodexCli/status/2011304899149971944",
+      "misc": "https://t.co/Y4cO4sjrdQ`"
+    },
+    "tags": [
+      "ai",
+      "ai-tools"
+    ],
+    "createdAt": "2026-01-14T05:10:30.000Z"
+  },
+  {
+    "id": "2011215978642989251",
+    "category": "ai-tools",
+    "title": "By popular request, I'm making Stash, my vibecoded read-later app, public so you can download a…",
+    "description": "By popular request, I'm making Stash, my vibecoded read-later app, public so you can download and use it yourself: https://t.co/i7cYbhjSXy\n\nEnjoy the fruits of my (Claude's) labor!",
+    "urls": {
+      "tweet": "https://x.com/kevinroose/status/2011215978642989251",
+      "misc": "https://t.co/i7cYbhjSXy"
+    },
+    "tags": [
+      "ai",
+      "ai-tools"
+    ],
+    "createdAt": "2026-01-13T23:17:10.000Z"
+  },
+  {
+    "id": "2011092850172444697",
+    "category": "graphics",
+    "title": "As software gets easier to make, the products that stand out will be the ones crafted with unco…",
+    "description": "As software gets easier to make, the products that stand out will be the ones crafted with uncommon care.\n\nIf that's the kind of work you want to do, I'm sharing everything I know:\n\nhttps://t.co/51EnluPYHn https://t.co/8MegvD6SNb",
+    "urls": {
+      "tweet": "https://x.com/joshpuckett/status/2011092850172444697",
+      "misc": "https://t.co/51EnluPYHn"
+    },
+    "tags": [],
+    "createdAt": "2026-01-13T15:07:54.000Z"
+  },
+  {
+    "id": "2010552135478337831",
+    "category": "graphics",
+    "title": "@PaulSolt lotta skills here:",
+    "description": "@PaulSolt lotta skills here: https://t.co/iDLXsqh9fD",
+    "urls": {
+      "tweet": "https://x.com/steipete/status/2010552135478337831",
+      "misc": "https://t.co/iDLXsqh9fD"
+    },
+    "tags": [],
+    "createdAt": "2026-01-12T03:19:18.000Z"
+  },
+  {
     "id": "yt-7dm776rZz-s",
     "category": "blender",
     "title": "Powerful Generative Landscape Animations (Blender Tutorial)￼",
     "description": "In this tutorial we will be using geometry nodes to create a generative topographic landscape animation in blender.",
-    "summary": "In this tutorial we will be using geometry nodes to create a generative topographic landscape animation in blender.",
     "urls": {
       "video": "https://www.youtube.com/watch?v=7dm776rZz-s",
       "transcript": "transcripts/7dm776rZz-s.md"
@@ -55,6 +946,7 @@ export const corpus: Entry[] = [
       "needs-transcript"
     ],
     "createdAt": "2025-09-29",
+    "summary": "In this tutorial we will be using geometry nodes to create a generative topographic landscape animation in blender.",
     "notes": "In this tutorial we will be using geometry nodes to create a generative topographic landscape animation in blender. This is a very powerful motion graphics technique and there are a lot of things and this tutorial you can apply to original ideas and artwork. ￼ #geometrynodes #blender3d #tutorial ----------------------------- Patreon - https://patreon.com/user?u=9011118&utm_medium=clipboard_copy&utm_source=copyLink&utm_campaign=creatorshare_creator&utm_content=join_link ----------------------------------------------- 🌐 Connect with me: - Instagram: https://www.instagram.com/ducky3d/ - Twitter: https://twitter.com/Ducky3d",
     "hasTranscript": false
   },
@@ -63,7 +955,6 @@ export const corpus: Entry[] = [
     "category": "blender",
     "title": "How Beautiful Light Trails Are Made in Blender 4.5 ￼",
     "description": "In this blender tutorial we will be using geometry nodes to create light trails.",
-    "summary": "In this blender tutorial we will be using geometry nodes to create light trails.",
     "urls": {
       "video": "https://www.youtube.com/watch?v=SerF_8yCVDA",
       "transcript": "transcripts/SerF_8yCVDA.md"
@@ -77,6 +968,7 @@ export const corpus: Entry[] = [
       "needs-transcript"
     ],
     "createdAt": "2025-09-26",
+    "summary": "In this blender tutorial we will be using geometry nodes to create light trails.",
     "notes": "In this blender tutorial we will be using geometry nodes to create light trails. We will be using curves and the shading system in combination to create this beautiful effect. This is a very powerful motion graphics technique that can be used in many different ways for your own original artwork. ￼￼ #geometrynodes #blender3d #tutorial ----------------------------- Patreon - https://patreon.com/user?u=9011118&utm_medium=clipboard_copy&utm_source=copyLink&utm_campaign=creatorshare_creator&utm_content=join_link ----------------------------------------------- 🌐 Connect with me: - Instagram: https://www.instagram.com/ducky3d/ - Twitter: https://twitter.com/Ducky3d",
     "hasTranscript": false
   },
@@ -85,7 +977,6 @@ export const corpus: Entry[] = [
     "category": "blender",
     "title": "Shading Makes Powerful Animations (Blender Tutorial)",
     "description": "In this blender tutorial we will be making a beautiful animation made entirely in the shader editor.",
-    "summary": "In this blender tutorial we will be making a beautiful animation made entirely in the shader editor.",
     "urls": {
       "video": "https://www.youtube.com/watch?v=syfDKEpSf54",
       "transcript": "transcripts/syfDKEpSf54.md"
@@ -96,15 +987,15 @@ export const corpus: Entry[] = [
       "needs-transcript"
     ],
     "createdAt": "2025-09-23",
-    "hasTranscript": false,
-    "notes": "In this blender tutorial we will be making a beautiful animation made entirely in the shader editor. This tutorial will show you how to create a highly detailed pattern, that with small subtle movements can make a beautiful motion graphics animation. ￼ ----------------------------- Patreon - https://patreon.com/user?u=9011118&utm_medium=clipboard_copy&utm_source=copyLink&utm_campaign=creatorshare_creator&utm_content=join_link ----------------------------------------------- 🌐 Connect with me: - Instagram: https://www.instagram.com/ducky3d/ - Twitter: https://twitter.com/Ducky3d"
+    "summary": "In this blender tutorial we will be making a beautiful animation made entirely in the shader editor.",
+    "notes": "In this blender tutorial we will be making a beautiful animation made entirely in the shader editor. This tutorial will show you how to create a highly detailed pattern, that with small subtle movements can make a beautiful motion graphics animation. ￼ ----------------------------- Patreon - https://patreon.com/user?u=9011118&utm_medium=clipboard_copy&utm_source=copyLink&utm_campaign=creatorshare_creator&utm_content=join_link ----------------------------------------------- 🌐 Connect with me: - Instagram: https://www.instagram.com/ducky3d/ - Twitter: https://twitter.com/Ducky3d",
+    "hasTranscript": false
   },
   {
     "id": "yt-965bgIUHoxA",
     "category": "blender",
     "title": "Powerful Light Trails in Blender 4.5 (tutorial)",
     "description": "In this blender tutorial we will be using geometry nodes to create light trails that draw geometry as the camera moves.",
-    "summary": "In this blender tutorial we will be using geometry nodes to create light trails that draw geometry as the camera moves.",
     "urls": {
       "video": "https://www.youtube.com/watch?v=965bgIUHoxA",
       "transcript": "transcripts/965bgIUHoxA.md"
@@ -118,6 +1009,7 @@ export const corpus: Entry[] = [
       "needs-transcript"
     ],
     "createdAt": "2025-09-20",
+    "summary": "In this blender tutorial we will be using geometry nodes to create light trails that draw geometry as the camera moves.",
     "notes": "In this blender tutorial we will be using geometry nodes to create light trails that draw geometry as the camera moves. This is a powerful concept that you can use in many of your motion graphics animations and other related styles of animation￼. We will be using geometry nodes to create the curves, creating a mirror system in geometry notes so that the animation will be a stainless loop. And will be using transparency to reveal the geometry as the camera moves. ￼#geometrynodes #blender3d #tutorial ----------------------------- Patreon - https://patreon.com/user?u=9011118&utm_medium=clipboard_copy&utm_source=copyLink&utm_campaign=creatorshare_creator&utm_content=join_link ----------------------------------------------- 🌐 Connect with me: - Instagram: https://www.instagram.com/ducky3d/ - Twitter: https://twitter.com/Ducky3d",
     "hasTranscript": false
   },
@@ -126,7 +1018,6 @@ export const corpus: Entry[] = [
     "category": "blender",
     "title": "Abstract Particle Flow Tutorial in Blender 4.5",
     "description": "In this Blender tutorial we will be using geometry nodes to make thousands of particles (points) in geometry nodes form around any logo we want to.",
-    "summary": "In this Blender tutorial we will be using geometry nodes to make thousands of particles (points) in geometry nodes form around any logo we want to.",
     "urls": {
       "video": "https://www.youtube.com/watch?v=dhYL2OTMR9o",
       "transcript": "transcripts/dhYL2OTMR9o.md"
@@ -137,6 +1028,7 @@ export const corpus: Entry[] = [
       "needs-transcript"
     ],
     "createdAt": "2025-09-04",
+    "summary": "In this Blender tutorial we will be using geometry nodes to make thousands of particles (points) in geometry nodes form around any logo we want to.",
     "notes": "In this Blender tutorial we will be using geometry nodes to make thousands of particles (points) in geometry nodes form around any logo we want to. This is a very useful trick you can use in your motion graphics. Enjoy! ----------------------------- Patreon - https://patreon.com/user?u=9011118&utm_medium=clipboard_copy&utm_source=copyLink&utm_campaign=creatorshare_creator&utm_content=join_link ----------------------------------------------- 🌐 Connect with me: - Instagram: https://www.instagram.com/ducky3d/ - Twitter: https://twitter.com/Ducky3d",
     "hasTranscript": false
   },
@@ -145,7 +1037,6 @@ export const corpus: Entry[] = [
     "category": "blender",
     "title": "Powerful Particle Systems in Blender",
     "description": "Particle systems are used in motion graphics, environments, VFX & movies.",
-    "summary": "Particle systems are used in motion graphics, environments, VFX & movies.",
     "urls": {
       "video": "https://www.youtube.com/watch?v=45HruJxNBcY",
       "transcript": "transcripts/45HruJxNBcY.md"
@@ -159,6 +1050,7 @@ export const corpus: Entry[] = [
       "needs-transcript"
     ],
     "createdAt": "2025-08-25",
+    "summary": "Particle systems are used in motion graphics, environments, VFX & movies.",
     "notes": "Particle systems are used in motion graphics, environments, VFX & movies. Knowing how to build powerful and interesting particle systems is a huge benefit to any blender artist. In this video I want to show you all the ways that I create particle systems in geometry nodes and all the ways to build them, control them, make them look good, and like them. I hope you enjoy! #blender #geometrynodes #motiongraphics #particles ----------------------------- Patreon - https://patreon.com/user?u=9011118&utm_medium=clipboard_copy&utm_source=copyLink&utm_campaign=creatorshare_creator&utm_content=join_link ----------------------------------------------- 🌐 Connect with me: - Instagram: https://www.instagram.com/ducky3d/ - Twitter: https://twitter.com/Ducky3d",
     "hasTranscript": false
   },
@@ -186,7 +1078,6 @@ export const corpus: Entry[] = [
     "category": "blender",
     "title": "Parasite effect with Geometry Nodes (Blender 3.3 tutorial)",
     "description": "Create a parasite-style looping animation using volume cube, 4D noise, instancing, and emissive materials.",
-    "summary": "Volume cube → spherical gradient → noise driven distortion, instanced cage, looped 4D noise animation, emissive materials, volumetric lighting, and render tips.",
     "urls": {
       "video": "https://www.youtube.com/watch?v=t61gMdBXjQw&list=PLNShHVjao84dTJDUQA9dPNTGsox16p1iV",
       "transcript": "transcripts/t61gMdBXjQw.md"
@@ -199,7 +1090,8 @@ export const corpus: Entry[] = [
       "materials",
       "lighting"
     ],
-    "createdAt": "2025-08-17"
+    "createdAt": "2025-08-17",
+    "summary": "Volume cube → spherical gradient → noise driven distortion, instanced cage, looped 4D noise animation, emissive materials, volumetric lighting, and render tips."
   },
   {
     "id": "1956298294583271809",
@@ -221,7 +1113,6 @@ export const corpus: Entry[] = [
     "category": "blender",
     "title": "Should You Learn Geometry Nodes?",
     "description": "Recently there has been a lot of discourse about #geometrynodes and if you should learn it.",
-    "summary": "Recently there has been a lot of discourse about #geometrynodes and if you should learn it.",
     "urls": {
       "video": "https://www.youtube.com/watch?v=x07cPMM6A-Q",
       "transcript": "transcripts/x07cPMM6A-Q.md"
@@ -233,6 +1124,7 @@ export const corpus: Entry[] = [
       "needs-transcript"
     ],
     "createdAt": "2025-08-14",
+    "summary": "Recently there has been a lot of discourse about #geometrynodes and if you should learn it.",
     "notes": "Recently there has been a lot of discourse about #geometrynodes and if you should learn it. In this video i want to address this idea and answer three questions. Who is geometry nodes for, when should you start to learn it, and how should you learn it. ----------------------------- project files - https://www.patreon.com/posts/cheat-project-136445059?utm_medium=clipboard_copy&utm_source=copyLink&utm_campaign=postshare_creator&utm_content=join_link ----------------------------- Patreon - https://patreon.com/user?u=9011118&utm_medium=clipboard_copy&utm_source=copyLink&utm_campaign=creatorshare_creator&utm_content=join_link ----------------------------------------------- 🌐 Connect with me: - Instagram: https://www.instagram.com/ducky3d/ - Twitter: https://twitter.com/Ducky3d",
     "hasTranscript": false
   },
@@ -448,7 +1340,6 @@ export const corpus: Entry[] = [
     "category": "blender",
     "title": "Photorealistic Sci-Fi environment Blender tutorial!",
     "description": "In this tutorial we are going to be building a photo of realistic sci-fi environment in geometry nodes.",
-    "summary": "In this tutorial we are going to be building a photo of realistic sci-fi environment in geometry nodes.",
     "urls": {
       "video": "https://www.youtube.com/watch?v=lI1DMK9TCeg",
       "transcript": "transcripts/lI1DMK9TCeg.md"
@@ -459,6 +1350,7 @@ export const corpus: Entry[] = [
       "needs-transcript"
     ],
     "createdAt": "2025-07-26",
+    "summary": "In this tutorial we are going to be building a photo of realistic sci-fi environment in geometry nodes.",
     "notes": "In this tutorial we are going to be building a photo of realistic sci-fi environment in geometry nodes. We will be creating several different levels of detail from geometry nodes to the shading. ￼ ----------------------------- Patreon - https://patreon.com/user?u=9011118&utm_medium=clipboard_copy&utm_source=copyLink&utm_campaign=creatorshare_creator&utm_content=join_link ----------------------------------------------- 🌐 Connect with me: - Instagram: https://www.instagram.com/ducky3d/ - Twitter: https://twitter.com/Ducky3d",
     "hasTranscript": false
   },
@@ -467,7 +1359,6 @@ export const corpus: Entry[] = [
     "category": "blender",
     "title": "The Thing Holding Your 3D Art Back!",
     "description": "Visual clutter can be your worst enemy when making 3D art.",
-    "summary": "Visual clutter can be your worst enemy when making 3D art.",
     "urls": {
       "video": "https://www.youtube.com/watch?v=FJ6nEmjGWa8",
       "transcript": "transcripts/FJ6nEmjGWa8.md"
@@ -478,6 +1369,7 @@ export const corpus: Entry[] = [
       "needs-transcript"
     ],
     "createdAt": "2025-07-16",
+    "summary": "Visual clutter can be your worst enemy when making 3D art.",
     "notes": "Visual clutter can be your worst enemy when making 3D art. But clutter dosnt always have to mean something bad. Sometimes it can just be a bunch of very cool details that need to be organized in a thoughtfulway. In this video I will show you a system of visual hierarchy to help you organize all yiur details in a beautiful way! ----------------------------- Patreon - https://patreon.com/user?u=9011118&utm_medium=clipboard_copy&utm_source=copyLink&utm_campaign=creatorshare_creator&utm_content=join_link ----------------------------------------------- 🌐 Connect with me: - Instagram: https://www.instagram.com/ducky3d/ - Twitter: https://twitter.com/Ducky3d",
     "hasTranscript": false
   },
@@ -486,7 +1378,6 @@ export const corpus: Entry[] = [
     "category": "blender",
     "title": "Another Blender String Tutorial....But even Better This Time!",
     "description": "In this #blender #MotionGraphics tutorial we will be using simulation zones to make an array of curves.",
-    "summary": "In this #blender #MotionGraphics tutorial we will be using simulation zones to make an array of curves.",
     "urls": {
       "video": "https://www.youtube.com/watch?v=0lBaaCMpZGs",
       "transcript": "transcripts/0lBaaCMpZGs.md"
@@ -499,6 +1390,7 @@ export const corpus: Entry[] = [
       "needs-transcript"
     ],
     "createdAt": "2025-06-30",
+    "summary": "In this #blender #MotionGraphics tutorial we will be using simulation zones to make an array of curves.",
     "notes": "In this #blender #MotionGraphics tutorial we will be using simulation zones to make an array of curves. we will then manipulate and animate them to behave like real strings with a few useful #geometryNodes tricks that makes this very powerful ----------------------------- Patreon - https://patreon.com/user?u=9011118&utm_medium=clipboard_copy&utm_source=copyLink&utm_campaign=creatorshare_creator&utm_content=join_link ----------------------------------------------- 🌐 Connect with me: - Instagram: https://www.instagram.com/ducky3d/ - Twitter: https://twitter.com/Ducky3d",
     "hasTranscript": false
   },
@@ -507,7 +1399,6 @@ export const corpus: Entry[] = [
     "category": "blender",
     "title": "When Tutorials Aren't helpful Anymore, How Do You Keep Learning?",
     "description": "After watching tutorials for a few years you might start to loose interest in them and they stop being useful.",
-    "summary": "After watching tutorials for a few years you might start to loose interest in them and they stop being useful.",
     "urls": {
       "video": "https://www.youtube.com/watch?v=jUPqd8_Ig7g",
       "transcript": "transcripts/jUPqd8_Ig7g.md"
@@ -518,6 +1409,7 @@ export const corpus: Entry[] = [
       "needs-transcript"
     ],
     "createdAt": "2025-06-12",
+    "summary": "After watching tutorials for a few years you might start to loose interest in them and they stop being useful.",
     "notes": "After watching tutorials for a few years you might start to loose interest in them and they stop being useful. And if you are not careful you can start to slow you learning down and hit a roadblock. When it came to me getting better at motion graphics in blender, this exact thing happened to me. Today i want to show you my method to self teach and move past being reliant on tutorials. ----------------------------- Patreon - https://patreon.com/user?u=9011118&utm_medium=clipboard_copy&utm_source=copyLink&utm_campaign=creatorshare_creator&utm_content=join_link ----------------------------------------------- 🌐 Connect with me: - Instagram: https://www.instagram.com/ducky3d/ - Twitter: https://twitter.com/Ducky3d",
     "hasTranscript": false
   },
@@ -526,7 +1418,6 @@ export const corpus: Entry[] = [
     "category": "blender",
     "title": "6 Ways Blender Makes Amazing Logo Renders!",
     "description": "3D Logos are an incredible way to bring a brand to love, and there are hundreds of directions to take that idea in your #motiongraphics Today i want to show you 6 concepts and how to achieve those ideas in blender so you can take them and make your own awesome logo renders and animations!",
-    "summary": "3D Logos are an incredible way to bring a brand to love, and there are hundreds of directions to take that idea in your #motiongraphics Today i want to show you 6 concepts and how to achieve those ideas in blender so you can take them and make your own awesome logo renders and animations!",
     "urls": {
       "video": "https://www.youtube.com/watch?v=cbS86G0mqrU",
       "transcript": "transcripts/cbS86G0mqrU.md"
@@ -538,6 +1429,7 @@ export const corpus: Entry[] = [
       "needs-transcript"
     ],
     "createdAt": "2025-05-24",
+    "summary": "3D Logos are an incredible way to bring a brand to love, and there are hundreds of directions to take that idea in your #motiongraphics Today i want to show you 6 concepts and how to achieve those ideas in blender so you can take them and make your own awesome logo renders and animations!",
     "notes": "3D Logos are an incredible way to bring a brand to love, and there are hundreds of directions to take that idea in your #motiongraphics Today i want to show you 6 concepts and how to achieve those ideas in blender so you can take them and make your own awesome logo renders and animations! ----------------------------- Patreon - https://patreon.com/user?u=9011118&utm_medium=clipboard_copy&utm_source=copyLink&utm_campaign=creatorshare_creator&utm_content=join_link ----------------------------------------------- 🌐 Connect with me: - Instagram: https://www.instagram.com/ducky3d/ - Twitter: https://twitter.com/Ducky3d",
     "hasTranscript": false
   },
@@ -546,7 +1438,6 @@ export const corpus: Entry[] = [
     "category": "blender",
     "title": "Particle Flow Logo Animation in Blender (Geometry Nodes Tutorial)",
     "description": "In this Blender tutorial we will be taking any logo, converting it to a bunch of particles in geometry nodes.",
-    "summary": "In this Blender tutorial we will be taking any logo, converting it to a bunch of particles in geometry nodes.",
     "urls": {
       "video": "https://www.youtube.com/watch?v=oC6guqEK9J4",
       "transcript": "transcripts/oC6guqEK9J4.md"
@@ -557,6 +1448,7 @@ export const corpus: Entry[] = [
       "needs-transcript"
     ],
     "createdAt": "2025-05-08",
+    "summary": "In this Blender tutorial we will be taking any logo, converting it to a bunch of particles in geometry nodes.",
     "notes": "In this Blender tutorial we will be taking any logo, converting it to a bunch of particles in geometry nodes. Then animating all the particles to come together to form the exact shape of your logo. This is a very powerful process that can be used in many motion graphics contexts and can be used in many other ways, enjoy! ----------------------------- Patreon - https://patreon.com/user?u=9011118&utm_medium=clipboard_copy&utm_source=copyLink&utm_campaign=creatorshare_creator&utm_content=join_link ----------------------------------------------- 🌐 Connect with me: - Instagram: https://www.instagram.com/ducky3d/ - Twitter: https://twitter.com/Ducky3d",
     "hasTranscript": false
   },
@@ -565,7 +1457,6 @@ export const corpus: Entry[] = [
     "category": "blender",
     "title": "Using Blender like its Adobe After Effects",
     "description": "You man have seen a effect in touch designer called blob tracking, its really cool, but if you don't know how to use touch designer or just don't want to buy it.",
-    "summary": "You man have seen a effect in touch designer called blob tracking, its really cool, but if you don't know how to use touch designer or just don't want to buy it.",
     "urls": {
       "video": "https://www.youtube.com/watch?v=nJ1TWyYvgco",
       "transcript": "transcripts/nJ1TWyYvgco.md"
@@ -576,6 +1467,7 @@ export const corpus: Entry[] = [
       "needs-transcript"
     ],
     "createdAt": "2025-04-30",
+    "summary": "You man have seen a effect in touch designer called blob tracking, its really cool, but if you don't know how to use touch designer or just don't want to buy it.",
     "notes": "You man have seen a effect in touch designer called blob tracking, its really cool, but if you don't know how to use touch designer or just don't want to buy it. I can show you how to do blob tracking in blender, enjoy! ----------------------------- Patreon - https://patreon.com/user?u=9011118&utm_medium=clipboard_copy&utm_source=copyLink&utm_campaign=creatorshare_creator&utm_content=join_link ----------------------------------------------- 🌐 Connect with me: - Instagram: https://www.instagram.com/ducky3d/ - Twitter: https://twitter.com/Ducky3d",
     "hasTranscript": false
   },
@@ -584,7 +1476,6 @@ export const corpus: Entry[] = [
     "category": "blender",
     "title": "10 Minute Tutorial - Organic Cell Effect In Geometry Nodes (Blender Tutorial)",
     "description": "In this Blender tutorial we will be making an abstract animation and that will mimic metaball behaviors in geometry nodes.",
-    "summary": "In this Blender tutorial we will be making an abstract animation and that will mimic metaball behaviors in geometry nodes.",
     "urls": {
       "video": "https://www.youtube.com/watch?v=5ltTn77WaFo",
       "transcript": "transcripts/5ltTn77WaFo.md"
@@ -595,15 +1486,8 @@ export const corpus: Entry[] = [
       "needs-transcript"
     ],
     "createdAt": "2025-04-19",
+    "summary": "In this Blender tutorial we will be making an abstract animation and that will mimic metaball behaviors in geometry nodes.",
     "notes": "In this Blender tutorial we will be making an abstract animation and that will mimic metaball behaviors in geometry nodes. ----------------------------- Patreon - https://patreon.com/user?u=9011118&utm_medium=clipboard_copy&utm_source=copyLink&utm_campaign=creatorshare_creator&utm_content=join_link ----------------------------------------------- 🌐 Connect with me: - Instagram: https://www.instagram.com/ducky3d/ - Twitter: https://twitter.com/Ducky3d",
     "hasTranscript": false
   }
 ];
-
-export const byTag = (tag: string) =>
-  corpus.filter((entry) =>
-    entry.tags.map((t) => t.toLowerCase()).includes(tag.toLowerCase())
-  );
-
-export const byCategory = (category: Category) =>
-  corpus.filter((entry) => entry.category === category);

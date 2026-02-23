@@ -1,0 +1,5025 @@
+1
+00:00:00,160 --> 00:00:02,070
+
+How's it going? So, you may have seen
+
+2
+00:00:02,070 --> 00:00:02,080
+How's it going? So, you may have seen
+ 
+
+3
+00:00:02,080 --> 00:00:04,070
+How's it going? So, you may have seen
+this effect uh somewhere on the
+
+4
+00:00:04,070 --> 00:00:04,080
+this effect uh somewhere on the
+ 
+
+5
+00:00:04,080 --> 00:00:05,430
+this effect uh somewhere on the
+internet. And if you don't know what
+
+6
+00:00:05,430 --> 00:00:05,440
+internet. And if you don't know what
+ 
+
+7
+00:00:05,440 --> 00:00:07,430
+internet. And if you don't know what
+it's called, it's called blob tracking.
+
+8
+00:00:07,430 --> 00:00:07,440
+it's called, it's called blob tracking.
+ 
+
+9
+00:00:07,440 --> 00:00:09,509
+it's called, it's called blob tracking.
+And typically, it's made in touch
+
+10
+00:00:09,509 --> 00:00:09,519
+And typically, it's made in touch
+ 
+
+11
+00:00:09,519 --> 00:00:10,629
+And typically, it's made in touch
+designer. But if you don't know how to
+
+12
+00:00:10,629 --> 00:00:10,639
+designer. But if you don't know how to
+ 
+
+13
+00:00:10,639 --> 00:00:12,070
+designer. But if you don't know how to
+use touch designer or don't want to pay
+
+14
+00:00:12,070 --> 00:00:12,080
+use touch designer or don't want to pay
+ 
+
+15
+00:00:12,080 --> 00:00:13,589
+use touch designer or don't want to pay
+for it, I'm going to show you how to get
+
+16
+00:00:13,589 --> 00:00:13,599
+for it, I'm going to show you how to get
+ 
+
+17
+00:00:13,599 --> 00:00:15,829
+for it, I'm going to show you how to get
+this effect completely free in Blender.
+
+18
+00:00:15,829 --> 00:00:15,839
+this effect completely free in Blender.
+ 
+
+19
+00:00:15,839 --> 00:00:17,349
+this effect completely free in Blender.
+There's four main steps to be able to
+
+20
+00:00:17,349 --> 00:00:17,359
+There's four main steps to be able to
+ 
+
+21
+00:00:17,359 --> 00:00:18,790
+There's four main steps to be able to
+achieve this look. First thing we're
+
+22
+00:00:18,790 --> 00:00:18,800
+achieve this look. First thing we're
+ 
+
+23
+00:00:18,800 --> 00:00:20,390
+achieve this look. First thing we're
+going to do is create some geometry
+
+24
+00:00:20,390 --> 00:00:20,400
+going to do is create some geometry
+ 
+
+25
+00:00:20,400 --> 00:00:22,230
+going to do is create some geometry
+that's going to have variation in
+
+26
+00:00:22,230 --> 00:00:22,240
+that's going to have variation in
+ 
+
+27
+00:00:22,240 --> 00:00:24,230
+that's going to have variation in
+geometry size, which is going to
+
+28
+00:00:24,230 --> 00:00:24,240
+geometry size, which is going to
+ 
+
+29
+00:00:24,240 --> 00:00:26,390
+geometry size, which is going to
+correlate to the effect in the shading.
+
+30
+00:00:26,390 --> 00:00:26,400
+correlate to the effect in the shading.
+ 
+
+31
+00:00:26,400 --> 00:00:28,390
+correlate to the effect in the shading.
+Next, we're going to use an attribute to
+
+32
+00:00:28,390 --> 00:00:28,400
+Next, we're going to use an attribute to
+ 
+
+33
+00:00:28,400 --> 00:00:30,390
+Next, we're going to use an attribute to
+turn the geometry into a texture that we
+
+34
+00:00:30,390 --> 00:00:30,400
+turn the geometry into a texture that we
+ 
+
+35
+00:00:30,400 --> 00:00:32,630
+turn the geometry into a texture that we
+can use in the shader editor and use
+
+36
+00:00:32,630 --> 00:00:32,640
+can use in the shader editor and use
+ 
+
+37
+00:00:32,640 --> 00:00:34,630
+can use in the shader editor and use
+that to kind of displace and glitch
+
+38
+00:00:34,630 --> 00:00:34,640
+that to kind of displace and glitch
+ 
+
+39
+00:00:34,640 --> 00:00:36,549
+that to kind of displace and glitch
+around the image that we're using.
+
+40
+00:00:36,549 --> 00:00:36,559
+around the image that we're using.
+ 
+
+41
+00:00:36,559 --> 00:00:38,069
+around the image that we're using.
+Because this effect is created with
+
+42
+00:00:38,069 --> 00:00:38,079
+Because this effect is created with
+ 
+
+43
+00:00:38,079 --> 00:00:40,470
+Because this effect is created with
+geometry, we can actually take geometry,
+
+44
+00:00:40,470 --> 00:00:40,480
+geometry, we can actually take geometry,
+ 
+
+45
+00:00:40,480 --> 00:00:42,470
+geometry, we can actually take geometry,
+convert it, and have them all connect
+
+46
+00:00:42,470 --> 00:00:42,480
+convert it, and have them all connect
+ 
+
+47
+00:00:42,480 --> 00:00:44,709
+convert it, and have them all connect
+with curves. Then all we have to do is
+
+48
+00:00:44,709 --> 00:00:44,719
+with curves. Then all we have to do is
+ 
+
+49
+00:00:44,719 --> 00:00:46,389
+with curves. Then all we have to do is
+take the one noise texture that is
+
+50
+00:00:46,389 --> 00:00:46,399
+take the one noise texture that is
+ 
+
+51
+00:00:46,399 --> 00:00:48,549
+take the one noise texture that is
+creating all of these movements, animate
+
+52
+00:00:48,549 --> 00:00:48,559
+creating all of these movements, animate
+ 
+
+53
+00:00:48,559 --> 00:00:50,790
+creating all of these movements, animate
+it, and you're completely done. So, it
+
+54
+00:00:50,790 --> 00:00:50,800
+it, and you're completely done. So, it
+ 
+
+55
+00:00:50,800 --> 00:00:52,709
+it, and you're completely done. So, it
+is just as simple as that. If you don't
+
+56
+00:00:52,709 --> 00:00:52,719
+is just as simple as that. If you don't
+ 
+
+57
+00:00:52,719 --> 00:00:53,990
+is just as simple as that. If you don't
+know about the videos on my channel,
+
+58
+00:00:53,990 --> 00:00:54,000
+know about the videos on my channel,
+ 
+
+59
+00:00:54,000 --> 00:00:55,910
+know about the videos on my channel,
+I've started a series of After Effects
+
+60
+00:00:55,910 --> 00:00:55,920
+I've started a series of After Effects
+ 
+
+61
+00:00:55,920 --> 00:00:58,869
+I've started a series of After Effects
+or kind of 2D style animations here on
+
+62
+00:00:58,869 --> 00:00:58,879
+or kind of 2D style animations here on
+ 
+
+63
+00:00:58,879 --> 00:01:00,630
+or kind of 2D style animations here on
+YouTube. So, you can check out several
+
+64
+00:01:00,630 --> 00:01:00,640
+YouTube. So, you can check out several
+ 
+
+65
+00:01:00,640 --> 00:01:02,389
+YouTube. So, you can check out several
+of those along with my Patreon where you
+
+66
+00:01:02,389 --> 00:01:02,399
+of those along with my Patreon where you
+ 
+
+67
+00:01:02,399 --> 00:01:04,549
+of those along with my Patreon where you
+can get a lot of extra content. Almost
+
+68
+00:01:04,549 --> 00:01:04,559
+can get a lot of extra content. Almost
+ 
+
+69
+00:01:04,559 --> 00:01:06,469
+can get a lot of extra content. Almost
+every month, I'm releasing a new batch
+
+70
+00:01:06,469 --> 00:01:06,479
+every month, I'm releasing a new batch
+ 
+
+71
+00:01:06,479 --> 00:01:08,390
+every month, I'm releasing a new batch
+of tutorials and I'm always on there and
+
+72
+00:01:08,390 --> 00:01:08,400
+of tutorials and I'm always on there and
+ 
+
+73
+00:01:08,400 --> 00:01:09,590
+of tutorials and I'm always on there and
+releasing new things. So, if you want to
+
+74
+00:01:09,590 --> 00:01:09,600
+releasing new things. So, if you want to
+ 
+
+75
+00:01:09,600 --> 00:01:10,789
+releasing new things. So, if you want to
+check it out, it's linked in the
+
+76
+00:01:10,789 --> 00:01:10,799
+check it out, it's linked in the
+ 
+
+77
+00:01:10,799 --> 00:01:12,310
+check it out, it's linked in the
+description and you can get a discount
+
+78
+00:01:12,310 --> 00:01:12,320
+description and you can get a discount
+ 
+
+79
+00:01:12,320 --> 00:01:14,630
+description and you can get a discount
+if you subscribe annually. Now, let's
+
+80
+00:01:14,630 --> 00:01:14,640
+if you subscribe annually. Now, let's
+ 
+
+81
+00:01:14,640 --> 00:01:16,310
+if you subscribe annually. Now, let's
+get into this tutorial. All right, so
+
+82
+00:01:16,310 --> 00:01:16,320
+get into this tutorial. All right, so
+ 
+
+83
+00:01:16,320 --> 00:01:18,070
+get into this tutorial. All right, so
+let's start with step number one. and
+
+84
+00:01:18,070 --> 00:01:18,080
+let's start with step number one. and
+ 
+
+85
+00:01:18,080 --> 00:01:19,749
+let's start with step number one. and
+we're going to go ahead and hit shift A
+
+86
+00:01:19,749 --> 00:01:19,759
+we're going to go ahead and hit shift A
+ 
+
+87
+00:01:19,759 --> 00:01:21,910
+we're going to go ahead and hit shift A
+and throw a plane or any piece of
+
+88
+00:01:21,910 --> 00:01:21,920
+and throw a plane or any piece of
+ 
+
+89
+00:01:21,920 --> 00:01:24,310
+and throw a plane or any piece of
+geometry into the main workspace. I'm
+
+90
+00:01:24,310 --> 00:01:24,320
+geometry into the main workspace. I'm
+ 
+
+91
+00:01:24,320 --> 00:01:26,109
+geometry into the main workspace. I'm
+going to be using Blender
+
+92
+00:01:26,109 --> 00:01:26,119
+going to be using Blender
+ 
+
+93
+00:01:26,119 --> 00:01:28,630
+going to be using Blender
+4.4.1. We're just going to open up a new
+
+94
+00:01:28,630 --> 00:01:28,640
+4.4.1. We're just going to open up a new
+ 
+
+95
+00:01:28,640 --> 00:01:30,710
+4.4.1. We're just going to open up a new
+window. Switch this one over to the
+
+96
+00:01:30,710 --> 00:01:30,720
+window. Switch this one over to the
+ 
+
+97
+00:01:30,720 --> 00:01:32,149
+window. Switch this one over to the
+geometry nodes editor. I'm going to hit
+
+98
+00:01:32,149 --> 00:01:32,159
+geometry nodes editor. I'm going to hit
+ 
+
+99
+00:01:32,159 --> 00:01:33,510
+geometry nodes editor. I'm going to hit
+in and then we're going to get a new
+
+100
+00:01:33,510 --> 00:01:33,520
+in and then we're going to get a new
+ 
+
+101
+00:01:33,520 --> 00:01:35,190
+in and then we're going to get a new
+geometry nodes tree. Let's go ahead and
+
+102
+00:01:35,190 --> 00:01:35,200
+geometry nodes tree. Let's go ahead and
+ 
+
+103
+00:01:35,200 --> 00:01:36,789
+geometry nodes tree. Let's go ahead and
+delete the group input. And we're going
+
+104
+00:01:36,789 --> 00:01:36,799
+delete the group input. And we're going
+ 
+
+105
+00:01:36,799 --> 00:01:38,590
+delete the group input. And we're going
+to go ahead and get in
+
+106
+00:01:38,590 --> 00:01:38,600
+to go ahead and get in
+ 
+
+107
+00:01:38,600 --> 00:01:41,230
+to go ahead and get in
+a
+
+108
+00:01:41,230 --> 00:01:41,240
+a
+ 
+
+109
+00:01:41,240 --> 00:01:43,350
+a
+grid. Also, I'm going to hit the tilt
+
+110
+00:01:43,350 --> 00:01:43,360
+grid. Also, I'm going to hit the tilt
+ 
+
+111
+00:01:43,360 --> 00:01:45,270
+grid. Also, I'm going to hit the tilt
+key over here, go to the top, and we're
+
+112
+00:01:45,270 --> 00:01:45,280
+key over here, go to the top, and we're
+ 
+
+113
+00:01:45,280 --> 00:01:47,510
+key over here, go to the top, and we're
+going to go and get our camera. And then
+
+114
+00:01:47,510 --> 00:01:47,520
+going to go and get our camera. And then
+ 
+
+115
+00:01:47,520 --> 00:01:49,190
+going to go and get our camera. And then
+I'm just going to bring it out. I'm
+
+116
+00:01:49,190 --> 00:01:49,200
+I'm just going to bring it out. I'm
+ 
+
+117
+00:01:49,200 --> 00:01:50,950
+I'm just going to bring it out. I'm
+really doing this just visually to fit
+
+118
+00:01:50,950 --> 00:01:50,960
+really doing this just visually to fit
+ 
+
+119
+00:01:50,960 --> 00:01:54,550
+really doing this just visually to fit
+the geometry to a 16x9 space, which is
+
+120
+00:01:54,550 --> 00:01:54,560
+the geometry to a 16x9 space, which is
+ 
+
+121
+00:01:54,560 --> 00:01:56,630
+the geometry to a 16x9 space, which is
+what it's created by default. So I'm
+
+122
+00:01:56,630 --> 00:01:56,640
+what it's created by default. So I'm
+ 
+
+123
+00:01:56,640 --> 00:01:58,230
+what it's created by default. So I'm
+going to go ahead with the grid and just
+
+124
+00:01:58,230 --> 00:01:58,240
+going to go ahead with the grid and just
+ 
+
+125
+00:01:58,240 --> 00:02:00,069
+going to go ahead with the grid and just
+kind of eyeball it. This does not need
+
+126
+00:02:00,069 --> 00:02:00,079
+kind of eyeball it. This does not need
+ 
+
+127
+00:02:00,079 --> 00:02:01,910
+kind of eyeball it. This does not need
+to be exact. This is just sort of an
+
+128
+00:02:01,910 --> 00:02:01,920
+to be exact. This is just sort of an
+ 
+
+129
+00:02:01,920 --> 00:02:04,630
+to be exact. This is just sort of an
+artistic approach to this. So exact
+
+130
+00:02:04,630 --> 00:02:04,640
+artistic approach to this. So exact
+ 
+
+131
+00:02:04,640 --> 00:02:06,709
+artistic approach to this. So exact
+measurements really are not necessary.
+
+132
+00:02:06,709 --> 00:02:06,719
+measurements really are not necessary.
+ 
+
+133
+00:02:06,719 --> 00:02:07,590
+measurements really are not necessary.
+I'm going to go over here to the
+
+134
+00:02:07,590 --> 00:02:07,600
+I'm going to go over here to the
+ 
+
+135
+00:02:07,600 --> 00:02:09,190
+I'm going to go over here to the
+wireframe view. And right now we just
+
+136
+00:02:09,190 --> 00:02:09,200
+wireframe view. And right now we just
+ 
+
+137
+00:02:09,200 --> 00:02:11,270
+wireframe view. And right now we just
+have four faces. Right now we just have
+
+138
+00:02:11,270 --> 00:02:11,280
+have four faces. Right now we just have
+ 
+
+139
+00:02:11,280 --> 00:02:12,710
+have four faces. Right now we just have
+four faces here. So what I'm going to do
+
+140
+00:02:12,710 --> 00:02:12,720
+four faces here. So what I'm going to do
+ 
+
+141
+00:02:12,720 --> 00:02:14,470
+four faces here. So what I'm going to do
+is just get them to be get them to be
+
+142
+00:02:14,470 --> 00:02:14,480
+is just get them to be get them to be
+ 
+
+143
+00:02:14,480 --> 00:02:17,390
+is just get them to be get them to be
+relatively square. So, we're going to do
+
+144
+00:02:17,390 --> 00:02:17,400
+relatively square. So, we're going to do
+ 
+
+145
+00:02:17,400 --> 00:02:20,150
+relatively square. So, we're going to do
+six by four. And this is the first set.
+
+146
+00:02:20,150 --> 00:02:20,160
+six by four. And this is the first set.
+ 
+
+147
+00:02:20,160 --> 00:02:22,150
+six by four. And this is the first set.
+And just imagine that when the image is
+
+148
+00:02:22,150 --> 00:02:22,160
+And just imagine that when the image is
+ 
+
+149
+00:02:22,160 --> 00:02:24,390
+And just imagine that when the image is
+going to be spread across, these squares
+
+150
+00:02:24,390 --> 00:02:24,400
+going to be spread across, these squares
+ 
+
+151
+00:02:24,400 --> 00:02:26,470
+going to be spread across, these squares
+are going to be where those glitchy
+
+152
+00:02:26,470 --> 00:02:26,480
+are going to be where those glitchy
+ 
+
+153
+00:02:26,480 --> 00:02:29,350
+are going to be where those glitchy
+points go. So, depending on how small or
+
+154
+00:02:29,350 --> 00:02:29,360
+points go. So, depending on how small or
+ 
+
+155
+00:02:29,360 --> 00:02:31,589
+points go. So, depending on how small or
+large you want those images to be,
+
+156
+00:02:31,589 --> 00:02:31,599
+large you want those images to be,
+ 
+
+157
+00:02:31,599 --> 00:02:33,190
+large you want those images to be,
+that's going to correspond with the size
+
+158
+00:02:33,190 --> 00:02:33,200
+that's going to correspond with the size
+ 
+
+159
+00:02:33,200 --> 00:02:34,710
+that's going to correspond with the size
+of your faces. Now, what we're going to
+
+160
+00:02:34,710 --> 00:02:34,720
+of your faces. Now, what we're going to
+ 
+
+161
+00:02:34,720 --> 00:02:38,710
+of your faces. Now, what we're going to
+do is get a separate geometry node and
+
+162
+00:02:38,710 --> 00:02:38,720
+do is get a separate geometry node and
+ 
+
+163
+00:02:38,720 --> 00:02:42,070
+do is get a separate geometry node and
+switch this over to separate faces.
+
+164
+00:02:42,070 --> 00:02:42,080
+switch this over to separate faces.
+ 
+
+165
+00:02:42,080 --> 00:02:45,110
+switch this over to separate faces.
+We're going to get a join geometry node
+
+166
+00:02:45,110 --> 00:02:45,120
+We're going to get a join geometry node
+ 
+
+167
+00:02:45,120 --> 00:02:46,710
+We're going to get a join geometry node
+and then plug in the invert. And what
+
+168
+00:02:46,710 --> 00:02:46,720
+and then plug in the invert. And what
+ 
+
+169
+00:02:46,720 --> 00:02:48,309
+and then plug in the invert. And what
+we're going to do is plug a texture into
+
+170
+00:02:48,309 --> 00:02:48,319
+we're going to do is plug a texture into
+ 
+
+171
+00:02:48,319 --> 00:02:50,710
+we're going to do is plug a texture into
+this to tell it where and how much to
+
+172
+00:02:50,710 --> 00:02:50,720
+this to tell it where and how much to
+ 
+
+173
+00:02:50,720 --> 00:02:52,150
+this to tell it where and how much to
+separate this geometry. If that doesn't
+
+174
+00:02:52,150 --> 00:02:52,160
+separate this geometry. If that doesn't
+ 
+
+175
+00:02:52,160 --> 00:02:54,309
+separate this geometry. If that doesn't
+make any sense, um, just follow along
+
+176
+00:02:54,309 --> 00:02:54,319
+make any sense, um, just follow along
+ 
+
+177
+00:02:54,319 --> 00:02:55,990
+make any sense, um, just follow along
+and it will make sense. So, we're going
+
+178
+00:02:55,990 --> 00:02:56,000
+and it will make sense. So, we're going
+ 
+
+179
+00:02:56,000 --> 00:02:59,030
+and it will make sense. So, we're going
+to go ahead and get in a noise texture.
+
+180
+00:02:59,030 --> 00:02:59,040
+to go ahead and get in a noise texture.
+ 
+
+181
+00:02:59,040 --> 00:03:00,710
+to go ahead and get in a noise texture.
+We're going to plug the factor into the
+
+182
+00:03:00,710 --> 00:03:00,720
+We're going to plug the factor into the
+ 
+
+183
+00:03:00,720 --> 00:03:02,149
+We're going to plug the factor into the
+selection and nothing's going to happen
+
+184
+00:03:02,149 --> 00:03:02,159
+selection and nothing's going to happen
+ 
+
+185
+00:03:02,159 --> 00:03:04,149
+selection and nothing's going to happen
+just mainly because the noise texture is
+
+186
+00:03:04,149 --> 00:03:04,159
+just mainly because the noise texture is
+ 
+
+187
+00:03:04,159 --> 00:03:06,550
+just mainly because the noise texture is
+not dramatic enough. So, we're going to
+
+188
+00:03:06,550 --> 00:03:06,560
+not dramatic enough. So, we're going to
+ 
+
+189
+00:03:06,560 --> 00:03:09,110
+not dramatic enough. So, we're going to
+get in a color ramp to force that. If we
+
+190
+00:03:09,110 --> 00:03:09,120
+get in a color ramp to force that. If we
+ 
+
+191
+00:03:09,120 --> 00:03:10,710
+get in a color ramp to force that. If we
+switch this over to linear to constant
+
+192
+00:03:10,710 --> 00:03:10,720
+switch this over to linear to constant
+ 
+
+193
+00:03:10,720 --> 00:03:12,309
+switch this over to linear to constant
+and then just bring the white one in the
+
+194
+00:03:12,309 --> 00:03:12,319
+and then just bring the white one in the
+ 
+
+195
+00:03:12,319 --> 00:03:14,309
+and then just bring the white one in the
+middle and you can do 0.5 to make it
+
+196
+00:03:14,309 --> 00:03:14,319
+middle and you can do 0.5 to make it
+ 
+
+197
+00:03:14,319 --> 00:03:15,990
+middle and you can do 0.5 to make it
+perfectly in the middle. Now this is set
+
+198
+00:03:15,990 --> 00:03:16,000
+perfectly in the middle. Now this is set
+ 
+
+199
+00:03:16,000 --> 00:03:18,550
+perfectly in the middle. Now this is set
+up. You'll notice if we just get a
+
+200
+00:03:18,550 --> 00:03:18,560
+up. You'll notice if we just get a
+ 
+
+201
+00:03:18,560 --> 00:03:20,630
+up. You'll notice if we just get a
+subdivide mesh node and throw it right
+
+202
+00:03:20,630 --> 00:03:20,640
+subdivide mesh node and throw it right
+ 
+
+203
+00:03:20,640 --> 00:03:23,430
+subdivide mesh node and throw it right
+here. It's now going to take some of the
+
+204
+00:03:23,430 --> 00:03:23,440
+here. It's now going to take some of the
+ 
+
+205
+00:03:23,440 --> 00:03:25,270
+here. It's now going to take some of the
+separated geometry and subdivide it. So
+
+206
+00:03:25,270 --> 00:03:25,280
+separated geometry and subdivide it. So
+ 
+
+207
+00:03:25,280 --> 00:03:27,190
+separated geometry and subdivide it. So
+if you bring this over here, you can get
+
+208
+00:03:27,190 --> 00:03:27,200
+if you bring this over here, you can get
+ 
+
+209
+00:03:27,200 --> 00:03:29,710
+if you bring this over here, you can get
+more or less subdivision in the
+
+210
+00:03:29,710 --> 00:03:29,720
+more or less subdivision in the
+ 
+
+211
+00:03:29,720 --> 00:03:32,309
+more or less subdivision in the
+geometry. So now I'm going to take the
+
+212
+00:03:32,309 --> 00:03:32,319
+geometry. So now I'm going to take the
+ 
+
+213
+00:03:32,319 --> 00:03:33,990
+geometry. So now I'm going to take the
+portion of the geometry that is
+
+214
+00:03:33,990 --> 00:03:34,000
+portion of the geometry that is
+ 
+
+215
+00:03:34,000 --> 00:03:36,710
+portion of the geometry that is
+subdivided. This line right here. We're
+
+216
+00:03:36,710 --> 00:03:36,720
+subdivided. This line right here. We're
+ 
+
+217
+00:03:36,720 --> 00:03:38,390
+subdivided. This line right here. We're
+going to do another separate geometry.
+
+218
+00:03:38,390 --> 00:03:38,400
+going to do another separate geometry.
+ 
+
+219
+00:03:38,400 --> 00:03:39,430
+going to do another separate geometry.
+So really, we're only going to be
+
+220
+00:03:39,430 --> 00:03:39,440
+So really, we're only going to be
+ 
+
+221
+00:03:39,440 --> 00:03:41,430
+So really, we're only going to be
+dealing with the geometry that makes up
+
+222
+00:03:41,430 --> 00:03:41,440
+dealing with the geometry that makes up
+ 
+
+223
+00:03:41,440 --> 00:03:43,190
+dealing with the geometry that makes up
+the portions that are subdivided. And
+
+224
+00:03:43,190 --> 00:03:43,200
+the portions that are subdivided. And
+ 
+
+225
+00:03:43,200 --> 00:03:44,710
+the portions that are subdivided. And
+we're just going to plug it right there.
+
+226
+00:03:44,710 --> 00:03:44,720
+we're just going to plug it right there.
+ 
+
+227
+00:03:44,720 --> 00:03:45,670
+we're just going to plug it right there.
+And then we're going to do the same
+
+228
+00:03:45,670 --> 00:03:45,680
+And then we're going to do the same
+ 
+
+229
+00:03:45,680 --> 00:03:47,589
+And then we're going to do the same
+thing. Plug the noise texture, the color
+
+230
+00:03:47,589 --> 00:03:47,599
+thing. Plug the noise texture, the color
+ 
+
+231
+00:03:47,599 --> 00:03:49,030
+thing. Plug the noise texture, the color
+ramp, just plug those right into the
+
+232
+00:03:49,030 --> 00:03:49,040
+ramp, just plug those right into the
+ 
+
+233
+00:03:49,040 --> 00:03:51,430
+ramp, just plug those right into the
+selection. Plug the inverted into join
+
+234
+00:03:51,430 --> 00:03:51,440
+selection. Plug the inverted into join
+ 
+
+235
+00:03:51,440 --> 00:03:54,630
+selection. Plug the inverted into join
+geometry. And then plug a subdivision or
+
+236
+00:03:54,630 --> 00:03:54,640
+geometry. And then plug a subdivision or
+ 
+
+237
+00:03:54,640 --> 00:03:57,030
+geometry. And then plug a subdivision or
+subdivide mesh node there. And now we're
+
+238
+00:03:57,030 --> 00:03:57,040
+subdivide mesh node there. And now we're
+ 
+
+239
+00:03:57,040 --> 00:03:57,789
+subdivide mesh node there. And now we're
+going to
+
+240
+00:03:57,789 --> 00:03:57,799
+going to
+ 
+
+241
+00:03:57,799 --> 00:04:00,630
+going to
+have this interesting set. So if you
+
+242
+00:04:00,630 --> 00:04:00,640
+have this interesting set. So if you
+ 
+
+243
+00:04:00,640 --> 00:04:02,470
+have this interesting set. So if you
+switch this noise texture to 4D, you can
+
+244
+00:04:02,470 --> 00:04:02,480
+switch this noise texture to 4D, you can
+ 
+
+245
+00:04:02,480 --> 00:04:05,030
+switch this noise texture to 4D, you can
+actually animate how this looks. I'm
+
+246
+00:04:05,030 --> 00:04:05,040
+actually animate how this looks. I'm
+ 
+
+247
+00:04:05,040 --> 00:04:06,789
+actually animate how this looks. I'm
+going to bring the detail to zero just
+
+248
+00:04:06,789 --> 00:04:06,799
+going to bring the detail to zero just
+ 
+
+249
+00:04:06,799 --> 00:04:08,750
+going to bring the detail to zero just
+so it's a cleaner look. And now you can
+
+250
+00:04:08,750 --> 00:04:08,760
+so it's a cleaner look. And now you can
+ 
+
+251
+00:04:08,760 --> 00:04:11,350
+so it's a cleaner look. And now you can
+animate this subdivision look. I forget
+
+252
+00:04:11,350 --> 00:04:11,360
+animate this subdivision look. I forget
+ 
+
+253
+00:04:11,360 --> 00:04:13,670
+animate this subdivision look. I forget
+the specific way to describe this style,
+
+254
+00:04:13,670 --> 00:04:13,680
+the specific way to describe this style,
+ 
+
+255
+00:04:13,680 --> 00:04:14,949
+the specific way to describe this style,
+but that's how you achieve it. You
+
+256
+00:04:14,949 --> 00:04:14,959
+but that's how you achieve it. You
+ 
+
+257
+00:04:14,959 --> 00:04:17,030
+but that's how you achieve it. You
+essentially do two sets of separation or
+
+258
+00:04:17,030 --> 00:04:17,040
+essentially do two sets of separation or
+ 
+
+259
+00:04:17,040 --> 00:04:19,749
+essentially do two sets of separation or
+as many sets of separation as you want
+
+260
+00:04:19,749 --> 00:04:19,759
+as many sets of separation as you want
+ 
+
+261
+00:04:19,759 --> 00:04:22,069
+as many sets of separation as you want
+to get a really really interesting set.
+
+262
+00:04:22,069 --> 00:04:22,079
+to get a really really interesting set.
+ 
+
+263
+00:04:22,079 --> 00:04:23,830
+to get a really really interesting set.
+Now that we have this, the point of
+
+264
+00:04:23,830 --> 00:04:23,840
+Now that we have this, the point of
+ 
+
+265
+00:04:23,840 --> 00:04:26,230
+Now that we have this, the point of
+creating this in geometry is to be able
+
+266
+00:04:26,230 --> 00:04:26,240
+creating this in geometry is to be able
+ 
+
+267
+00:04:26,240 --> 00:04:28,870
+creating this in geometry is to be able
+to convert it into a texture, but to be
+
+268
+00:04:28,870 --> 00:04:28,880
+to convert it into a texture, but to be
+ 
+
+269
+00:04:28,880 --> 00:04:30,629
+to convert it into a texture, but to be
+able to go back and actually use the
+
+270
+00:04:30,629 --> 00:04:30,639
+able to go back and actually use the
+ 
+
+271
+00:04:30,639 --> 00:04:32,710
+able to go back and actually use the
+geometry that we are turning into a
+
+272
+00:04:32,710 --> 00:04:32,720
+geometry that we are turning into a
+ 
+
+273
+00:04:32,720 --> 00:04:35,350
+geometry that we are turning into a
+texture. So it all is created from the
+
+274
+00:04:35,350 --> 00:04:35,360
+texture. So it all is created from the
+ 
+
+275
+00:04:35,360 --> 00:04:37,909
+texture. So it all is created from the
+same set of data. So what we can do now
+
+276
+00:04:37,909 --> 00:04:37,919
+same set of data. So what we can do now
+ 
+
+277
+00:04:37,919 --> 00:04:41,670
+same set of data. So what we can do now
+is get a store named attribute node. I'm
+
+278
+00:04:41,670 --> 00:04:41,680
+is get a store named attribute node. I'm
+ 
+
+279
+00:04:41,680 --> 00:04:42,950
+is get a store named attribute node. I'm
+just going to give it any name I want.
+
+280
+00:04:42,950 --> 00:04:42,960
+just going to give it any name I want.
+ 
+
+281
+00:04:42,960 --> 00:04:44,710
+just going to give it any name I want.
+I'm going to do R just to represent that
+
+282
+00:04:44,710 --> 00:04:44,720
+I'm going to do R just to represent that
+ 
+
+283
+00:04:44,720 --> 00:04:46,469
+I'm going to do R just to represent that
+it's random. And then we're going to
+
+284
+00:04:46,469 --> 00:04:46,479
+it's random. And then we're going to
+ 
+
+285
+00:04:46,479 --> 00:04:48,310
+it's random. And then we're going to
+plug the color ramp. We're going to plug
+
+286
+00:04:48,310 --> 00:04:48,320
+plug the color ramp. We're going to plug
+ 
+
+287
+00:04:48,320 --> 00:04:50,390
+plug the color ramp. We're going to plug
+the noise texture straight into the
+
+288
+00:04:50,390 --> 00:04:50,400
+the noise texture straight into the
+ 
+
+289
+00:04:50,400 --> 00:04:51,830
+the noise texture straight into the
+value socket. And then we're going to
+
+290
+00:04:51,830 --> 00:04:51,840
+value socket. And then we're going to
+ 
+
+291
+00:04:51,840 --> 00:04:53,909
+value socket. And then we're going to
+tell it make we're going to tell it to
+
+292
+00:04:53,909 --> 00:04:53,919
+tell it make we're going to tell it to
+ 
+
+293
+00:04:53,919 --> 00:04:56,870
+tell it make we're going to tell it to
+recognize the faces. So now we're able
+
+294
+00:04:56,870 --> 00:04:56,880
+recognize the faces. So now we're able
+ 
+
+295
+00:04:56,880 --> 00:04:58,629
+recognize the faces. So now we're able
+to throw this information into the
+
+296
+00:04:58,629 --> 00:04:58,639
+to throw this information into the
+ 
+
+297
+00:04:58,639 --> 00:05:00,790
+to throw this information into the
+shading and look at it like a texture.
+
+298
+00:05:00,790 --> 00:05:00,800
+shading and look at it like a texture.
+ 
+
+299
+00:05:00,800 --> 00:05:03,590
+shading and look at it like a texture.
+So, what we'll do is get a set material
+
+300
+00:05:03,590 --> 00:05:03,600
+So, what we'll do is get a set material
+ 
+
+301
+00:05:03,600 --> 00:05:06,070
+So, what we'll do is get a set material
+node. Go right over here and just create
+
+302
+00:05:06,070 --> 00:05:06,080
+node. Go right over here and just create
+ 
+
+303
+00:05:06,080 --> 00:05:10,230
+node. Go right over here and just create
+a material and grab it right there. And
+
+304
+00:05:10,230 --> 00:05:10,240
+a material and grab it right there. And
+ 
+
+305
+00:05:10,240 --> 00:05:12,150
+a material and grab it right there. And
+I'm going to switch over to the shading
+
+306
+00:05:12,150 --> 00:05:12,160
+I'm going to switch over to the shading
+ 
+
+307
+00:05:12,160 --> 00:05:14,230
+I'm going to switch over to the shading
+tab. So, I'm just going to go ahead and
+
+308
+00:05:14,230 --> 00:05:14,240
+tab. So, I'm just going to go ahead and
+ 
+
+309
+00:05:14,240 --> 00:05:16,310
+tab. So, I'm just going to go ahead and
+rearrange these windows really quickly.
+
+310
+00:05:16,310 --> 00:05:16,320
+rearrange these windows really quickly.
+ 
+
+311
+00:05:16,320 --> 00:05:18,150
+rearrange these windows really quickly.
+I should just save these, but I just I
+
+312
+00:05:18,150 --> 00:05:18,160
+I should just save these, but I just I
+ 
+
+313
+00:05:18,160 --> 00:05:20,390
+I should just save these, but I just I
+just never get around to it. Um, and
+
+314
+00:05:20,390 --> 00:05:20,400
+just never get around to it. Um, and
+ 
+
+315
+00:05:20,400 --> 00:05:21,550
+just never get around to it. Um, and
+we're going to go here to the shader
+
+316
+00:05:21,550 --> 00:05:21,560
+we're going to go here to the shader
+ 
+
+317
+00:05:21,560 --> 00:05:24,230
+we're going to go here to the shader
+editor. Now, what we want to do is go
+
+318
+00:05:24,230 --> 00:05:24,240
+editor. Now, what we want to do is go
+ 
+
+319
+00:05:24,240 --> 00:05:25,909
+editor. Now, what we want to do is go
+ahead and call that attribute that we
+
+320
+00:05:25,909 --> 00:05:25,919
+ahead and call that attribute that we
+ 
+
+321
+00:05:25,919 --> 00:05:27,270
+ahead and call that attribute that we
+created with the store named attribute
+
+322
+00:05:27,270 --> 00:05:27,280
+created with the store named attribute
+ 
+
+323
+00:05:27,280 --> 00:05:28,870
+created with the store named attribute
+node. That's going to just be an
+
+324
+00:05:28,870 --> 00:05:28,880
+node. That's going to just be an
+ 
+
+325
+00:05:28,880 --> 00:05:31,430
+node. That's going to just be an
+attribute node.
+
+326
+00:05:31,430 --> 00:05:31,440
+attribute node.
+ 
+
+327
+00:05:31,440 --> 00:05:33,270
+attribute node.
+uh call the name which was R and plug
+
+328
+00:05:33,270 --> 00:05:33,280
+uh call the name which was R and plug
+ 
+
+329
+00:05:33,280 --> 00:05:35,110
+uh call the name which was R and plug
+factor into base color. And now we can
+
+330
+00:05:35,110 --> 00:05:35,120
+factor into base color. And now we can
+ 
+
+331
+00:05:35,120 --> 00:05:36,710
+factor into base color. And now we can
+see that texture. So if I were to go
+
+332
+00:05:36,710 --> 00:05:36,720
+see that texture. So if I were to go
+ 
+
+333
+00:05:36,720 --> 00:05:38,790
+see that texture. So if I were to go
+back to geometry nodes and go to the
+
+334
+00:05:38,790 --> 00:05:38,800
+back to geometry nodes and go to the
+ 
+
+335
+00:05:38,800 --> 00:05:41,430
+back to geometry nodes and go to the
+material preview window, I can play with
+
+336
+00:05:41,430 --> 00:05:41,440
+material preview window, I can play with
+ 
+
+337
+00:05:41,440 --> 00:05:45,110
+material preview window, I can play with
+the W. And you'll notice we have
+
+338
+00:05:45,110 --> 00:05:45,120
+the W. And you'll notice we have
+ 
+
+339
+00:05:45,120 --> 00:05:46,550
+the W. And you'll notice we have
+essentially a black and white texture
+
+340
+00:05:46,550 --> 00:05:46,560
+essentially a black and white texture
+ 
+
+341
+00:05:46,560 --> 00:05:48,629
+essentially a black and white texture
+that we can uh play around with. So I'm
+
+342
+00:05:48,629 --> 00:05:48,639
+that we can uh play around with. So I'm
+ 
+
+343
+00:05:48,639 --> 00:05:49,909
+that we can uh play around with. So I'm
+going to go back to the shading and
+
+344
+00:05:49,909 --> 00:05:49,919
+going to go back to the shading and
+ 
+
+345
+00:05:49,919 --> 00:05:52,710
+going to go back to the shading and
+let's go ahead and put our image into
+
+346
+00:05:52,710 --> 00:05:52,720
+let's go ahead and put our image into
+ 
+
+347
+00:05:52,720 --> 00:05:54,950
+let's go ahead and put our image into
+this scene. So go ahead and pick any
+
+348
+00:05:54,950 --> 00:05:54,960
+this scene. So go ahead and pick any
+ 
+
+349
+00:05:54,960 --> 00:05:57,830
+this scene. So go ahead and pick any
+image or video that you want. either
+
+350
+00:05:57,830 --> 00:05:57,840
+image or video that you want. either
+ 
+
+351
+00:05:57,840 --> 00:05:59,430
+image or video that you want. either
+images and videos, it will behave the
+
+352
+00:05:59,430 --> 00:05:59,440
+images and videos, it will behave the
+ 
+
+353
+00:05:59,440 --> 00:06:00,950
+images and videos, it will behave the
+same in terms of this glitching effect.
+
+354
+00:06:00,950 --> 00:06:00,960
+same in terms of this glitching effect.
+ 
+
+355
+00:06:00,960 --> 00:06:01,990
+same in terms of this glitching effect.
+So, what I'm going to do is if you have
+
+356
+00:06:01,990 --> 00:06:02,000
+So, what I'm going to do is if you have
+ 
+
+357
+00:06:02,000 --> 00:06:03,430
+So, what I'm going to do is if you have
+the node wrangler add-on enabled, just
+
+358
+00:06:03,430 --> 00:06:03,440
+the node wrangler add-on enabled, just
+ 
+
+359
+00:06:03,440 --> 00:06:06,550
+the node wrangler add-on enabled, just
+hit control T. It's going to give you a
+
+360
+00:06:06,550 --> 00:06:06,560
+hit control T. It's going to give you a
+ 
+
+361
+00:06:06,560 --> 00:06:08,950
+hit control T. It's going to give you a
+quick mapping setup. Use the object
+
+362
+00:06:08,950 --> 00:06:08,960
+quick mapping setup. Use the object
+ 
+
+363
+00:06:08,960 --> 00:06:10,710
+quick mapping setup. Use the object
+coordinate and I'm going to click open
+
+364
+00:06:10,710 --> 00:06:10,720
+coordinate and I'm going to click open
+ 
+
+365
+00:06:10,720 --> 00:06:12,870
+coordinate and I'm going to click open
+and grab my image. You can see a couple
+
+366
+00:06:12,870 --> 00:06:12,880
+and grab my image. You can see a couple
+ 
+
+367
+00:06:12,880 --> 00:06:14,309
+and grab my image. You can see a couple
+of these images that I was playing with.
+
+368
+00:06:14,309 --> 00:06:14,319
+of these images that I was playing with.
+ 
+
+369
+00:06:14,319 --> 00:06:16,230
+of these images that I was playing with.
+I found these landscape images to look
+
+370
+00:06:16,230 --> 00:06:16,240
+I found these landscape images to look
+ 
+
+371
+00:06:16,240 --> 00:06:17,990
+I found these landscape images to look
+really nice. And then I'm going to go
+
+372
+00:06:17,990 --> 00:06:18,000
+really nice. And then I'm going to go
+ 
+
+373
+00:06:18,000 --> 00:06:21,110
+really nice. And then I'm going to go
+get an empty and use that as uh the
+
+374
+00:06:21,110 --> 00:06:21,120
+get an empty and use that as uh the
+ 
+
+375
+00:06:21,120 --> 00:06:22,790
+get an empty and use that as uh the
+object that creates kind of my texture
+
+376
+00:06:22,790 --> 00:06:22,800
+object that creates kind of my texture
+ 
+
+377
+00:06:22,800 --> 00:06:24,790
+object that creates kind of my texture
+coordinate or my mapping. So, if you
+
+378
+00:06:24,790 --> 00:06:24,800
+coordinate or my mapping. So, if you
+ 
+
+379
+00:06:24,800 --> 00:06:27,350
+coordinate or my mapping. So, if you
+click the empty, then you can click the
+
+380
+00:06:27,350 --> 00:06:27,360
+click the empty, then you can click the
+ 
+
+381
+00:06:27,360 --> 00:06:29,029
+click the empty, then you can click the
+empty here in the viewport and scale it
+
+382
+00:06:29,029 --> 00:06:29,039
+empty here in the viewport and scale it
+ 
+
+383
+00:06:29,039 --> 00:06:32,550
+empty here in the viewport and scale it
+up. Now, the image is uh squished. It's
+
+384
+00:06:32,550 --> 00:06:32,560
+up. Now, the image is uh squished. It's
+ 
+
+385
+00:06:32,560 --> 00:06:34,469
+up. Now, the image is uh squished. It's
+kind of a square. So, you can take your
+
+386
+00:06:34,469 --> 00:06:34,479
+kind of a square. So, you can take your
+ 
+
+387
+00:06:34,479 --> 00:06:36,309
+kind of a square. So, you can take your
+empty and just sort of stretch it out.
+
+388
+00:06:36,309 --> 00:06:36,319
+empty and just sort of stretch it out.
+ 
+
+389
+00:06:36,319 --> 00:06:39,350
+empty and just sort of stretch it out.
+Kind of eyeball it. Um I should just
+
+390
+00:06:39,350 --> 00:06:39,360
+Kind of eyeball it. Um I should just
+ 
+
+391
+00:06:39,360 --> 00:06:40,790
+Kind of eyeball it. Um I should just
+look at the original image, but I'm just
+
+392
+00:06:40,790 --> 00:06:40,800
+look at the original image, but I'm just
+ 
+
+393
+00:06:40,800 --> 00:06:42,870
+look at the original image, but I'm just
+going to go by memory of how I remember
+
+394
+00:06:42,870 --> 00:06:42,880
+going to go by memory of how I remember
+ 
+
+395
+00:06:42,880 --> 00:06:45,590
+going to go by memory of how I remember
+it looking. And then one quick thing, go
+
+396
+00:06:45,590 --> 00:06:45,600
+it looking. And then one quick thing, go
+ 
+
+397
+00:06:45,600 --> 00:06:47,189
+it looking. And then one quick thing, go
+ahead and just delete the principled and
+
+398
+00:06:47,189 --> 00:06:47,199
+ahead and just delete the principled and
+ 
+
+399
+00:06:47,199 --> 00:06:49,189
+ahead and just delete the principled and
+plug the image straight into the
+
+400
+00:06:49,189 --> 00:06:49,199
+plug the image straight into the
+ 
+
+401
+00:06:49,199 --> 00:06:51,029
+plug the image straight into the
+surface. And that's going to bring it
+
+402
+00:06:51,029 --> 00:06:51,039
+surface. And that's going to bring it
+ 
+
+403
+00:06:51,039 --> 00:06:53,590
+surface. And that's going to bring it
+back to sort of the images original
+
+404
+00:06:53,590 --> 00:06:53,600
+back to sort of the images original
+ 
+
+405
+00:06:53,600 --> 00:06:56,469
+back to sort of the images original
+color and contrast and all that. So it's
+
+406
+00:06:56,469 --> 00:06:56,479
+color and contrast and all that. So it's
+ 
+
+407
+00:06:56,479 --> 00:06:59,309
+color and contrast and all that. So it's
+not a surface. So you can just go ahead
+
+408
+00:06:59,309 --> 00:06:59,319
+not a surface. So you can just go ahead
+ 
+
+409
+00:06:59,319 --> 00:07:02,710
+not a surface. So you can just go ahead
+and scale up the image to fit whatever
+
+410
+00:07:02,710 --> 00:07:02,720
+and scale up the image to fit whatever
+ 
+
+411
+00:07:02,720 --> 00:07:06,189
+and scale up the image to fit whatever
+square. I'm using a 16x9
+
+412
+00:07:06,189 --> 00:07:06,199
+square. I'm using a 16x9
+ 
+
+413
+00:07:06,199 --> 00:07:09,230
+square. I'm using a 16x9
+um ratio here. And this is now our
+
+414
+00:07:09,230 --> 00:07:09,240
+um ratio here. And this is now our
+ 
+
+415
+00:07:09,240 --> 00:07:11,909
+um ratio here. And this is now our
+image. Now what we can do is right here
+
+416
+00:07:11,909 --> 00:07:11,919
+image. Now what we can do is right here
+ 
+
+417
+00:07:11,919 --> 00:07:15,230
+image. Now what we can do is right here
+on this line get a mix
+
+418
+00:07:15,230 --> 00:07:15,240
+on this line get a mix
+ 
+
+419
+00:07:15,240 --> 00:07:18,150
+on this line get a mix
+color. And now throw that texture or
+
+420
+00:07:18,150 --> 00:07:18,160
+color. And now throw that texture or
+ 
+
+421
+00:07:18,160 --> 00:07:19,670
+color. And now throw that texture or
+that geometry straight into there. And
+
+422
+00:07:19,670 --> 00:07:19,680
+that geometry straight into there. And
+ 
+
+423
+00:07:19,680 --> 00:07:20,950
+that geometry straight into there. And
+you're going to notice that glitch start
+
+424
+00:07:20,950 --> 00:07:20,960
+you're going to notice that glitch start
+ 
+
+425
+00:07:20,960 --> 00:07:22,629
+you're going to notice that glitch start
+to happen. So it's starting to move it
+
+426
+00:07:22,629 --> 00:07:22,639
+to happen. So it's starting to move it
+ 
+
+427
+00:07:22,639 --> 00:07:24,550
+to happen. So it's starting to move it
+around. It's combining your regular
+
+428
+00:07:24,550 --> 00:07:24,560
+around. It's combining your regular
+ 
+
+429
+00:07:24,560 --> 00:07:27,350
+around. It's combining your regular
+mapping with this new black and white
+
+430
+00:07:27,350 --> 00:07:27,360
+mapping with this new black and white
+ 
+
+431
+00:07:27,360 --> 00:07:28,870
+mapping with this new black and white
+value mapping. And it's going to kind of
+
+432
+00:07:28,870 --> 00:07:28,880
+value mapping. And it's going to kind of
+ 
+
+433
+00:07:28,880 --> 00:07:30,710
+value mapping. And it's going to kind of
+play with it a little bit. And so we can
+
+434
+00:07:30,710 --> 00:07:30,720
+play with it a little bit. And so we can
+ 
+
+435
+00:07:30,720 --> 00:07:32,790
+play with it a little bit. And so we can
+head back to geometry nodes. I'm going
+
+436
+00:07:32,790 --> 00:07:32,800
+head back to geometry nodes. I'm going
+ 
+
+437
+00:07:32,800 --> 00:07:35,270
+head back to geometry nodes. I'm going
+collapse this window here. Notice there
+
+438
+00:07:35,270 --> 00:07:35,280
+collapse this window here. Notice there
+ 
+
+439
+00:07:35,280 --> 00:07:38,870
+collapse this window here. Notice there
+is a line going straight into the store
+
+440
+00:07:38,870 --> 00:07:38,880
+is a line going straight into the store
+ 
+
+441
+00:07:38,880 --> 00:07:40,550
+is a line going straight into the store
+named attribute. So what we can do is
+
+442
+00:07:40,550 --> 00:07:40,560
+named attribute. So what we can do is
+ 
+
+443
+00:07:40,560 --> 00:07:43,270
+named attribute. So what we can do is
+get a color ramp to play with that a
+
+444
+00:07:43,270 --> 00:07:43,280
+get a color ramp to play with that a
+ 
+
+445
+00:07:43,280 --> 00:07:45,350
+get a color ramp to play with that a
+little bit. So, if you get a color ramp,
+
+446
+00:07:45,350 --> 00:07:45,360
+little bit. So, if you get a color ramp,
+ 
+
+447
+00:07:45,360 --> 00:07:47,309
+little bit. So, if you get a color ramp,
+switch it to
+
+448
+00:07:47,309 --> 00:07:47,319
+switch it to
+ 
+
+449
+00:07:47,319 --> 00:07:50,670
+switch it to
+constant, you'll be able to just get a
+
+450
+00:07:50,670 --> 00:07:50,680
+constant, you'll be able to just get a
+ 
+
+451
+00:07:50,680 --> 00:07:54,309
+constant, you'll be able to just get a
+couple, say something like like this.
+
+452
+00:07:54,309 --> 00:07:54,319
+couple, say something like like this.
+ 
+
+453
+00:07:54,319 --> 00:07:55,790
+couple, say something like like this.
+And then I'm going to go back to the
+
+454
+00:07:55,790 --> 00:07:55,800
+And then I'm going to go back to the
+ 
+
+455
+00:07:55,800 --> 00:07:59,430
+And then I'm going to go back to the
+empty and get that background image to
+
+456
+00:07:59,430 --> 00:07:59,440
+empty and get that background image to
+ 
+
+457
+00:07:59,440 --> 00:08:01,909
+empty and get that background image to
+be scaled properly. There we go. And
+
+458
+00:08:01,909 --> 00:08:01,919
+be scaled properly. There we go. And
+ 
+
+459
+00:08:01,919 --> 00:08:03,909
+be scaled properly. There we go. And
+then if you play with the W, we now have
+
+460
+00:08:03,909 --> 00:08:03,919
+then if you play with the W, we now have
+ 
+
+461
+00:08:03,919 --> 00:08:05,390
+then if you play with the W, we now have
+this
+
+462
+00:08:05,390 --> 00:08:05,400
+this
+ 
+
+463
+00:08:05,400 --> 00:08:08,230
+this
+image glitching around. And it's pretty
+
+464
+00:08:08,230 --> 00:08:08,240
+image glitching around. And it's pretty
+ 
+
+465
+00:08:08,240 --> 00:08:11,430
+image glitching around. And it's pretty
+cool. What I found looks really good is
+
+466
+00:08:11,430 --> 00:08:11,440
+cool. What I found looks really good is
+ 
+
+467
+00:08:11,440 --> 00:08:14,150
+cool. What I found looks really good is
+if you get a wave texture with a scale
+
+468
+00:08:14,150 --> 00:08:14,160
+if you get a wave texture with a scale
+ 
+
+469
+00:08:14,160 --> 00:08:15,950
+if you get a wave texture with a scale
+of
+
+470
+00:08:15,950 --> 00:08:15,960
+of
+ 
+
+471
+00:08:15,960 --> 00:08:17,790
+of
+0.5,
+
+472
+00:08:17,790 --> 00:08:17,800
+0.5,
+ 
+
+473
+00:08:17,800 --> 00:08:20,869
+0.5,
+it makes the images feel a little bit
+
+474
+00:08:20,869 --> 00:08:20,879
+it makes the images feel a little bit
+ 
+
+475
+00:08:20,879 --> 00:08:22,390
+it makes the images feel a little bit
+better. We're going to do a scale of two
+
+476
+00:08:22,390 --> 00:08:22,400
+better. We're going to do a scale of two
+ 
+
+477
+00:08:22,400 --> 00:08:24,950
+better. We're going to do a scale of two
+on the noise texture. And it does I do
+
+478
+00:08:24,950 --> 00:08:24,960
+on the noise texture. And it does I do
+ 
+
+479
+00:08:24,960 --> 00:08:27,510
+on the noise texture. And it does I do
+appreciate the behavior a little bit
+
+480
+00:08:27,510 --> 00:08:27,520
+appreciate the behavior a little bit
+ 
+
+481
+00:08:27,520 --> 00:08:28,710
+appreciate the behavior a little bit
+more. So, I'm going to flip my color
+
+482
+00:08:28,710 --> 00:08:28,720
+more. So, I'm going to flip my color
+ 
+
+483
+00:08:28,720 --> 00:08:31,870
+more. So, I'm going to flip my color
+ramp
+
+484
+00:08:31,870 --> 00:08:31,880
+
+ 
+
+485
+00:08:31,880 --> 00:08:34,230
+
+actually. And I noticed when I flipped
+
+486
+00:08:34,230 --> 00:08:34,240
+actually. And I noticed when I flipped
+ 
+
+487
+00:08:34,240 --> 00:08:35,589
+actually. And I noticed when I flipped
+the color ramp, he used the combination
+
+488
+00:08:35,589 --> 00:08:35,599
+the color ramp, he used the combination
+ 
+
+489
+00:08:35,599 --> 00:08:38,070
+the color ramp, he used the combination
+with the wave. I really do enjoy that
+
+490
+00:08:38,070 --> 00:08:38,080
+with the wave. I really do enjoy that
+ 
+
+491
+00:08:38,080 --> 00:08:39,790
+with the wave. I really do enjoy that
+movement quite a bit more than the
+
+492
+00:08:39,790 --> 00:08:39,800
+movement quite a bit more than the
+ 
+
+493
+00:08:39,800 --> 00:08:42,389
+movement quite a bit more than the
+original. Um, but really it's going to
+
+494
+00:08:42,389 --> 00:08:42,399
+original. Um, but really it's going to
+ 
+
+495
+00:08:42,399 --> 00:08:43,509
+original. Um, but really it's going to
+be up to just playing with it. You can
+
+496
+00:08:43,509 --> 00:08:43,519
+be up to just playing with it. You can
+ 
+
+497
+00:08:43,519 --> 00:08:44,949
+be up to just playing with it. You can
+just keep the noise texture, play with
+
+498
+00:08:44,949 --> 00:08:44,959
+just keep the noise texture, play with
+ 
+
+499
+00:08:44,959 --> 00:08:48,870
+just keep the noise texture, play with
+those values. Um, but this I really,
+
+500
+00:08:48,870 --> 00:08:48,880
+those values. Um, but this I really,
+ 
+
+501
+00:08:48,880 --> 00:08:51,870
+those values. Um, but this I really,
+really like. So, now that we have
+
+502
+00:08:51,870 --> 00:08:51,880
+really like. So, now that we have
+ 
+
+503
+00:08:51,880 --> 00:08:54,630
+really like. So, now that we have
+this working properly, we now need to
+
+504
+00:08:54,630 --> 00:08:54,640
+this working properly, we now need to
+ 
+
+505
+00:08:54,640 --> 00:08:56,790
+this working properly, we now need to
+create that effect where all of those
+
+506
+00:08:56,790 --> 00:08:56,800
+create that effect where all of those
+ 
+
+507
+00:08:56,800 --> 00:08:59,590
+create that effect where all of those
+little squares have this red line
+
+508
+00:08:59,590 --> 00:08:59,600
+little squares have this red line
+ 
+
+509
+00:08:59,600 --> 00:09:02,949
+little squares have this red line
+connecting to each other.
+
+510
+00:09:02,949 --> 00:09:02,959
+connecting to each other.
+ 
+
+511
+00:09:02,959 --> 00:09:04,230
+connecting to each other.
+So, we're going to go back to the
+
+512
+00:09:04,230 --> 00:09:04,240
+So, we're going to go back to the
+ 
+
+513
+00:09:04,240 --> 00:09:06,790
+So, we're going to go back to the
+wireframe view. And what I'm going to do
+
+514
+00:09:06,790 --> 00:09:06,800
+wireframe view. And what I'm going to do
+ 
+
+515
+00:09:06,800 --> 00:09:09,030
+wireframe view. And what I'm going to do
+is I'm just going to go ahead and sever
+
+516
+00:09:09,030 --> 00:09:09,040
+is I'm just going to go ahead and sever
+ 
+
+517
+00:09:09,040 --> 00:09:11,670
+is I'm just going to go ahead and sever
+the connection right there. And we're
+
+518
+00:09:11,670 --> 00:09:11,680
+the connection right there. And we're
+ 
+
+519
+00:09:11,680 --> 00:09:14,190
+the connection right there. And we're
+going to go ahead and get
+
+520
+00:09:14,190 --> 00:09:14,200
+going to go ahead and get
+ 
+
+521
+00:09:14,200 --> 00:09:17,110
+going to go ahead and get
+a delete geometry. And I'm going to plug
+
+522
+00:09:17,110 --> 00:09:17,120
+a delete geometry. And I'm going to plug
+ 
+
+523
+00:09:17,120 --> 00:09:19,350
+a delete geometry. And I'm going to plug
+the the color amp right here that plugs
+
+524
+00:09:19,350 --> 00:09:19,360
+the the color amp right here that plugs
+ 
+
+525
+00:09:19,360 --> 00:09:20,949
+the the color amp right here that plugs
+into the store named attribute. This
+
+526
+00:09:20,949 --> 00:09:20,959
+into the store named attribute. This
+ 
+
+527
+00:09:20,959 --> 00:09:22,710
+into the store named attribute. This
+color amp is the one that crunches in
+
+528
+00:09:22,710 --> 00:09:22,720
+color amp is the one that crunches in
+ 
+
+529
+00:09:22,720 --> 00:09:24,389
+color amp is the one that crunches in
+those images to just a couple of those
+
+530
+00:09:24,389 --> 00:09:24,399
+those images to just a couple of those
+ 
+
+531
+00:09:24,399 --> 00:09:26,550
+those images to just a couple of those
+cubes, a couple of those squares that
+
+532
+00:09:26,550 --> 00:09:26,560
+cubes, a couple of those squares that
+ 
+
+533
+00:09:26,560 --> 00:09:28,790
+cubes, a couple of those squares that
+glitch in and out. So I want to use that
+
+534
+00:09:28,790 --> 00:09:28,800
+glitch in and out. So I want to use that
+ 
+
+535
+00:09:28,800 --> 00:09:31,190
+glitch in and out. So I want to use that
+same specification to be plugged into
+
+536
+00:09:31,190 --> 00:09:31,200
+same specification to be plugged into
+ 
+
+537
+00:09:31,200 --> 00:09:33,230
+same specification to be plugged into
+the delete geometry. So we can actually
+
+538
+00:09:33,230 --> 00:09:33,240
+the delete geometry. So we can actually
+ 
+
+539
+00:09:33,240 --> 00:09:36,630
+the delete geometry. So we can actually
+delete that specific geometry. So what
+
+540
+00:09:36,630 --> 00:09:36,640
+delete that specific geometry. So what
+ 
+
+541
+00:09:36,640 --> 00:09:38,470
+delete that specific geometry. So what
+I'm going to do is plug this join
+
+542
+00:09:38,470 --> 00:09:38,480
+I'm going to do is plug this join
+ 
+
+543
+00:09:38,480 --> 00:09:39,670
+I'm going to do is plug this join
+geometry, the one that goes right before
+
+544
+00:09:39,670 --> 00:09:39,680
+geometry, the one that goes right before
+ 
+
+545
+00:09:39,680 --> 00:09:41,750
+geometry, the one that goes right before
+the store named attribute right after
+
+546
+00:09:41,750 --> 00:09:41,760
+the store named attribute right after
+ 
+
+547
+00:09:41,760 --> 00:09:43,430
+the store named attribute right after
+all of these nodes that created that
+
+548
+00:09:43,430 --> 00:09:43,440
+all of these nodes that created that
+ 
+
+549
+00:09:43,440 --> 00:09:46,949
+all of these nodes that created that
+variation geometry. Plug that into the
+
+550
+00:09:46,949 --> 00:09:46,959
+variation geometry. Plug that into the
+ 
+
+551
+00:09:46,959 --> 00:09:49,509
+variation geometry. Plug that into the
+geometry. Switch this over to face.
+
+552
+00:09:49,509 --> 00:09:49,519
+geometry. Switch this over to face.
+ 
+
+553
+00:09:49,519 --> 00:09:51,710
+geometry. Switch this over to face.
+We're going to plug the color ramp into
+
+554
+00:09:51,710 --> 00:09:51,720
+We're going to plug the color ramp into
+ 
+
+555
+00:09:51,720 --> 00:09:54,230
+We're going to plug the color ramp into
+that and then plug and then we're going
+
+556
+00:09:54,230 --> 00:09:54,240
+that and then plug and then we're going
+ 
+
+557
+00:09:54,240 --> 00:09:54,910
+that and then plug and then we're going
+to get
+
+558
+00:09:54,910 --> 00:09:54,920
+to get
+ 
+
+559
+00:09:54,920 --> 00:09:57,750
+to get
+a join geometry so that we can plug this
+
+560
+00:09:57,750 --> 00:09:57,760
+a join geometry so that we can plug this
+ 
+
+561
+00:09:57,760 --> 00:09:59,350
+a join geometry so that we can plug this
+stuff that all this this image
+
+562
+00:09:59,350 --> 00:09:59,360
+stuff that all this this image
+ 
+
+563
+00:09:59,360 --> 00:10:00,790
+stuff that all this this image
+information into it and this new
+
+564
+00:10:00,790 --> 00:10:00,800
+information into it and this new
+ 
+
+565
+00:10:00,800 --> 00:10:02,070
+information into it and this new
+information. So we'll just plug that
+
+566
+00:10:02,070 --> 00:10:02,080
+information. So we'll just plug that
+ 
+
+567
+00:10:02,080 --> 00:10:04,430
+information. So we'll just plug that
+there. Plug this
+
+568
+00:10:04,430 --> 00:10:04,440
+there. Plug this
+ 
+
+569
+00:10:04,440 --> 00:10:07,310
+there. Plug this
+here and you'll
+
+570
+00:10:07,310 --> 00:10:07,320
+here and you'll
+ 
+
+571
+00:10:07,320 --> 00:10:09,910
+here and you'll
+notice we'll play with the W. It's doing
+
+572
+00:10:09,910 --> 00:10:09,920
+notice we'll play with the W. It's doing
+ 
+
+573
+00:10:09,920 --> 00:10:11,750
+notice we'll play with the W. It's doing
+that. You'll notice it's doing that.
+
+574
+00:10:11,750 --> 00:10:11,760
+that. You'll notice it's doing that.
+ 
+
+575
+00:10:11,760 --> 00:10:14,069
+that. You'll notice it's doing that.
+What we can do is just invert it with a
+
+576
+00:10:14,069 --> 00:10:14,079
+What we can do is just invert it with a
+ 
+
+577
+00:10:14,079 --> 00:10:15,829
+What we can do is just invert it with a
+color ramp.
+
+578
+00:10:15,829 --> 00:10:15,839
+color ramp.
+ 
+
+579
+00:10:15,839 --> 00:10:17,829
+color ramp.
+So plug that there and then just flip
+
+580
+00:10:17,829 --> 00:10:17,839
+So plug that there and then just flip
+ 
+
+581
+00:10:17,839 --> 00:10:20,630
+So plug that there and then just flip
+the color ramp. So that's just inverting
+
+582
+00:10:20,630 --> 00:10:20,640
+the color ramp. So that's just inverting
+ 
+
+583
+00:10:20,640 --> 00:10:23,470
+the color ramp. So that's just inverting
+that texture so we don't have to change
+
+584
+00:10:23,470 --> 00:10:23,480
+that texture so we don't have to change
+ 
+
+585
+00:10:23,480 --> 00:10:26,230
+that texture so we don't have to change
+anything. And then now you have all of
+
+586
+00:10:26,230 --> 00:10:26,240
+anything. And then now you have all of
+ 
+
+587
+00:10:26,240 --> 00:10:28,230
+anything. And then now you have all of
+this geometry. What I want to do is
+
+588
+00:10:28,230 --> 00:10:28,240
+this geometry. What I want to do is
+ 
+
+589
+00:10:28,240 --> 00:10:30,470
+this geometry. What I want to do is
+convert all of these faces into uh
+
+590
+00:10:30,470 --> 00:10:30,480
+convert all of these faces into uh
+ 
+
+591
+00:10:30,480 --> 00:10:32,310
+convert all of these faces into uh
+points. So I'm just going to take these
+
+592
+00:10:32,310 --> 00:10:32,320
+points. So I'm just going to take these
+ 
+
+593
+00:10:32,320 --> 00:10:34,150
+points. So I'm just going to take these
+guys here, highlight them, and bring
+
+594
+00:10:34,150 --> 00:10:34,160
+guys here, highlight them, and bring
+ 
+
+595
+00:10:34,160 --> 00:10:36,069
+guys here, highlight them, and bring
+them over a little bit. What I want to
+
+596
+00:10:36,069 --> 00:10:36,079
+them over a little bit. What I want to
+ 
+
+597
+00:10:36,079 --> 00:10:38,150
+them over a little bit. What I want to
+do is to turn these faces into points.
+
+598
+00:10:38,150 --> 00:10:38,160
+do is to turn these faces into points.
+ 
+
+599
+00:10:38,160 --> 00:10:40,550
+do is to turn these faces into points.
+And so that's very easy. You can just go
+
+600
+00:10:40,550 --> 00:10:40,560
+And so that's very easy. You can just go
+ 
+
+601
+00:10:40,560 --> 00:10:44,790
+And so that's very easy. You can just go
+ahead and do a mesh to points and say
+
+602
+00:10:44,790 --> 00:10:44,800
+ahead and do a mesh to points and say
+ 
+
+603
+00:10:44,800 --> 00:10:47,590
+ahead and do a mesh to points and say
+use the faces. And so now again, if you
+
+604
+00:10:47,590 --> 00:10:47,600
+use the faces. And so now again, if you
+ 
+
+605
+00:10:47,600 --> 00:10:49,269
+use the faces. And so now again, if you
+play with that noise texture, we're just
+
+606
+00:10:49,269 --> 00:10:49,279
+play with that noise texture, we're just
+ 
+
+607
+00:10:49,279 --> 00:10:51,509
+play with that noise texture, we're just
+getting points. And if I were to plug
+
+608
+00:10:51,509 --> 00:10:51,519
+getting points. And if I were to plug
+ 
+
+609
+00:10:51,519 --> 00:10:53,990
+getting points. And if I were to plug
+this material set material into the
+
+610
+00:10:53,990 --> 00:10:54,000
+this material set material into the
+ 
+
+611
+00:10:54,000 --> 00:10:56,110
+this material set material into the
+join, you'll
+
+612
+00:10:56,110 --> 00:10:56,120
+join, you'll
+ 
+
+613
+00:10:56,120 --> 00:11:00,190
+join, you'll
+notice, see those points are on top of
+
+614
+00:11:00,190 --> 00:11:00,200
+notice, see those points are on top of
+ 
+
+615
+00:11:00,200 --> 00:11:03,590
+notice, see those points are on top of
+each image square. So this is sort this
+
+616
+00:11:03,590 --> 00:11:03,600
+each image square. So this is sort this
+ 
+
+617
+00:11:03,600 --> 00:11:05,590
+each image square. So this is sort this
+is just to confirm, hey, this is working
+
+618
+00:11:05,590 --> 00:11:05,600
+is just to confirm, hey, this is working
+ 
+
+619
+00:11:05,600 --> 00:11:07,750
+is just to confirm, hey, this is working
+properly. And once these points connect,
+
+620
+00:11:07,750 --> 00:11:07,760
+properly. And once these points connect,
+ 
+
+621
+00:11:07,760 --> 00:11:09,350
+properly. And once these points connect,
+this effect is going to work, right? So,
+
+622
+00:11:09,350 --> 00:11:09,360
+this effect is going to work, right? So,
+ 
+
+623
+00:11:09,360 --> 00:11:10,550
+this effect is going to work, right? So,
+I'm just going to go ahead and sever
+
+624
+00:11:10,550 --> 00:11:10,560
+I'm just going to go ahead and sever
+ 
+
+625
+00:11:10,560 --> 00:11:12,550
+I'm just going to go ahead and sever
+that and go back. What we need to do now
+
+626
+00:11:12,550 --> 00:11:12,560
+that and go back. What we need to do now
+ 
+
+627
+00:11:12,560 --> 00:11:15,190
+that and go back. What we need to do now
+is to create a really kind of weird
+
+628
+00:11:15,190 --> 00:11:15,200
+is to create a really kind of weird
+ 
+
+629
+00:11:15,200 --> 00:11:18,150
+is to create a really kind of weird
+setup of nodes to get every point here
+
+630
+00:11:18,150 --> 00:11:18,160
+setup of nodes to get every point here
+ 
+
+631
+00:11:18,160 --> 00:11:19,430
+setup of nodes to get every point here
+to connect. So, I'm just going to go
+
+632
+00:11:19,430 --> 00:11:19,440
+to connect. So, I'm just going to go
+ 
+
+633
+00:11:19,440 --> 00:11:20,949
+to connect. So, I'm just going to go
+ahead and play with my W till I have a
+
+634
+00:11:20,949 --> 00:11:20,959
+ahead and play with my W till I have a
+ 
+
+635
+00:11:20,959 --> 00:11:22,350
+ahead and play with my W till I have a
+few more points that we'll want to
+
+636
+00:11:22,350 --> 00:11:22,360
+few more points that we'll want to
+ 
+
+637
+00:11:22,360 --> 00:11:24,870
+few more points that we'll want to
+connect. So, right after the mesh to
+
+638
+00:11:24,870 --> 00:11:24,880
+connect. So, right after the mesh to
+ 
+
+639
+00:11:24,880 --> 00:11:26,710
+connect. So, right after the mesh to
+points node, let's go ahead and get a
+
+640
+00:11:26,710 --> 00:11:26,720
+points node, let's go ahead and get a
+ 
+
+641
+00:11:26,720 --> 00:11:28,509
+points node, let's go ahead and get a
+for each element
+
+642
+00:11:28,509 --> 00:11:28,519
+for each element
+ 
+
+643
+00:11:28,519 --> 00:11:30,550
+for each element
+node. And we're going to need two of
+
+644
+00:11:30,550 --> 00:11:30,560
+node. And we're going to need two of
+ 
+
+645
+00:11:30,560 --> 00:11:31,990
+node. And we're going to need two of
+them. So, let's go ahead. I'm g sever
+
+646
+00:11:31,990 --> 00:11:32,000
+them. So, let's go ahead. I'm g sever
+ 
+
+647
+00:11:32,000 --> 00:11:34,790
+them. So, let's go ahead. I'm g sever
+that points to geometry. And then this
+
+648
+00:11:34,790 --> 00:11:34,800
+that points to geometry. And then this
+ 
+
+649
+00:11:34,800 --> 00:11:37,750
+that points to geometry. And then this
+lower green. Plug him there. And then
+
+650
+00:11:37,750 --> 00:11:37,760
+lower green. Plug him there. And then
+ 
+
+651
+00:11:37,760 --> 00:11:40,470
+lower green. Plug him there. And then
+we're just going to get another for each
+
+652
+00:11:40,470 --> 00:11:40,480
+we're just going to get another for each
+ 
+
+653
+00:11:40,480 --> 00:11:42,470
+we're just going to get another for each
+element node. And we're going to plug
+
+654
+00:11:42,470 --> 00:11:42,480
+element node. And we're going to plug
+ 
+
+655
+00:11:42,480 --> 00:11:45,910
+element node. And we're going to plug
+this lower green into hem right there.
+
+656
+00:11:45,910 --> 00:11:45,920
+this lower green into hem right there.
+ 
+
+657
+00:11:45,920 --> 00:11:47,030
+this lower green into hem right there.
+And here's what we're going to do now.
+
+658
+00:11:47,030 --> 00:11:47,040
+And here's what we're going to do now.
+ 
+
+659
+00:11:47,040 --> 00:11:48,710
+And here's what we're going to do now.
+Let's go ahead and throw some data into
+
+660
+00:11:48,710 --> 00:11:48,720
+Let's go ahead and throw some data into
+ 
+
+661
+00:11:48,720 --> 00:11:51,509
+Let's go ahead and throw some data into
+it to get all of those points to connect
+
+662
+00:11:51,509 --> 00:11:51,519
+it to get all of those points to connect
+ 
+
+663
+00:11:51,519 --> 00:11:55,430
+it to get all of those points to connect
+each other with a curve. So, first we're
+
+664
+00:11:55,430 --> 00:11:55,440
+each other with a curve. So, first we're
+ 
+
+665
+00:11:55,440 --> 00:11:57,590
+each other with a curve. So, first we're
+going to need a position node. And
+
+666
+00:11:57,590 --> 00:11:57,600
+going to need a position node. And
+ 
+
+667
+00:11:57,600 --> 00:11:59,190
+going to need a position node. And
+because it's a for each element node,
+
+668
+00:11:59,190 --> 00:11:59,200
+because it's a for each element node,
+ 
+
+669
+00:11:59,200 --> 00:12:00,949
+because it's a for each element node,
+once we plug him into here, it's going
+
+670
+00:12:00,949 --> 00:12:00,959
+once we plug him into here, it's going
+ 
+
+671
+00:12:00,959 --> 00:12:04,150
+once we plug him into here, it's going
+to create a position some position data
+
+672
+00:12:04,150 --> 00:12:04,160
+to create a position some position data
+ 
+
+673
+00:12:04,160 --> 00:12:06,949
+to create a position some position data
+for each one of those points that we
+
+674
+00:12:06,949 --> 00:12:06,959
+for each one of those points that we
+ 
+
+675
+00:12:06,959 --> 00:12:08,710
+for each one of those points that we
+generated. Let's go ahead and get a
+
+676
+00:12:08,710 --> 00:12:08,720
+generated. Let's go ahead and get a
+ 
+
+677
+00:12:08,720 --> 00:12:12,550
+generated. Let's go ahead and get a
+curve line node. Curve line. And the
+
+678
+00:12:12,550 --> 00:12:12,560
+curve line node. Curve line. And the
+ 
+
+679
+00:12:12,560 --> 00:12:13,910
+curve line node. Curve line. And the
+this point we're going to get the
+
+680
+00:12:13,910 --> 00:12:13,920
+this point we're going to get the
+ 
+
+681
+00:12:13,920 --> 00:12:16,310
+this point we're going to get the
+position of each point into the start of
+
+682
+00:12:16,310 --> 00:12:16,320
+position of each point into the start of
+ 
+
+683
+00:12:16,320 --> 00:12:18,870
+position of each point into the start of
+the curve line. So one end of the curve,
+
+684
+00:12:18,870 --> 00:12:18,880
+the curve line. So one end of the curve,
+ 
+
+685
+00:12:18,880 --> 00:12:20,870
+the curve line. So one end of the curve,
+we're saying, hey, start there. Now, we
+
+686
+00:12:20,870 --> 00:12:20,880
+we're saying, hey, start there. Now, we
+ 
+
+687
+00:12:20,880 --> 00:12:22,870
+we're saying, hey, start there. Now, we
+need to get the other end of the curve
+
+688
+00:12:22,870 --> 00:12:22,880
+need to get the other end of the curve
+ 
+
+689
+00:12:22,880 --> 00:12:25,110
+need to get the other end of the curve
+to also connect to everything. So, I'm
+
+690
+00:12:25,110 --> 00:12:25,120
+to also connect to everything. So, I'm
+ 
+
+691
+00:12:25,120 --> 00:12:26,710
+to also connect to everything. So, I'm
+just going to go ahead and give myself a
+
+692
+00:12:26,710 --> 00:12:26,720
+just going to go ahead and give myself a
+ 
+
+693
+00:12:26,720 --> 00:12:28,150
+just going to go ahead and give myself a
+little bit more space. I'm highlighting
+
+694
+00:12:28,150 --> 00:12:28,160
+little bit more space. I'm highlighting
+ 
+
+695
+00:12:28,160 --> 00:12:30,629
+little bit more space. I'm highlighting
+and hitting G. Now, we're going to need
+
+696
+00:12:30,629 --> 00:12:30,639
+and hitting G. Now, we're going to need
+ 
+
+697
+00:12:30,639 --> 00:12:32,590
+and hitting G. Now, we're going to need
+to get a
+
+698
+00:12:32,590 --> 00:12:32,600
+to get a
+ 
+
+699
+00:12:32,600 --> 00:12:35,430
+to get a
+sample index node. We're going to get
+
+700
+00:12:35,430 --> 00:12:35,440
+sample index node. We're going to get
+ 
+
+701
+00:12:35,440 --> 00:12:37,829
+sample index node. We're going to get
+another position node. We're going to
+
+702
+00:12:37,829 --> 00:12:37,839
+another position node. We're going to
+ 
+
+703
+00:12:37,839 --> 00:12:40,389
+another position node. We're going to
+switch this over to a vector. Plug
+
+704
+00:12:40,389 --> 00:12:40,399
+switch this over to a vector. Plug
+ 
+
+705
+00:12:40,399 --> 00:12:43,030
+switch this over to a vector. Plug
+position into value. The mesh to points
+
+706
+00:12:43,030 --> 00:12:43,040
+position into value. The mesh to points
+ 
+
+707
+00:12:43,040 --> 00:12:44,629
+position into value. The mesh to points
+is going to go here, right here into the
+
+708
+00:12:44,629 --> 00:12:44,639
+is going to go here, right here into the
+ 
+
+709
+00:12:44,639 --> 00:12:46,949
+is going to go here, right here into the
+geometry. And then the element right
+
+710
+00:12:46,949 --> 00:12:46,959
+geometry. And then the element right
+ 
+
+711
+00:12:46,959 --> 00:12:49,430
+geometry. And then the element right
+here into the geometry. And then he is
+
+712
+00:12:49,430 --> 00:12:49,440
+here into the geometry. And then he is
+ 
+
+713
+00:12:49,440 --> 00:12:51,430
+here into the geometry. And then he is
+going to represent the end of the curve.
+
+714
+00:12:51,430 --> 00:12:51,440
+going to represent the end of the curve.
+ 
+
+715
+00:12:51,440 --> 00:12:52,550
+going to represent the end of the curve.
+And then we're just going to plug this
+
+716
+00:12:52,550 --> 00:12:52,560
+And then we're just going to plug this
+ 
+
+717
+00:12:52,560 --> 00:12:55,590
+And then we're just going to plug this
+curve line into geometry. And now all of
+
+718
+00:12:55,590 --> 00:12:55,600
+curve line into geometry. And now all of
+ 
+
+719
+00:12:55,600 --> 00:12:57,829
+curve line into geometry. And now all of
+them connect. So it's kind of a weird
+
+720
+00:12:57,829 --> 00:12:57,839
+them connect. So it's kind of a weird
+ 
+
+721
+00:12:57,839 --> 00:12:59,670
+them connect. So it's kind of a weird
+convoluted mess of nodes. If you
+
+722
+00:12:59,670 --> 00:12:59,680
+convoluted mess of nodes. If you
+ 
+
+723
+00:12:59,680 --> 00:13:01,110
+convoluted mess of nodes. If you
+recognize the setup, I actually did a
+
+724
+00:13:01,110 --> 00:13:01,120
+recognize the setup, I actually did a
+ 
+
+725
+00:13:01,120 --> 00:13:03,030
+recognize the setup, I actually did a
+tutorial on it earlier and it created
+
+726
+00:13:03,030 --> 00:13:03,040
+tutorial on it earlier and it created
+ 
+
+727
+00:13:03,040 --> 00:13:05,110
+tutorial on it earlier and it created
+this animation. So that very much goes
+
+728
+00:13:05,110 --> 00:13:05,120
+this animation. So that very much goes
+ 
+
+729
+00:13:05,120 --> 00:13:08,470
+this animation. So that very much goes
+to show same process, highly different
+
+730
+00:13:08,470 --> 00:13:08,480
+to show same process, highly different
+ 
+
+731
+00:13:08,480 --> 00:13:10,629
+to show same process, highly different
+result, similar idea. So you can really
+
+732
+00:13:10,629 --> 00:13:10,639
+result, similar idea. So you can really
+ 
+
+733
+00:13:10,639 --> 00:13:12,389
+result, similar idea. So you can really
+take really cool things like this and
+
+734
+00:13:12,389 --> 00:13:12,399
+take really cool things like this and
+ 
+
+735
+00:13:12,399 --> 00:13:13,990
+take really cool things like this and
+use them for other things. And that's
+
+736
+00:13:13,990 --> 00:13:14,000
+use them for other things. And that's
+ 
+
+737
+00:13:14,000 --> 00:13:15,269
+use them for other things. And that's
+where you can start to take these
+
+738
+00:13:15,269 --> 00:13:15,279
+where you can start to take these
+ 
+
+739
+00:13:15,279 --> 00:13:17,190
+where you can start to take these
+processes and go, "Oh, I recognize that
+
+740
+00:13:17,190 --> 00:13:17,200
+processes and go, "Oh, I recognize that
+ 
+
+741
+00:13:17,200 --> 00:13:18,790
+processes and go, "Oh, I recognize that
+all these things are connected. I
+
+742
+00:13:18,790 --> 00:13:18,800
+all these things are connected. I
+ 
+
+743
+00:13:18,800 --> 00:13:20,230
+all these things are connected. I
+recognize that node setup. I'm going to
+
+744
+00:13:20,230 --> 00:13:20,240
+recognize that node setup. I'm going to
+ 
+
+745
+00:13:20,240 --> 00:13:21,990
+recognize that node setup. I'm going to
+use it in this completely different way.
+
+746
+00:13:21,990 --> 00:13:22,000
+use it in this completely different way.
+ 
+
+747
+00:13:22,000 --> 00:13:23,629
+use it in this completely different way.
+And that's how you can really creatively
+
+748
+00:13:23,629 --> 00:13:23,639
+And that's how you can really creatively
+ 
+
+749
+00:13:23,639 --> 00:13:25,829
+And that's how you can really creatively
+use setups like this that are very
+
+750
+00:13:25,829 --> 00:13:25,839
+use setups like this that are very
+ 
+
+751
+00:13:25,839 --> 00:13:27,350
+use setups like this that are very
+technical, but you can be very artistic
+
+752
+00:13:27,350 --> 00:13:27,360
+technical, but you can be very artistic
+ 
+
+753
+00:13:27,360 --> 00:13:29,269
+technical, but you can be very artistic
+with their use case. Now that we have
+
+754
+00:13:29,269 --> 00:13:29,279
+with their use case. Now that we have
+ 
+
+755
+00:13:29,279 --> 00:13:30,629
+with their use case. Now that we have
+all these connected, there's some stuff
+
+756
+00:13:30,629 --> 00:13:30,639
+all these connected, there's some stuff
+ 
+
+757
+00:13:30,639 --> 00:13:32,389
+all these connected, there's some stuff
+going on that may not be entirely
+
+758
+00:13:32,389 --> 00:13:32,399
+going on that may not be entirely
+ 
+
+759
+00:13:32,399 --> 00:13:34,110
+going on that may not be entirely
+visual. But
+
+760
+00:13:34,110 --> 00:13:34,120
+visual. But
+ 
+
+761
+00:13:34,120 --> 00:13:36,629
+visual. But
+essentially, you may see one curve.
+
+762
+00:13:36,629 --> 00:13:36,639
+essentially, you may see one curve.
+ 
+
+763
+00:13:36,639 --> 00:13:38,310
+essentially, you may see one curve.
+There's really, I believe, three. One
+
+764
+00:13:38,310 --> 00:13:38,320
+There's really, I believe, three. One
+ 
+
+765
+00:13:38,320 --> 00:13:39,750
+There's really, I believe, three. One
+going there, one going back, one going
+
+766
+00:13:39,750 --> 00:13:39,760
+going there, one going back, one going
+ 
+
+767
+00:13:39,760 --> 00:13:41,430
+going there, one going back, one going
+back. So, you have some duplicates
+
+768
+00:13:41,430 --> 00:13:41,440
+back. So, you have some duplicates
+ 
+
+769
+00:13:41,440 --> 00:13:42,949
+back. So, you have some duplicates
+that's going to create extra geometry.
+
+770
+00:13:42,949 --> 00:13:42,959
+that's going to create extra geometry.
+ 
+
+771
+00:13:42,959 --> 00:13:45,670
+that's going to create extra geometry.
+So, I want to just go ahead and delete
+
+772
+00:13:45,670 --> 00:13:45,680
+So, I want to just go ahead and delete
+ 
+
+773
+00:13:45,680 --> 00:13:47,670
+So, I want to just go ahead and delete
+the curves that are overlapping because
+
+774
+00:13:47,670 --> 00:13:47,680
+the curves that are overlapping because
+ 
+
+775
+00:13:47,680 --> 00:13:49,190
+the curves that are overlapping because
+you can't even see it. And once we turn
+
+776
+00:13:49,190 --> 00:13:49,200
+you can't even see it. And once we turn
+ 
+
+777
+00:13:49,200 --> 00:13:50,949
+you can't even see it. And once we turn
+it into geometry, it's going to be three
+
+778
+00:13:50,949 --> 00:13:50,959
+it into geometry, it's going to be three
+ 
+
+779
+00:13:50,959 --> 00:13:52,949
+it into geometry, it's going to be three
+times the geometry we need. So what
+
+780
+00:13:52,949 --> 00:13:52,959
+times the geometry we need. So what
+ 
+
+781
+00:13:52,959 --> 00:13:57,150
+times the geometry we need. So what
+we'll do is convert it to a
+
+782
+00:13:57,150 --> 00:13:57,160
+
+ 
+
+783
+00:13:57,160 --> 00:14:00,310
+
+mesh. We'll do a curve to mesh. And this
+
+784
+00:14:00,310 --> 00:14:00,320
+mesh. We'll do a curve to mesh. And this
+ 
+
+785
+00:14:00,320 --> 00:14:02,629
+mesh. We'll do a curve to mesh. And this
+isn't to create that wireframe effect
+
+786
+00:14:02,629 --> 00:14:02,639
+isn't to create that wireframe effect
+ 
+
+787
+00:14:02,639 --> 00:14:04,470
+isn't to create that wireframe effect
+that I'm normally doing with this node.
+
+788
+00:14:04,470 --> 00:14:04,480
+that I'm normally doing with this node.
+ 
+
+789
+00:14:04,480 --> 00:14:07,550
+that I'm normally doing with this node.
+It's simply to turn it into a
+
+790
+00:14:07,550 --> 00:14:07,560
+It's simply to turn it into a
+ 
+
+791
+00:14:07,560 --> 00:14:10,629
+It's simply to turn it into a
+mesh and allow us to use this merge by
+
+792
+00:14:10,629 --> 00:14:10,639
+mesh and allow us to use this merge by
+ 
+
+793
+00:14:10,639 --> 00:14:12,550
+mesh and allow us to use this merge by
+distance. And what that's going to do is
+
+794
+00:14:12,550 --> 00:14:12,560
+distance. And what that's going to do is
+ 
+
+795
+00:14:12,560 --> 00:14:15,030
+distance. And what that's going to do is
+just kill that duplicate curve. You
+
+796
+00:14:15,030 --> 00:14:15,040
+just kill that duplicate curve. You
+ 
+
+797
+00:14:15,040 --> 00:14:16,310
+just kill that duplicate curve. You
+couldn't see it visually, but in the
+
+798
+00:14:16,310 --> 00:14:16,320
+couldn't see it visually, but in the
+ 
+
+799
+00:14:16,320 --> 00:14:17,430
+couldn't see it visually, but in the
+data you would be able to recognize
+
+800
+00:14:17,430 --> 00:14:17,440
+data you would be able to recognize
+ 
+
+801
+00:14:17,440 --> 00:14:19,189
+data you would be able to recognize
+that. This just serves to delete the
+
+802
+00:14:19,189 --> 00:14:19,199
+that. This just serves to delete the
+ 
+
+803
+00:14:19,199 --> 00:14:21,590
+that. This just serves to delete the
+redundant curve. Now, what I'm going to
+
+804
+00:14:21,590 --> 00:14:21,600
+redundant curve. Now, what I'm going to
+ 
+
+805
+00:14:21,600 --> 00:14:26,350
+redundant curve. Now, what I'm going to
+do is get in a mesh to
+
+806
+00:14:26,350 --> 00:14:26,360
+
+ 
+
+807
+00:14:26,360 --> 00:14:30,350
+
+curve and then a curve to
+
+808
+00:14:30,350 --> 00:14:30,360
+curve and then a curve to
+ 
+
+809
+00:14:30,360 --> 00:14:33,389
+curve and then a curve to
+mesh. And then you get a curve
+
+810
+00:14:33,389 --> 00:14:33,399
+mesh. And then you get a curve
+ 
+
+811
+00:14:33,399 --> 00:14:35,430
+mesh. And then you get a curve
+circle. Feel like I say this every time,
+
+812
+00:14:35,430 --> 00:14:35,440
+circle. Feel like I say this every time,
+ 
+
+813
+00:14:35,440 --> 00:14:36,870
+circle. Feel like I say this every time,
+but we've done this a thousand times on
+
+814
+00:14:36,870 --> 00:14:36,880
+but we've done this a thousand times on
+ 
+
+815
+00:14:36,880 --> 00:14:39,110
+but we've done this a thousand times on
+the channel. We're creating a wireframe.
+
+816
+00:14:39,110 --> 00:14:39,120
+the channel. We're creating a wireframe.
+ 
+
+817
+00:14:39,120 --> 00:14:41,590
+the channel. We're creating a wireframe.
+And you just plug that there. And now we
+
+818
+00:14:41,590 --> 00:14:41,600
+And you just plug that there. And now we
+ 
+
+819
+00:14:41,600 --> 00:14:44,150
+And you just plug that there. And now we
+bring that radius down. You now have
+
+820
+00:14:44,150 --> 00:14:44,160
+bring that radius down. You now have
+ 
+
+821
+00:14:44,160 --> 00:14:46,470
+bring that radius down. You now have
+this. So, what we can do is take this
+
+822
+00:14:46,470 --> 00:14:46,480
+this. So, what we can do is take this
+ 
+
+823
+00:14:46,480 --> 00:14:47,470
+this. So, what we can do is take this
+set
+
+824
+00:14:47,470 --> 00:14:47,480
+set
+ 
+
+825
+00:14:47,480 --> 00:14:49,590
+set
+material node and just plug that into
+
+826
+00:14:49,590 --> 00:14:49,600
+material node and just plug that into
+ 
+
+827
+00:14:49,600 --> 00:14:52,069
+material node and just plug that into
+the join geometry. And we're back. If
+
+828
+00:14:52,069 --> 00:14:52,079
+the join geometry. And we're back. If
+ 
+
+829
+00:14:52,079 --> 00:14:53,509
+the join geometry. And we're back. If
+you want to kind of just appreciate it
+
+830
+00:14:53,509 --> 00:14:53,519
+you want to kind of just appreciate it
+ 
+
+831
+00:14:53,519 --> 00:14:55,030
+you want to kind of just appreciate it
+and see it, you can play with that noise
+
+832
+00:14:55,030 --> 00:14:55,040
+and see it, you can play with that noise
+ 
+
+833
+00:14:55,040 --> 00:14:57,269
+and see it, you can play with that noise
+texture. And now there's a curve.
+
+834
+00:14:57,269 --> 00:14:57,279
+texture. And now there's a curve.
+ 
+
+835
+00:14:57,279 --> 00:14:59,829
+texture. And now there's a curve.
+There's a line connected to each one of
+
+836
+00:14:59,829 --> 00:14:59,839
+There's a line connected to each one of
+ 
+
+837
+00:14:59,839 --> 00:15:01,750
+There's a line connected to each one of
+those image cubes. So, I'm going to go
+
+838
+00:15:01,750 --> 00:15:01,760
+those image cubes. So, I'm going to go
+ 
+
+839
+00:15:01,760 --> 00:15:05,350
+those image cubes. So, I'm going to go
+back here to the uh circle curve and I'm
+
+840
+00:15:05,350 --> 00:15:05,360
+back here to the uh circle curve and I'm
+ 
+
+841
+00:15:05,360 --> 00:15:07,509
+back here to the uh circle curve and I'm
+just going to bring it pretty far down.
+
+842
+00:15:07,509 --> 00:15:07,519
+just going to bring it pretty far down.
+ 
+
+843
+00:15:07,519 --> 00:15:08,870
+just going to bring it pretty far down.
+Something like that. And the resolution
+
+844
+00:15:08,870 --> 00:15:08,880
+Something like that. And the resolution
+ 
+
+845
+00:15:08,880 --> 00:15:10,470
+Something like that. And the resolution
+of four is really all you're going to
+
+846
+00:15:10,470 --> 00:15:10,480
+of four is really all you're going to
+ 
+
+847
+00:15:10,480 --> 00:15:11,829
+of four is really all you're going to
+need cuz it's going to be extremely
+
+848
+00:15:11,829 --> 00:15:11,839
+need cuz it's going to be extremely
+ 
+
+849
+00:15:11,839 --> 00:15:13,910
+need cuz it's going to be extremely
+thin. geometry isn't going to be very
+
+850
+00:15:13,910 --> 00:15:13,920
+thin. geometry isn't going to be very
+ 
+
+851
+00:15:13,920 --> 00:15:16,150
+thin. geometry isn't going to be very
+noticeable. Now it's white. It's just
+
+852
+00:15:16,150 --> 00:15:16,160
+noticeable. Now it's white. It's just
+ 
+
+853
+00:15:16,160 --> 00:15:17,870
+noticeable. Now it's white. It's just
+white by default. What you can do is get
+
+854
+00:15:17,870 --> 00:15:17,880
+white by default. What you can do is get
+ 
+
+855
+00:15:17,880 --> 00:15:22,230
+white by default. What you can do is get
+a set material node. Go over here. Click
+
+856
+00:15:22,230 --> 00:15:22,240
+a set material node. Go over here. Click
+ 
+
+857
+00:15:22,240 --> 00:15:23,829
+a set material node. Go over here. Click
+new. We're going to switch it over to an
+
+858
+00:15:23,829 --> 00:15:23,839
+new. We're going to switch it over to an
+ 
+
+859
+00:15:23,839 --> 00:15:27,110
+new. We're going to switch it over to an
+emission node and just make it a nice
+
+860
+00:15:27,110 --> 00:15:27,120
+emission node and just make it a nice
+ 
+
+861
+00:15:27,120 --> 00:15:28,790
+emission node and just make it a nice
+red. And then just go ahead and grab
+
+862
+00:15:28,790 --> 00:15:28,800
+red. And then just go ahead and grab
+ 
+
+863
+00:15:28,800 --> 00:15:30,150
+red. And then just go ahead and grab
+that red right there. And now we have
+
+864
+00:15:30,150 --> 00:15:30,160
+that red right there. And now we have
+ 
+
+865
+00:15:30,160 --> 00:15:31,750
+that red right there. And now we have
+these red lines. I'm going to go say
+
+866
+00:15:31,750 --> 00:15:31,760
+these red lines. I'm going to go say
+ 
+
+867
+00:15:31,760 --> 00:15:35,189
+these red lines. I'm going to go say
+maybe 05 might be good. I would even go
+
+868
+00:15:35,189 --> 00:15:35,199
+maybe 05 might be good. I would even go
+ 
+
+869
+00:15:35,199 --> 00:15:36,110
+maybe 05 might be good. I would even go
+even
+
+870
+00:15:36,110 --> 00:15:36,120
+even
+ 
+
+871
+00:15:36,120 --> 00:15:40,150
+even
+uh thinner on this. And then we need one
+
+872
+00:15:40,150 --> 00:15:40,160
+uh thinner on this. And then we need one
+ 
+
+873
+00:15:40,160 --> 00:15:41,269
+uh thinner on this. And then we need one
+more thing. I want to have these little
+
+874
+00:15:41,269 --> 00:15:41,279
+more thing. I want to have these little
+ 
+
+875
+00:15:41,279 --> 00:15:43,870
+more thing. I want to have these little
+cubes, um, these little planes at each
+
+876
+00:15:43,870 --> 00:15:43,880
+cubes, um, these little planes at each
+ 
+
+877
+00:15:43,880 --> 00:15:46,389
+cubes, um, these little planes at each
+connection. So, what I'm going to do is
+
+878
+00:15:46,389 --> 00:15:46,399
+connection. So, what I'm going to do is
+ 
+
+879
+00:15:46,399 --> 00:15:48,230
+connection. So, what I'm going to do is
+right here on the node that says mesh to
+
+880
+00:15:48,230 --> 00:15:48,240
+right here on the node that says mesh to
+ 
+
+881
+00:15:48,240 --> 00:15:49,790
+right here on the node that says mesh to
+points. What I'm going to
+
+882
+00:15:49,790 --> 00:15:49,800
+points. What I'm going to
+ 
+
+883
+00:15:49,800 --> 00:15:51,910
+points. What I'm going to
+do, we're going to get an instance on
+
+884
+00:15:51,910 --> 00:15:51,920
+do, we're going to get an instance on
+ 
+
+885
+00:15:51,920 --> 00:15:53,550
+do, we're going to get an instance on
+points
+
+886
+00:15:53,550 --> 00:15:53,560
+points
+ 
+
+887
+00:15:53,560 --> 00:15:57,350
+points
+node and just plug him into the points.
+
+888
+00:15:57,350 --> 00:15:57,360
+node and just plug him into the points.
+ 
+
+889
+00:15:57,360 --> 00:16:00,910
+node and just plug him into the points.
+Plug him into the join
+
+890
+00:16:00,910 --> 00:16:00,920
+
+ 
+
+891
+00:16:00,920 --> 00:16:06,509
+
+geometry and get a
+
+892
+00:16:06,509 --> 00:16:06,519
+
+ 
+
+893
+00:16:06,519 --> 00:16:08,310
+
+grid. And you're not going to see
+
+894
+00:16:08,310 --> 00:16:08,320
+grid. And you're not going to see
+ 
+
+895
+00:16:08,320 --> 00:16:09,590
+grid. And you're not going to see
+anything. It needs to be we're going to
+
+896
+00:16:09,590 --> 00:16:09,600
+anything. It needs to be we're going to
+ 
+
+897
+00:16:09,600 --> 00:16:12,629
+anything. It needs to be we're going to
+get a transform geometry node just to
+
+898
+00:16:12,629 --> 00:16:12,639
+get a transform geometry node just to
+ 
+
+899
+00:16:12,639 --> 00:16:15,670
+get a transform geometry node just to
+kind of bring it up a slight bit so that
+
+900
+00:16:15,670 --> 00:16:15,680
+kind of bring it up a slight bit so that
+ 
+
+901
+00:16:15,680 --> 00:16:18,470
+kind of bring it up a slight bit so that
+we can see it. And then you can just go
+
+902
+00:16:18,470 --> 00:16:18,480
+we can see it. And then you can just go
+ 
+
+903
+00:16:18,480 --> 00:16:20,829
+we can see it. And then you can just go
+also put that same
+
+904
+00:16:20,829 --> 00:16:20,839
+also put that same
+ 
+
+905
+00:16:20,839 --> 00:16:25,389
+also put that same
+material on that. So now we have the
+
+906
+00:16:25,389 --> 00:16:25,399
+material on that. So now we have the
+ 
+
+907
+00:16:25,399 --> 00:16:27,749
+material on that. So now we have the
+finished effect. If you go back to sort
+
+908
+00:16:27,749 --> 00:16:27,759
+finished effect. If you go back to sort
+ 
+
+909
+00:16:27,759 --> 00:16:29,949
+finished effect. If you go back to sort
+of the master
+
+910
+00:16:29,949 --> 00:16:29,959
+of the master
+ 
+
+911
+00:16:29,959 --> 00:16:33,269
+of the master
+noise, you can now see and appreciate
+
+912
+00:16:33,269 --> 00:16:33,279
+noise, you can now see and appreciate
+ 
+
+913
+00:16:33,279 --> 00:16:35,829
+noise, you can now see and appreciate
+this effect. And all we need to do is
+
+914
+00:16:35,829 --> 00:16:35,839
+this effect. And all we need to do is
+ 
+
+915
+00:16:35,839 --> 00:16:37,910
+this effect. And all we need to do is
+animate it. Uh because we kind of I like
+
+916
+00:16:37,910 --> 00:16:37,920
+animate it. Uh because we kind of I like
+ 
+
+917
+00:16:37,920 --> 00:16:39,430
+animate it. Uh because we kind of I like
+to go the extra mile and loop the
+
+918
+00:16:39,430 --> 00:16:39,440
+to go the extra mile and loop the
+ 
+
+919
+00:16:39,440 --> 00:16:41,670
+to go the extra mile and loop the
+animation. We're going to loop the W and
+
+920
+00:16:41,670 --> 00:16:41,680
+animation. We're going to loop the W and
+ 
+
+921
+00:16:41,680 --> 00:16:43,590
+animation. We're going to loop the W and
+the noise. And so we have our timeline
+
+922
+00:16:43,590 --> 00:16:43,600
+the noise. And so we have our timeline
+ 
+
+923
+00:16:43,600 --> 00:16:45,189
+the noise. And so we have our timeline
+down here. I'm going to stick with 250
+
+924
+00:16:45,189 --> 00:16:45,199
+down here. I'm going to stick with 250
+ 
+
+925
+00:16:45,199 --> 00:16:47,670
+down here. I'm going to stick with 250
+frames. That's going to give you about I
+
+926
+00:16:47,670 --> 00:16:47,680
+frames. That's going to give you about I
+ 
+
+927
+00:16:47,680 --> 00:16:49,509
+frames. That's going to give you about I
+think a 10-second animation if I'm
+
+928
+00:16:49,509 --> 00:16:49,519
+think a 10-second animation if I'm
+ 
+
+929
+00:16:49,519 --> 00:16:51,749
+think a 10-second animation if I'm
+remembering right. And so I'm going to
+
+930
+00:16:51,749 --> 00:16:51,759
+remembering right. And so I'm going to
+ 
+
+931
+00:16:51,759 --> 00:16:55,749
+remembering right. And so I'm going to
+go ahead and bring my W to zero. I'm
+
+932
+00:16:55,749 --> 00:16:55,759
+go ahead and bring my W to zero. I'm
+ 
+
+933
+00:16:55,759 --> 00:16:58,389
+go ahead and bring my W to zero. I'm
+going to duplicate the noise. Get a mix
+
+934
+00:16:58,389 --> 00:16:58,399
+going to duplicate the noise. Get a mix
+ 
+
+935
+00:16:58,399 --> 00:17:01,590
+going to duplicate the noise. Get a mix
+color node. Mix color node. And plug
+
+936
+00:17:01,590 --> 00:17:01,600
+color node. Mix color node. And plug
+ 
+
+937
+00:17:01,600 --> 00:17:03,189
+color node. Mix color node. And plug
+factor there. And bring the factor over
+
+938
+00:17:03,189 --> 00:17:03,199
+factor there. And bring the factor over
+ 
+
+939
+00:17:03,199 --> 00:17:05,590
+factor there. And bring the factor over
+to the left. So right here on the W, you
+
+940
+00:17:05,590 --> 00:17:05,600
+to the left. So right here on the W, you
+ 
+
+941
+00:17:05,600 --> 00:17:07,829
+to the left. So right here on the W, you
+hit I to add a key frame. Hit I on the
+
+942
+00:17:07,829 --> 00:17:07,839
+hit I to add a key frame. Hit I on the
+ 
+
+943
+00:17:07,839 --> 00:17:10,630
+hit I to add a key frame. Hit I on the
+factor. And then we're going to go to
+
+944
+00:17:10,630 --> 00:17:10,640
+factor. And then we're going to go to
+ 
+
+945
+00:17:10,640 --> 00:17:12,230
+factor. And then we're going to go to
+the very end. And I'm going to say
+
+946
+00:17:12,230 --> 00:17:12,240
+the very end. And I'm going to say
+ 
+
+947
+00:17:12,240 --> 00:17:14,270
+the very end. And I'm going to say
+probably a value of
+
+948
+00:17:14,270 --> 00:17:14,280
+probably a value of
+ 
+
+949
+00:17:14,280 --> 00:17:17,029
+probably a value of
+five. And then we're going to slide this
+
+950
+00:17:17,029 --> 00:17:17,039
+five. And then we're going to slide this
+ 
+
+951
+00:17:17,039 --> 00:17:19,270
+five. And then we're going to slide this
+guy over and hit I. Hit I. Now that
+
+952
+00:17:19,270 --> 00:17:19,280
+guy over and hit I. Hit I. Now that
+ 
+
+953
+00:17:19,280 --> 00:17:21,669
+guy over and hit I. Hit I. Now that
+we're at the very end of the animation,
+
+954
+00:17:21,669 --> 00:17:21,679
+we're at the very end of the animation,
+ 
+
+955
+00:17:21,679 --> 00:17:24,789
+we're at the very end of the animation,
+hit your W. He should be zero. Go back
+
+956
+00:17:24,789 --> 00:17:24,799
+hit your W. He should be zero. Go back
+ 
+
+957
+00:17:24,799 --> 00:17:28,510
+hit your W. He should be zero. Go back
+to frame zero and do
+
+958
+00:17:28,510 --> 00:17:28,520
+to frame zero and do
+ 
+
+959
+00:17:28,520 --> 00:17:32,310
+to frame zero and do
+five. And there we go. Now we used a
+
+960
+00:17:32,310 --> 00:17:32,320
+five. And there we go. Now we used a
+ 
+
+961
+00:17:32,320 --> 00:17:33,990
+five. And there we go. Now we used a
+value of five and neg 5. If you want it
+
+962
+00:17:33,990 --> 00:17:34,000
+value of five and neg 5. If you want it
+ 
+
+963
+00:17:34,000 --> 00:17:35,830
+value of five and neg 5. If you want it
+faster, do like 10 negative 10. If you
+
+964
+00:17:35,830 --> 00:17:35,840
+faster, do like 10 negative 10. If you
+ 
+
+965
+00:17:35,840 --> 00:17:37,310
+faster, do like 10 negative 10. If you
+want it slower, do
+
+966
+00:17:37,310 --> 00:17:37,320
+want it slower, do
+ 
+
+967
+00:17:37,320 --> 00:17:39,029
+want it slower, do
+like.5gative.5. You kind of get the
+
+968
+00:17:39,029 --> 00:17:39,039
+like.5gative.5. You kind of get the
+ 
+
+969
+00:17:39,039 --> 00:17:41,350
+like.5gative.5. You kind of get the
+idea. But your values are going to
+
+970
+00:17:41,350 --> 00:17:41,360
+idea. But your values are going to
+ 
+
+971
+00:17:41,360 --> 00:17:43,350
+idea. But your values are going to
+create the speed of the animation. So,
+
+972
+00:17:43,350 --> 00:17:43,360
+create the speed of the animation. So,
+ 
+
+973
+00:17:43,360 --> 00:17:45,830
+create the speed of the animation. So,
+that's really going to dictate um how it
+
+974
+00:17:45,830 --> 00:17:45,840
+that's really going to dictate um how it
+ 
+
+975
+00:17:45,840 --> 00:17:48,070
+that's really going to dictate um how it
+looks. I would render this in the Eevee
+
+976
+00:17:48,070 --> 00:17:48,080
+looks. I would render this in the Eevee
+ 
+
+977
+00:17:48,080 --> 00:17:49,510
+looks. I would render this in the Eevee
+render engine. I think I'm in cycles
+
+978
+00:17:49,510 --> 00:17:49,520
+render engine. I think I'm in cycles
+ 
+
+979
+00:17:49,520 --> 00:17:50,830
+render engine. I think I'm in cycles
+right now. Yeah. Just switch over to
+
+980
+00:17:50,830 --> 00:17:50,840
+right now. Yeah. Just switch over to
+ 
+
+981
+00:17:50,840 --> 00:17:54,950
+right now. Yeah. Just switch over to
+Eevee. Press play. And you now have a
+
+982
+00:17:54,950 --> 00:17:54,960
+Eevee. Press play. And you now have a
+ 
+
+983
+00:17:54,960 --> 00:17:59,190
+Eevee. Press play. And you now have a
+really, really cool finished interesting
+
+984
+00:17:59,190 --> 00:17:59,200
+really, really cool finished interesting
+ 
+
+985
+00:17:59,200 --> 00:18:02,070
+really, really cool finished interesting
+looking touch designer effect. Um, and
+
+986
+00:18:02,070 --> 00:18:02,080
+looking touch designer effect. Um, and
+ 
+
+987
+00:18:02,080 --> 00:18:03,990
+looking touch designer effect. Um, and
+all points connect to all points. It's
+
+988
+00:18:03,990 --> 00:18:04,000
+all points connect to all points. It's
+ 
+
+989
+00:18:04,000 --> 00:18:06,630
+all points connect to all points. It's
+really cool. It's pretty useful. Um,
+
+990
+00:18:06,630 --> 00:18:06,640
+really cool. It's pretty useful. Um,
+ 
+
+991
+00:18:06,640 --> 00:18:07,909
+really cool. It's pretty useful. Um,
+especially just having some fun and
+
+992
+00:18:07,909 --> 00:18:07,919
+especially just having some fun and
+ 
+
+993
+00:18:07,919 --> 00:18:09,350
+especially just having some fun and
+glitching some things around. So, there
+
+994
+00:18:09,350 --> 00:18:09,360
+glitching some things around. So, there
+ 
+
+995
+00:18:09,360 --> 00:18:11,590
+glitching some things around. So, there
+you go. That is the full animation. You
+
+996
+00:18:11,590 --> 00:18:11,600
+you go. That is the full animation. You
+ 
+
+997
+00:18:11,600 --> 00:18:13,270
+you go. That is the full animation. You
+can get the project file right now on my
+
+998
+00:18:13,270 --> 00:18:13,280
+can get the project file right now on my
+ 
+
+999
+00:18:13,280 --> 00:18:14,710
+can get the project file right now on my
+Patreon. You can check that out linked
+
+1000
+00:18:14,710 --> 00:18:14,720
+Patreon. You can check that out linked
+ 
+
+1001
+00:18:14,720 --> 00:18:16,390
+Patreon. You can check that out linked
+in the description. Hopefully you
+
+1002
+00:18:16,390 --> 00:18:16,400
+in the description. Hopefully you
+ 
+
+1003
+00:18:16,400 --> 00:18:17,990
+in the description. Hopefully you
+learned something and I'll see you guys
+
+1004
+00:18:17,990 --> 00:18:18,000
+learned something and I'll see you guys
+ 
+
+1005
+00:18:18,000 --> 00:18:20,720
+learned something and I'll see you guys
+in the next tutorial.
+

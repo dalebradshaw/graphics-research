@@ -1,0 +1,3825 @@
+1
+00:00:00,080 --> 00:00:02,950
+
+All right, this video is about particle
+
+2
+00:00:02,950 --> 00:00:02,960
+All right, this video is about particle
+ 
+
+3
+00:00:02,960 --> 00:00:05,269
+All right, this video is about particle
+systems in geometry nodes. I want to
+
+4
+00:00:05,269 --> 00:00:05,279
+systems in geometry nodes. I want to
+ 
+
+5
+00:00:05,279 --> 00:00:07,510
+systems in geometry nodes. I want to
+show you a ton of different ways that we
+
+6
+00:00:07,510 --> 00:00:07,520
+show you a ton of different ways that we
+ 
+
+7
+00:00:07,520 --> 00:00:09,669
+show you a ton of different ways that we
+can first set them up, uh, get them
+
+8
+00:00:09,669 --> 00:00:09,679
+can first set them up, uh, get them
+ 
+
+9
+00:00:09,679 --> 00:00:12,230
+can first set them up, uh, get them
+shaped to really cool stuff, animating
+
+10
+00:00:12,230 --> 00:00:12,240
+shaped to really cool stuff, animating
+ 
+
+11
+00:00:12,240 --> 00:00:15,030
+shaped to really cool stuff, animating
+in really, really cool ways. A lot of it
+
+12
+00:00:15,030 --> 00:00:15,040
+in really, really cool ways. A lot of it
+ 
+
+13
+00:00:15,040 --> 00:00:16,630
+in really, really cool ways. A lot of it
+is really not that complicated. You
+
+14
+00:00:16,630 --> 00:00:16,640
+is really not that complicated. You
+ 
+
+15
+00:00:16,640 --> 00:00:18,230
+is really not that complicated. You
+don't need to be an expert or super
+
+16
+00:00:18,230 --> 00:00:18,240
+don't need to be an expert or super
+ 
+
+17
+00:00:18,240 --> 00:00:19,990
+don't need to be an expert or super
+proficient in geometry nodes to do some
+
+18
+00:00:19,990 --> 00:00:20,000
+proficient in geometry nodes to do some
+ 
+
+19
+00:00:20,000 --> 00:00:21,109
+proficient in geometry nodes to do some
+of these things. So, I'm going to show
+
+20
+00:00:21,109 --> 00:00:21,119
+of these things. So, I'm going to show
+ 
+
+21
+00:00:21,119 --> 00:00:23,269
+of these things. So, I'm going to show
+you how to get them to be shaped in ways
+
+22
+00:00:23,269 --> 00:00:23,279
+you how to get them to be shaped in ways
+ 
+
+23
+00:00:23,279 --> 00:00:25,189
+you how to get them to be shaped in ways
+that you want them for your ideas. I'm
+
+24
+00:00:25,189 --> 00:00:25,199
+that you want them for your ideas. I'm
+ 
+
+25
+00:00:25,199 --> 00:00:26,790
+that you want them for your ideas. I'm
+going to show you different ways to
+
+26
+00:00:26,790 --> 00:00:26,800
+going to show you different ways to
+ 
+
+27
+00:00:26,800 --> 00:00:28,710
+going to show you different ways to
+animate them and control the movements
+
+28
+00:00:28,710 --> 00:00:28,720
+animate them and control the movements
+ 
+
+29
+00:00:28,720 --> 00:00:30,310
+animate them and control the movements
+so it doesn't really feel like you're
+
+30
+00:00:30,310 --> 00:00:30,320
+so it doesn't really feel like you're
+ 
+
+31
+00:00:30,320 --> 00:00:31,990
+so it doesn't really feel like you're
+kind of at the mercy of textures and
+
+32
+00:00:31,990 --> 00:00:32,000
+kind of at the mercy of textures and
+ 
+
+33
+00:00:32,000 --> 00:00:33,990
+kind of at the mercy of textures and
+things like that. And I want to show you
+
+34
+00:00:33,990 --> 00:00:34,000
+things like that. And I want to show you
+ 
+
+35
+00:00:34,000 --> 00:00:36,310
+things like that. And I want to show you
+how to get them to look good, like
+
+36
+00:00:36,310 --> 00:00:36,320
+how to get them to look good, like
+ 
+
+37
+00:00:36,320 --> 00:00:38,229
+how to get them to look good, like
+changing different object variations,
+
+38
+00:00:38,229 --> 00:00:38,239
+changing different object variations,
+ 
+
+39
+00:00:38,239 --> 00:00:40,310
+changing different object variations,
+scales, textures, lighting. I'm going to
+
+40
+00:00:40,310 --> 00:00:40,320
+scales, textures, lighting. I'm going to
+ 
+
+41
+00:00:40,320 --> 00:00:41,590
+scales, textures, lighting. I'm going to
+be showing five different animations
+
+42
+00:00:41,590 --> 00:00:41,600
+be showing five different animations
+ 
+
+43
+00:00:41,600 --> 00:00:43,350
+be showing five different animations
+throughout this video as references to
+
+44
+00:00:43,350 --> 00:00:43,360
+throughout this video as references to
+ 
+
+45
+00:00:43,360 --> 00:00:45,590
+throughout this video as references to
+what I'm talking about. If you want all
+
+46
+00:00:45,590 --> 00:00:45,600
+what I'm talking about. If you want all
+ 
+
+47
+00:00:45,600 --> 00:00:47,430
+what I'm talking about. If you want all
+of the tutorials for all five of those,
+
+48
+00:00:47,430 --> 00:00:47,440
+of the tutorials for all five of those,
+ 
+
+49
+00:00:47,440 --> 00:00:49,270
+of the tutorials for all five of those,
+those are available on my Patreon right
+
+50
+00:00:49,270 --> 00:00:49,280
+those are available on my Patreon right
+ 
+
+51
+00:00:49,280 --> 00:00:51,110
+those are available on my Patreon right
+now under the particles collection. So,
+
+52
+00:00:51,110 --> 00:00:51,120
+now under the particles collection. So,
+ 
+
+53
+00:00:51,120 --> 00:00:53,189
+now under the particles collection. So,
+you can check out all of those. And this
+
+54
+00:00:53,189 --> 00:00:53,199
+you can check out all of those. And this
+ 
+
+55
+00:00:53,199 --> 00:00:55,110
+you can check out all of those. And this
+animation in particular is completely
+
+56
+00:00:55,110 --> 00:00:55,120
+animation in particular is completely
+ 
+
+57
+00:00:55,120 --> 00:00:56,869
+animation in particular is completely
+free for non-members as well. So if you
+
+58
+00:00:56,869 --> 00:00:56,879
+free for non-members as well. So if you
+ 
+
+59
+00:00:56,879 --> 00:00:57,910
+free for non-members as well. So if you
+want to check that out and watch the
+
+60
+00:00:57,910 --> 00:00:57,920
+want to check that out and watch the
+ 
+
+61
+00:00:57,920 --> 00:00:59,270
+want to check that out and watch the
+rest of them, that is available linked
+
+62
+00:00:59,270 --> 00:00:59,280
+rest of them, that is available linked
+ 
+
+63
+00:00:59,280 --> 00:01:00,950
+rest of them, that is available linked
+in the description. And you can also get
+
+64
+00:01:00,950 --> 00:01:00,960
+in the description. And you can also get
+ 
+
+65
+00:01:00,960 --> 00:01:03,590
+in the description. And you can also get
+a uh discount if you subscribe annually.
+
+66
+00:01:03,590 --> 00:01:03,600
+a uh discount if you subscribe annually.
+ 
+
+67
+00:01:03,600 --> 00:01:05,590
+a uh discount if you subscribe annually.
+So with that being said, let's learn how
+
+68
+00:01:05,590 --> 00:01:05,600
+So with that being said, let's learn how
+ 
+
+69
+00:01:05,600 --> 00:01:07,350
+So with that being said, let's learn how
+to make cool particle systems. Okay,
+
+70
+00:01:07,350 --> 00:01:07,360
+to make cool particle systems. Okay,
+ 
+
+71
+00:01:07,360 --> 00:01:08,950
+to make cool particle systems. Okay,
+let's start with like the super basic
+
+72
+00:01:08,950 --> 00:01:08,960
+let's start with like the super basic
+ 
+
+73
+00:01:08,960 --> 00:01:11,429
+let's start with like the super basic
+stuff just just right now and then we'll
+
+74
+00:01:11,429 --> 00:01:11,439
+stuff just just right now and then we'll
+ 
+
+75
+00:01:11,439 --> 00:01:13,429
+stuff just just right now and then we'll
+very quickly get into some cool stuff.
+
+76
+00:01:13,429 --> 00:01:13,439
+very quickly get into some cool stuff.
+ 
+
+77
+00:01:13,439 --> 00:01:15,670
+very quickly get into some cool stuff.
+So first just open up two windows. We're
+
+78
+00:01:15,670 --> 00:01:15,680
+So first just open up two windows. We're
+ 
+
+79
+00:01:15,680 --> 00:01:17,590
+So first just open up two windows. We're
+going to throw in any piece of geometry
+
+80
+00:01:17,590 --> 00:01:17,600
+going to throw in any piece of geometry
+ 
+
+81
+00:01:17,600 --> 00:01:19,109
+going to throw in any piece of geometry
+and then I'm going to switch this to the
+
+82
+00:01:19,109 --> 00:01:19,119
+and then I'm going to switch this to the
+ 
+
+83
+00:01:19,119 --> 00:01:21,749
+and then I'm going to switch this to the
+geo node editor. I'm going to click new.
+
+84
+00:01:21,749 --> 00:01:21,759
+geo node editor. I'm going to click new.
+ 
+
+85
+00:01:21,759 --> 00:01:24,789
+geo node editor. I'm going to click new.
+So there's two ways to get particles
+
+86
+00:01:24,789 --> 00:01:24,799
+So there's two ways to get particles
+ 
+
+87
+00:01:24,799 --> 00:01:26,950
+So there's two ways to get particles
+available in your scene. It's you can
+
+88
+00:01:26,950 --> 00:01:26,960
+available in your scene. It's you can
+ 
+
+89
+00:01:26,960 --> 00:01:29,190
+available in your scene. It's you can
+either distribute them on something or
+
+90
+00:01:29,190 --> 00:01:29,200
+either distribute them on something or
+ 
+
+91
+00:01:29,200 --> 00:01:32,789
+either distribute them on something or
+in something. So I'll use that idea with
+
+92
+00:01:32,789 --> 00:01:32,799
+in something. So I'll use that idea with
+ 
+
+93
+00:01:32,799 --> 00:01:35,350
+in something. So I'll use that idea with
+an icosphere. So scale it up, subdivide
+
+94
+00:01:35,350 --> 00:01:35,360
+an icosphere. So scale it up, subdivide
+ 
+
+95
+00:01:35,360 --> 00:01:36,870
+an icosphere. So scale it up, subdivide
+it. You could first do a distribute
+
+96
+00:01:36,870 --> 00:01:36,880
+it. You could first do a distribute
+ 
+
+97
+00:01:36,880 --> 00:01:39,190
+it. You could first do a distribute
+points on faces and it's going to
+
+98
+00:01:39,190 --> 00:01:39,200
+points on faces and it's going to
+ 
+
+99
+00:01:39,200 --> 00:01:42,710
+points on faces and it's going to
+randomly place points all over any
+
+100
+00:01:42,710 --> 00:01:42,720
+randomly place points all over any
+ 
+
+101
+00:01:42,720 --> 00:01:44,630
+randomly place points all over any
+geometry you put in geometry notes. That
+
+102
+00:01:44,630 --> 00:01:44,640
+geometry you put in geometry notes. That
+ 
+
+103
+00:01:44,640 --> 00:01:47,749
+geometry you put in geometry notes. That
+be letters, logos, any any geometry you
+
+104
+00:01:47,749 --> 00:01:47,759
+be letters, logos, any any geometry you
+ 
+
+105
+00:01:47,759 --> 00:01:50,550
+be letters, logos, any any geometry you
+can put it on it like it's a shell. or
+
+106
+00:01:50,550 --> 00:01:50,560
+can put it on it like it's a shell. or
+ 
+
+107
+00:01:50,560 --> 00:01:53,270
+can put it on it like it's a shell. or
+again taking any piece of geometry, you
+
+108
+00:01:53,270 --> 00:01:53,280
+again taking any piece of geometry, you
+ 
+
+109
+00:01:53,280 --> 00:01:55,830
+again taking any piece of geometry, you
+can convert it into a volume and you can
+
+110
+00:01:55,830 --> 00:01:55,840
+can convert it into a volume and you can
+ 
+
+111
+00:01:55,840 --> 00:01:58,069
+can convert it into a volume and you can
+do a distribute points in volume and
+
+112
+00:01:58,069 --> 00:01:58,079
+do a distribute points in volume and
+ 
+
+113
+00:01:58,079 --> 00:01:59,270
+do a distribute points in volume and
+that's of course going to put the
+
+114
+00:01:59,270 --> 00:01:59,280
+that's of course going to put the
+ 
+
+115
+00:01:59,280 --> 00:02:01,910
+that's of course going to put the
+objects within the volume of whatever
+
+116
+00:02:01,910 --> 00:02:01,920
+objects within the volume of whatever
+ 
+
+117
+00:02:01,920 --> 00:02:03,429
+objects within the volume of whatever
+you put it in. So if you're doing logos
+
+118
+00:02:03,429 --> 00:02:03,439
+you put it in. So if you're doing logos
+ 
+
+119
+00:02:03,439 --> 00:02:04,709
+you put it in. So if you're doing logos
+and you want to turn the logo into
+
+120
+00:02:04,709 --> 00:02:04,719
+and you want to turn the logo into
+ 
+
+121
+00:02:04,719 --> 00:02:06,310
+and you want to turn the logo into
+particles, this is how you do it. Now
+
+122
+00:02:06,310 --> 00:02:06,320
+particles, this is how you do it. Now
+ 
+
+123
+00:02:06,320 --> 00:02:08,150
+particles, this is how you do it. Now
+when it comes to getting the very first
+
+124
+00:02:08,150 --> 00:02:08,160
+when it comes to getting the very first
+ 
+
+125
+00:02:08,160 --> 00:02:11,270
+when it comes to getting the very first
+steps of any particle system idea, you
+
+126
+00:02:11,270 --> 00:02:11,280
+steps of any particle system idea, you
+ 
+
+127
+00:02:11,280 --> 00:02:12,790
+steps of any particle system idea, you
+do have to figure out what is the
+
+128
+00:02:12,790 --> 00:02:12,800
+do have to figure out what is the
+ 
+
+129
+00:02:12,800 --> 00:02:15,030
+do have to figure out what is the
+initial shape we have to go with to go
+
+130
+00:02:15,030 --> 00:02:15,040
+initial shape we have to go with to go
+ 
+
+131
+00:02:15,040 --> 00:02:17,350
+initial shape we have to go with to go
+in that direction. So for this example,
+
+132
+00:02:17,350 --> 00:02:17,360
+in that direction. So for this example,
+ 
+
+133
+00:02:17,360 --> 00:02:18,869
+in that direction. So for this example,
+this animation kind of looks like a
+
+134
+00:02:18,869 --> 00:02:18,879
+this animation kind of looks like a
+ 
+
+135
+00:02:18,879 --> 00:02:20,949
+this animation kind of looks like a
+wreath. So the first thing I decided was
+
+136
+00:02:20,949 --> 00:02:20,959
+wreath. So the first thing I decided was
+ 
+
+137
+00:02:20,959 --> 00:02:23,589
+wreath. So the first thing I decided was
+let's get a cylinder and uh distribute
+
+138
+00:02:23,589 --> 00:02:23,599
+let's get a cylinder and uh distribute
+ 
+
+139
+00:02:23,599 --> 00:02:26,309
+let's get a cylinder and uh distribute
+points on that cylinder and that will
+
+140
+00:02:26,309 --> 00:02:26,319
+points on that cylinder and that will
+ 
+
+141
+00:02:26,319 --> 00:02:28,470
+points on that cylinder and that will
+get us uh at the beginning of that then
+
+142
+00:02:28,470 --> 00:02:28,480
+get us uh at the beginning of that then
+ 
+
+143
+00:02:28,480 --> 00:02:30,710
+get us uh at the beginning of that then
+I was able to later uh displace those
+
+144
+00:02:30,710 --> 00:02:30,720
+I was able to later uh displace those
+ 
+
+145
+00:02:30,720 --> 00:02:32,550
+I was able to later uh displace those
+particles and get that more interesting
+
+146
+00:02:32,550 --> 00:02:32,560
+particles and get that more interesting
+ 
+
+147
+00:02:32,560 --> 00:02:35,350
+particles and get that more interesting
+look. But I started with an initial uh
+
+148
+00:02:35,350 --> 00:02:35,360
+look. But I started with an initial uh
+ 
+
+149
+00:02:35,360 --> 00:02:37,990
+look. But I started with an initial uh
+cylinder shape and distributed points on
+
+150
+00:02:37,990 --> 00:02:38,000
+cylinder shape and distributed points on
+ 
+
+151
+00:02:38,000 --> 00:02:40,470
+cylinder shape and distributed points on
+it. Now with these animations that I
+
+152
+00:02:40,470 --> 00:02:40,480
+it. Now with these animations that I
+ 
+
+153
+00:02:40,480 --> 00:02:41,750
+it. Now with these animations that I
+did, there was two ways that I
+
+154
+00:02:41,750 --> 00:02:41,760
+did, there was two ways that I
+ 
+
+155
+00:02:41,760 --> 00:02:43,830
+did, there was two ways that I
+influenced the initial shape. So you can
+
+156
+00:02:43,830 --> 00:02:43,840
+influenced the initial shape. So you can
+ 
+
+157
+00:02:43,840 --> 00:02:46,150
+influenced the initial shape. So you can
+place particles in or on some
+
+158
+00:02:46,150 --> 00:02:46,160
+place particles in or on some
+ 
+
+159
+00:02:46,160 --> 00:02:49,509
+place particles in or on some
+predetermined shape like a circle, uh
+
+160
+00:02:49,509 --> 00:02:49,519
+predetermined shape like a circle, uh
+ 
+
+161
+00:02:49,519 --> 00:02:52,150
+predetermined shape like a circle, uh
+flat plane, even text, logos, different
+
+162
+00:02:52,150 --> 00:02:52,160
+flat plane, even text, logos, different
+ 
+
+163
+00:02:52,160 --> 00:02:54,470
+flat plane, even text, logos, different
+things like that. You can use that
+
+164
+00:02:54,470 --> 00:02:54,480
+things like that. You can use that
+ 
+
+165
+00:02:54,480 --> 00:02:56,150
+things like that. You can use that
+initial shape and you can predetermine
+
+166
+00:02:56,150 --> 00:02:56,160
+initial shape and you can predetermine
+ 
+
+167
+00:02:56,160 --> 00:02:58,309
+initial shape and you can predetermine
+that right there. Or you can use images
+
+168
+00:02:58,309 --> 00:02:58,319
+that right there. Or you can use images
+ 
+
+169
+00:02:58,319 --> 00:03:00,710
+that right there. Or you can use images
+and textures to delete particles that
+
+170
+00:03:00,710 --> 00:03:00,720
+and textures to delete particles that
+ 
+
+171
+00:03:00,720 --> 00:03:03,509
+and textures to delete particles that
+will influence how they will show up and
+
+172
+00:03:03,509 --> 00:03:03,519
+will influence how they will show up and
+ 
+
+173
+00:03:03,519 --> 00:03:05,589
+will influence how they will show up and
+create some type of initial shape. So
+
+174
+00:03:05,589 --> 00:03:05,599
+create some type of initial shape. So
+ 
+
+175
+00:03:05,599 --> 00:03:06,949
+create some type of initial shape. So
+that's typically one of the first things
+
+176
+00:03:06,949 --> 00:03:06,959
+that's typically one of the first things
+ 
+
+177
+00:03:06,959 --> 00:03:08,149
+that's typically one of the first things
+you're going to want to be thinking
+
+178
+00:03:08,149 --> 00:03:08,159
+you're going to want to be thinking
+ 
+
+179
+00:03:08,159 --> 00:03:09,830
+you're going to want to be thinking
+about when trying to make something
+
+180
+00:03:09,830 --> 00:03:09,840
+about when trying to make something
+ 
+
+181
+00:03:09,840 --> 00:03:11,750
+about when trying to make something
+cool. So, in terms of using textures and
+
+182
+00:03:11,750 --> 00:03:11,760
+cool. So, in terms of using textures and
+ 
+
+183
+00:03:11,760 --> 00:03:13,589
+cool. So, in terms of using textures and
+images to delete things, both of these
+
+184
+00:03:13,589 --> 00:03:13,599
+images to delete things, both of these
+ 
+
+185
+00:03:13,599 --> 00:03:15,589
+images to delete things, both of these
+animations are doing the exact same
+
+186
+00:03:15,589 --> 00:03:15,599
+animations are doing the exact same
+ 
+
+187
+00:03:15,599 --> 00:03:17,990
+animations are doing the exact same
+thing. Using images to delete points
+
+188
+00:03:17,990 --> 00:03:18,000
+thing. Using images to delete points
+ 
+
+189
+00:03:18,000 --> 00:03:20,070
+thing. Using images to delete points
+that we can then later animate or do
+
+190
+00:03:20,070 --> 00:03:20,080
+that we can then later animate or do
+ 
+
+191
+00:03:20,080 --> 00:03:22,309
+that we can then later animate or do
+something with. So, for example, I got a
+
+192
+00:03:22,309 --> 00:03:22,319
+something with. So, for example, I got a
+ 
+
+193
+00:03:22,319 --> 00:03:24,790
+something with. So, for example, I got a
+cube and I just stretched it to be
+
+194
+00:03:24,790 --> 00:03:24,800
+cube and I just stretched it to be
+ 
+
+195
+00:03:24,800 --> 00:03:27,350
+cube and I just stretched it to be
+basically the type of shape that I'm
+
+196
+00:03:27,350 --> 00:03:27,360
+basically the type of shape that I'm
+ 
+
+197
+00:03:27,360 --> 00:03:30,710
+basically the type of shape that I'm
+wanting my particle system to be before
+
+198
+00:03:30,710 --> 00:03:30,720
+wanting my particle system to be before
+ 
+
+199
+00:03:30,720 --> 00:03:33,750
+wanting my particle system to be before
+I start deleting points. And then again,
+
+200
+00:03:33,750 --> 00:03:33,760
+I start deleting points. And then again,
+ 
+
+201
+00:03:33,760 --> 00:03:36,070
+I start deleting points. And then again,
+distributed those points within that
+
+202
+00:03:36,070 --> 00:03:36,080
+distributed those points within that
+ 
+
+203
+00:03:36,080 --> 00:03:38,309
+distributed those points within that
+space. Once you have some kind of image
+
+204
+00:03:38,309 --> 00:03:38,319
+space. Once you have some kind of image
+ 
+
+205
+00:03:38,319 --> 00:03:39,830
+space. Once you have some kind of image
+picked out, you'll get a delete
+
+206
+00:03:39,830 --> 00:03:39,840
+picked out, you'll get a delete
+ 
+
+207
+00:03:39,840 --> 00:03:41,830
+picked out, you'll get a delete
+geometry. Get an image texture and open
+
+208
+00:03:41,830 --> 00:03:41,840
+geometry. Get an image texture and open
+ 
+
+209
+00:03:41,840 --> 00:03:43,190
+geometry. Get an image texture and open
+up that image. Then you're going to need
+
+210
+00:03:43,190 --> 00:03:43,200
+up that image. Then you're going to need
+ 
+
+211
+00:03:43,200 --> 00:03:44,710
+up that image. Then you're going to need
+some vector math and some position
+
+212
+00:03:44,710 --> 00:03:44,720
+some vector math and some position
+ 
+
+213
+00:03:44,720 --> 00:03:46,390
+some vector math and some position
+information so that you can actually
+
+214
+00:03:46,390 --> 00:03:46,400
+information so that you can actually
+ 
+
+215
+00:03:46,400 --> 00:03:49,910
+information so that you can actually
+move this thing around by adjusting the
+
+216
+00:03:49,910 --> 00:03:49,920
+move this thing around by adjusting the
+ 
+
+217
+00:03:49,920 --> 00:03:52,789
+move this thing around by adjusting the
+X and the Y
+
+218
+00:03:52,789 --> 00:03:52,799
+X and the Y
+ 
+
+219
+00:03:52,799 --> 00:03:55,430
+X and the Y
+of the text and then moving them around
+
+220
+00:03:55,430 --> 00:03:55,440
+of the text and then moving them around
+ 
+
+221
+00:03:55,440 --> 00:03:58,470
+of the text and then moving them around
+with your ad. And that is how you can
+
+222
+00:03:58,470 --> 00:03:58,480
+with your ad. And that is how you can
+ 
+
+223
+00:03:58,480 --> 00:04:01,670
+with your ad. And that is how you can
+get text to actually be deleting and
+
+224
+00:04:01,670 --> 00:04:01,680
+get text to actually be deleting and
+ 
+
+225
+00:04:01,680 --> 00:04:03,509
+get text to actually be deleting and
+showing up. And then you can go after
+
+226
+00:04:03,509 --> 00:04:03,519
+showing up. And then you can go after
+ 
+
+227
+00:04:03,519 --> 00:04:05,270
+showing up. And then you can go after
+that coloring and animating the points.
+
+228
+00:04:05,270 --> 00:04:05,280
+that coloring and animating the points.
+ 
+
+229
+00:04:05,280 --> 00:04:07,270
+that coloring and animating the points.
+That is how we can actually delete
+
+230
+00:04:07,270 --> 00:04:07,280
+That is how we can actually delete
+ 
+
+231
+00:04:07,280 --> 00:04:10,390
+That is how we can actually delete
+points using images, using textures, all
+
+232
+00:04:10,390 --> 00:04:10,400
+points using images, using textures, all
+ 
+
+233
+00:04:10,400 --> 00:04:12,390
+points using images, using textures, all
+of that. And again, I did the exact same
+
+234
+00:04:12,390 --> 00:04:12,400
+of that. And again, I did the exact same
+ 
+
+235
+00:04:12,400 --> 00:04:14,309
+of that. And again, I did the exact same
+thing with an image of a fingerprint.
+
+236
+00:04:14,309 --> 00:04:14,319
+thing with an image of a fingerprint.
+ 
+
+237
+00:04:14,319 --> 00:04:17,270
+thing with an image of a fingerprint.
+So, you can use any solid black and
+
+238
+00:04:17,270 --> 00:04:17,280
+So, you can use any solid black and
+ 
+
+239
+00:04:17,280 --> 00:04:19,590
+So, you can use any solid black and
+white image to influence particles. One
+
+240
+00:04:19,590 --> 00:04:19,600
+white image to influence particles. One
+ 
+
+241
+00:04:19,600 --> 00:04:21,110
+white image to influence particles. One
+other random way that I was able to
+
+242
+00:04:21,110 --> 00:04:21,120
+other random way that I was able to
+ 
+
+243
+00:04:21,120 --> 00:04:22,950
+other random way that I was able to
+influence the shape of the particles in
+
+244
+00:04:22,950 --> 00:04:22,960
+influence the shape of the particles in
+ 
+
+245
+00:04:22,960 --> 00:04:25,189
+influence the shape of the particles in
+this particular animation was I just
+
+246
+00:04:25,189 --> 00:04:25,199
+this particular animation was I just
+ 
+
+247
+00:04:25,199 --> 00:04:27,430
+this particular animation was I just
+wanted no matter what the animation was,
+
+248
+00:04:27,430 --> 00:04:27,440
+wanted no matter what the animation was,
+ 
+
+249
+00:04:27,440 --> 00:04:29,030
+wanted no matter what the animation was,
+I wanted to contain what you were seeing
+
+250
+00:04:29,030 --> 00:04:29,040
+I wanted to contain what you were seeing
+ 
+
+251
+00:04:29,040 --> 00:04:31,510
+I wanted to contain what you were seeing
+within a sphere. So, it was simple. I
+
+252
+00:04:31,510 --> 00:04:31,520
+within a sphere. So, it was simple. I
+ 
+
+253
+00:04:31,520 --> 00:04:33,590
+within a sphere. So, it was simple. I
+just was able to get a proximity system
+
+254
+00:04:33,590 --> 00:04:33,600
+just was able to get a proximity system
+ 
+
+255
+00:04:33,600 --> 00:04:35,990
+just was able to get a proximity system
+to say once particles go out a certain
+
+256
+00:04:35,990 --> 00:04:36,000
+to say once particles go out a certain
+ 
+
+257
+00:04:36,000 --> 00:04:38,710
+to say once particles go out a certain
+distance scale them out and after that
+
+258
+00:04:38,710 --> 00:04:38,720
+distance scale them out and after that
+ 
+
+259
+00:04:38,720 --> 00:04:40,070
+distance scale them out and after that
+it made this really really cool
+
+260
+00:04:40,070 --> 00:04:40,080
+it made this really really cool
+ 
+
+261
+00:04:40,080 --> 00:04:43,350
+it made this really really cool
+animation. So once you have some kind of
+
+262
+00:04:43,350 --> 00:04:43,360
+animation. So once you have some kind of
+ 
+
+263
+00:04:43,360 --> 00:04:45,110
+animation. So once you have some kind of
+initial shape that you've decided for
+
+264
+00:04:45,110 --> 00:04:45,120
+initial shape that you've decided for
+ 
+
+265
+00:04:45,120 --> 00:04:47,030
+initial shape that you've decided for
+your particle system now we can actually
+
+266
+00:04:47,030 --> 00:04:47,040
+your particle system now we can actually
+ 
+
+267
+00:04:47,040 --> 00:04:48,550
+your particle system now we can actually
+get into animating them moving them
+
+268
+00:04:48,550 --> 00:04:48,560
+get into animating them moving them
+ 
+
+269
+00:04:48,560 --> 00:04:50,150
+get into animating them moving them
+around with textures and different
+
+270
+00:04:50,150 --> 00:04:50,160
+around with textures and different
+ 
+
+271
+00:04:50,160 --> 00:04:51,909
+around with textures and different
+things like that to make them look and
+
+272
+00:04:51,909 --> 00:04:51,919
+things like that to make them look and
+ 
+
+273
+00:04:51,919 --> 00:04:53,430
+things like that to make them look and
+move in a really cool way. So let's do
+
+274
+00:04:53,430 --> 00:04:53,440
+move in a really cool way. So let's do
+ 
+
+275
+00:04:53,440 --> 00:04:54,950
+move in a really cool way. So let's do
+that. I want to start out with in my
+
+276
+00:04:54,950 --> 00:04:54,960
+that. I want to start out with in my
+ 
+
+277
+00:04:54,960 --> 00:04:57,110
+that. I want to start out with in my
+opinion the the coolest way that I've
+
+278
+00:04:57,110 --> 00:04:57,120
+opinion the the coolest way that I've
+ 
+
+279
+00:04:57,120 --> 00:04:59,590
+opinion the the coolest way that I've
+recently found to animate particles. So,
+
+280
+00:04:59,590 --> 00:04:59,600
+recently found to animate particles. So,
+ 
+
+281
+00:04:59,600 --> 00:05:01,510
+recently found to animate particles. So,
+we just have a couple nodes putting
+
+282
+00:05:01,510 --> 00:05:01,520
+we just have a couple nodes putting
+ 
+
+283
+00:05:01,520 --> 00:05:03,830
+we just have a couple nodes putting
+small particles in a system. Now, for
+
+284
+00:05:03,830 --> 00:05:03,840
+small particles in a system. Now, for
+ 
+
+285
+00:05:03,840 --> 00:05:05,510
+small particles in a system. Now, for
+context, the way I've been animating
+
+286
+00:05:05,510 --> 00:05:05,520
+context, the way I've been animating
+ 
+
+287
+00:05:05,520 --> 00:05:07,270
+context, the way I've been animating
+particles for a really long time was
+
+288
+00:05:07,270 --> 00:05:07,280
+particles for a really long time was
+ 
+
+289
+00:05:07,280 --> 00:05:09,189
+particles for a really long time was
+getting the color into an offset and
+
+290
+00:05:09,189 --> 00:05:09,199
+getting the color into an offset and
+ 
+
+291
+00:05:09,199 --> 00:05:11,909
+getting the color into an offset and
+then just getting a really small scale.
+
+292
+00:05:11,909 --> 00:05:11,919
+then just getting a really small scale.
+ 
+
+293
+00:05:11,919 --> 00:05:13,990
+then just getting a really small scale.
+And then you can just play with the W.
+
+294
+00:05:13,990 --> 00:05:14,000
+And then you can just play with the W.
+ 
+
+295
+00:05:14,000 --> 00:05:16,629
+And then you can just play with the W.
+And now we can actually move around and
+
+296
+00:05:16,629 --> 00:05:16,639
+And now we can actually move around and
+ 
+
+297
+00:05:16,639 --> 00:05:19,350
+And now we can actually move around and
+animate particles just like this. You
+
+298
+00:05:19,350 --> 00:05:19,360
+animate particles just like this. You
+ 
+
+299
+00:05:19,360 --> 00:05:22,070
+animate particles just like this. You
+can also get vector math to say how
+
+300
+00:05:22,070 --> 00:05:22,080
+can also get vector math to say how
+ 
+
+301
+00:05:22,080 --> 00:05:25,670
+can also get vector math to say how
+strong do we want this effect to be. But
+
+302
+00:05:25,670 --> 00:05:25,680
+strong do we want this effect to be. But
+ 
+
+303
+00:05:25,680 --> 00:05:27,749
+strong do we want this effect to be. But
+this is how I've been doing it from day
+
+304
+00:05:27,749 --> 00:05:27,759
+this is how I've been doing it from day
+ 
+
+305
+00:05:27,759 --> 00:05:29,510
+this is how I've been doing it from day
+one. animating particles and geometry
+
+306
+00:05:29,510 --> 00:05:29,520
+one. animating particles and geometry
+ 
+
+307
+00:05:29,520 --> 00:05:31,749
+one. animating particles and geometry
+nodes. But now we have this new thing
+
+308
+00:05:31,749 --> 00:05:31,759
+nodes. But now we have this new thing
+ 
+
+309
+00:05:31,759 --> 00:05:34,230
+nodes. But now we have this new thing
+called a repeat zone. And I've been
+
+310
+00:05:34,230 --> 00:05:34,240
+called a repeat zone. And I've been
+ 
+
+311
+00:05:34,240 --> 00:05:35,590
+called a repeat zone. And I've been
+seeing this technique float around on
+
+312
+00:05:35,590 --> 00:05:35,600
+seeing this technique float around on
+ 
+
+313
+00:05:35,600 --> 00:05:38,070
+seeing this technique float around on
+the internet. Uh Mantisa did a really
+
+314
+00:05:38,070 --> 00:05:38,080
+the internet. Uh Mantisa did a really
+ 
+
+315
+00:05:38,080 --> 00:05:40,150
+the internet. Uh Mantisa did a really
+cool live stream on it. And there's a
+
+316
+00:05:40,150 --> 00:05:40,160
+cool live stream on it. And there's a
+ 
+
+317
+00:05:40,160 --> 00:05:41,590
+cool live stream on it. And there's a
+lot of cool things we can do with this.
+
+318
+00:05:41,590 --> 00:05:41,600
+lot of cool things we can do with this.
+ 
+
+319
+00:05:41,600 --> 00:05:43,430
+lot of cool things we can do with this.
+So So if you put the set position within
+
+320
+00:05:43,430 --> 00:05:43,440
+So So if you put the set position within
+ 
+
+321
+00:05:43,440 --> 00:05:45,270
+So So if you put the set position within
+a repeat and then do that same thing
+
+322
+00:05:45,270 --> 00:05:45,280
+a repeat and then do that same thing
+ 
+
+323
+00:05:45,280 --> 00:05:47,110
+a repeat and then do that same thing
+that we just did, I'm going to go ahead
+
+324
+00:05:47,110 --> 00:05:47,120
+that we just did, I'm going to go ahead
+ 
+
+325
+00:05:47,120 --> 00:05:48,950
+that we just did, I'm going to go ahead
+bring my scale to be something very,
+
+326
+00:05:48,950 --> 00:05:48,960
+bring my scale to be something very,
+ 
+
+327
+00:05:48,960 --> 00:05:52,310
+bring my scale to be something very,
+very small. And once we start to repeat
+
+328
+00:05:52,310 --> 00:05:52,320
+very small. And once we start to repeat
+ 
+
+329
+00:05:52,320 --> 00:05:56,550
+very small. And once we start to repeat
+this, you get this very interesting
+
+330
+00:05:56,550 --> 00:05:56,560
+this, you get this very interesting
+ 
+
+331
+00:05:56,560 --> 00:05:59,830
+this, you get this very interesting
+almost splashy looking texture that if
+
+332
+00:05:59,830 --> 00:05:59,840
+almost splashy looking texture that if
+ 
+
+333
+00:05:59,840 --> 00:06:02,710
+almost splashy looking texture that if
+we go ahead and play with the 4D, you
+
+334
+00:06:02,710 --> 00:06:02,720
+we go ahead and play with the 4D, you
+ 
+
+335
+00:06:02,720 --> 00:06:04,870
+we go ahead and play with the 4D, you
+get something really really awesome. And
+
+336
+00:06:04,870 --> 00:06:04,880
+get something really really awesome. And
+ 
+
+337
+00:06:04,880 --> 00:06:08,230
+get something really really awesome. And
+it is greatly affected by uh the scale
+
+338
+00:06:08,230 --> 00:06:08,240
+it is greatly affected by uh the scale
+ 
+
+339
+00:06:08,240 --> 00:06:10,309
+it is greatly affected by uh the scale
+of your, you know, the vector scale that
+
+340
+00:06:10,309 --> 00:06:10,319
+of your, you know, the vector scale that
+ 
+
+341
+00:06:10,319 --> 00:06:12,710
+of your, you know, the vector scale that
+we do and of course by the scale of the
+
+342
+00:06:12,710 --> 00:06:12,720
+we do and of course by the scale of the
+ 
+
+343
+00:06:12,720 --> 00:06:15,590
+we do and of course by the scale of the
+texture. And we get something amazing.
+
+344
+00:06:15,590 --> 00:06:15,600
+texture. And we get something amazing.
+ 
+
+345
+00:06:15,600 --> 00:06:17,350
+texture. And we get something amazing.
+If I bring down the scale of my points
+
+346
+00:06:17,350 --> 00:06:17,360
+If I bring down the scale of my points
+ 
+
+347
+00:06:17,360 --> 00:06:19,510
+If I bring down the scale of my points
+and I just bring up the density of these
+
+348
+00:06:19,510 --> 00:06:19,520
+and I just bring up the density of these
+ 
+
+349
+00:06:19,520 --> 00:06:22,070
+and I just bring up the density of these
+this animation, it just starts to look
+
+350
+00:06:22,070 --> 00:06:22,080
+this animation, it just starts to look
+ 
+
+351
+00:06:22,080 --> 00:06:23,909
+this animation, it just starts to look
+absolutely incredible. We can bring up
+
+352
+00:06:23,909 --> 00:06:23,919
+absolutely incredible. We can bring up
+ 
+
+353
+00:06:23,919 --> 00:06:25,749
+absolutely incredible. We can bring up
+the scale a little bit. If we bring down
+
+354
+00:06:25,749 --> 00:06:25,759
+the scale a little bit. If we bring down
+ 
+
+355
+00:06:25,759 --> 00:06:27,350
+the scale a little bit. If we bring down
+the scale a little bit, gets it a little
+
+356
+00:06:27,350 --> 00:06:27,360
+the scale a little bit, gets it a little
+ 
+
+357
+00:06:27,360 --> 00:06:29,990
+the scale a little bit, gets it a little
+bit more uh waterlike. Playing with the
+
+358
+00:06:29,990 --> 00:06:30,000
+bit more uh waterlike. Playing with the
+ 
+
+359
+00:06:30,000 --> 00:06:32,309
+bit more uh waterlike. Playing with the
+W, playing with the scale. There's a ton
+
+360
+00:06:32,309 --> 00:06:32,319
+W, playing with the scale. There's a ton
+ 
+
+361
+00:06:32,319 --> 00:06:35,510
+W, playing with the scale. There's a ton
+of things that you can do with this and
+
+362
+00:06:35,510 --> 00:06:35,520
+of things that you can do with this and
+ 
+
+363
+00:06:35,520 --> 00:06:39,110
+of things that you can do with this and
+it just looks really really cool. So,
+
+364
+00:06:39,110 --> 00:06:39,120
+it just looks really really cool. So,
+ 
+
+365
+00:06:39,120 --> 00:06:41,270
+it just looks really really cool. So,
+just repeating a noise texture get some
+
+366
+00:06:41,270 --> 00:06:41,280
+just repeating a noise texture get some
+ 
+
+367
+00:06:41,280 --> 00:06:43,830
+just repeating a noise texture get some
+pretty insane particle uh textures. Now,
+
+368
+00:06:43,830 --> 00:06:43,840
+pretty insane particle uh textures. Now,
+ 
+
+369
+00:06:43,840 --> 00:06:45,029
+pretty insane particle uh textures. Now,
+another thing we can do is if we have if
+
+370
+00:06:45,029 --> 00:06:45,039
+another thing we can do is if we have if
+ 
+
+371
+00:06:45,039 --> 00:06:46,629
+another thing we can do is if we have if
+we have a noise texture at a really low
+
+372
+00:06:46,629 --> 00:06:46,639
+we have a noise texture at a really low
+ 
+
+373
+00:06:46,639 --> 00:06:48,070
+we have a noise texture at a really low
+scale, just something like this. It's
+
+374
+00:06:48,070 --> 00:06:48,080
+scale, just something like this. It's
+ 
+
+375
+00:06:48,080 --> 00:06:50,710
+scale, just something like this. It's
+kind of globby for whatever reason. This
+
+376
+00:06:50,710 --> 00:06:50,720
+kind of globby for whatever reason. This
+ 
+
+377
+00:06:50,720 --> 00:06:53,350
+kind of globby for whatever reason. This
+is the animation and the shape you want
+
+378
+00:06:53,350 --> 00:06:53,360
+is the animation and the shape you want
+ 
+
+379
+00:06:53,360 --> 00:06:55,510
+is the animation and the shape you want
+this to be. You can add a little bit of
+
+380
+00:06:55,510 --> 00:06:55,520
+this to be. You can add a little bit of
+ 
+
+381
+00:06:55,520 --> 00:06:57,830
+this to be. You can add a little bit of
+detail by mixing another noise texture
+
+382
+00:06:57,830 --> 00:06:57,840
+detail by mixing another noise texture
+ 
+
+383
+00:06:57,840 --> 00:06:59,909
+detail by mixing another noise texture
+with a mixed color. And then you can
+
+384
+00:06:59,909 --> 00:06:59,919
+with a mixed color. And then you can
+ 
+
+385
+00:06:59,919 --> 00:07:01,830
+with a mixed color. And then you can
+take one noise texture, scale it up
+
+386
+00:07:01,830 --> 00:07:01,840
+take one noise texture, scale it up
+ 
+
+387
+00:07:01,840 --> 00:07:03,670
+take one noise texture, scale it up
+pretty significantly, bring it back to
+
+388
+00:07:03,670 --> 00:07:03,680
+pretty significantly, bring it back to
+ 
+
+389
+00:07:03,680 --> 00:07:05,589
+pretty significantly, bring it back to
+the original shape. And if you just
+
+390
+00:07:05,589 --> 00:07:05,599
+the original shape. And if you just
+ 
+
+391
+00:07:05,599 --> 00:07:07,510
+the original shape. And if you just
+bring that factor in, it's just going to
+
+392
+00:07:07,510 --> 00:07:07,520
+bring that factor in, it's just going to
+ 
+
+393
+00:07:07,520 --> 00:07:09,749
+bring that factor in, it's just going to
+give it a little bit more of a
+
+394
+00:07:09,749 --> 00:07:09,759
+give it a little bit more of a
+ 
+
+395
+00:07:09,759 --> 00:07:12,950
+give it a little bit more of a
+interesting higher detailed shape rather
+
+396
+00:07:12,950 --> 00:07:12,960
+interesting higher detailed shape rather
+ 
+
+397
+00:07:12,960 --> 00:07:14,950
+interesting higher detailed shape rather
+than this.
+
+398
+00:07:14,950 --> 00:07:14,960
+than this.
+ 
+
+399
+00:07:14,960 --> 00:07:17,110
+than this.
+You can actually bring up the detail to
+
+400
+00:07:17,110 --> 00:07:17,120
+You can actually bring up the detail to
+ 
+
+401
+00:07:17,120 --> 00:07:19,270
+You can actually bring up the detail to
+something like that.
+
+402
+00:07:19,270 --> 00:07:19,280
+something like that.
+ 
+
+403
+00:07:19,280 --> 00:07:21,510
+something like that.
+And you have a little bit more variation
+
+404
+00:07:21,510 --> 00:07:21,520
+And you have a little bit more variation
+ 
+
+405
+00:07:21,520 --> 00:07:24,950
+And you have a little bit more variation
+and also another opportunity to animate
+
+406
+00:07:24,950 --> 00:07:24,960
+and also another opportunity to animate
+ 
+
+407
+00:07:24,960 --> 00:07:26,870
+and also another opportunity to animate
+two different components of the noise
+
+408
+00:07:26,870 --> 00:07:26,880
+two different components of the noise
+ 
+
+409
+00:07:26,880 --> 00:07:29,110
+two different components of the noise
+texture of the particle system. And it
+
+410
+00:07:29,110 --> 00:07:29,120
+texture of the particle system. And it
+ 
+
+411
+00:07:29,120 --> 00:07:31,350
+texture of the particle system. And it
+gives you a lot of control and a way to
+
+412
+00:07:31,350 --> 00:07:31,360
+gives you a lot of control and a way to
+ 
+
+413
+00:07:31,360 --> 00:07:33,110
+gives you a lot of control and a way to
+just make something even more
+
+414
+00:07:33,110 --> 00:07:33,120
+just make something even more
+ 
+
+415
+00:07:33,120 --> 00:07:35,350
+just make something even more
+interesting. getting all the individual
+
+416
+00:07:35,350 --> 00:07:35,360
+interesting. getting all the individual
+ 
+
+417
+00:07:35,360 --> 00:07:36,629
+interesting. getting all the individual
+particles to look like they're moving
+
+418
+00:07:36,629 --> 00:07:36,639
+particles to look like they're moving
+ 
+
+419
+00:07:36,639 --> 00:07:40,629
+particles to look like they're moving
+and the larger uh scene as well. One
+
+420
+00:07:40,629 --> 00:07:40,639
+and the larger uh scene as well. One
+ 
+
+421
+00:07:40,639 --> 00:07:42,629
+and the larger uh scene as well. One
+more problem you might run into with
+
+422
+00:07:42,629 --> 00:07:42,639
+more problem you might run into with
+ 
+
+423
+00:07:42,639 --> 00:07:44,629
+more problem you might run into with
+animating particles is you're animating
+
+424
+00:07:44,629 --> 00:07:44,639
+animating particles is you're animating
+ 
+
+425
+00:07:44,639 --> 00:07:47,589
+animating particles is you're animating
+these particles at a really low scale
+
+426
+00:07:47,589 --> 00:07:47,599
+these particles at a really low scale
+ 
+
+427
+00:07:47,599 --> 00:07:50,629
+these particles at a really low scale
+right here. It's 009 and all all the
+
+428
+00:07:50,629 --> 00:07:50,639
+right here. It's 009 and all all the
+ 
+
+429
+00:07:50,639 --> 00:07:51,990
+right here. It's 009 and all all the
+particles are just kind of moving
+
+430
+00:07:51,990 --> 00:07:52,000
+particles are just kind of moving
+ 
+
+431
+00:07:52,000 --> 00:07:54,550
+particles are just kind of moving
+together like a like a really close
+
+432
+00:07:54,550 --> 00:07:54,560
+together like a like a really close
+ 
+
+433
+00:07:54,560 --> 00:07:56,550
+together like a like a really close
+together school of fish. See how that
+
+434
+00:07:56,550 --> 00:07:56,560
+together school of fish. See how that
+ 
+
+435
+00:07:56,560 --> 00:07:57,749
+together school of fish. See how that
+looks? And we can just bring up that
+
+436
+00:07:57,749 --> 00:07:57,759
+looks? And we can just bring up that
+ 
+
+437
+00:07:57,759 --> 00:07:59,749
+looks? And we can just bring up that
+scale a little bit. You get the idea
+
+438
+00:07:59,749 --> 00:07:59,759
+scale a little bit. You get the idea
+ 
+
+439
+00:07:59,759 --> 00:08:01,270
+scale a little bit. You get the idea
+that all the particles don't look like
+
+440
+00:08:01,270 --> 00:08:01,280
+that all the particles don't look like
+ 
+
+441
+00:08:01,280 --> 00:08:02,629
+that all the particles don't look like
+they have a mind of their own. They're
+
+442
+00:08:02,629 --> 00:08:02,639
+they have a mind of their own. They're
+ 
+
+443
+00:08:02,639 --> 00:08:05,430
+they have a mind of their own. They're
+all moving kind of with the same mind
+
+444
+00:08:05,430 --> 00:08:05,440
+all moving kind of with the same mind
+ 
+
+445
+00:08:05,440 --> 00:08:06,869
+all moving kind of with the same mind
+essentially. And I'm calling the mind
+
+446
+00:08:06,869 --> 00:08:06,879
+essentially. And I'm calling the mind
+ 
+
+447
+00:08:06,879 --> 00:08:09,749
+essentially. And I'm calling the mind
+the W. They're all moving from the same
+
+448
+00:08:09,749 --> 00:08:09,759
+the W. They're all moving from the same
+ 
+
+449
+00:08:09,759 --> 00:08:12,950
+the W. They're all moving from the same
+W value. I want them to have their own
+
+450
+00:08:12,950 --> 00:08:12,960
+W value. I want them to have their own
+ 
+
+451
+00:08:12,960 --> 00:08:14,869
+W value. I want them to have their own
+mind. What could I do? I can bring up
+
+452
+00:08:14,869 --> 00:08:14,879
+mind. What could I do? I can bring up
+ 
+
+453
+00:08:14,879 --> 00:08:17,430
+mind. What could I do? I can bring up
+the scale, right? Maybe something pretty
+
+454
+00:08:17,430 --> 00:08:17,440
+the scale, right? Maybe something pretty
+ 
+
+455
+00:08:17,440 --> 00:08:19,189
+the scale, right? Maybe something pretty
+big so that it doesn't look like they're
+
+456
+00:08:19,189 --> 00:08:19,199
+big so that it doesn't look like they're
+ 
+
+457
+00:08:19,199 --> 00:08:21,430
+big so that it doesn't look like they're
+all dealing with the same texture. Um,
+
+458
+00:08:21,430 --> 00:08:21,440
+all dealing with the same texture. Um,
+ 
+
+459
+00:08:21,440 --> 00:08:24,950
+all dealing with the same texture. Um,
+then this W value gets very very
+
+460
+00:08:24,950 --> 00:08:24,960
+then this W value gets very very
+ 
+
+461
+00:08:24,960 --> 00:08:27,749
+then this W value gets very very
+sensitive. I mean you can look but at a
+
+462
+00:08:27,749 --> 00:08:27,759
+sensitive. I mean you can look but at a
+ 
+
+463
+00:08:27,759 --> 00:08:31,430
+sensitive. I mean you can look but at a
+smaller value like three the the W is a
+
+464
+00:08:31,430 --> 00:08:31,440
+smaller value like three the the W is a
+ 
+
+465
+00:08:31,440 --> 00:08:34,230
+smaller value like three the the W is a
+is far more controlled. You can animate
+
+466
+00:08:34,230 --> 00:08:34,240
+is far more controlled. You can animate
+ 
+
+467
+00:08:34,240 --> 00:08:37,029
+is far more controlled. You can animate
+it better but again all the points just
+
+468
+00:08:37,029 --> 00:08:37,039
+it better but again all the points just
+ 
+
+469
+00:08:37,039 --> 00:08:38,230
+it better but again all the points just
+look like they're moving together. How
+
+470
+00:08:38,230 --> 00:08:38,240
+look like they're moving together. How
+ 
+
+471
+00:08:38,240 --> 00:08:40,310
+look like they're moving together. How
+can we fix that? So before the set
+
+472
+00:08:40,310 --> 00:08:40,320
+can we fix that? So before the set
+ 
+
+473
+00:08:40,320 --> 00:08:41,990
+can we fix that? So before the set
+position you can get a store named
+
+474
+00:08:41,990 --> 00:08:42,000
+position you can get a store named
+ 
+
+475
+00:08:42,000 --> 00:08:44,949
+position you can get a store named
+attribute a random value node and we'll
+
+476
+00:08:44,949 --> 00:08:44,959
+attribute a random value node and we'll
+ 
+
+477
+00:08:44,959 --> 00:08:46,790
+attribute a random value node and we'll
+just plug that value into value and just
+
+478
+00:08:46,790 --> 00:08:46,800
+just plug that value into value and just
+ 
+
+479
+00:08:46,800 --> 00:08:48,949
+just plug that value into value and just
+call it R. Now we can get a named
+
+480
+00:08:48,949 --> 00:08:48,959
+call it R. Now we can get a named
+ 
+
+481
+00:08:48,959 --> 00:08:51,829
+call it R. Now we can get a named
+attribute node. Call that and then plug
+
+482
+00:08:51,829 --> 00:08:51,839
+attribute node. Call that and then plug
+ 
+
+483
+00:08:51,839 --> 00:08:54,470
+attribute node. Call that and then plug
+attribute right into the W because again
+
+484
+00:08:54,470 --> 00:08:54,480
+attribute right into the W because again
+ 
+
+485
+00:08:54,480 --> 00:08:56,150
+attribute right into the W because again
+the problem is they're all animating
+
+486
+00:08:56,150 --> 00:08:56,160
+the problem is they're all animating
+ 
+
+487
+00:08:56,160 --> 00:08:58,070
+the problem is they're all animating
+from the same W value. Now we're going
+
+488
+00:08:58,070 --> 00:08:58,080
+from the same W value. Now we're going
+ 
+
+489
+00:08:58,080 --> 00:09:01,670
+from the same W value. Now we're going
+to randomize the W value per point. Now
+
+490
+00:09:01,670 --> 00:09:01,680
+to randomize the W value per point. Now
+ 
+
+491
+00:09:01,680 --> 00:09:03,430
+to randomize the W value per point. Now
+we'll get a math node and set it to
+
+492
+00:09:03,430 --> 00:09:03,440
+we'll get a math node and set it to
+ 
+
+493
+00:09:03,440 --> 00:09:07,110
+we'll get a math node and set it to
+multiply add. This add right here is the
+
+494
+00:09:07,110 --> 00:09:07,120
+multiply add. This add right here is the
+ 
+
+495
+00:09:07,120 --> 00:09:09,430
+multiply add. This add right here is the
+W value. It's just now we have access to
+
+496
+00:09:09,430 --> 00:09:09,440
+W value. It's just now we have access to
+ 
+
+497
+00:09:09,440 --> 00:09:10,550
+W value. It's just now we have access to
+it through the addendant and the
+
+498
+00:09:10,550 --> 00:09:10,560
+it through the addendant and the
+ 
+
+499
+00:09:10,560 --> 00:09:12,550
+it through the addendant and the
+multiplier is just going to strengthen
+
+500
+00:09:12,550 --> 00:09:12,560
+multiplier is just going to strengthen
+ 
+
+501
+00:09:12,560 --> 00:09:16,230
+multiplier is just going to strengthen
+that effect per point. And now all of
+
+502
+00:09:16,230 --> 00:09:16,240
+that effect per point. And now all of
+ 
+
+503
+00:09:16,240 --> 00:09:18,389
+that effect per point. And now all of
+the objects are still animating from a
+
+504
+00:09:18,389 --> 00:09:18,399
+the objects are still animating from a
+ 
+
+505
+00:09:18,399 --> 00:09:21,750
+the objects are still animating from a
+very small noise texture scale, but they
+
+506
+00:09:21,750 --> 00:09:21,760
+very small noise texture scale, but they
+ 
+
+507
+00:09:21,760 --> 00:09:23,829
+very small noise texture scale, but they
+all are doing their own thing. And
+
+508
+00:09:23,829 --> 00:09:23,839
+all are doing their own thing. And
+ 
+
+509
+00:09:23,839 --> 00:09:25,750
+all are doing their own thing. And
+again, this add is the W. So if you know
+
+510
+00:09:25,750 --> 00:09:25,760
+again, this add is the W. So if you know
+ 
+
+511
+00:09:25,760 --> 00:09:28,070
+again, this add is the W. So if you know
+how to loop the W, just do it right
+
+512
+00:09:28,070 --> 00:09:28,080
+how to loop the W, just do it right
+ 
+
+513
+00:09:28,080 --> 00:09:30,550
+how to loop the W, just do it right
+here. And then now you have a collection
+
+514
+00:09:30,550 --> 00:09:30,560
+here. And then now you have a collection
+ 
+
+515
+00:09:30,560 --> 00:09:33,509
+here. And then now you have a collection
+of points that are at a low scale value,
+
+516
+00:09:33,509 --> 00:09:33,519
+of points that are at a low scale value,
+ 
+
+517
+00:09:33,519 --> 00:09:35,509
+of points that are at a low scale value,
+but all have a mind of their own. This
+
+518
+00:09:35,509 --> 00:09:35,519
+but all have a mind of their own. This
+ 
+
+519
+00:09:35,519 --> 00:09:37,590
+but all have a mind of their own. This
+was one of my favorite animations I did.
+
+520
+00:09:37,590 --> 00:09:37,600
+was one of my favorite animations I did.
+ 
+
+521
+00:09:37,600 --> 00:09:40,870
+was one of my favorite animations I did.
+And it really has this incredible nebula
+
+522
+00:09:40,870 --> 00:09:40,880
+And it really has this incredible nebula
+ 
+
+523
+00:09:40,880 --> 00:09:42,550
+And it really has this incredible nebula
+look. So, the way I was able to set that
+
+524
+00:09:42,550 --> 00:09:42,560
+look. So, the way I was able to set that
+ 
+
+525
+00:09:42,560 --> 00:09:44,710
+look. So, the way I was able to set that
+up was again using that cylinder like I
+
+526
+00:09:44,710 --> 00:09:44,720
+up was again using that cylinder like I
+ 
+
+527
+00:09:44,720 --> 00:09:46,230
+up was again using that cylinder like I
+mentioned, getting a bunch of particles
+
+528
+00:09:46,230 --> 00:09:46,240
+mentioned, getting a bunch of particles
+ 
+
+529
+00:09:46,240 --> 00:09:48,310
+mentioned, getting a bunch of particles
+and then displacing them using that
+
+530
+00:09:48,310 --> 00:09:48,320
+and then displacing them using that
+ 
+
+531
+00:09:48,320 --> 00:09:50,550
+and then displacing them using that
+repeat zone trick, but instead of
+
+532
+00:09:50,550 --> 00:09:50,560
+repeat zone trick, but instead of
+ 
+
+533
+00:09:50,560 --> 00:09:52,870
+repeat zone trick, but instead of
+animating the particles with the W
+
+534
+00:09:52,870 --> 00:09:52,880
+animating the particles with the W
+ 
+
+535
+00:09:52,880 --> 00:09:55,670
+animating the particles with the W
+value, I just created that vector math
+
+536
+00:09:55,670 --> 00:09:55,680
+value, I just created that vector math
+ 
+
+537
+00:09:55,680 --> 00:09:57,350
+value, I just created that vector math
+kind of mapping setup and then I
+
+538
+00:09:57,350 --> 00:09:57,360
+kind of mapping setup and then I
+ 
+
+539
+00:09:57,360 --> 00:09:59,430
+kind of mapping setup and then I
+actually rotated the texture. So, as
+
+540
+00:09:59,430 --> 00:09:59,440
+actually rotated the texture. So, as
+ 
+
+541
+00:09:59,440 --> 00:10:01,750
+actually rotated the texture. So, as
+that texture is slowly rotating, those
+
+542
+00:10:01,750 --> 00:10:01,760
+that texture is slowly rotating, those
+ 
+
+543
+00:10:01,760 --> 00:10:04,230
+that texture is slowly rotating, those
+particles are technically not moving
+
+544
+00:10:04,230 --> 00:10:04,240
+particles are technically not moving
+ 
+
+545
+00:10:04,240 --> 00:10:07,030
+particles are technically not moving
+from a set position standpoint. They're
+
+546
+00:10:07,030 --> 00:10:07,040
+from a set position standpoint. They're
+ 
+
+547
+00:10:07,040 --> 00:10:09,269
+from a set position standpoint. They're
+just being affected by the fact that
+
+548
+00:10:09,269 --> 00:10:09,279
+just being affected by the fact that
+ 
+
+549
+00:10:09,279 --> 00:10:11,110
+just being affected by the fact that
+that texture is moving and they're kind
+
+550
+00:10:11,110 --> 00:10:11,120
+that texture is moving and they're kind
+ 
+
+551
+00:10:11,120 --> 00:10:13,190
+that texture is moving and they're kind
+of moving like it's water. This really
+
+552
+00:10:13,190 --> 00:10:13,200
+of moving like it's water. This really
+ 
+
+553
+00:10:13,200 --> 00:10:15,110
+of moving like it's water. This really
+cool nebula look. So instead of
+
+554
+00:10:15,110 --> 00:10:15,120
+cool nebula look. So instead of
+ 
+
+555
+00:10:15,120 --> 00:10:17,990
+cool nebula look. So instead of
+animating the W, maybe try rotating the
+
+556
+00:10:17,990 --> 00:10:18,000
+animating the W, maybe try rotating the
+ 
+
+557
+00:10:18,000 --> 00:10:20,470
+animating the W, maybe try rotating the
+texture of the noise and seeing how
+
+558
+00:10:20,470 --> 00:10:20,480
+texture of the noise and seeing how
+ 
+
+559
+00:10:20,480 --> 00:10:21,990
+texture of the noise and seeing how
+those particles react. So you can
+
+560
+00:10:21,990 --> 00:10:22,000
+those particles react. So you can
+ 
+
+561
+00:10:22,000 --> 00:10:24,150
+those particles react. So you can
+animate the W. You can also animate the
+
+562
+00:10:24,150 --> 00:10:24,160
+animate the W. You can also animate the
+ 
+
+563
+00:10:24,160 --> 00:10:26,790
+animate the W. You can also animate the
+rotation as another way to get some
+
+564
+00:10:26,790 --> 00:10:26,800
+rotation as another way to get some
+ 
+
+565
+00:10:26,800 --> 00:10:28,949
+rotation as another way to get some
+really cool motion. All right. As a
+
+566
+00:10:28,949 --> 00:10:28,959
+really cool motion. All right. As a
+ 
+
+567
+00:10:28,959 --> 00:10:31,030
+really cool motion. All right. As a
+beginner, I think lighting particles is
+
+568
+00:10:31,030 --> 00:10:31,040
+beginner, I think lighting particles is
+ 
+
+569
+00:10:31,040 --> 00:10:33,190
+beginner, I think lighting particles is
+incredibly frustrating. I'm typically
+
+570
+00:10:33,190 --> 00:10:33,200
+incredibly frustrating. I'm typically
+ 
+
+571
+00:10:33,200 --> 00:10:35,430
+incredibly frustrating. I'm typically
+finding myself in two different uh kind
+
+572
+00:10:35,430 --> 00:10:35,440
+finding myself in two different uh kind
+ 
+
+573
+00:10:35,440 --> 00:10:37,190
+finding myself in two different uh kind
+of lighting environments. This kind of
+
+574
+00:10:37,190 --> 00:10:37,200
+of lighting environments. This kind of
+ 
+
+575
+00:10:37,200 --> 00:10:39,350
+of lighting environments. This kind of
+low light, very high contrast
+
+576
+00:10:39,350 --> 00:10:39,360
+low light, very high contrast
+ 
+
+577
+00:10:39,360 --> 00:10:41,269
+low light, very high contrast
+environment or a much brighter
+
+578
+00:10:41,269 --> 00:10:41,279
+environment or a much brighter
+ 
+
+579
+00:10:41,279 --> 00:10:42,949
+environment or a much brighter
+environment that's a little bit more
+
+580
+00:10:42,949 --> 00:10:42,959
+environment that's a little bit more
+ 
+
+581
+00:10:42,959 --> 00:10:44,389
+environment that's a little bit more
+delicate when it comes to how we're
+
+582
+00:10:44,389 --> 00:10:44,399
+delicate when it comes to how we're
+ 
+
+583
+00:10:44,399 --> 00:10:46,710
+delicate when it comes to how we're
+placing lights. Now, in either of these
+
+584
+00:10:46,710 --> 00:10:46,720
+placing lights. Now, in either of these
+ 
+
+585
+00:10:46,720 --> 00:10:48,630
+placing lights. Now, in either of these
+two environments, the biggest thing that
+
+586
+00:10:48,630 --> 00:10:48,640
+two environments, the biggest thing that
+ 
+
+587
+00:10:48,640 --> 00:10:50,790
+two environments, the biggest thing that
+is going to affect how professional or
+
+588
+00:10:50,790 --> 00:10:50,800
+is going to affect how professional or
+ 
+
+589
+00:10:50,800 --> 00:10:52,790
+is going to affect how professional or
+how good it's going to look is just
+
+590
+00:10:52,790 --> 00:10:52,800
+how good it's going to look is just
+ 
+
+591
+00:10:52,800 --> 00:10:54,870
+how good it's going to look is just
+having more particles, especially if the
+
+592
+00:10:54,870 --> 00:10:54,880
+having more particles, especially if the
+ 
+
+593
+00:10:54,880 --> 00:10:57,030
+having more particles, especially if the
+particles are small. I found myself
+
+594
+00:10:57,030 --> 00:10:57,040
+particles are small. I found myself
+ 
+
+595
+00:10:57,040 --> 00:10:58,949
+particles are small. I found myself
+bringing my density up to a point where
+
+596
+00:10:58,949 --> 00:10:58,959
+bringing my density up to a point where
+ 
+
+597
+00:10:58,959 --> 00:11:01,190
+bringing my density up to a point where
+it almost felt like it was a solid
+
+598
+00:11:01,190 --> 00:11:01,200
+it almost felt like it was a solid
+ 
+
+599
+00:11:01,200 --> 00:11:03,430
+it almost felt like it was a solid
+object. And at that point, that's when
+
+600
+00:11:03,430 --> 00:11:03,440
+object. And at that point, that's when
+ 
+
+601
+00:11:03,440 --> 00:11:05,190
+object. And at that point, that's when
+the lighting started to work in my
+
+602
+00:11:05,190 --> 00:11:05,200
+the lighting started to work in my
+ 
+
+603
+00:11:05,200 --> 00:11:07,190
+the lighting started to work in my
+favor. If you have too few particles,
+
+604
+00:11:07,190 --> 00:11:07,200
+favor. If you have too few particles,
+ 
+
+605
+00:11:07,200 --> 00:11:08,550
+favor. If you have too few particles,
+the light is just going to go straight
+
+606
+00:11:08,550 --> 00:11:08,560
+the light is just going to go straight
+ 
+
+607
+00:11:08,560 --> 00:11:09,670
+the light is just going to go straight
+through it. It's not going to be dense
+
+608
+00:11:09,670 --> 00:11:09,680
+through it. It's not going to be dense
+ 
+
+609
+00:11:09,680 --> 00:11:10,790
+through it. It's not going to be dense
+enough, and it's really not going to be
+
+610
+00:11:10,790 --> 00:11:10,800
+enough, and it's really not going to be
+ 
+
+611
+00:11:10,800 --> 00:11:12,790
+enough, and it's really not going to be
+readable, and the lighting is really
+
+612
+00:11:12,790 --> 00:11:12,800
+readable, and the lighting is really
+ 
+
+613
+00:11:12,800 --> 00:11:14,470
+readable, and the lighting is really
+going to struggle. So, sometimes the
+
+614
+00:11:14,470 --> 00:11:14,480
+going to struggle. So, sometimes the
+ 
+
+615
+00:11:14,480 --> 00:11:16,630
+going to struggle. So, sometimes the
+answer is simple as bring up your
+
+616
+00:11:16,630 --> 00:11:16,640
+answer is simple as bring up your
+ 
+
+617
+00:11:16,640 --> 00:11:18,389
+answer is simple as bring up your
+density of the particles. I know it's
+
+618
+00:11:18,389 --> 00:11:18,399
+density of the particles. I know it's
+ 
+
+619
+00:11:18,399 --> 00:11:20,230
+density of the particles. I know it's
+very computer inensive. Just figure out
+
+620
+00:11:20,230 --> 00:11:20,240
+very computer inensive. Just figure out
+ 
+
+621
+00:11:20,240 --> 00:11:21,430
+very computer inensive. Just figure out
+what number that looks like, and then
+
+622
+00:11:21,430 --> 00:11:21,440
+what number that looks like, and then
+ 
+
+623
+00:11:21,440 --> 00:11:22,870
+what number that looks like, and then
+when you're ready to render, bring it up
+
+624
+00:11:22,870 --> 00:11:22,880
+when you're ready to render, bring it up
+ 
+
+625
+00:11:22,880 --> 00:11:24,150
+when you're ready to render, bring it up
+to that number, render out your
+
+626
+00:11:24,150 --> 00:11:24,160
+to that number, render out your
+ 
+
+627
+00:11:24,160 --> 00:11:25,990
+to that number, render out your
+animation. So, I'll give you an example.
+
+628
+00:11:25,990 --> 00:11:26,000
+animation. So, I'll give you an example.
+ 
+
+629
+00:11:26,000 --> 00:11:27,990
+animation. So, I'll give you an example.
+In this scene right here, there was
+
+630
+00:11:27,990 --> 00:11:28,000
+In this scene right here, there was
+ 
+
+631
+00:11:28,000 --> 00:11:30,230
+In this scene right here, there was
+three lights. I took my background far
+
+632
+00:11:30,230 --> 00:11:30,240
+three lights. I took my background far
+ 
+
+633
+00:11:30,240 --> 00:11:32,230
+three lights. I took my background far
+back enough to where the area lights
+
+634
+00:11:32,230 --> 00:11:32,240
+back enough to where the area lights
+ 
+
+635
+00:11:32,240 --> 00:11:33,990
+back enough to where the area lights
+that were going to hit the particles
+
+636
+00:11:33,990 --> 00:11:34,000
+that were going to hit the particles
+ 
+
+637
+00:11:34,000 --> 00:11:35,509
+that were going to hit the particles
+weren't hitting my background. And I was
+
+638
+00:11:35,509 --> 00:11:35,519
+weren't hitting my background. And I was
+ 
+
+639
+00:11:35,519 --> 00:11:36,870
+weren't hitting my background. And I was
+able to control the background
+
+640
+00:11:36,870 --> 00:11:36,880
+able to control the background
+ 
+
+641
+00:11:36,880 --> 00:11:39,110
+able to control the background
+independently. Then I was able to get a
+
+642
+00:11:39,110 --> 00:11:39,120
+independently. Then I was able to get a
+ 
+
+643
+00:11:39,120 --> 00:11:41,110
+independently. Then I was able to get a
+light above it and then a light at the
+
+644
+00:11:41,110 --> 00:11:41,120
+light above it and then a light at the
+ 
+
+645
+00:11:41,120 --> 00:11:42,949
+light above it and then a light at the
+very back hitting the back of it to get
+
+646
+00:11:42,949 --> 00:11:42,959
+very back hitting the back of it to get
+ 
+
+647
+00:11:42,959 --> 00:11:45,110
+very back hitting the back of it to get
+it this really nice studio effect where
+
+648
+00:11:45,110 --> 00:11:45,120
+it this really nice studio effect where
+ 
+
+649
+00:11:45,120 --> 00:11:47,190
+it this really nice studio effect where
+my background had its own control
+
+650
+00:11:47,190 --> 00:11:47,200
+my background had its own control
+ 
+
+651
+00:11:47,200 --> 00:11:48,550
+my background had its own control
+independently to make it look really
+
+652
+00:11:48,550 --> 00:11:48,560
+independently to make it look really
+ 
+
+653
+00:11:48,560 --> 00:11:51,509
+independently to make it look really
+beautiful. And then two points at the
+
+654
+00:11:51,509 --> 00:11:51,519
+beautiful. And then two points at the
+ 
+
+655
+00:11:51,519 --> 00:11:53,829
+beautiful. And then two points at the
+top and the back to make it look really,
+
+656
+00:11:53,829 --> 00:11:53,839
+top and the back to make it look really,
+ 
+
+657
+00:11:53,839 --> 00:11:55,829
+top and the back to make it look really,
+really nice. Now, of course, sometimes
+
+658
+00:11:55,829 --> 00:11:55,839
+really nice. Now, of course, sometimes
+ 
+
+659
+00:11:55,839 --> 00:11:57,590
+really nice. Now, of course, sometimes
+the lighting comes from the particles
+
+660
+00:11:57,590 --> 00:11:57,600
+the lighting comes from the particles
+ 
+
+661
+00:11:57,600 --> 00:11:59,430
+the lighting comes from the particles
+themselves because the particles are
+
+662
+00:11:59,430 --> 00:11:59,440
+themselves because the particles are
+ 
+
+663
+00:11:59,440 --> 00:12:02,150
+themselves because the particles are
+emissive. So, in that case, lighting
+
+664
+00:12:02,150 --> 00:12:02,160
+emissive. So, in that case, lighting
+ 
+
+665
+00:12:02,160 --> 00:12:03,910
+emissive. So, in that case, lighting
+isn't really going to affect it, and you
+
+666
+00:12:03,910 --> 00:12:03,920
+isn't really going to affect it, and you
+ 
+
+667
+00:12:03,920 --> 00:12:05,990
+isn't really going to affect it, and you
+can get away with lower densities
+
+668
+00:12:05,990 --> 00:12:06,000
+can get away with lower densities
+ 
+
+669
+00:12:06,000 --> 00:12:07,430
+can get away with lower densities
+because things are a little bit easier
+
+670
+00:12:07,430 --> 00:12:07,440
+because things are a little bit easier
+ 
+
+671
+00:12:07,440 --> 00:12:09,190
+because things are a little bit easier
+to read. All right, now let's talk about
+
+672
+00:12:09,190 --> 00:12:09,200
+to read. All right, now let's talk about
+ 
+
+673
+00:12:09,200 --> 00:12:12,389
+to read. All right, now let's talk about
+shading and shaping these particles so
+
+674
+00:12:12,389 --> 00:12:12,399
+shading and shaping these particles so
+ 
+
+675
+00:12:12,399 --> 00:12:13,829
+shading and shaping these particles so
+they can look really cool. Now, most of
+
+676
+00:12:13,829 --> 00:12:13,839
+they can look really cool. Now, most of
+ 
+
+677
+00:12:13,839 --> 00:12:16,069
+they can look really cool. Now, most of
+the time, I'm just using the default
+
+678
+00:12:16,069 --> 00:12:16,079
+the time, I'm just using the default
+ 
+
+679
+00:12:16,079 --> 00:12:17,910
+the time, I'm just using the default
+spherical points that happen when you
+
+680
+00:12:17,910 --> 00:12:17,920
+spherical points that happen when you
+ 
+
+681
+00:12:17,920 --> 00:12:20,150
+spherical points that happen when you
+just simply add points. Now, one trick
+
+682
+00:12:20,150 --> 00:12:20,160
+just simply add points. Now, one trick
+ 
+
+683
+00:12:20,160 --> 00:12:22,470
+just simply add points. Now, one trick
+I've recently used is separating some of
+
+684
+00:12:22,470 --> 00:12:22,480
+I've recently used is separating some of
+ 
+
+685
+00:12:22,480 --> 00:12:24,870
+I've recently used is separating some of
+the objects and replacing them with this
+
+686
+00:12:24,870 --> 00:12:24,880
+the objects and replacing them with this
+ 
+
+687
+00:12:24,880 --> 00:12:27,269
+the objects and replacing them with this
+flat circle that has a really reflective
+
+688
+00:12:27,269 --> 00:12:27,279
+flat circle that has a really reflective
+ 
+
+689
+00:12:27,279 --> 00:12:29,430
+flat circle that has a really reflective
+metallic material. That's going to
+
+690
+00:12:29,430 --> 00:12:29,440
+metallic material. That's going to
+ 
+
+691
+00:12:29,440 --> 00:12:31,670
+metallic material. That's going to
+create these really reflective moments
+
+692
+00:12:31,670 --> 00:12:31,680
+create these really reflective moments
+ 
+
+693
+00:12:31,680 --> 00:12:33,590
+create these really reflective moments
+that add just this really nice interest
+
+694
+00:12:33,590 --> 00:12:33,600
+that add just this really nice interest
+ 
+
+695
+00:12:33,600 --> 00:12:35,990
+that add just this really nice interest
+to your animation. So, you don't always
+
+696
+00:12:35,990 --> 00:12:36,000
+to your animation. So, you don't always
+ 
+
+697
+00:12:36,000 --> 00:12:38,310
+to your animation. So, you don't always
+have to stick with the default spheres.
+
+698
+00:12:38,310 --> 00:12:38,320
+have to stick with the default spheres.
+ 
+
+699
+00:12:38,320 --> 00:12:39,910
+have to stick with the default spheres.
+Another really easy way to add some
+
+700
+00:12:39,910 --> 00:12:39,920
+Another really easy way to add some
+ 
+
+701
+00:12:39,920 --> 00:12:41,350
+Another really easy way to add some
+interest in your animation is just
+
+702
+00:12:41,350 --> 00:12:41,360
+interest in your animation is just
+ 
+
+703
+00:12:41,360 --> 00:12:44,150
+interest in your animation is just
+simply randomizing the size of the
+
+704
+00:12:44,150 --> 00:12:44,160
+simply randomizing the size of the
+ 
+
+705
+00:12:44,160 --> 00:12:46,710
+simply randomizing the size of the
+points. Then, what you can do is set up
+
+706
+00:12:46,710 --> 00:12:46,720
+points. Then, what you can do is set up
+ 
+
+707
+00:12:46,720 --> 00:12:49,190
+points. Then, what you can do is set up
+a store named attribute. plug that same
+
+708
+00:12:49,190 --> 00:12:49,200
+a store named attribute. plug that same
+ 
+
+709
+00:12:49,200 --> 00:12:51,190
+a store named attribute. plug that same
+randomization into the attribute. You
+
+710
+00:12:51,190 --> 00:12:51,200
+randomization into the attribute. You
+ 
+
+711
+00:12:51,200 --> 00:12:52,870
+randomization into the attribute. You
+can go to the shading, call that
+
+712
+00:12:52,870 --> 00:12:52,880
+can go to the shading, call that
+ 
+
+713
+00:12:52,880 --> 00:12:56,069
+can go to the shading, call that
+attribute and plug that into the shading
+
+714
+00:12:56,069 --> 00:12:56,079
+attribute and plug that into the shading
+ 
+
+715
+00:12:56,079 --> 00:12:58,470
+attribute and plug that into the shading
+so that you can also get random color in
+
+716
+00:12:58,470 --> 00:12:58,480
+so that you can also get random color in
+ 
+
+717
+00:12:58,480 --> 00:13:00,710
+so that you can also get random color in
+your animations and they stay put when
+
+718
+00:13:00,710 --> 00:13:00,720
+your animations and they stay put when
+ 
+
+719
+00:13:00,720 --> 00:13:02,790
+your animations and they stay put when
+the particles are moving around, which I
+
+720
+00:13:02,790 --> 00:13:02,800
+the particles are moving around, which I
+ 
+
+721
+00:13:02,800 --> 00:13:04,550
+the particles are moving around, which I
+think is really important. Now, using
+
+722
+00:13:04,550 --> 00:13:04,560
+think is really important. Now, using
+ 
+
+723
+00:13:04,560 --> 00:13:06,389
+think is really important. Now, using
+that same idea of taking something in
+
+724
+00:13:06,389 --> 00:13:06,399
+that same idea of taking something in
+ 
+
+725
+00:13:06,399 --> 00:13:08,230
+that same idea of taking something in
+geometry nodes, plugging it into a store
+
+726
+00:13:08,230 --> 00:13:08,240
+geometry nodes, plugging it into a store
+ 
+
+727
+00:13:08,240 --> 00:13:09,750
+geometry nodes, plugging it into a store
+named attribute, you can actually take
+
+728
+00:13:09,750 --> 00:13:09,760
+named attribute, you can actually take
+ 
+
+729
+00:13:09,760 --> 00:13:12,150
+named attribute, you can actually take
+the same noise texture that is operating
+
+730
+00:13:12,150 --> 00:13:12,160
+the same noise texture that is operating
+ 
+
+731
+00:13:12,160 --> 00:13:14,550
+the same noise texture that is operating
+some movements in geometry nodes, and
+
+732
+00:13:14,550 --> 00:13:14,560
+some movements in geometry nodes, and
+ 
+
+733
+00:13:14,560 --> 00:13:16,629
+some movements in geometry nodes, and
+you can send that into the shading and
+
+734
+00:13:16,629 --> 00:13:16,639
+you can send that into the shading and
+ 
+
+735
+00:13:16,639 --> 00:13:19,030
+you can send that into the shading and
+use that to texture the points as well.
+
+736
+00:13:19,030 --> 00:13:19,040
+use that to texture the points as well.
+ 
+
+737
+00:13:19,040 --> 00:13:21,509
+use that to texture the points as well.
+I was actually able to take that idea
+
+738
+00:13:21,509 --> 00:13:21,519
+I was actually able to take that idea
+ 
+
+739
+00:13:21,519 --> 00:13:24,150
+I was actually able to take that idea
+and plug that texture into some of the
+
+740
+00:13:24,150 --> 00:13:24,160
+and plug that texture into some of the
+ 
+
+741
+00:13:24,160 --> 00:13:26,389
+and plug that texture into some of the
+brightness of those particles in this
+
+742
+00:13:26,389 --> 00:13:26,399
+brightness of those particles in this
+ 
+
+743
+00:13:26,399 --> 00:13:28,310
+brightness of those particles in this
+animation, and I just think it made it
+
+744
+00:13:28,310 --> 00:13:28,320
+animation, and I just think it made it
+ 
+
+745
+00:13:28,320 --> 00:13:30,150
+animation, and I just think it made it
+look much, much cooler. So, there you
+
+746
+00:13:30,150 --> 00:13:30,160
+look much, much cooler. So, there you
+ 
+
+747
+00:13:30,160 --> 00:13:31,750
+look much, much cooler. So, there you
+go. Those are all of my tips and tricks
+
+748
+00:13:31,750 --> 00:13:31,760
+go. Those are all of my tips and tricks
+ 
+
+749
+00:13:31,760 --> 00:13:34,310
+go. Those are all of my tips and tricks
+that I dove into this week to make some
+
+750
+00:13:34,310 --> 00:13:34,320
+that I dove into this week to make some
+ 
+
+751
+00:13:34,320 --> 00:13:35,990
+that I dove into this week to make some
+really cool animations. Again, if you
+
+752
+00:13:35,990 --> 00:13:36,000
+really cool animations. Again, if you
+ 
+
+753
+00:13:36,000 --> 00:13:37,509
+really cool animations. Again, if you
+want the step-by-step tutorials for
+
+754
+00:13:37,509 --> 00:13:37,519
+want the step-by-step tutorials for
+ 
+
+755
+00:13:37,519 --> 00:13:39,190
+want the step-by-step tutorials for
+those animations, they are available on
+
+756
+00:13:39,190 --> 00:13:39,200
+those animations, they are available on
+ 
+
+757
+00:13:39,200 --> 00:13:41,750
+those animations, they are available on
+Patreon right now. And this one is uh
+
+758
+00:13:41,750 --> 00:13:41,760
+Patreon right now. And this one is uh
+ 
+
+759
+00:13:41,760 --> 00:13:42,949
+Patreon right now. And this one is uh
+totally free, so you can check that one
+
+760
+00:13:42,949 --> 00:13:42,959
+totally free, so you can check that one
+ 
+
+761
+00:13:42,959 --> 00:13:45,110
+totally free, so you can check that one
+out as well. So, with that being said, I
+
+762
+00:13:45,110 --> 00:13:45,120
+out as well. So, with that being said, I
+ 
+
+763
+00:13:45,120 --> 00:13:46,550
+out as well. So, with that being said, I
+hope you learned some really cool things
+
+764
+00:13:46,550 --> 00:13:46,560
+hope you learned some really cool things
+ 
+
+765
+00:13:46,560 --> 00:13:49,920
+hope you learned some really cool things
+and I will see you in the next
+

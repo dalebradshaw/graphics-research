@@ -1,0 +1,5555 @@
+1
+00:00:00,240 --> 00:00:02,470
+
+There's hundreds of directions you can
+
+2
+00:00:02,470 --> 00:00:02,480
+There's hundreds of directions you can
+ 
+
+3
+00:00:02,480 --> 00:00:05,670
+There's hundreds of directions you can
+go uh in 3D if you want to take logos
+
+4
+00:00:05,670 --> 00:00:05,680
+go uh in 3D if you want to take logos
+ 
+
+5
+00:00:05,680 --> 00:00:07,349
+go uh in 3D if you want to take logos
+and bring them to life because at the
+
+6
+00:00:07,349 --> 00:00:07,359
+and bring them to life because at the
+ 
+
+7
+00:00:07,359 --> 00:00:08,390
+and bring them to life because at the
+end of the day we're playing with
+
+8
+00:00:08,390 --> 00:00:08,400
+end of the day we're playing with
+ 
+
+9
+00:00:08,400 --> 00:00:10,549
+end of the day we're playing with
+geometry. It's just in the shape of a
+
+10
+00:00:10,549 --> 00:00:10,559
+geometry. It's just in the shape of a
+ 
+
+11
+00:00:10,559 --> 00:00:13,110
+geometry. It's just in the shape of a
+logo. But this week I wanted to take six
+
+12
+00:00:13,110 --> 00:00:13,120
+logo. But this week I wanted to take six
+ 
+
+13
+00:00:13,120 --> 00:00:15,589
+logo. But this week I wanted to take six
+ideas and make something really cool
+
+14
+00:00:15,589 --> 00:00:15,599
+ideas and make something really cool
+ 
+
+15
+00:00:15,599 --> 00:00:17,430
+ideas and make something really cool
+with them. Ended up making some really
+
+16
+00:00:17,430 --> 00:00:17,440
+with them. Ended up making some really
+ 
+
+17
+00:00:17,440 --> 00:00:19,109
+with them. Ended up making some really
+cool animations and a couple still
+
+18
+00:00:19,109 --> 00:00:19,119
+cool animations and a couple still
+ 
+
+19
+00:00:19,119 --> 00:00:21,510
+cool animations and a couple still
+images. So, what I want to do today is
+
+20
+00:00:21,510 --> 00:00:21,520
+images. So, what I want to do today is
+ 
+
+21
+00:00:21,520 --> 00:00:23,670
+images. So, what I want to do today is
+show you the bones, the concept of how
+
+22
+00:00:23,670 --> 00:00:23,680
+show you the bones, the concept of how
+ 
+
+23
+00:00:23,680 --> 00:00:26,790
+show you the bones, the concept of how
+to do those processes in Blender and
+
+24
+00:00:26,790 --> 00:00:26,800
+to do those processes in Blender and
+ 
+
+25
+00:00:26,800 --> 00:00:28,150
+to do those processes in Blender and
+just show you enough to where you can
+
+26
+00:00:28,150 --> 00:00:28,160
+just show you enough to where you can
+ 
+
+27
+00:00:28,160 --> 00:00:30,070
+just show you enough to where you can
+take them and then make them your own
+
+28
+00:00:30,070 --> 00:00:30,080
+take them and then make them your own
+ 
+
+29
+00:00:30,080 --> 00:00:31,750
+take them and then make them your own
+with your own ideas and how to take
+
+30
+00:00:31,750 --> 00:00:31,760
+with your own ideas and how to take
+ 
+
+31
+00:00:31,760 --> 00:00:33,750
+with your own ideas and how to take
+those ideas and go further with them
+
+32
+00:00:33,750 --> 00:00:33,760
+those ideas and go further with them
+ 
+
+33
+00:00:33,760 --> 00:00:35,510
+those ideas and go further with them
+with your own creativity. The first
+
+34
+00:00:35,510 --> 00:00:35,520
+with your own creativity. The first
+ 
+
+35
+00:00:35,520 --> 00:00:37,350
+with your own creativity. The first
+concept is taking your geometry,
+
+36
+00:00:37,350 --> 00:00:37,360
+concept is taking your geometry,
+ 
+
+37
+00:00:37,360 --> 00:00:39,190
+concept is taking your geometry,
+converting it to a volume so that you
+
+38
+00:00:39,190 --> 00:00:39,200
+converting it to a volume so that you
+ 
+
+39
+00:00:39,200 --> 00:00:41,270
+converting it to a volume so that you
+can then displace it in really cool ways
+
+40
+00:00:41,270 --> 00:00:41,280
+can then displace it in really cool ways
+ 
+
+41
+00:00:41,280 --> 00:00:42,630
+can then displace it in really cool ways
+that goes beyond your typical
+
+42
+00:00:42,630 --> 00:00:42,640
+that goes beyond your typical
+ 
+
+43
+00:00:42,640 --> 00:00:44,709
+that goes beyond your typical
+displacement modifier. and then we're
+
+44
+00:00:44,709 --> 00:00:44,719
+displacement modifier. and then we're
+ 
+
+45
+00:00:44,719 --> 00:00:46,470
+displacement modifier. and then we're
+going to convert it back into geometry
+
+46
+00:00:46,470 --> 00:00:46,480
+going to convert it back into geometry
+ 
+
+47
+00:00:46,480 --> 00:00:48,709
+going to convert it back into geometry
+so that you can add materials, lighting,
+
+48
+00:00:48,709 --> 00:00:48,719
+so that you can add materials, lighting,
+ 
+
+49
+00:00:48,719 --> 00:00:50,709
+so that you can add materials, lighting,
+anything you want to do it past that.
+
+50
+00:00:50,709 --> 00:00:50,719
+anything you want to do it past that.
+ 
+
+51
+00:00:50,719 --> 00:00:52,389
+anything you want to do it past that.
+The second one is conceptually very
+
+52
+00:00:52,389 --> 00:00:52,399
+The second one is conceptually very
+ 
+
+53
+00:00:52,399 --> 00:00:54,389
+The second one is conceptually very
+simple. You're taking just an image of
+
+54
+00:00:54,389 --> 00:00:54,399
+simple. You're taking just an image of
+ 
+
+55
+00:00:54,399 --> 00:00:56,150
+simple. You're taking just an image of
+your logo, black and white, throwing it
+
+56
+00:00:56,150 --> 00:00:56,160
+your logo, black and white, throwing it
+ 
+
+57
+00:00:56,160 --> 00:00:57,750
+your logo, black and white, throwing it
+in Blender, and manipulating it with
+
+58
+00:00:57,750 --> 00:00:57,760
+in Blender, and manipulating it with
+ 
+
+59
+00:00:57,760 --> 00:01:00,069
+in Blender, and manipulating it with
+procedural textures to create this
+
+60
+00:01:00,069 --> 00:01:00,079
+procedural textures to create this
+ 
+
+61
+00:01:00,079 --> 00:01:02,229
+procedural textures to create this
+transitioning morphing effect with
+
+62
+00:01:02,229 --> 00:01:02,239
+transitioning morphing effect with
+ 
+
+63
+00:01:02,239 --> 00:01:03,510
+transitioning morphing effect with
+anything you want to do. It's very
+
+64
+00:01:03,510 --> 00:01:03,520
+anything you want to do. It's very
+ 
+
+65
+00:01:03,520 --> 00:01:05,750
+anything you want to do. It's very
+powerful, but very simple to execute.
+
+66
+00:01:05,750 --> 00:01:05,760
+powerful, but very simple to execute.
+ 
+
+67
+00:01:05,760 --> 00:01:07,429
+powerful, but very simple to execute.
+This might be my favorite one. Uh, but
+
+68
+00:01:07,429 --> 00:01:07,439
+This might be my favorite one. Uh, but
+ 
+
+69
+00:01:07,439 --> 00:01:09,190
+This might be my favorite one. Uh, but
+we're taking a logo and able to control
+
+70
+00:01:09,190 --> 00:01:09,200
+we're taking a logo and able to control
+ 
+
+71
+00:01:09,200 --> 00:01:12,190
+we're taking a logo and able to control
+the emission outwards and inwards
+
+72
+00:01:12,190 --> 00:01:12,200
+the emission outwards and inwards
+ 
+
+73
+00:01:12,200 --> 00:01:14,789
+the emission outwards and inwards
+independently to make a really cool
+
+74
+00:01:14,789 --> 00:01:14,799
+independently to make a really cool
+ 
+
+75
+00:01:14,799 --> 00:01:17,429
+independently to make a really cool
+animation. Fourth concept is just being
+
+76
+00:01:17,429 --> 00:01:17,439
+animation. Fourth concept is just being
+ 
+
+77
+00:01:17,439 --> 00:01:19,429
+animation. Fourth concept is just being
+able to fill the inside of your logo
+
+78
+00:01:19,429 --> 00:01:19,439
+able to fill the inside of your logo
+ 
+
+79
+00:01:19,439 --> 00:01:21,350
+able to fill the inside of your logo
+with objects. I'm going to show you two
+
+80
+00:01:21,350 --> 00:01:21,360
+with objects. I'm going to show you two
+ 
+
+81
+00:01:21,360 --> 00:01:23,109
+with objects. I'm going to show you two
+methods. One that helps you fill it
+
+82
+00:01:23,109 --> 00:01:23,119
+methods. One that helps you fill it
+ 
+
+83
+00:01:23,119 --> 00:01:24,710
+methods. One that helps you fill it
+really well. Another method that allows
+
+84
+00:01:24,710 --> 00:01:24,720
+really well. Another method that allows
+ 
+
+85
+00:01:24,720 --> 00:01:26,870
+really well. Another method that allows
+you some space to animate those points.
+
+86
+00:01:26,870 --> 00:01:26,880
+you some space to animate those points.
+ 
+
+87
+00:01:26,880 --> 00:01:27,910
+you some space to animate those points.
+Then I'm going to show you how to take
+
+88
+00:01:27,910 --> 00:01:27,920
+Then I'm going to show you how to take
+ 
+
+89
+00:01:27,920 --> 00:01:29,990
+Then I'm going to show you how to take
+the black and white image of a logo, use
+
+90
+00:01:29,990 --> 00:01:30,000
+the black and white image of a logo, use
+ 
+
+91
+00:01:30,000 --> 00:01:31,990
+the black and white image of a logo, use
+it as a mask in geometry node. So, we
+
+92
+00:01:31,990 --> 00:01:32,000
+it as a mask in geometry node. So, we
+ 
+
+93
+00:01:32,000 --> 00:01:34,390
+it as a mask in geometry node. So, we
+can delete things, scale things, really
+
+94
+00:01:34,390 --> 00:01:34,400
+can delete things, scale things, really
+ 
+
+95
+00:01:34,400 --> 00:01:36,870
+can delete things, scale things, really
+show you how to take an image, map it in
+
+96
+00:01:36,870 --> 00:01:36,880
+show you how to take an image, map it in
+ 
+
+97
+00:01:36,880 --> 00:01:38,469
+show you how to take an image, map it in
+Geometry Nodes, and then you can take
+
+98
+00:01:38,469 --> 00:01:38,479
+Geometry Nodes, and then you can take
+ 
+
+99
+00:01:38,479 --> 00:01:40,469
+Geometry Nodes, and then you can take
+your further Geometry Nodes knowledge to
+
+100
+00:01:40,469 --> 00:01:40,479
+your further Geometry Nodes knowledge to
+ 
+
+101
+00:01:40,479 --> 00:01:43,109
+your further Geometry Nodes knowledge to
+do whatever you want under that idea.
+
+102
+00:01:43,109 --> 00:01:43,119
+do whatever you want under that idea.
+ 
+
+103
+00:01:43,119 --> 00:01:44,469
+do whatever you want under that idea.
+And the last one, I'm going to show you
+
+104
+00:01:44,469 --> 00:01:44,479
+And the last one, I'm going to show you
+ 
+
+105
+00:01:44,479 --> 00:01:47,109
+And the last one, I'm going to show you
+the quickest way to add fur to a logo
+
+106
+00:01:47,109 --> 00:01:47,119
+the quickest way to add fur to a logo
+ 
+
+107
+00:01:47,119 --> 00:01:49,590
+the quickest way to add fur to a logo
+and make it look really good very, very
+
+108
+00:01:49,590 --> 00:01:49,600
+and make it look really good very, very
+ 
+
+109
+00:01:49,600 --> 00:01:51,590
+and make it look really good very, very
+quickly. So, we're going to get into all
+
+110
+00:01:51,590 --> 00:01:51,600
+quickly. So, we're going to get into all
+ 
+
+111
+00:01:51,600 --> 00:01:53,270
+quickly. So, we're going to get into all
+of those right now. Before that, I want
+
+112
+00:01:53,270 --> 00:01:53,280
+of those right now. Before that, I want
+ 
+
+113
+00:01:53,280 --> 00:01:55,109
+of those right now. Before that, I want
+to let you guys know that there are six
+
+114
+00:01:55,109 --> 00:01:55,119
+to let you guys know that there are six
+ 
+
+115
+00:01:55,119 --> 00:01:57,510
+to let you guys know that there are six
+completed step-by-step tutorials on all
+
+116
+00:01:57,510 --> 00:01:57,520
+completed step-by-step tutorials on all
+ 
+
+117
+00:01:57,520 --> 00:01:59,749
+completed step-by-step tutorials on all
+of these concepts on my Patreon right
+
+118
+00:01:59,749 --> 00:01:59,759
+of these concepts on my Patreon right
+ 
+
+119
+00:01:59,759 --> 00:02:02,230
+of these concepts on my Patreon right
+now. I get to slow down, show you each
+
+120
+00:02:02,230 --> 00:02:02,240
+now. I get to slow down, show you each
+ 
+
+121
+00:02:02,240 --> 00:02:03,990
+now. I get to slow down, show you each
+one of these ideas in depth, and really
+
+122
+00:02:03,990 --> 00:02:04,000
+one of these ideas in depth, and really
+ 
+
+123
+00:02:04,000 --> 00:02:05,109
+one of these ideas in depth, and really
+show you how to make something really
+
+124
+00:02:05,109 --> 00:02:05,119
+show you how to make something really
+ 
+
+125
+00:02:05,119 --> 00:02:06,630
+show you how to make something really
+awesome by the end of them. If you want
+
+126
+00:02:06,630 --> 00:02:06,640
+awesome by the end of them. If you want
+ 
+
+127
+00:02:06,640 --> 00:02:08,469
+awesome by the end of them. If you want
+to check that out, that is on my Patreon
+
+128
+00:02:08,469 --> 00:02:08,479
+to check that out, that is on my Patreon
+ 
+
+129
+00:02:08,479 --> 00:02:10,309
+to check that out, that is on my Patreon
+today, and you can get a discount if you
+
+130
+00:02:10,309 --> 00:02:10,319
+today, and you can get a discount if you
+ 
+
+131
+00:02:10,319 --> 00:02:11,750
+today, and you can get a discount if you
+subscribe annually. With that being
+
+132
+00:02:11,750 --> 00:02:11,760
+subscribe annually. With that being
+ 
+
+133
+00:02:11,760 --> 00:02:13,750
+subscribe annually. With that being
+said, let's get into these concepts.
+
+134
+00:02:13,750 --> 00:02:13,760
+said, let's get into these concepts.
+ 
+
+135
+00:02:13,760 --> 00:02:15,910
+said, let's get into these concepts.
+Okay, so concept one, taking geometry,
+
+136
+00:02:15,910 --> 00:02:15,920
+Okay, so concept one, taking geometry,
+ 
+
+137
+00:02:15,920 --> 00:02:17,430
+Okay, so concept one, taking geometry,
+converting it to volumes, and being able
+
+138
+00:02:17,430 --> 00:02:17,440
+converting it to volumes, and being able
+ 
+
+139
+00:02:17,440 --> 00:02:19,350
+converting it to volumes, and being able
+to displace and sort of manipulate it
+
+140
+00:02:19,350 --> 00:02:19,360
+to displace and sort of manipulate it
+ 
+
+141
+00:02:19,360 --> 00:02:21,430
+to displace and sort of manipulate it
+that way. First, we are going to need
+
+142
+00:02:21,430 --> 00:02:21,440
+that way. First, we are going to need
+ 
+
+143
+00:02:21,440 --> 00:02:24,070
+that way. First, we are going to need
+the SVG of a logo. Um, but what you'll
+
+144
+00:02:24,070 --> 00:02:24,080
+the SVG of a logo. Um, but what you'll
+ 
+
+145
+00:02:24,080 --> 00:02:27,190
+the SVG of a logo. Um, but what you'll
+do is you just import and click on SVG.
+
+146
+00:02:27,190 --> 00:02:27,200
+do is you just import and click on SVG.
+ 
+
+147
+00:02:27,200 --> 00:02:28,790
+do is you just import and click on SVG.
+And I'm going to grab the Blender logo.
+
+148
+00:02:28,790 --> 00:02:28,800
+And I'm going to grab the Blender logo.
+ 
+
+149
+00:02:28,800 --> 00:02:30,150
+And I'm going to grab the Blender logo.
+So, we have the logo. First thing we
+
+150
+00:02:30,150 --> 00:02:30,160
+So, we have the logo. First thing we
+ 
+
+151
+00:02:30,160 --> 00:02:32,229
+So, we have the logo. First thing we
+need to do is add some thickness to it.
+
+152
+00:02:32,229 --> 00:02:32,239
+need to do is add some thickness to it.
+ 
+
+153
+00:02:32,239 --> 00:02:34,390
+need to do is add some thickness to it.
+Because it is currently a curve, you can
+
+154
+00:02:34,390 --> 00:02:34,400
+Because it is currently a curve, you can
+ 
+
+155
+00:02:34,400 --> 00:02:36,390
+Because it is currently a curve, you can
+go ahead in the geometry section and
+
+156
+00:02:36,390 --> 00:02:36,400
+go ahead in the geometry section and
+ 
+
+157
+00:02:36,400 --> 00:02:38,550
+go ahead in the geometry section and
+extrude that. And this is all we're
+
+158
+00:02:38,550 --> 00:02:38,560
+extrude that. And this is all we're
+ 
+
+159
+00:02:38,560 --> 00:02:39,509
+extrude that. And this is all we're
+going to need to do. And I'm just going
+
+160
+00:02:39,509 --> 00:02:39,519
+going to need to do. And I'm just going
+ 
+
+161
+00:02:39,519 --> 00:02:41,990
+going to need to do. And I'm just going
+to go ahead and convert it to a mesh.
+
+162
+00:02:41,990 --> 00:02:42,000
+to go ahead and convert it to a mesh.
+ 
+
+163
+00:02:42,000 --> 00:02:44,070
+to go ahead and convert it to a mesh.
+Now, we have real geometry. Now, I'm
+
+164
+00:02:44,070 --> 00:02:44,080
+Now, we have real geometry. Now, I'm
+ 
+
+165
+00:02:44,080 --> 00:02:45,670
+Now, we have real geometry. Now, I'm
+going to hide that. And the first step
+
+166
+00:02:45,670 --> 00:02:45,680
+going to hide that. And the first step
+ 
+
+167
+00:02:45,680 --> 00:02:47,910
+going to hide that. And the first step
+to converting this into a volume is in
+
+168
+00:02:47,910 --> 00:02:47,920
+to converting this into a volume is in
+ 
+
+169
+00:02:47,920 --> 00:02:50,070
+to converting this into a volume is in
+the volume settings, go ahead and create
+
+170
+00:02:50,070 --> 00:02:50,080
+the volume settings, go ahead and create
+ 
+
+171
+00:02:50,080 --> 00:02:52,309
+the volume settings, go ahead and create
+an empty. And that is going to give you
+
+172
+00:02:52,309 --> 00:02:52,319
+an empty. And that is going to give you
+ 
+
+173
+00:02:52,319 --> 00:02:54,710
+an empty. And that is going to give you
+a subset of modifiers you now have
+
+174
+00:02:54,710 --> 00:02:54,720
+a subset of modifiers you now have
+ 
+
+175
+00:02:54,720 --> 00:02:57,430
+a subset of modifiers you now have
+access to. We can search up a mesh to
+
+176
+00:02:57,430 --> 00:02:57,440
+access to. We can search up a mesh to
+ 
+
+177
+00:02:57,440 --> 00:02:59,990
+access to. We can search up a mesh to
+volume node and then you can grab that
+
+178
+00:02:59,990 --> 00:03:00,000
+volume node and then you can grab that
+ 
+
+179
+00:03:00,000 --> 00:03:01,110
+volume node and then you can grab that
+logo and you can start to see it show
+
+180
+00:03:01,110 --> 00:03:01,120
+logo and you can start to see it show
+ 
+
+181
+00:03:01,120 --> 00:03:02,949
+logo and you can start to see it show
+up. You bring up that density and then
+
+182
+00:03:02,949 --> 00:03:02,959
+up. You bring up that density and then
+ 
+
+183
+00:03:02,959 --> 00:03:04,869
+up. You bring up that density and then
+you can bring up that voxil amount. We
+
+184
+00:03:04,869 --> 00:03:04,879
+you can bring up that voxil amount. We
+ 
+
+185
+00:03:04,879 --> 00:03:07,830
+you can bring up that voxil amount. We
+now have a volume version of the logo
+
+186
+00:03:07,830 --> 00:03:07,840
+now have a volume version of the logo
+ 
+
+187
+00:03:07,840 --> 00:03:09,830
+now have a volume version of the logo
+and if you are in cycles you quite
+
+188
+00:03:09,830 --> 00:03:09,840
+and if you are in cycles you quite
+ 
+
+189
+00:03:09,840 --> 00:03:13,430
+and if you are in cycles you quite
+literally have now a volume version of
+
+190
+00:03:13,430 --> 00:03:13,440
+literally have now a volume version of
+ 
+
+191
+00:03:13,440 --> 00:03:15,190
+literally have now a volume version of
+this logo. Like already this is a cool
+
+192
+00:03:15,190 --> 00:03:15,200
+this logo. Like already this is a cool
+ 
+
+193
+00:03:15,200 --> 00:03:16,790
+this logo. Like already this is a cool
+concept. Now we're going to get a volume
+
+194
+00:03:16,790 --> 00:03:16,800
+concept. Now we're going to get a volume
+ 
+
+195
+00:03:16,800 --> 00:03:18,710
+concept. Now we're going to get a volume
+displace. So search that up. Volume
+
+196
+00:03:18,710 --> 00:03:18,720
+displace. So search that up. Volume
+ 
+
+197
+00:03:18,720 --> 00:03:20,630
+displace. So search that up. Volume
+displace. This is going to allow you to
+
+198
+00:03:20,630 --> 00:03:20,640
+displace. This is going to allow you to
+ 
+
+199
+00:03:20,640 --> 00:03:22,949
+displace. This is going to allow you to
+now throw textures on this just like a
+
+200
+00:03:22,949 --> 00:03:22,959
+now throw textures on this just like a
+ 
+
+201
+00:03:22,959 --> 00:03:26,309
+now throw textures on this just like a
+displacement texture. So, we'll go into
+
+202
+00:03:26,309 --> 00:03:26,319
+displacement texture. So, we'll go into
+ 
+
+203
+00:03:26,319 --> 00:03:28,229
+displacement texture. So, we'll go into
+the textures and I'm going to do
+
+204
+00:03:28,229 --> 00:03:28,239
+the textures and I'm going to do
+ 
+
+205
+00:03:28,239 --> 00:03:31,430
+the textures and I'm going to do
+distorted noise. And we now have this.
+
+206
+00:03:31,430 --> 00:03:31,440
+distorted noise. And we now have this.
+ 
+
+207
+00:03:31,440 --> 00:03:34,550
+distorted noise. And we now have this.
+Again, if we pop back into cycles, it's
+
+208
+00:03:34,550 --> 00:03:34,560
+Again, if we pop back into cycles, it's
+ 
+
+209
+00:03:34,560 --> 00:03:36,630
+Again, if we pop back into cycles, it's
+pretty cool. Now, keep in mind your
+
+210
+00:03:36,630 --> 00:03:36,640
+pretty cool. Now, keep in mind your
+ 
+
+211
+00:03:36,640 --> 00:03:38,390
+pretty cool. Now, keep in mind your
+voxil amount. I have it at 500, which is
+
+212
+00:03:38,390 --> 00:03:38,400
+voxil amount. I have it at 500, which is
+ 
+
+213
+00:03:38,400 --> 00:03:39,990
+voxil amount. I have it at 500, which is
+way too much just to show you guys
+
+214
+00:03:39,990 --> 00:03:40,000
+way too much just to show you guys
+ 
+
+215
+00:03:40,000 --> 00:03:41,670
+way too much just to show you guys
+what's going on. Let me just pop it down
+
+216
+00:03:41,670 --> 00:03:41,680
+what's going on. Let me just pop it down
+ 
+
+217
+00:03:41,680 --> 00:03:43,670
+what's going on. Let me just pop it down
+to 200. We can go ahead and play with
+
+218
+00:03:43,670 --> 00:03:43,680
+to 200. We can go ahead and play with
+ 
+
+219
+00:03:43,680 --> 00:03:47,869
+to 200. We can go ahead and play with
+that size. The strength is quite a
+
+220
+00:03:47,869 --> 00:03:47,879
+that size. The strength is quite a
+ 
+
+221
+00:03:47,879 --> 00:03:50,229
+that size. The strength is quite a
+lot right now. So, we'll maybe bring it
+
+222
+00:03:50,229 --> 00:03:50,239
+lot right now. So, we'll maybe bring it
+ 
+
+223
+00:03:50,239 --> 00:03:52,309
+lot right now. So, we'll maybe bring it
+down to something like this. Now what I
+
+224
+00:03:52,309 --> 00:03:52,319
+down to something like this. Now what I
+ 
+
+225
+00:03:52,319 --> 00:03:55,990
+down to something like this. Now what I
+can do is convert it back to geometry.
+
+226
+00:03:55,990 --> 00:03:56,000
+can do is convert it back to geometry.
+ 
+
+227
+00:03:56,000 --> 00:03:57,509
+can do is convert it back to geometry.
+So what we'll do is we'll just add a
+
+228
+00:03:57,509 --> 00:03:57,519
+So what we'll do is we'll just add a
+ 
+
+229
+00:03:57,519 --> 00:04:00,309
+So what we'll do is we'll just add a
+geometry nodes modifier and then open
+
+230
+00:04:00,309 --> 00:04:00,319
+geometry nodes modifier and then open
+ 
+
+231
+00:04:00,319 --> 00:04:03,350
+geometry nodes modifier and then open
+that up and then there is a volume to
+
+232
+00:04:03,350 --> 00:04:03,360
+that up and then there is a volume to
+ 
+
+233
+00:04:03,360 --> 00:04:06,070
+that up and then there is a volume to
+mesh node. Volume to mesh that is going
+
+234
+00:04:06,070 --> 00:04:06,080
+mesh node. Volume to mesh that is going
+ 
+
+235
+00:04:06,080 --> 00:04:09,190
+mesh node. Volume to mesh that is going
+to convert it back. It looks pretty
+
+236
+00:04:09,190 --> 00:04:09,200
+to convert it back. It looks pretty
+ 
+
+237
+00:04:09,200 --> 00:04:12,070
+to convert it back. It looks pretty
+insane. We can fix that with a set shade
+
+238
+00:04:12,070 --> 00:04:12,080
+insane. We can fix that with a set shade
+ 
+
+239
+00:04:12,080 --> 00:04:13,990
+insane. We can fix that with a set shade
+smooth node. And then you can see it's
+
+240
+00:04:13,990 --> 00:04:14,000
+smooth node. And then you can see it's
+ 
+
+241
+00:04:14,000 --> 00:04:16,710
+smooth node. And then you can see it's
+still kind of steppy if that's a proper
+
+242
+00:04:16,710 --> 00:04:16,720
+still kind of steppy if that's a proper
+ 
+
+243
+00:04:16,720 --> 00:04:18,229
+still kind of steppy if that's a proper
+word. I'm gonna bring my voxil amount to
+
+244
+00:04:18,229 --> 00:04:18,239
+word. I'm gonna bring my voxil amount to
+ 
+
+245
+00:04:18,239 --> 00:04:21,670
+word. I'm gonna bring my voxil amount to
+like 400. You could see that. I think
+
+246
+00:04:21,670 --> 00:04:21,680
+like 400. You could see that. I think
+ 
+
+247
+00:04:21,680 --> 00:04:23,590
+like 400. You could see that. I think
+it's cool, but it's not on purpose. So,
+
+248
+00:04:23,590 --> 00:04:23,600
+it's cool, but it's not on purpose. So,
+ 
+
+249
+00:04:23,600 --> 00:04:25,510
+it's cool, but it's not on purpose. So,
+you just bring that threshold up. Then
+
+250
+00:04:25,510 --> 00:04:25,520
+you just bring that threshold up. Then
+ 
+
+251
+00:04:25,520 --> 00:04:27,030
+you just bring that threshold up. Then
+you can head back to the texture and
+
+252
+00:04:27,030 --> 00:04:27,040
+you can head back to the texture and
+ 
+
+253
+00:04:27,040 --> 00:04:30,590
+you can head back to the texture and
+start to just play with some stuff. Uh I
+
+254
+00:04:30,590 --> 00:04:30,600
+start to just play with some stuff. Uh I
+ 
+
+255
+00:04:30,600 --> 00:04:32,870
+start to just play with some stuff. Uh I
+would play with the contrast
+
+256
+00:04:32,870 --> 00:04:32,880
+would play with the contrast
+ 
+
+257
+00:04:32,880 --> 00:04:34,629
+would play with the contrast
+specifically cuz I want to get these
+
+258
+00:04:34,629 --> 00:04:34,639
+specifically cuz I want to get these
+ 
+
+259
+00:04:34,639 --> 00:04:37,270
+specifically cuz I want to get these
+holes in uh the scene. And then you can
+
+260
+00:04:37,270 --> 00:04:37,280
+holes in uh the scene. And then you can
+ 
+
+261
+00:04:37,280 --> 00:04:39,909
+holes in uh the scene. And then you can
+maybe bring that size up. And now you
+
+262
+00:04:39,909 --> 00:04:39,919
+maybe bring that size up. And now you
+ 
+
+263
+00:04:39,919 --> 00:04:41,990
+maybe bring that size up. And now you
+have something really really wild. I
+
+264
+00:04:41,990 --> 00:04:42,000
+have something really really wild. I
+ 
+
+265
+00:04:42,000 --> 00:04:45,270
+have something really really wild. I
+find this volumeing and then texturing
+
+266
+00:04:45,270 --> 00:04:45,280
+find this volumeing and then texturing
+ 
+
+267
+00:04:45,280 --> 00:04:47,350
+find this volumeing and then texturing
+uh to be very stable. And I really
+
+268
+00:04:47,350 --> 00:04:47,360
+uh to be very stable. And I really
+ 
+
+269
+00:04:47,360 --> 00:04:49,270
+uh to be very stable. And I really
+really like this method. And you can
+
+270
+00:04:49,270 --> 00:04:49,280
+really like this method. And you can
+ 
+
+271
+00:04:49,280 --> 00:04:52,150
+really like this method. And you can
+throw any texture within this on that.
+
+272
+00:04:52,150 --> 00:04:52,160
+throw any texture within this on that.
+ 
+
+273
+00:04:52,160 --> 00:04:53,590
+throw any texture within this on that.
+So you can even mix them. We'll do maybe
+
+274
+00:04:53,590 --> 00:04:53,600
+So you can even mix them. We'll do maybe
+ 
+
+275
+00:04:53,600 --> 00:04:57,749
+So you can even mix them. We'll do maybe
+do a cell noise. And now we have this
+
+276
+00:04:57,749 --> 00:04:57,759
+do a cell noise. And now we have this
+ 
+
+277
+00:04:57,759 --> 00:04:59,749
+do a cell noise. And now we have this
+very quickly. And it's it's pretty
+
+278
+00:04:59,749 --> 00:04:59,759
+very quickly. And it's it's pretty
+ 
+
+279
+00:04:59,759 --> 00:05:01,270
+very quickly. And it's it's pretty
+stable. You have like weird things like
+
+280
+00:05:01,270 --> 00:05:01,280
+stable. You have like weird things like
+ 
+
+281
+00:05:01,280 --> 00:05:02,629
+stable. You have like weird things like
+this, but you can work with it. But that
+
+282
+00:05:02,629 --> 00:05:02,639
+this, but you can work with it. But that
+ 
+
+283
+00:05:02,639 --> 00:05:04,230
+this, but you can work with it. But that
+is how you can create something really
+
+284
+00:05:04,230 --> 00:05:04,240
+is how you can create something really
+ 
+
+285
+00:05:04,240 --> 00:05:06,870
+is how you can create something really
+really cool very quickly. Uh with
+
+286
+00:05:06,870 --> 00:05:06,880
+really cool very quickly. Uh with
+ 
+
+287
+00:05:06,880 --> 00:05:08,629
+really cool very quickly. Uh with
+volumes. For this next thing, you are
+
+288
+00:05:08,629 --> 00:05:08,639
+volumes. For this next thing, you are
+ 
+
+289
+00:05:08,639 --> 00:05:11,670
+volumes. For this next thing, you are
+going to need a black and white image of
+
+290
+00:05:11,670 --> 00:05:11,680
+going to need a black and white image of
+ 
+
+291
+00:05:11,680 --> 00:05:13,670
+going to need a black and white image of
+your logo. Something like this. I'm
+
+292
+00:05:13,670 --> 00:05:13,680
+your logo. Something like this. I'm
+ 
+
+293
+00:05:13,680 --> 00:05:15,670
+your logo. Something like this. I'm
+going to use uh the Nike logo. Um, but
+
+294
+00:05:15,670 --> 00:05:15,680
+going to use uh the Nike logo. Um, but
+ 
+
+295
+00:05:15,680 --> 00:05:18,469
+going to use uh the Nike logo. Um, but
+get a PNG or JPEG of a black and white
+
+296
+00:05:18,469 --> 00:05:18,479
+get a PNG or JPEG of a black and white
+ 
+
+297
+00:05:18,479 --> 00:05:21,029
+get a PNG or JPEG of a black and white
+image. Um, what we'll do now is I'm
+
+298
+00:05:21,029 --> 00:05:21,039
+image. Um, what we'll do now is I'm
+ 
+
+299
+00:05:21,039 --> 00:05:24,469
+image. Um, what we'll do now is I'm
+going to go ahead on image mesh plane
+
+300
+00:05:24,469 --> 00:05:24,479
+going to go ahead on image mesh plane
+ 
+
+301
+00:05:24,479 --> 00:05:27,270
+going to go ahead on image mesh plane
+and I'm going to grab my logo. So, I'm
+
+302
+00:05:27,270 --> 00:05:27,280
+and I'm going to grab my logo. So, I'm
+ 
+
+303
+00:05:27,280 --> 00:05:28,870
+and I'm going to grab my logo. So, I'm
+going to scale it up and we're going to
+
+304
+00:05:28,870 --> 00:05:28,880
+going to scale it up and we're going to
+ 
+
+305
+00:05:28,880 --> 00:05:30,950
+going to scale it up and we're going to
+open up a shader window and I'm going to
+
+306
+00:05:30,950 --> 00:05:30,960
+open up a shader window and I'm going to
+ 
+
+307
+00:05:30,960 --> 00:05:33,029
+open up a shader window and I'm going to
+look at this in Eevee. So, now we have
+
+308
+00:05:33,029 --> 00:05:33,039
+look at this in Eevee. So, now we have
+ 
+
+309
+00:05:33,039 --> 00:05:35,430
+look at this in Eevee. So, now we have
+this and we have a couple things that we
+
+310
+00:05:35,430 --> 00:05:35,440
+this and we have a couple things that we
+ 
+
+311
+00:05:35,440 --> 00:05:37,110
+this and we have a couple things that we
+can do here. So, I'm just going to go
+
+312
+00:05:37,110 --> 00:05:37,120
+can do here. So, I'm just going to go
+ 
+
+313
+00:05:37,120 --> 00:05:39,029
+can do here. So, I'm just going to go
+ahead and sever these connections. Give
+
+314
+00:05:39,029 --> 00:05:39,039
+ahead and sever these connections. Give
+ 
+
+315
+00:05:39,039 --> 00:05:40,950
+ahead and sever these connections. Give
+myself an emission of 10 and we're going
+
+316
+00:05:40,950 --> 00:05:40,960
+myself an emission of 10 and we're going
+ 
+
+317
+00:05:40,960 --> 00:05:43,909
+myself an emission of 10 and we're going
+to plug this guy right into color. And
+
+318
+00:05:43,909 --> 00:05:43,919
+to plug this guy right into color. And
+ 
+
+319
+00:05:43,919 --> 00:05:47,029
+to plug this guy right into color. And
+off the bat, we need to invert it. So,
+
+320
+00:05:47,029 --> 00:05:47,039
+off the bat, we need to invert it. So,
+ 
+
+321
+00:05:47,039 --> 00:05:49,189
+off the bat, we need to invert it. So,
+first you have some ugliness right
+
+322
+00:05:49,189 --> 00:05:49,199
+first you have some ugliness right
+ 
+
+323
+00:05:49,199 --> 00:05:50,749
+first you have some ugliness right
+there. You can fix
+
+324
+00:05:50,749 --> 00:05:50,759
+there. You can fix
+ 
+
+325
+00:05:50,759 --> 00:05:55,430
+there. You can fix
+that with a color ramp set to constant.
+
+326
+00:05:55,430 --> 00:05:55,440
+that with a color ramp set to constant.
+ 
+
+327
+00:05:55,440 --> 00:05:57,270
+that with a color ramp set to constant.
+That's going to fix that weird ugliness.
+
+328
+00:05:57,270 --> 00:05:57,280
+That's going to fix that weird ugliness.
+ 
+
+329
+00:05:57,280 --> 00:05:59,350
+That's going to fix that weird ugliness.
+Can't explain it, but that is the case.
+
+330
+00:05:59,350 --> 00:05:59,360
+Can't explain it, but that is the case.
+ 
+
+331
+00:05:59,360 --> 00:06:00,870
+Can't explain it, but that is the case.
+So, here's what we can do. Go ahead and
+
+332
+00:06:00,870 --> 00:06:00,880
+So, here's what we can do. Go ahead and
+ 
+
+333
+00:06:00,880 --> 00:06:02,469
+So, here's what we can do. Go ahead and
+get a mapping setup. Just a mapping node
+
+334
+00:06:02,469 --> 00:06:02,479
+get a mapping setup. Just a mapping node
+ 
+
+335
+00:06:02,479 --> 00:06:04,629
+get a mapping setup. Just a mapping node
+and a texture coordinate. And we are
+
+336
+00:06:04,629 --> 00:06:04,639
+and a texture coordinate. And we are
+ 
+
+337
+00:06:04,639 --> 00:06:07,830
+and a texture coordinate. And we are
+going to go ahead and throw a texture on
+
+338
+00:06:07,830 --> 00:06:07,840
+going to go ahead and throw a texture on
+ 
+
+339
+00:06:07,840 --> 00:06:10,070
+going to go ahead and throw a texture on
+here. I'm going to use the Gabber
+
+340
+00:06:10,070 --> 00:06:10,080
+here. I'm going to use the Gabber
+ 
+
+341
+00:06:10,080 --> 00:06:11,990
+here. I'm going to use the Gabber
+texture because I've never actually used
+
+342
+00:06:11,990 --> 00:06:12,000
+texture because I've never actually used
+ 
+
+343
+00:06:12,000 --> 00:06:13,510
+texture because I've never actually used
+it on the YouTube channel yet. and it's
+
+344
+00:06:13,510 --> 00:06:13,520
+it on the YouTube channel yet. and it's
+ 
+
+345
+00:06:13,520 --> 00:06:14,550
+it on the YouTube channel yet. and it's
+going to give you something really cool
+
+346
+00:06:14,550 --> 00:06:14,560
+going to give you something really cool
+ 
+
+347
+00:06:14,560 --> 00:06:17,189
+going to give you something really cool
+like this. So now we've completely lost
+
+348
+00:06:17,189 --> 00:06:17,199
+like this. So now we've completely lost
+ 
+
+349
+00:06:17,199 --> 00:06:19,270
+like this. So now we've completely lost
+the logo. So now I'm going to go ahead
+
+350
+00:06:19,270 --> 00:06:19,280
+the logo. So now I'm going to go ahead
+ 
+
+351
+00:06:19,280 --> 00:06:22,469
+the logo. So now I'm going to go ahead
+and get in a mix color node to create a
+
+352
+00:06:22,469 --> 00:06:22,479
+and get in a mix color node to create a
+ 
+
+353
+00:06:22,479 --> 00:06:25,830
+and get in a mix color node to create a
+bypass. So we can just say how much of
+
+354
+00:06:25,830 --> 00:06:25,840
+bypass. So we can just say how much of
+ 
+
+355
+00:06:25,840 --> 00:06:29,029
+bypass. So we can just say how much of
+this texture are we actually wanting um
+
+356
+00:06:29,029 --> 00:06:29,039
+this texture are we actually wanting um
+ 
+
+357
+00:06:29,039 --> 00:06:31,430
+this texture are we actually wanting um
+to see. So this is a really really cool
+
+358
+00:06:31,430 --> 00:06:31,440
+to see. So this is a really really cool
+ 
+
+359
+00:06:31,440 --> 00:06:33,029
+to see. So this is a really really cool
+texture. Again, one that I've not talked
+
+360
+00:06:33,029 --> 00:06:33,039
+texture. Again, one that I've not talked
+ 
+
+361
+00:06:33,039 --> 00:06:34,309
+texture. Again, one that I've not talked
+about, but you can change the
+
+362
+00:06:34,309 --> 00:06:34,319
+about, but you can change the
+ 
+
+363
+00:06:34,319 --> 00:06:36,230
+about, but you can change the
+orientation to actually fit the shape of
+
+364
+00:06:36,230 --> 00:06:36,240
+orientation to actually fit the shape of
+ 
+
+365
+00:06:36,240 --> 00:06:39,189
+orientation to actually fit the shape of
+the Nike logo. So when we morph it in,
+
+366
+00:06:39,189 --> 00:06:39,199
+the Nike logo. So when we morph it in,
+ 
+
+367
+00:06:39,199 --> 00:06:40,350
+the Nike logo. So when we morph it in,
+it
+
+368
+00:06:40,350 --> 00:06:40,360
+it
+ 
+
+369
+00:06:40,360 --> 00:06:42,629
+it
+actually makes more sense in terms of
+
+370
+00:06:42,629 --> 00:06:42,639
+actually makes more sense in terms of
+ 
+
+371
+00:06:42,639 --> 00:06:44,950
+actually makes more sense in terms of
+this transition. Uh there's a lot of
+
+372
+00:06:44,950 --> 00:06:44,960
+this transition. Uh there's a lot of
+ 
+
+373
+00:06:44,960 --> 00:06:46,629
+this transition. Uh there's a lot of
+really really cool things that you can
+
+374
+00:06:46,629 --> 00:06:46,639
+really really cool things that you can
+ 
+
+375
+00:06:46,639 --> 00:06:49,670
+really really cool things that you can
+do uh with this texture. But look at
+
+376
+00:06:49,670 --> 00:06:49,680
+do uh with this texture. But look at
+ 
+
+377
+00:06:49,680 --> 00:06:52,309
+do uh with this texture. But look at
+that. All we have to do is animate this
+
+378
+00:06:52,309 --> 00:06:52,319
+that. All we have to do is animate this
+ 
+
+379
+00:06:52,319 --> 00:06:54,390
+that. All we have to do is animate this
+in. So let's go ahead. So I'm going to
+
+380
+00:06:54,390 --> 00:06:54,400
+in. So let's go ahead. So I'm going to
+ 
+
+381
+00:06:54,400 --> 00:06:57,870
+in. So let's go ahead. So I'm going to
+go ahead and set up my camera just to
+
+382
+00:06:57,870 --> 00:06:57,880
+go ahead and set up my camera just to
+ 
+
+383
+00:06:57,880 --> 00:07:00,790
+go ahead and set up my camera just to
+have most of the logo. I really like the
+
+384
+00:07:00,790 --> 00:07:00,800
+have most of the logo. I really like the
+ 
+
+385
+00:07:00,800 --> 00:07:02,390
+have most of the logo. I really like the
+composition of cutting off part of the
+
+386
+00:07:02,390 --> 00:07:02,400
+composition of cutting off part of the
+ 
+
+387
+00:07:02,400 --> 00:07:04,710
+composition of cutting off part of the
+logo. I think it looks really, really,
+
+388
+00:07:04,710 --> 00:07:04,720
+logo. I think it looks really, really,
+ 
+
+389
+00:07:04,720 --> 00:07:06,309
+logo. I think it looks really, really,
+really cool. And then what I'm going to
+
+390
+00:07:06,309 --> 00:07:06,319
+really cool. And then what I'm going to
+ 
+
+391
+00:07:06,319 --> 00:07:09,990
+really cool. And then what I'm going to
+do now is because we have kind of a high
+
+392
+00:07:09,990 --> 00:07:10,000
+do now is because we have kind of a high
+ 
+
+393
+00:07:10,000 --> 00:07:12,670
+do now is because we have kind of a high
+emission, we can go into the
+
+394
+00:07:12,670 --> 00:07:12,680
+emission, we can go into the
+ 
+
+395
+00:07:12,680 --> 00:07:14,550
+emission, we can go into the
+compositing right here. I'm going just
+
+396
+00:07:14,550 --> 00:07:14,560
+compositing right here. I'm going just
+ 
+
+397
+00:07:14,560 --> 00:07:17,749
+compositing right here. I'm going just
+click use node and get a glare node. Set
+
+398
+00:07:17,749 --> 00:07:17,759
+click use node and get a glare node. Set
+ 
+
+399
+00:07:17,759 --> 00:07:20,070
+click use node and get a glare node. Set
+it to bloom. And then we can go back to
+
+400
+00:07:20,070 --> 00:07:20,080
+it to bloom. And then we can go back to
+ 
+
+401
+00:07:20,080 --> 00:07:21,710
+it to bloom. And then we can go back to
+layout. And I'm just going to go say
+
+402
+00:07:21,710 --> 00:07:21,720
+layout. And I'm just going to go say
+ 
+
+403
+00:07:21,720 --> 00:07:24,230
+layout. And I'm just going to go say
+always. And then we can just make it
+
+404
+00:07:24,230 --> 00:07:24,240
+always. And then we can just make it
+ 
+
+405
+00:07:24,240 --> 00:07:25,990
+always. And then we can just make it
+glow a little bit. And then you can
+
+406
+00:07:25,990 --> 00:07:26,000
+glow a little bit. And then you can
+ 
+
+407
+00:07:26,000 --> 00:07:30,309
+glow a little bit. And then you can
+change the color of your logo here. Nike
+
+408
+00:07:30,309 --> 00:07:30,319
+change the color of your logo here. Nike
+ 
+
+409
+00:07:30,319 --> 00:07:32,070
+change the color of your logo here. Nike
+does love red. So we'll do that. And
+
+410
+00:07:32,070 --> 00:07:32,080
+does love red. So we'll do that. And
+ 
+
+411
+00:07:32,080 --> 00:07:34,510
+does love red. So we'll do that. And
+then all we have to do is just
+
+412
+00:07:34,510 --> 00:07:34,520
+then all we have to do is just
+ 
+
+413
+00:07:34,520 --> 00:07:37,350
+then all we have to do is just
+animate this factor to whatever extent
+
+414
+00:07:37,350 --> 00:07:37,360
+animate this factor to whatever extent
+ 
+
+415
+00:07:37,360 --> 00:07:38,710
+animate this factor to whatever extent
+you want it to start. Maybe something
+
+416
+00:07:38,710 --> 00:07:38,720
+you want it to start. Maybe something
+ 
+
+417
+00:07:38,720 --> 00:07:40,950
+you want it to start. Maybe something
+like that looks really cool. So I'm
+
+418
+00:07:40,950 --> 00:07:40,960
+like that looks really cool. So I'm
+ 
+
+419
+00:07:40,960 --> 00:07:42,870
+like that looks really cool. So I'm
+going to go ahead. You'll just hit I on
+
+420
+00:07:42,870 --> 00:07:42,880
+going to go ahead. You'll just hit I on
+ 
+
+421
+00:07:42,880 --> 00:07:46,110
+going to go ahead. You'll just hit I on
+the factor. Go to maybe 120. Bring it
+
+422
+00:07:46,110 --> 00:07:46,120
+the factor. Go to maybe 120. Bring it
+ 
+
+423
+00:07:46,120 --> 00:07:49,150
+the factor. Go to maybe 120. Bring it
+over. And then we can
+
+424
+00:07:49,150 --> 00:07:49,160
+over. And then we can
+ 
+
+425
+00:07:49,160 --> 00:07:51,390
+over. And then we can
+enjoy
+
+426
+00:07:51,390 --> 00:07:51,400
+enjoy
+ 
+
+427
+00:07:51,400 --> 00:07:54,390
+enjoy
+this. Just like that. And that is how
+
+428
+00:07:54,390 --> 00:07:54,400
+this. Just like that. And that is how
+ 
+
+429
+00:07:54,400 --> 00:07:57,110
+this. Just like that. And that is how
+you create logos and morph them with
+
+430
+00:07:57,110 --> 00:07:57,120
+you create logos and morph them with
+ 
+
+431
+00:07:57,120 --> 00:07:59,110
+you create logos and morph them with
+textures. This is my favorite animation
+
+432
+00:07:59,110 --> 00:07:59,120
+textures. This is my favorite animation
+ 
+
+433
+00:07:59,120 --> 00:08:01,510
+textures. This is my favorite animation
+of all of them. yet it's probably one of
+
+434
+00:08:01,510 --> 00:08:01,520
+of all of them. yet it's probably one of
+ 
+
+435
+00:08:01,520 --> 00:08:05,589
+of all of them. yet it's probably one of
+the most simple ways to execute um this
+
+436
+00:08:05,589 --> 00:08:05,599
+the most simple ways to execute um this
+ 
+
+437
+00:08:05,599 --> 00:08:07,430
+the most simple ways to execute um this
+idea. So, let me show you how to do it.
+
+438
+00:08:07,430 --> 00:08:07,440
+idea. So, let me show you how to do it.
+ 
+
+439
+00:08:07,440 --> 00:08:08,629
+idea. So, let me show you how to do it.
+So, just like always, we're going to
+
+440
+00:08:08,629 --> 00:08:08,639
+So, just like always, we're going to
+ 
+
+441
+00:08:08,639 --> 00:08:11,990
+So, just like always, we're going to
+start with the SVG of our logo. What I'm
+
+442
+00:08:11,990 --> 00:08:12,000
+start with the SVG of our logo. What I'm
+ 
+
+443
+00:08:12,000 --> 00:08:13,189
+start with the SVG of our logo. What I'm
+going to do is I'm just going to pull
+
+444
+00:08:13,189 --> 00:08:13,199
+going to do is I'm just going to pull
+ 
+
+445
+00:08:13,199 --> 00:08:16,950
+going to do is I'm just going to pull
+off uh the geometry and we're just going
+
+446
+00:08:16,950 --> 00:08:16,960
+off uh the geometry and we're just going
+ 
+
+447
+00:08:16,960 --> 00:08:18,550
+off uh the geometry and we're just going
+to extrude it so we have these nice
+
+448
+00:08:18,550 --> 00:08:18,560
+to extrude it so we have these nice
+ 
+
+449
+00:08:18,560 --> 00:08:19,830
+to extrude it so we have these nice
+walls. And then I'm going to go ahead
+
+450
+00:08:19,830 --> 00:08:19,840
+walls. And then I'm going to go ahead
+ 
+
+451
+00:08:19,840 --> 00:08:22,469
+walls. And then I'm going to go ahead
+and get a plane. So, if I go to the very
+
+452
+00:08:22,469 --> 00:08:22,479
+and get a plane. So, if I go to the very
+ 
+
+453
+00:08:22,479 --> 00:08:24,710
+and get a plane. So, if I go to the very
+top and I hop into cycles, you can see
+
+454
+00:08:24,710 --> 00:08:24,720
+top and I hop into cycles, you can see
+ 
+
+455
+00:08:24,720 --> 00:08:28,550
+top and I hop into cycles, you can see
+our logo and we'll add a material and
+
+456
+00:08:28,550 --> 00:08:28,560
+our logo and we'll add a material and
+ 
+
+457
+00:08:28,560 --> 00:08:31,110
+our logo and we'll add a material and
+tell it to be emissive. So, off the bat,
+
+458
+00:08:31,110 --> 00:08:31,120
+tell it to be emissive. So, off the bat,
+ 
+
+459
+00:08:31,120 --> 00:08:33,670
+tell it to be emissive. So, off the bat,
+we have something pretty cool and very,
+
+460
+00:08:33,670 --> 00:08:33,680
+we have something pretty cool and very,
+ 
+
+461
+00:08:33,680 --> 00:08:35,829
+we have something pretty cool and very,
+very simple. We can even go ahead and
+
+462
+00:08:35,829 --> 00:08:35,839
+very simple. We can even go ahead and
+ 
+
+463
+00:08:35,839 --> 00:08:38,389
+very simple. We can even go ahead and
+add some color to it. But, if I take
+
+464
+00:08:38,389 --> 00:08:38,399
+add some color to it. But, if I take
+ 
+
+465
+00:08:38,399 --> 00:08:40,550
+add some color to it. But, if I take
+this logo and I duplicate it, we can go
+
+466
+00:08:40,550 --> 00:08:40,560
+this logo and I duplicate it, we can go
+ 
+
+467
+00:08:40,560 --> 00:08:42,070
+this logo and I duplicate it, we can go
+back into the curve settings and right
+
+468
+00:08:42,070 --> 00:08:42,080
+back into the curve settings and right
+ 
+
+469
+00:08:42,080 --> 00:08:44,389
+back into the curve settings and right
+here on offset, we can get another one
+
+470
+00:08:44,389 --> 00:08:44,399
+here on offset, we can get another one
+ 
+
+471
+00:08:44,399 --> 00:08:46,470
+here on offset, we can get another one
+and just bring it in a little bit. So,
+
+472
+00:08:46,470 --> 00:08:46,480
+and just bring it in a little bit. So,
+ 
+
+473
+00:08:46,480 --> 00:08:47,990
+and just bring it in a little bit. So,
+that's going to allow something really,
+
+474
+00:08:47,990 --> 00:08:48,000
+that's going to allow something really,
+ 
+
+475
+00:08:48,000 --> 00:08:49,590
+that's going to allow something really,
+really cool to happen. So if we go back
+
+476
+00:08:49,590 --> 00:08:49,600
+really cool to happen. So if we go back
+ 
+
+477
+00:08:49,600 --> 00:08:52,790
+really cool to happen. So if we go back
+to the top, I could take this texture.
+
+478
+00:08:52,790 --> 00:08:52,800
+to the top, I could take this texture.
+ 
+
+479
+00:08:52,800 --> 00:08:54,710
+to the top, I could take this texture.
+We can now just maybe make it black and
+
+480
+00:08:54,710 --> 00:08:54,720
+We can now just maybe make it black and
+ 
+
+481
+00:08:54,720 --> 00:08:56,870
+We can now just maybe make it black and
+now it limits. Now it's the only the
+
+482
+00:08:56,870 --> 00:08:56,880
+now it limits. Now it's the only the
+ 
+
+483
+00:08:56,880 --> 00:08:57,790
+now it limits. Now it's the only the
+inner
+
+484
+00:08:57,790 --> 00:08:57,800
+inner
+ 
+
+485
+00:08:57,800 --> 00:08:59,990
+inner
+texture that is creating emission and
+
+486
+00:08:59,990 --> 00:09:00,000
+texture that is creating emission and
+ 
+
+487
+00:09:00,000 --> 00:09:01,910
+texture that is creating emission and
+it's blocking the other one. Or we can
+
+488
+00:09:01,910 --> 00:09:01,920
+it's blocking the other one. Or we can
+ 
+
+489
+00:09:01,920 --> 00:09:03,590
+it's blocking the other one. Or we can
+do the opposite. We can just bring that
+
+490
+00:09:03,590 --> 00:09:03,600
+do the opposite. We can just bring that
+ 
+
+491
+00:09:03,600 --> 00:09:06,070
+do the opposite. We can just bring that
+in and now it's just a texture on the
+
+492
+00:09:06,070 --> 00:09:06,080
+in and now it's just a texture on the
+ 
+
+493
+00:09:06,080 --> 00:09:08,310
+in and now it's just a texture on the
+outside. But here is where we can make
+
+494
+00:09:08,310 --> 00:09:08,320
+outside. But here is where we can make
+ 
+
+495
+00:09:08,320 --> 00:09:10,870
+outside. But here is where we can make
+it look really, really awesome. And then
+
+496
+00:09:10,870 --> 00:09:10,880
+it look really, really awesome. And then
+ 
+
+497
+00:09:10,880 --> 00:09:12,949
+it look really, really awesome. And then
+if we head to the shader editor, I'm
+
+498
+00:09:12,949 --> 00:09:12,959
+if we head to the shader editor, I'm
+ 
+
+499
+00:09:12,959 --> 00:09:15,190
+if we head to the shader editor, I'm
+going to go ahead and put the same
+
+500
+00:09:15,190 --> 00:09:15,200
+going to go ahead and put the same
+ 
+
+501
+00:09:15,200 --> 00:09:16,949
+going to go ahead and put the same
+material on both of them just to make my
+
+502
+00:09:16,949 --> 00:09:16,959
+material on both of them just to make my
+ 
+
+503
+00:09:16,959 --> 00:09:20,790
+material on both of them just to make my
+life easy. And let's plug a texture into
+
+504
+00:09:20,790 --> 00:09:20,800
+life easy. And let's plug a texture into
+ 
+
+505
+00:09:20,800 --> 00:09:22,949
+life easy. And let's plug a texture into
+the emission with a color ramp. So we
+
+506
+00:09:22,949 --> 00:09:22,959
+the emission with a color ramp. So we
+ 
+
+507
+00:09:22,959 --> 00:09:25,190
+the emission with a color ramp. So we
+have a noise texture plugged into this.
+
+508
+00:09:25,190 --> 00:09:25,200
+have a noise texture plugged into this.
+ 
+
+509
+00:09:25,200 --> 00:09:27,790
+have a noise texture plugged into this.
+So now if we make it
+
+510
+00:09:27,790 --> 00:09:27,800
+So now if we make it
+ 
+
+511
+00:09:27,800 --> 00:09:30,310
+So now if we make it
+4D, you can have a lot of fun with this.
+
+512
+00:09:30,310 --> 00:09:30,320
+4D, you can have a lot of fun with this.
+ 
+
+513
+00:09:30,320 --> 00:09:32,630
+4D, you can have a lot of fun with this.
+Say bring the detail down, bring the
+
+514
+00:09:32,630 --> 00:09:32,640
+Say bring the detail down, bring the
+ 
+
+515
+00:09:32,640 --> 00:09:34,870
+Say bring the detail down, bring the
+scale up, and you can do something
+
+516
+00:09:34,870 --> 00:09:34,880
+scale up, and you can do something
+ 
+
+517
+00:09:34,880 --> 00:09:36,470
+scale up, and you can do something
+really awesome. So say we're going to
+
+518
+00:09:36,470 --> 00:09:36,480
+really awesome. So say we're going to
+ 
+
+519
+00:09:36,480 --> 00:09:38,269
+really awesome. So say we're going to
+put this over to
+
+520
+00:09:38,269 --> 00:09:38,279
+put this over to
+ 
+
+521
+00:09:38,279 --> 00:09:41,350
+put this over to
+BPLine. I'm going to add another black
+
+522
+00:09:41,350 --> 00:09:41,360
+BPLine. I'm going to add another black
+ 
+
+523
+00:09:41,360 --> 00:09:43,670
+BPLine. I'm going to add another black
+just to crunch in the black portions.
+
+524
+00:09:43,670 --> 00:09:43,680
+just to crunch in the black portions.
+ 
+
+525
+00:09:43,680 --> 00:09:47,269
+just to crunch in the black portions.
+I'm going to make this red.
+
+526
+00:09:47,269 --> 00:09:47,279
+I'm going to make this red.
+ 
+
+527
+00:09:47,279 --> 00:09:50,190
+I'm going to make this red.
+I'm going to make another one a deep
+
+528
+00:09:50,190 --> 00:09:50,200
+I'm going to make another one a deep
+ 
+
+529
+00:09:50,200 --> 00:09:53,710
+I'm going to make another one a deep
+blue so that we can just have a nice red
+
+530
+00:09:53,710 --> 00:09:53,720
+blue so that we can just have a nice red
+ 
+
+531
+00:09:53,720 --> 00:09:55,910
+blue so that we can just have a nice red
+highlight. Then we'll bring the strength
+
+532
+00:09:55,910 --> 00:09:55,920
+highlight. Then we'll bring the strength
+ 
+
+533
+00:09:55,920 --> 00:09:58,829
+highlight. Then we'll bring the strength
+up pretty good. And so now we
+
+534
+00:09:58,829 --> 00:09:58,839
+up pretty good. And so now we
+ 
+
+535
+00:09:58,839 --> 00:10:00,990
+up pretty good. And so now we
+have we have
+
+536
+00:10:00,990 --> 00:10:01,000
+have we have
+ 
+
+537
+00:10:01,000 --> 00:10:03,509
+have we have
+this. But here is the really really cool
+
+538
+00:10:03,509 --> 00:10:03,519
+this. But here is the really really cool
+ 
+
+539
+00:10:03,519 --> 00:10:05,430
+this. But here is the really really cool
+part. I'm going to go ahead and click on
+
+540
+00:10:05,430 --> 00:10:05,440
+part. I'm going to go ahead and click on
+ 
+
+541
+00:10:05,440 --> 00:10:07,070
+part. I'm going to go ahead and click on
+the inner
+
+542
+00:10:07,070 --> 00:10:07,080
+the inner
+ 
+
+543
+00:10:07,080 --> 00:10:09,190
+the inner
+material, duplicate it so it's
+
+544
+00:10:09,190 --> 00:10:09,200
+material, duplicate it so it's
+ 
+
+545
+00:10:09,200 --> 00:10:12,870
+material, duplicate it so it's
+different, and maybe make the in the
+
+546
+00:10:12,870 --> 00:10:12,880
+different, and maybe make the in the
+ 
+
+547
+00:10:12,880 --> 00:10:14,630
+different, and maybe make the in the
+maybe make the texture on the inside
+
+548
+00:10:14,630 --> 00:10:14,640
+maybe make the texture on the inside
+ 
+
+549
+00:10:14,640 --> 00:10:16,630
+maybe make the texture on the inside
+darker and the texture on the outside a
+
+550
+00:10:16,630 --> 00:10:16,640
+darker and the texture on the outside a
+ 
+
+551
+00:10:16,640 --> 00:10:20,430
+darker and the texture on the outside a
+lot brighter. You can now independently
+
+552
+00:10:20,430 --> 00:10:20,440
+lot brighter. You can now independently
+ 
+
+553
+00:10:20,440 --> 00:10:23,990
+lot brighter. You can now independently
+control each texture. And you can
+
+554
+00:10:23,990 --> 00:10:24,000
+control each texture. And you can
+ 
+
+555
+00:10:24,000 --> 00:10:25,829
+control each texture. And you can
+animate the speeds and the directions of
+
+556
+00:10:25,829 --> 00:10:25,839
+animate the speeds and the directions of
+ 
+
+557
+00:10:25,839 --> 00:10:28,550
+animate the speeds and the directions of
+those at different speeds, giving them a
+
+558
+00:10:28,550 --> 00:10:28,560
+those at different speeds, giving them a
+ 
+
+559
+00:10:28,560 --> 00:10:31,030
+those at different speeds, giving them a
+really, really cool look. And because
+
+560
+00:10:31,030 --> 00:10:31,040
+really, really cool look. And because
+ 
+
+561
+00:10:31,040 --> 00:10:33,829
+really, really cool look. And because
+it's the logo, it stays to the logo and
+
+562
+00:10:33,829 --> 00:10:33,839
+it's the logo, it stays to the logo and
+ 
+
+563
+00:10:33,839 --> 00:10:35,750
+it's the logo, it stays to the logo and
+you have something really, really cool
+
+564
+00:10:35,750 --> 00:10:35,760
+you have something really, really cool
+ 
+
+565
+00:10:35,760 --> 00:10:37,910
+you have something really, really cool
+and honestly very beautiful, especially
+
+566
+00:10:37,910 --> 00:10:37,920
+and honestly very beautiful, especially
+ 
+
+567
+00:10:37,920 --> 00:10:39,509
+and honestly very beautiful, especially
+with the colors you can pick. You can
+
+568
+00:10:39,509 --> 00:10:39,519
+with the colors you can pick. You can
+ 
+
+569
+00:10:39,519 --> 00:10:41,350
+with the colors you can pick. You can
+add a glare node. It's incredibly
+
+570
+00:10:41,350 --> 00:10:41,360
+add a glare node. It's incredibly
+ 
+
+571
+00:10:41,360 --> 00:10:43,590
+add a glare node. It's incredibly
+simple. U but as long as you have access
+
+572
+00:10:43,590 --> 00:10:43,600
+simple. U but as long as you have access
+ 
+
+573
+00:10:43,600 --> 00:10:45,509
+simple. U but as long as you have access
+to using the text tool or using curves
+
+574
+00:10:45,509 --> 00:10:45,519
+to using the text tool or using curves
+ 
+
+575
+00:10:45,519 --> 00:10:47,990
+to using the text tool or using curves
+and you can bring in one of those logos.
+
+576
+00:10:47,990 --> 00:10:48,000
+and you can bring in one of those logos.
+ 
+
+577
+00:10:48,000 --> 00:10:49,990
+and you can bring in one of those logos.
+It's very simple and it's awesome. So,
+
+578
+00:10:49,990 --> 00:10:50,000
+It's very simple and it's awesome. So,
+ 
+
+579
+00:10:50,000 --> 00:10:51,829
+It's very simple and it's awesome. So,
+there's a lot of ideas that might lead
+
+580
+00:10:51,829 --> 00:10:51,839
+there's a lot of ideas that might lead
+ 
+
+581
+00:10:51,839 --> 00:10:53,509
+there's a lot of ideas that might lead
+you to wanting to fill the inside of
+
+582
+00:10:53,509 --> 00:10:53,519
+you to wanting to fill the inside of
+ 
+
+583
+00:10:53,519 --> 00:10:55,829
+you to wanting to fill the inside of
+your logo with objects. So, I'm going to
+
+584
+00:10:55,829 --> 00:10:55,839
+your logo with objects. So, I'm going to
+ 
+
+585
+00:10:55,839 --> 00:10:57,590
+your logo with objects. So, I'm going to
+show you two very similar methods on how
+
+586
+00:10:57,590 --> 00:10:57,600
+show you two very similar methods on how
+ 
+
+587
+00:10:57,600 --> 00:10:59,670
+show you two very similar methods on how
+to get objects filled. a different
+
+588
+00:10:59,670 --> 00:10:59,680
+to get objects filled. a different
+ 
+
+589
+00:10:59,680 --> 00:11:00,710
+to get objects filled. a different
+method that's going to allow you to
+
+590
+00:11:00,710 --> 00:11:00,720
+method that's going to allow you to
+ 
+
+591
+00:11:00,720 --> 00:11:02,389
+method that's going to allow you to
+animate the objects, but both have their
+
+592
+00:11:02,389 --> 00:11:02,399
+animate the objects, but both have their
+ 
+
+593
+00:11:02,399 --> 00:11:03,990
+animate the objects, but both have their
+kind of pros and cons. All right, so I
+
+594
+00:11:03,990 --> 00:11:04,000
+kind of pros and cons. All right, so I
+ 
+
+595
+00:11:04,000 --> 00:11:05,750
+kind of pros and cons. All right, so I
+have my logo. What I'm gonna do is open
+
+596
+00:11:05,750 --> 00:11:05,760
+have my logo. What I'm gonna do is open
+ 
+
+597
+00:11:05,760 --> 00:11:07,670
+have my logo. What I'm gonna do is open
+up a geometry nodes window. And we are
+
+598
+00:11:07,670 --> 00:11:07,680
+up a geometry nodes window. And we are
+ 
+
+599
+00:11:07,680 --> 00:11:09,829
+up a geometry nodes window. And we are
+going to be using geometry nodes to
+
+600
+00:11:09,829 --> 00:11:09,839
+going to be using geometry nodes to
+ 
+
+601
+00:11:09,839 --> 00:11:11,350
+going to be using geometry nodes to
+create this effect. So if we click new,
+
+602
+00:11:11,350 --> 00:11:11,360
+create this effect. So if we click new,
+ 
+
+603
+00:11:11,360 --> 00:11:12,470
+create this effect. So if we click new,
+you can actually go ahead and convert
+
+604
+00:11:12,470 --> 00:11:12,480
+you can actually go ahead and convert
+ 
+
+605
+00:11:12,480 --> 00:11:14,310
+you can actually go ahead and convert
+this into a volume like this. And you
+
+606
+00:11:14,310 --> 00:11:14,320
+this into a volume like this. And you
+ 
+
+607
+00:11:14,320 --> 00:11:15,829
+this into a volume like this. And you
+can bring that voxal amount to kind of
+
+608
+00:11:15,829 --> 00:11:15,839
+can bring that voxal amount to kind of
+ 
+
+609
+00:11:15,839 --> 00:11:17,430
+can bring that voxal amount to kind of
+smooth it and make it look really nice.
+
+610
+00:11:17,430 --> 00:11:17,440
+smooth it and make it look really nice.
+ 
+
+611
+00:11:17,440 --> 00:11:19,430
+smooth it and make it look really nice.
+And then we can do a distribute points
+
+612
+00:11:19,430 --> 00:11:19,440
+And then we can do a distribute points
+ 
+
+613
+00:11:19,440 --> 00:11:21,030
+And then we can do a distribute points
+in volume. And then you can just bring
+
+614
+00:11:21,030 --> 00:11:21,040
+in volume. And then you can just bring
+ 
+
+615
+00:11:21,040 --> 00:11:23,430
+in volume. And then you can just bring
+that density up. And now you have the
+
+616
+00:11:23,430 --> 00:11:23,440
+that density up. And now you have the
+ 
+
+617
+00:11:23,440 --> 00:11:25,990
+that density up. And now you have the
+shape of your logo. You can also just
+
+618
+00:11:25,990 --> 00:11:26,000
+shape of your logo. You can also just
+ 
+
+619
+00:11:26,000 --> 00:11:28,470
+shape of your logo. You can also just
+use the points themselves as the object
+
+620
+00:11:28,470 --> 00:11:28,480
+use the points themselves as the object
+ 
+
+621
+00:11:28,480 --> 00:11:31,910
+use the points themselves as the object
+and they will render out as just a round
+
+622
+00:11:31,910 --> 00:11:31,920
+and they will render out as just a round
+ 
+
+623
+00:11:31,920 --> 00:11:33,430
+and they will render out as just a round
+ball. In this case, this is exactly what
+
+624
+00:11:33,430 --> 00:11:33,440
+ball. In this case, this is exactly what
+ 
+
+625
+00:11:33,440 --> 00:11:35,509
+ball. In this case, this is exactly what
+I want. Go ahead and actually bring the
+
+626
+00:11:35,509 --> 00:11:35,519
+I want. Go ahead and actually bring the
+ 
+
+627
+00:11:35,519 --> 00:11:39,269
+I want. Go ahead and actually bring the
+original back with a join geometry. And
+
+628
+00:11:39,269 --> 00:11:39,279
+original back with a join geometry. And
+ 
+
+629
+00:11:39,279 --> 00:11:41,430
+original back with a join geometry. And
+then we can add materials to this so we
+
+630
+00:11:41,430 --> 00:11:41,440
+then we can add materials to this so we
+ 
+
+631
+00:11:41,440 --> 00:11:43,030
+then we can add materials to this so we
+can actually appreciate it. So I'll just
+
+632
+00:11:43,030 --> 00:11:43,040
+can actually appreciate it. So I'll just
+ 
+
+633
+00:11:43,040 --> 00:11:44,430
+can actually appreciate it. So I'll just
+add a
+
+634
+00:11:44,430 --> 00:11:44,440
+add a
+ 
+
+635
+00:11:44,440 --> 00:11:46,590
+add a
+material. Make it
+
+636
+00:11:46,590 --> 00:11:46,600
+material. Make it
+ 
+
+637
+00:11:46,600 --> 00:11:49,269
+material. Make it
+glass. And you can now see the inside of
+
+638
+00:11:49,269 --> 00:11:49,279
+glass. And you can now see the inside of
+ 
+
+639
+00:11:49,279 --> 00:11:51,269
+glass. And you can now see the inside of
+your scene. And just bring up that
+
+640
+00:11:51,269 --> 00:11:51,279
+your scene. And just bring up that
+ 
+
+641
+00:11:51,279 --> 00:11:53,110
+your scene. And just bring up that
+density a whole bunch. And now you have
+
+642
+00:11:53,110 --> 00:11:53,120
+density a whole bunch. And now you have
+ 
+
+643
+00:11:53,120 --> 00:11:55,269
+density a whole bunch. And now you have
+your logo. The problem is if I want to
+
+644
+00:11:55,269 --> 00:11:55,279
+your logo. The problem is if I want to
+ 
+
+645
+00:11:55,279 --> 00:11:57,269
+your logo. The problem is if I want to
+make these objects move around, they are
+
+646
+00:11:57,269 --> 00:11:57,279
+make these objects move around, they are
+ 
+
+647
+00:11:57,279 --> 00:11:58,389
+make these objects move around, they are
+going to be shooting. I mean, you can
+
+648
+00:11:58,389 --> 00:11:58,399
+going to be shooting. I mean, you can
+ 
+
+649
+00:11:58,399 --> 00:12:00,710
+going to be shooting. I mean, you can
+already see some of them are coming out.
+
+650
+00:12:00,710 --> 00:12:00,720
+already see some of them are coming out.
+ 
+
+651
+00:12:00,720 --> 00:12:02,630
+already see some of them are coming out.
+And that's just going to be editing your
+
+652
+00:12:02,630 --> 00:12:02,640
+And that's just going to be editing your
+ 
+
+653
+00:12:02,640 --> 00:12:03,829
+And that's just going to be editing your
+seed value to make sure they're all
+
+654
+00:12:03,829 --> 00:12:03,839
+seed value to make sure they're all
+ 
+
+655
+00:12:03,839 --> 00:12:06,150
+seed value to make sure they're all
+inside of it. But if I want to actually
+
+656
+00:12:06,150 --> 00:12:06,160
+inside of it. But if I want to actually
+ 
+
+657
+00:12:06,160 --> 00:12:09,350
+inside of it. But if I want to actually
+animate this, I can't. It's too They're
+
+658
+00:12:09,350 --> 00:12:09,360
+animate this, I can't. It's too They're
+ 
+
+659
+00:12:09,360 --> 00:12:11,190
+animate this, I can't. It's too They're
+too close to the edge already. So, let
+
+660
+00:12:11,190 --> 00:12:11,200
+too close to the edge already. So, let
+ 
+
+661
+00:12:11,200 --> 00:12:13,750
+too close to the edge already. So, let
+me show you something you can do
+
+662
+00:12:13,750 --> 00:12:13,760
+me show you something you can do
+ 
+
+663
+00:12:13,760 --> 00:12:15,430
+me show you something you can do
+instead. I'm going to kill this node
+
+664
+00:12:15,430 --> 00:12:15,440
+instead. I'm going to kill this node
+ 
+
+665
+00:12:15,440 --> 00:12:17,190
+instead. I'm going to kill this node
+tree. And what we'll do, so what I can
+
+666
+00:12:17,190 --> 00:12:17,200
+tree. And what we'll do, so what I can
+ 
+
+667
+00:12:17,200 --> 00:12:19,910
+tree. And what we'll do, so what I can
+do is I can duplicate my logo. And then
+
+668
+00:12:19,910 --> 00:12:19,920
+do is I can duplicate my logo. And then
+ 
+
+669
+00:12:19,920 --> 00:12:22,150
+do is I can duplicate my logo. And then
+I'm going to take the original one and
+
+670
+00:12:22,150 --> 00:12:22,160
+I'm going to take the original one and
+ 
+
+671
+00:12:22,160 --> 00:12:23,670
+I'm going to take the original one and
+in the curve settings right here, you
+
+672
+00:12:23,670 --> 00:12:23,680
+in the curve settings right here, you
+ 
+
+673
+00:12:23,680 --> 00:12:26,230
+in the curve settings right here, you
+can just bring that offset in just like
+
+674
+00:12:26,230 --> 00:12:26,240
+can just bring that offset in just like
+ 
+
+675
+00:12:26,240 --> 00:12:28,870
+can just bring that offset in just like
+this. And also bring that extrude in. So
+
+676
+00:12:28,870 --> 00:12:28,880
+this. And also bring that extrude in. So
+ 
+
+677
+00:12:28,880 --> 00:12:32,629
+this. And also bring that extrude in. So
+you now have a smaller, skinnier version
+
+678
+00:12:32,629 --> 00:12:32,639
+you now have a smaller, skinnier version
+ 
+
+679
+00:12:32,639 --> 00:12:35,110
+you now have a smaller, skinnier version
+of the logo. We can go back to geometry
+
+680
+00:12:35,110 --> 00:12:35,120
+of the logo. We can go back to geometry
+ 
+
+681
+00:12:35,120 --> 00:12:37,590
+of the logo. We can go back to geometry
+nodes. And if I pull that old node tree
+
+682
+00:12:37,590 --> 00:12:37,600
+nodes. And if I pull that old node tree
+ 
+
+683
+00:12:37,600 --> 00:12:39,590
+nodes. And if I pull that old node tree
+back and delete the original. So now we
+
+684
+00:12:39,590 --> 00:12:39,600
+back and delete the original. So now we
+ 
+
+685
+00:12:39,600 --> 00:12:42,069
+back and delete the original. So now we
+have a bunch of objects that we can then
+
+686
+00:12:42,069 --> 00:12:42,079
+have a bunch of objects that we can then
+ 
+
+687
+00:12:42,079 --> 00:12:44,949
+have a bunch of objects that we can then
+if we get a set position and animate
+
+688
+00:12:44,949 --> 00:12:44,959
+if we get a set position and animate
+ 
+
+689
+00:12:44,959 --> 00:12:47,190
+if we get a set position and animate
+these with a noise texture. We can now
+
+690
+00:12:47,190 --> 00:12:47,200
+these with a noise texture. We can now
+ 
+
+691
+00:12:47,200 --> 00:12:49,790
+these with a noise texture. We can now
+take these guys and you can do
+
+692
+00:12:49,790 --> 00:12:49,800
+take these guys and you can do
+ 
+
+693
+00:12:49,800 --> 00:12:53,990
+take these guys and you can do
+this with the original geometry. So now
+
+694
+00:12:53,990 --> 00:12:54,000
+this with the original geometry. So now
+ 
+
+695
+00:12:54,000 --> 00:12:55,829
+this with the original geometry. So now
+you can actually take these particles,
+
+696
+00:12:55,829 --> 00:12:55,839
+you can actually take these particles,
+ 
+
+697
+00:12:55,839 --> 00:12:57,990
+you can actually take these particles,
+bring them up a little bit and actually
+
+698
+00:12:57,990 --> 00:12:58,000
+bring them up a little bit and actually
+ 
+
+699
+00:12:58,000 --> 00:13:02,470
+bring them up a little bit and actually
+animate objects inside of your logo. So
+
+700
+00:13:02,470 --> 00:13:02,480
+animate objects inside of your logo. So
+ 
+
+701
+00:13:02,480 --> 00:13:05,030
+animate objects inside of your logo. So
+both of these methods do populate the
+
+702
+00:13:05,030 --> 00:13:05,040
+both of these methods do populate the
+ 
+
+703
+00:13:05,040 --> 00:13:07,269
+both of these methods do populate the
+inside. though it's just not going to
+
+704
+00:13:07,269 --> 00:13:07,279
+inside. though it's just not going to
+ 
+
+705
+00:13:07,279 --> 00:13:09,190
+inside. though it's just not going to
+feel full. But that is how the two
+
+706
+00:13:09,190 --> 00:13:09,200
+feel full. But that is how the two
+ 
+
+707
+00:13:09,200 --> 00:13:12,150
+feel full. But that is how the two
+methods of populating the inside of a
+
+708
+00:13:12,150 --> 00:13:12,160
+methods of populating the inside of a
+ 
+
+709
+00:13:12,160 --> 00:13:14,790
+methods of populating the inside of a
+logo. Staying on the geometry nodes
+
+710
+00:13:14,790 --> 00:13:14,800
+logo. Staying on the geometry nodes
+ 
+
+711
+00:13:14,800 --> 00:13:17,430
+logo. Staying on the geometry nodes
+topic, you can actually use masks to
+
+712
+00:13:17,430 --> 00:13:17,440
+topic, you can actually use masks to
+ 
+
+713
+00:13:17,440 --> 00:13:20,230
+topic, you can actually use masks to
+delete objects. You can use masks to
+
+714
+00:13:20,230 --> 00:13:20,240
+delete objects. You can use masks to
+ 
+
+715
+00:13:20,240 --> 00:13:22,710
+delete objects. You can use masks to
+control geometry within geometry nodes
+
+716
+00:13:22,710 --> 00:13:22,720
+control geometry within geometry nodes
+ 
+
+717
+00:13:22,720 --> 00:13:24,710
+control geometry within geometry nodes
+to have some really really cool options
+
+718
+00:13:24,710 --> 00:13:24,720
+to have some really really cool options
+ 
+
+719
+00:13:24,720 --> 00:13:27,190
+to have some really really cool options
+with making interesting things using
+
+720
+00:13:27,190 --> 00:13:27,200
+with making interesting things using
+ 
+
+721
+00:13:27,200 --> 00:13:29,350
+with making interesting things using
+masks, creating geometry in geometry
+
+722
+00:13:29,350 --> 00:13:29,360
+masks, creating geometry in geometry
+ 
+
+723
+00:13:29,360 --> 00:13:31,030
+masks, creating geometry in geometry
+nodes. It's very, very powerful. Just
+
+724
+00:13:31,030 --> 00:13:31,040
+nodes. It's very, very powerful. Just
+ 
+
+725
+00:13:31,040 --> 00:13:32,150
+nodes. It's very, very powerful. Just
+like earlier in the video, we are going
+
+726
+00:13:32,150 --> 00:13:32,160
+like earlier in the video, we are going
+ 
+
+727
+00:13:32,160 --> 00:13:35,590
+like earlier in the video, we are going
+to need a black and white version of our
+
+728
+00:13:35,590 --> 00:13:35,600
+to need a black and white version of our
+ 
+
+729
+00:13:35,600 --> 00:13:37,910
+to need a black and white version of our
+logo. I'm just going to start with a
+
+730
+00:13:37,910 --> 00:13:37,920
+logo. I'm just going to start with a
+ 
+
+731
+00:13:37,920 --> 00:13:39,430
+logo. I'm just going to start with a
+grid in geometry nodes. I'm going to
+
+732
+00:13:39,430 --> 00:13:39,440
+grid in geometry nodes. I'm going to
+ 
+
+733
+00:13:39,440 --> 00:13:41,910
+grid in geometry nodes. I'm going to
+scale it up and give it subdivisions of
+
+734
+00:13:41,910 --> 00:13:41,920
+scale it up and give it subdivisions of
+ 
+
+735
+00:13:41,920 --> 00:13:43,829
+scale it up and give it subdivisions of
+80. The biggest obstacle to making this
+
+736
+00:13:43,829 --> 00:13:43,839
+80. The biggest obstacle to making this
+ 
+
+737
+00:13:43,839 --> 00:13:46,870
+80. The biggest obstacle to making this
+work is mapping the logo properly. So,
+
+738
+00:13:46,870 --> 00:13:46,880
+work is mapping the logo properly. So,
+ 
+
+739
+00:13:46,880 --> 00:13:47,990
+work is mapping the logo properly. So,
+let me show you how to do that. We're
+
+740
+00:13:47,990 --> 00:13:48,000
+let me show you how to do that. We're
+ 
+
+741
+00:13:48,000 --> 00:13:49,350
+let me show you how to do that. We're
+going to do a we're going to go ahead
+
+742
+00:13:49,350 --> 00:13:49,360
+going to do a we're going to go ahead
+ 
+
+743
+00:13:49,360 --> 00:13:51,910
+going to do a we're going to go ahead
+and convert this over to just regular
+
+744
+00:13:51,910 --> 00:13:51,920
+and convert this over to just regular
+ 
+
+745
+00:13:51,920 --> 00:13:53,590
+and convert this over to just regular
+points so we can actually see the logo.
+
+746
+00:13:53,590 --> 00:13:53,600
+points so we can actually see the logo.
+ 
+
+747
+00:13:53,600 --> 00:13:55,030
+points so we can actually see the logo.
+And then if you get a delete geometry,
+
+748
+00:13:55,030 --> 00:13:55,040
+And then if you get a delete geometry,
+ 
+
+749
+00:13:55,040 --> 00:13:56,150
+And then if you get a delete geometry,
+that's going to say, "Hey, delete
+
+750
+00:13:56,150 --> 00:13:56,160
+that's going to say, "Hey, delete
+ 
+
+751
+00:13:56,160 --> 00:13:58,430
+that's going to say, "Hey, delete
+points." We're going to go ahead and
+
+752
+00:13:58,430 --> 00:13:58,440
+points." We're going to go ahead and
+ 
+
+753
+00:13:58,440 --> 00:14:01,910
+points." We're going to go ahead and
+throw an image texture right onto this
+
+754
+00:14:01,910 --> 00:14:01,920
+throw an image texture right onto this
+ 
+
+755
+00:14:01,920 --> 00:14:03,910
+throw an image texture right onto this
+and grab our logo. So, we're going to
+
+756
+00:14:03,910 --> 00:14:03,920
+and grab our logo. So, we're going to
+ 
+
+757
+00:14:03,920 --> 00:14:05,590
+and grab our logo. So, we're going to
+use the Blender logo. And you can see
+
+758
+00:14:05,590 --> 00:14:05,600
+use the Blender logo. And you can see
+ 
+
+759
+00:14:05,600 --> 00:14:07,750
+use the Blender logo. And you can see
+some type of tiling is happening here.
+
+760
+00:14:07,750 --> 00:14:07,760
+some type of tiling is happening here.
+ 
+
+761
+00:14:07,760 --> 00:14:09,350
+some type of tiling is happening here.
+So, we're going to go here from repeat
+
+762
+00:14:09,350 --> 00:14:09,360
+So, we're going to go here from repeat
+ 
+
+763
+00:14:09,360 --> 00:14:11,990
+So, we're going to go here from repeat
+to clip. I only want one logo. And
+
+764
+00:14:11,990 --> 00:14:12,000
+to clip. I only want one logo. And
+ 
+
+765
+00:14:12,000 --> 00:14:14,470
+to clip. I only want one logo. And
+typically, we'd want a mapping node. We
+
+766
+00:14:14,470 --> 00:14:14,480
+typically, we'd want a mapping node. We
+ 
+
+767
+00:14:14,480 --> 00:14:15,829
+typically, we'd want a mapping node. We
+can't do that. We don't have a mapping
+
+768
+00:14:15,829 --> 00:14:15,839
+can't do that. We don't have a mapping
+ 
+
+769
+00:14:15,839 --> 00:14:18,069
+can't do that. We don't have a mapping
+node, geometry nodes, but a mapping node
+
+770
+00:14:18,069 --> 00:14:18,079
+node, geometry nodes, but a mapping node
+ 
+
+771
+00:14:18,079 --> 00:14:20,629
+node, geometry nodes, but a mapping node
+is just vector math. So, if we plug in a
+
+772
+00:14:20,629 --> 00:14:20,639
+is just vector math. So, if we plug in a
+ 
+
+773
+00:14:20,639 --> 00:14:22,389
+is just vector math. So, if we plug in a
+position and add, you can see, okay, now
+
+774
+00:14:22,389 --> 00:14:22,399
+position and add, you can see, okay, now
+ 
+
+775
+00:14:22,399 --> 00:14:25,189
+position and add, you can see, okay, now
+we can put this logo wherever we want.
+
+776
+00:14:25,189 --> 00:14:25,199
+we can put this logo wherever we want.
+ 
+
+777
+00:14:25,199 --> 00:14:27,269
+we can put this logo wherever we want.
+And then a scale node is just going to
+
+778
+00:14:27,269 --> 00:14:27,279
+And then a scale node is just going to
+ 
+
+779
+00:14:27,279 --> 00:14:30,150
+And then a scale node is just going to
+keep that logo exactly how we want it.
+
+780
+00:14:30,150 --> 00:14:30,160
+keep that logo exactly how we want it.
+ 
+
+781
+00:14:30,160 --> 00:14:31,750
+keep that logo exactly how we want it.
+It's not going to stretch or squash it.
+
+782
+00:14:31,750 --> 00:14:31,760
+It's not going to stretch or squash it.
+ 
+
+783
+00:14:31,760 --> 00:14:35,110
+It's not going to stretch or squash it.
+It's going to respect uh where it, you
+
+784
+00:14:35,110 --> 00:14:35,120
+It's going to respect uh where it, you
+ 
+
+785
+00:14:35,120 --> 00:14:37,910
+It's going to respect uh where it, you
+know, how it wants to to look. So now we
+
+786
+00:14:37,910 --> 00:14:37,920
+know, how it wants to to look. So now we
+ 
+
+787
+00:14:37,920 --> 00:14:39,829
+know, how it wants to to look. So now we
+have this. And then we can just go ahead
+
+788
+00:14:39,829 --> 00:14:39,839
+have this. And then we can just go ahead
+ 
+
+789
+00:14:39,839 --> 00:14:44,310
+have this. And then we can just go ahead
+and invert this. Now we have a logo made
+
+790
+00:14:44,310 --> 00:14:44,320
+and invert this. Now we have a logo made
+ 
+
+791
+00:14:44,320 --> 00:14:46,310
+and invert this. Now we have a logo made
+of points, which is awesome. Now we
+
+792
+00:14:46,310 --> 00:14:46,320
+of points, which is awesome. Now we
+ 
+
+793
+00:14:46,320 --> 00:14:48,230
+of points, which is awesome. Now we
+could do whatever we want here. We could
+
+794
+00:14:48,230 --> 00:14:48,240
+could do whatever we want here. We could
+ 
+
+795
+00:14:48,240 --> 00:14:51,030
+could do whatever we want here. We could
+go ahead and just instance a cube on
+
+796
+00:14:51,030 --> 00:14:51,040
+go ahead and just instance a cube on
+ 
+
+797
+00:14:51,040 --> 00:14:52,710
+go ahead and just instance a cube on
+every single one of these points that we
+
+798
+00:14:52,710 --> 00:14:52,720
+every single one of these points that we
+ 
+
+799
+00:14:52,720 --> 00:14:54,629
+every single one of these points that we
+have. Then you can use a noise texture
+
+800
+00:14:54,629 --> 00:14:54,639
+have. Then you can use a noise texture
+ 
+
+801
+00:14:54,639 --> 00:14:57,509
+have. Then you can use a noise texture
+to actually animate the scale which can
+
+802
+00:14:57,509 --> 00:14:57,519
+to actually animate the scale which can
+ 
+
+803
+00:14:57,519 --> 00:14:59,509
+to actually animate the scale which can
+look really really cool. And then now
+
+804
+00:14:59,509 --> 00:14:59,519
+look really really cool. And then now
+ 
+
+805
+00:14:59,519 --> 00:15:01,509
+look really really cool. And then now
+you have something really really awesome
+
+806
+00:15:01,509 --> 00:15:01,519
+you have something really really awesome
+ 
+
+807
+00:15:01,519 --> 00:15:03,189
+you have something really really awesome
+like pretty quick and you can use any
+
+808
+00:15:03,189 --> 00:15:03,199
+like pretty quick and you can use any
+ 
+
+809
+00:15:03,199 --> 00:15:05,189
+like pretty quick and you can use any
+object you want. But now we're at the
+
+810
+00:15:05,189 --> 00:15:05,199
+object you want. But now we're at the
+ 
+
+811
+00:15:05,199 --> 00:15:07,350
+object you want. But now we're at the
+shape of the logo. So you can so you
+
+812
+00:15:07,350 --> 00:15:07,360
+shape of the logo. So you can so you
+ 
+
+813
+00:15:07,360 --> 00:15:08,870
+shape of the logo. So you can so you
+have a lot of data. So if you are
+
+814
+00:15:08,870 --> 00:15:08,880
+have a lot of data. So if you are
+ 
+
+815
+00:15:08,880 --> 00:15:10,949
+have a lot of data. So if you are
+familiar with geometry nodes taking this
+
+816
+00:15:10,949 --> 00:15:10,959
+familiar with geometry nodes taking this
+ 
+
+817
+00:15:10,959 --> 00:15:12,710
+familiar with geometry nodes taking this
+mapping a logo doing something really
+
+818
+00:15:12,710 --> 00:15:12,720
+mapping a logo doing something really
+ 
+
+819
+00:15:12,720 --> 00:15:15,509
+mapping a logo doing something really
+cool on Patreon I was able to take this
+
+820
+00:15:15,509 --> 00:15:15,519
+cool on Patreon I was able to take this
+ 
+
+821
+00:15:15,519 --> 00:15:17,829
+cool on Patreon I was able to take this
+add a sur add some surrounding objects
+
+822
+00:15:17,829 --> 00:15:17,839
+add a sur add some surrounding objects
+ 
+
+823
+00:15:17,839 --> 00:15:19,670
+add a sur add some surrounding objects
+to it controlling that with the image
+
+824
+00:15:19,670 --> 00:15:19,680
+to it controlling that with the image
+ 
+
+825
+00:15:19,680 --> 00:15:21,829
+to it controlling that with the image
+texture added a procedural wood material
+
+826
+00:15:21,829 --> 00:15:21,839
+texture added a procedural wood material
+ 
+
+827
+00:15:21,839 --> 00:15:23,750
+texture added a procedural wood material
+to it. So the creative application to
+
+828
+00:15:23,750 --> 00:15:23,760
+to it. So the creative application to
+ 
+
+829
+00:15:23,760 --> 00:15:25,350
+to it. So the creative application to
+just a little bit of this data in
+
+830
+00:15:25,350 --> 00:15:25,360
+just a little bit of this data in
+ 
+
+831
+00:15:25,360 --> 00:15:26,550
+just a little bit of this data in
+geometry nodes, especially if you're
+
+832
+00:15:26,550 --> 00:15:26,560
+geometry nodes, especially if you're
+ 
+
+833
+00:15:26,560 --> 00:15:28,550
+geometry nodes, especially if you're
+familiar with geometry nodes, can really
+
+834
+00:15:28,550 --> 00:15:28,560
+familiar with geometry nodes, can really
+ 
+
+835
+00:15:28,560 --> 00:15:30,230
+familiar with geometry nodes, can really
+yield some really awesome things.
+
+836
+00:15:30,230 --> 00:15:30,240
+yield some really awesome things.
+ 
+
+837
+00:15:30,240 --> 00:15:31,590
+yield some really awesome things.
+Another really cool thing could just be
+
+838
+00:15:31,590 --> 00:15:31,600
+Another really cool thing could just be
+ 
+
+839
+00:15:31,600 --> 00:15:33,269
+Another really cool thing could just be
+getting like a curved circle and then
+
+840
+00:15:33,269 --> 00:15:33,279
+getting like a curved circle and then
+ 
+
+841
+00:15:33,279 --> 00:15:35,430
+getting like a curved circle and then
+randomizing some of these objects. You
+
+842
+00:15:35,430 --> 00:15:35,440
+randomizing some of these objects. You
+ 
+
+843
+00:15:35,440 --> 00:15:37,590
+randomizing some of these objects. You
+can do another delete geometry and just
+
+844
+00:15:37,590 --> 00:15:37,600
+can do another delete geometry and just
+ 
+
+845
+00:15:37,600 --> 00:15:40,230
+can do another delete geometry and just
+do a random value boolean and then you
+
+846
+00:15:40,230 --> 00:15:40,240
+do a random value boolean and then you
+ 
+
+847
+00:15:40,240 --> 00:15:42,389
+do a random value boolean and then you
+can just have maybe like some of these
+
+848
+00:15:42,389 --> 00:15:42,399
+can just have maybe like some of these
+ 
+
+849
+00:15:42,399 --> 00:15:43,670
+can just have maybe like some of these
+disappearing to give you more of an
+
+850
+00:15:43,670 --> 00:15:43,680
+disappearing to give you more of an
+ 
+
+851
+00:15:43,680 --> 00:15:45,350
+disappearing to give you more of an
+organic look. So now some of these
+
+852
+00:15:45,350 --> 00:15:45,360
+organic look. So now some of these
+ 
+
+853
+00:15:45,360 --> 00:15:47,350
+organic look. So now some of these
+objects are missing and you can even use
+
+854
+00:15:47,350 --> 00:15:47,360
+objects are missing and you can even use
+ 
+
+855
+00:15:47,360 --> 00:15:48,710
+objects are missing and you can even use
+a noise texture too if you want to
+
+856
+00:15:48,710 --> 00:15:48,720
+a noise texture too if you want to
+ 
+
+857
+00:15:48,720 --> 00:15:51,030
+a noise texture too if you want to
+animate this look. So there's a lot of
+
+858
+00:15:51,030 --> 00:15:51,040
+animate this look. So there's a lot of
+ 
+
+859
+00:15:51,040 --> 00:15:54,430
+animate this look. So there's a lot of
+really really effective uses of this
+
+860
+00:15:54,430 --> 00:15:54,440
+really really effective uses of this
+ 
+
+861
+00:15:54,440 --> 00:15:58,310
+really really effective uses of this
+idea in geometry nodes, but having this
+
+862
+00:15:58,310 --> 00:15:58,320
+idea in geometry nodes, but having this
+ 
+
+863
+00:15:58,320 --> 00:16:00,949
+idea in geometry nodes, but having this
+image texture really cool. Last thing
+
+864
+00:16:00,949 --> 00:16:00,959
+image texture really cool. Last thing
+ 
+
+865
+00:16:00,959 --> 00:16:02,230
+image texture really cool. Last thing
+I'm going to show you is how to get a
+
+866
+00:16:02,230 --> 00:16:02,240
+I'm going to show you is how to get a
+ 
+
+867
+00:16:02,240 --> 00:16:04,310
+I'm going to show you is how to get a
+logo very quickly to look like this
+
+868
+00:16:04,310 --> 00:16:04,320
+logo very quickly to look like this
+ 
+
+869
+00:16:04,320 --> 00:16:05,829
+logo very quickly to look like this
+little furball. We're not going to go
+
+870
+00:16:05,829 --> 00:16:05,839
+little furball. We're not going to go
+ 
+
+871
+00:16:05,839 --> 00:16:07,269
+little furball. We're not going to go
+really really in depth with this. If you
+
+872
+00:16:07,269 --> 00:16:07,279
+really really in depth with this. If you
+ 
+
+873
+00:16:07,279 --> 00:16:08,629
+really really in depth with this. If you
+want to get in depth with this exact
+
+874
+00:16:08,629 --> 00:16:08,639
+want to get in depth with this exact
+ 
+
+875
+00:16:08,639 --> 00:16:10,310
+want to get in depth with this exact
+process, Southern Shotty has an awesome
+
+876
+00:16:10,310 --> 00:16:10,320
+process, Southern Shotty has an awesome
+ 
+
+877
+00:16:10,320 --> 00:16:11,829
+process, Southern Shotty has an awesome
+video that I highly recommend if you
+
+878
+00:16:11,829 --> 00:16:11,839
+video that I highly recommend if you
+ 
+
+879
+00:16:11,839 --> 00:16:13,189
+video that I highly recommend if you
+want to really get into this. But I'm
+
+880
+00:16:13,189 --> 00:16:13,199
+want to really get into this. But I'm
+ 
+
+881
+00:16:13,199 --> 00:16:14,389
+want to really get into this. But I'm
+going to show you the bones of how to
+
+882
+00:16:14,389 --> 00:16:14,399
+going to show you the bones of how to
+ 
+
+883
+00:16:14,399 --> 00:16:17,509
+going to show you the bones of how to
+get some fur super fast. So I remshed
+
+884
+00:16:17,509 --> 00:16:17,519
+get some fur super fast. So I remshed
+ 
+
+885
+00:16:17,519 --> 00:16:19,269
+get some fur super fast. So I remshed
+and smoothed the logo. I do want it to
+
+886
+00:16:19,269 --> 00:16:19,279
+and smoothed the logo. I do want it to
+ 
+
+887
+00:16:19,279 --> 00:16:21,189
+and smoothed the logo. I do want it to
+be kind of nice and round looking like
+
+888
+00:16:21,189 --> 00:16:21,199
+be kind of nice and round looking like
+ 
+
+889
+00:16:21,199 --> 00:16:22,470
+be kind of nice and round looking like
+something like this. And then I'm just
+
+890
+00:16:22,470 --> 00:16:22,480
+something like this. And then I'm just
+ 
+
+891
+00:16:22,480 --> 00:16:25,030
+something like this. And then I'm just
+going to go convert it to a mesh. Now,
+
+892
+00:16:25,030 --> 00:16:25,040
+going to go convert it to a mesh. Now,
+ 
+
+893
+00:16:25,040 --> 00:16:28,230
+going to go convert it to a mesh. Now,
+for this you need UVs. This actually
+
+894
+00:16:28,230 --> 00:16:28,240
+for this you need UVs. This actually
+ 
+
+895
+00:16:28,240 --> 00:16:30,870
+for this you need UVs. This actually
+works quite well, but if you just hit U
+
+896
+00:16:30,870 --> 00:16:30,880
+works quite well, but if you just hit U
+ 
+
+897
+00:16:30,880 --> 00:16:34,069
+works quite well, but if you just hit U
+and do a smart UV project and click
+
+898
+00:16:34,069 --> 00:16:34,079
+and do a smart UV project and click
+ 
+
+899
+00:16:34,079 --> 00:16:37,509
+and do a smart UV project and click
+unwrap, you can actually see like not
+
+900
+00:16:37,509 --> 00:16:37,519
+unwrap, you can actually see like not
+ 
+
+901
+00:16:37,519 --> 00:16:39,829
+unwrap, you can actually see like not
+bad in in this in this context. It
+
+902
+00:16:39,829 --> 00:16:39,839
+bad in in this in this context. It
+ 
+
+903
+00:16:39,839 --> 00:16:41,670
+bad in in this in this context. It
+actually works very well. It's certainly
+
+904
+00:16:41,670 --> 00:16:41,680
+actually works very well. It's certainly
+ 
+
+905
+00:16:41,680 --> 00:16:43,269
+actually works very well. It's certainly
+not perfect, but it works really well.
+
+906
+00:16:43,269 --> 00:16:43,279
+not perfect, but it works really well.
+ 
+
+907
+00:16:43,279 --> 00:16:46,310
+not perfect, but it works really well.
+here. What we'll do is I'll just hit F3
+
+908
+00:16:46,310 --> 00:16:46,320
+here. What we'll do is I'll just hit F3
+ 
+
+909
+00:16:46,320 --> 00:16:49,110
+here. What we'll do is I'll just hit F3
+and click on a quick fur. So now we have
+
+910
+00:16:49,110 --> 00:16:49,120
+and click on a quick fur. So now we have
+ 
+
+911
+00:16:49,120 --> 00:16:52,069
+and click on a quick fur. So now we have
+this. If I go here to cycles, we we have
+
+912
+00:16:52,069 --> 00:16:52,079
+this. If I go here to cycles, we we have
+ 
+
+913
+00:16:52,079 --> 00:16:54,310
+this. If I go here to cycles, we we have
+fur. So it's going to open up a bunch of
+
+914
+00:16:54,310 --> 00:16:54,320
+fur. So it's going to open up a bunch of
+ 
+
+915
+00:16:54,320 --> 00:16:57,189
+fur. So it's going to open up a bunch of
+these modifiers. Really simply, this top
+
+916
+00:16:57,189 --> 00:16:57,199
+these modifiers. Really simply, this top
+ 
+
+917
+00:16:57,199 --> 00:16:59,910
+these modifiers. Really simply, this top
+modifier is just going to control the
+
+918
+00:16:59,910 --> 00:16:59,920
+modifier is just going to control the
+ 
+
+919
+00:16:59,920 --> 00:17:01,910
+modifier is just going to control the
+way that the individual hair looks in
+
+920
+00:17:01,910 --> 00:17:01,920
+way that the individual hair looks in
+ 
+
+921
+00:17:01,920 --> 00:17:04,309
+way that the individual hair looks in
+terms of how big it is. You have your
+
+922
+00:17:04,309 --> 00:17:04,319
+terms of how big it is. You have your
+ 
+
+923
+00:17:04,319 --> 00:17:05,909
+terms of how big it is. You have your
+shape, which is going to kind of play
+
+924
+00:17:05,909 --> 00:17:05,919
+shape, which is going to kind of play
+ 
+
+925
+00:17:05,919 --> 00:17:07,590
+shape, which is going to kind of play
+with, oh, where is sort of the
+
+926
+00:17:07,590 --> 00:17:07,600
+with, oh, where is sort of the
+ 
+
+927
+00:17:07,600 --> 00:17:09,669
+with, oh, where is sort of the
+skinniness. So it inverts it like that.
+
+928
+00:17:09,669 --> 00:17:09,679
+skinniness. So it inverts it like that.
+ 
+
+929
+00:17:09,679 --> 00:17:12,590
+skinniness. So it inverts it like that.
+is I'm have a radius of
+
+930
+00:17:12,590 --> 00:17:12,600
+is I'm have a radius of
+ 
+
+931
+00:17:12,600 --> 00:17:16,309
+is I'm have a radius of
+03. I want kind of a thicker guy. And
+
+932
+00:17:16,309 --> 00:17:16,319
+03. I want kind of a thicker guy. And
+ 
+
+933
+00:17:16,319 --> 00:17:17,829
+03. I want kind of a thicker guy. And
+then maybe my max brings this down a
+
+934
+00:17:17,829 --> 00:17:17,839
+then maybe my max brings this down a
+ 
+
+935
+00:17:17,839 --> 00:17:20,270
+then maybe my max brings this down a
+little bit, but honestly, we'll keep it
+
+936
+00:17:20,270 --> 00:17:20,280
+little bit, but honestly, we'll keep it
+ 
+
+937
+00:17:20,280 --> 00:17:22,710
+little bit, but honestly, we'll keep it
+here. Maybe bring my max down a little
+
+938
+00:17:22,710 --> 00:17:22,720
+here. Maybe bring my max down a little
+ 
+
+939
+00:17:22,720 --> 00:17:25,309
+here. Maybe bring my max down a little
+bit. This next modifier is going to
+
+940
+00:17:25,309 --> 00:17:25,319
+bit. This next modifier is going to
+ 
+
+941
+00:17:25,319 --> 00:17:27,909
+bit. This next modifier is going to
+control how many hairs are going to show
+
+942
+00:17:27,909 --> 00:17:27,919
+control how many hairs are going to show
+ 
+
+943
+00:17:27,919 --> 00:17:30,070
+control how many hairs are going to show
+up in your render and your viewport. So,
+
+944
+00:17:30,070 --> 00:17:30,080
+up in your render and your viewport. So,
+ 
+
+945
+00:17:30,080 --> 00:17:31,909
+up in your render and your viewport. So,
+we have density here. So, what I'm going
+
+946
+00:17:31,909 --> 00:17:31,919
+we have density here. So, what I'm going
+ 
+
+947
+00:17:31,919 --> 00:17:33,110
+we have density here. So, what I'm going
+to do is I'm going to do my viewport
+
+948
+00:17:33,110 --> 00:17:33,120
+to do is I'm going to do my viewport
+ 
+
+949
+00:17:33,120 --> 00:17:34,909
+to do is I'm going to do my viewport
+amount of like 0.005
+
+950
+00:17:34,909 --> 00:17:34,919
+amount of like 0.005
+ 
+
+951
+00:17:34,919 --> 00:17:37,430
+amount of like 0.005
+000 five and then I'm going to do a
+
+952
+00:17:37,430 --> 00:17:37,440
+000 five and then I'm going to do a
+ 
+
+953
+00:17:37,440 --> 00:17:41,430
+000 five and then I'm going to do a
+density of I'm going to do like 80,000.
+
+954
+00:17:41,430 --> 00:17:41,440
+density of I'm going to do like 80,000.
+ 
+
+955
+00:17:41,440 --> 00:17:43,350
+density of I'm going to do like 80,000.
+So now you'll notice in the render it's
+
+956
+00:17:43,350 --> 00:17:43,360
+So now you'll notice in the render it's
+ 
+
+957
+00:17:43,360 --> 00:17:45,669
+So now you'll notice in the render it's
+full big hairy guy but this is the
+
+958
+00:17:45,669 --> 00:17:45,679
+full big hairy guy but this is the
+ 
+
+959
+00:17:45,679 --> 00:17:47,750
+full big hairy guy but this is the
+viewport. So this allows you to look at
+
+960
+00:17:47,750 --> 00:17:47,760
+viewport. So this allows you to look at
+ 
+
+961
+00:17:47,760 --> 00:17:50,029
+viewport. So this allows you to look at
+your edits in real time but already
+
+962
+00:17:50,029 --> 00:17:50,039
+your edits in real time but already
+ 
+
+963
+00:17:50,039 --> 00:17:52,390
+your edits in real time but already
+immediately this looks awesome. This
+
+964
+00:17:52,390 --> 00:17:52,400
+immediately this looks awesome. This
+ 
+
+965
+00:17:52,400 --> 00:17:54,710
+immediately this looks awesome. This
+next one plays with the overall noise
+
+966
+00:17:54,710 --> 00:17:54,720
+next one plays with the overall noise
+ 
+
+967
+00:17:54,720 --> 00:17:56,549
+next one plays with the overall noise
+pattern that creates those waves and
+
+968
+00:17:56,549 --> 00:17:56,559
+pattern that creates those waves and
+ 
+
+969
+00:17:56,559 --> 00:17:58,470
+pattern that creates those waves and
+shapes that you can see in this render.
+
+970
+00:17:58,470 --> 00:17:58,480
+shapes that you can see in this render.
+ 
+
+971
+00:17:58,480 --> 00:18:00,630
+shapes that you can see in this render.
+You can see that it's a noise texture.
+
+972
+00:18:00,630 --> 00:18:00,640
+You can see that it's a noise texture.
+ 
+
+973
+00:18:00,640 --> 00:18:03,630
+You can see that it's a noise texture.
+This next one, the frizz actually edits
+
+974
+00:18:03,630 --> 00:18:03,640
+This next one, the frizz actually edits
+ 
+
+975
+00:18:03,640 --> 00:18:05,909
+This next one, the frizz actually edits
+the kind of a noise pattern on the
+
+976
+00:18:05,909 --> 00:18:05,919
+the kind of a noise pattern on the
+ 
+
+977
+00:18:05,919 --> 00:18:08,070
+the kind of a noise pattern on the
+individual hair rather than the full
+
+978
+00:18:08,070 --> 00:18:08,080
+individual hair rather than the full
+ 
+
+979
+00:18:08,080 --> 00:18:10,310
+individual hair rather than the full
+each individual hair. So I play with So
+
+980
+00:18:10,310 --> 00:18:10,320
+each individual hair. So I play with So
+ 
+
+981
+00:18:10,320 --> 00:18:13,029
+each individual hair. So I play with So
+if I play with the shape on these hairs,
+
+982
+00:18:13,029 --> 00:18:13,039
+if I play with the shape on these hairs,
+ 
+
+983
+00:18:13,039 --> 00:18:14,630
+if I play with the shape on these hairs,
+you'll notice it kind of straightens
+
+984
+00:18:14,630 --> 00:18:14,640
+you'll notice it kind of straightens
+ 
+
+985
+00:18:14,640 --> 00:18:16,150
+you'll notice it kind of straightens
+them out. If I bring them down, it
+
+986
+00:18:16,150 --> 00:18:16,160
+them out. If I bring them down, it
+ 
+
+987
+00:18:16,160 --> 00:18:19,029
+them out. If I bring them down, it
+frizzes them a little bit more. So I'm
+
+988
+00:18:19,029 --> 00:18:19,039
+frizzes them a little bit more. So I'm
+ 
+
+989
+00:18:19,039 --> 00:18:20,390
+frizzes them a little bit more. So I'm
+going to play with the distance on the
+
+990
+00:18:20,390 --> 00:18:20,400
+going to play with the distance on the
+ 
+
+991
+00:18:20,400 --> 00:18:22,110
+going to play with the distance on the
+frizz and make it
+
+992
+00:18:22,110 --> 00:18:22,120
+frizz and make it
+ 
+
+993
+00:18:22,120 --> 00:18:25,390
+frizz and make it
+really kind of tangly, but it
+
+994
+00:18:25,390 --> 00:18:25,400
+really kind of tangly, but it
+ 
+
+995
+00:18:25,400 --> 00:18:28,310
+really kind of tangly, but it
+also makes them bigger. And so now we
+
+996
+00:18:28,310 --> 00:18:28,320
+also makes them bigger. And so now we
+ 
+
+997
+00:18:28,320 --> 00:18:32,230
+also makes them bigger. And so now we
+can head into the curve presets that
+
+998
+00:18:32,230 --> 00:18:32,240
+can head into the curve presets that
+ 
+
+999
+00:18:32,240 --> 00:18:35,190
+can head into the curve presets that
+Blender very recently added. So if we go
+
+1000
+00:18:35,190 --> 00:18:35,200
+Blender very recently added. So if we go
+ 
+
+1001
+00:18:35,200 --> 00:18:37,590
+Blender very recently added. So if we go
+here to the asset browser, I'm going to
+
+1002
+00:18:37,590 --> 00:18:37,600
+here to the asset browser, I'm going to
+ 
+
+1003
+00:18:37,600 --> 00:18:39,630
+here to the asset browser, I'm going to
+go to the very
+
+1004
+00:18:39,630 --> 00:18:39,640
+go to the very
+ 
+
+1005
+00:18:39,640 --> 00:18:42,390
+go to the very
+bottom and I'm going to want to get a
+
+1006
+00:18:42,390 --> 00:18:42,400
+bottom and I'm going to want to get a
+ 
+
+1007
+00:18:42,400 --> 00:18:44,789
+bottom and I'm going to want to get a
+trim hair curves modifier. And what
+
+1008
+00:18:44,789 --> 00:18:44,799
+trim hair curves modifier. And what
+ 
+
+1009
+00:18:44,799 --> 00:18:48,390
+trim hair curves modifier. And what
+that's going to do is trim the length
+
+1010
+00:18:48,390 --> 00:18:48,400
+that's going to do is trim the length
+ 
+
+1011
+00:18:48,400 --> 00:18:50,789
+that's going to do is trim the length
+based on all those edits. And then what
+
+1012
+00:18:50,789 --> 00:18:50,799
+based on all those edits. And then what
+ 
+
+1013
+00:18:50,799 --> 00:18:52,630
+based on all those edits. And then what
+I don't want is it to look like I took a
+
+1014
+00:18:52,630 --> 00:18:52,640
+I don't want is it to look like I took a
+ 
+
+1015
+00:18:52,640 --> 00:18:55,110
+I don't want is it to look like I took a
+razor and just raise razored the top.
+
+1016
+00:18:55,110 --> 00:18:55,120
+razor and just raise razored the top.
+ 
+
+1017
+00:18:55,120 --> 00:18:57,270
+razor and just raise razored the top.
+So, I'm going to get them the max length
+
+1018
+00:18:57,270 --> 00:18:57,280
+So, I'm going to get them the max length
+ 
+
+1019
+00:18:57,280 --> 00:18:59,350
+So, I'm going to get them the max length
+I want them here. And then the random
+
+1020
+00:18:59,350 --> 00:18:59,360
+I want them here. And then the random
+ 
+
+1021
+00:18:59,360 --> 00:19:01,190
+I want them here. And then the random
+offset will bring a couple of them down.
+
+1022
+00:19:01,190 --> 00:19:01,200
+offset will bring a couple of them down.
+ 
+
+1023
+00:19:01,200 --> 00:19:04,230
+offset will bring a couple of them down.
+So, now it's a bit of a random look. And
+
+1024
+00:19:04,230 --> 00:19:04,240
+So, now it's a bit of a random look. And
+ 
+
+1025
+00:19:04,240 --> 00:19:06,710
+So, now it's a bit of a random look. And
+this is what we have so far. Very
+
+1026
+00:19:06,710 --> 00:19:06,720
+this is what we have so far. Very
+ 
+
+1027
+00:19:06,720 --> 00:19:08,470
+this is what we have so far. Very
+quickly, it looks really good. Of
+
+1028
+00:19:08,470 --> 00:19:08,480
+quickly, it looks really good. Of
+ 
+
+1029
+00:19:08,480 --> 00:19:10,710
+quickly, it looks really good. Of
+course, if you want a little bit if you
+
+1030
+00:19:10,710 --> 00:19:10,720
+course, if you want a little bit if you
+ 
+
+1031
+00:19:10,720 --> 00:19:12,950
+course, if you want a little bit if you
+want control over the material, we do
+
+1032
+00:19:12,950 --> 00:19:12,960
+want control over the material, we do
+ 
+
+1033
+00:19:12,960 --> 00:19:15,510
+want control over the material, we do
+have a fur material right here. So, what
+
+1034
+00:19:15,510 --> 00:19:15,520
+have a fur material right here. So, what
+ 
+
+1035
+00:19:15,520 --> 00:19:17,110
+have a fur material right here. So, what
+I would do is just go ahead and add that
+
+1036
+00:19:17,110 --> 00:19:17,120
+I would do is just go ahead and add that
+ 
+
+1037
+00:19:17,120 --> 00:19:19,350
+I would do is just go ahead and add that
+fur material also to the base. That says
+
+1038
+00:19:19,350 --> 00:19:19,360
+fur material also to the base. That says
+ 
+
+1039
+00:19:19,360 --> 00:19:21,190
+fur material also to the base. That says
+curve. That's our logo. We'll click back
+
+1040
+00:19:21,190 --> 00:19:21,200
+curve. That's our logo. We'll click back
+ 
+
+1041
+00:19:21,200 --> 00:19:23,510
+curve. That's our logo. We'll click back
+on curves. And then we can just switch
+
+1042
+00:19:23,510 --> 00:19:23,520
+on curves. And then we can just switch
+ 
+
+1043
+00:19:23,520 --> 00:19:25,750
+on curves. And then we can just switch
+this guy over to the shader editor. Make
+
+1044
+00:19:25,750 --> 00:19:25,760
+this guy over to the shader editor. Make
+ 
+
+1045
+00:19:25,760 --> 00:19:28,070
+this guy over to the shader editor. Make
+sure you click use nodes. And you'll now
+
+1046
+00:19:28,070 --> 00:19:28,080
+sure you click use nodes. And you'll now
+ 
+
+1047
+00:19:28,080 --> 00:19:30,789
+sure you click use nodes. And you'll now
+have access to adding materials to this.
+
+1048
+00:19:30,789 --> 00:19:30,799
+have access to adding materials to this.
+ 
+
+1049
+00:19:30,799 --> 00:19:32,230
+have access to adding materials to this.
+So I'm going to make it really rough.
+
+1050
+00:19:32,230 --> 00:19:32,240
+So I'm going to make it really rough.
+ 
+
+1051
+00:19:32,240 --> 00:19:35,270
+So I'm going to make it really rough.
+You can plug a noise texture into this
+
+1052
+00:19:35,270 --> 00:19:35,280
+You can plug a noise texture into this
+ 
+
+1053
+00:19:35,280 --> 00:19:37,590
+You can plug a noise texture into this
+whole system like that. Let's see how
+
+1054
+00:19:37,590 --> 00:19:37,600
+whole system like that. Let's see how
+ 
+
+1055
+00:19:37,600 --> 00:19:39,110
+whole system like that. Let's see how
+this looks in a final and we'll be
+
+1056
+00:19:39,110 --> 00:19:39,120
+this looks in a final and we'll be
+ 
+
+1057
+00:19:39,120 --> 00:19:41,190
+this looks in a final and we'll be
+completely done. And here we have it. A
+
+1058
+00:19:41,190 --> 00:19:41,200
+completely done. And here we have it. A
+ 
+
+1059
+00:19:41,200 --> 00:19:44,630
+completely done. And here we have it. A
+very quick furry logo. I showed you
+
+1060
+00:19:44,630 --> 00:19:44,640
+very quick furry logo. I showed you
+ 
+
+1061
+00:19:44,640 --> 00:19:46,549
+very quick furry logo. I showed you
+about 10% of the controls here. There's
+
+1062
+00:19:46,549 --> 00:19:46,559
+about 10% of the controls here. There's
+ 
+
+1063
+00:19:46,559 --> 00:19:48,230
+about 10% of the controls here. There's
+a lot more you can do with this, but I
+
+1064
+00:19:48,230 --> 00:19:48,240
+a lot more you can do with this, but I
+ 
+
+1065
+00:19:48,240 --> 00:19:49,430
+a lot more you can do with this, but I
+wanted to show you the quickest way to
+
+1066
+00:19:49,430 --> 00:19:49,440
+wanted to show you the quickest way to
+ 
+
+1067
+00:19:49,440 --> 00:19:51,029
+wanted to show you the quickest way to
+make it just look really nice and really
+
+1068
+00:19:51,029 --> 00:19:51,039
+make it just look really nice and really
+ 
+
+1069
+00:19:51,039 --> 00:19:53,430
+make it just look really nice and really
+cool for ideiation reasons. And you can
+
+1070
+00:19:53,430 --> 00:19:53,440
+cool for ideiation reasons. And you can
+ 
+
+1071
+00:19:53,440 --> 00:19:54,549
+cool for ideiation reasons. And you can
+check out that video from Southern
+
+1072
+00:19:54,549 --> 00:19:54,559
+check out that video from Southern
+ 
+
+1073
+00:19:54,559 --> 00:19:57,350
+check out that video from Southern
+Shoddy uh to really take this further.
+
+1074
+00:19:57,350 --> 00:19:57,360
+Shoddy uh to really take this further.
+ 
+
+1075
+00:19:57,360 --> 00:19:58,710
+Shoddy uh to really take this further.
+So, there you guys go. That is six
+
+1076
+00:19:58,710 --> 00:19:58,720
+So, there you guys go. That is six
+ 
+
+1077
+00:19:58,720 --> 00:20:00,710
+So, there you guys go. That is six
+concepts that you can do kind of
+
+1078
+00:20:00,710 --> 00:20:00,720
+concepts that you can do kind of
+ 
+
+1079
+00:20:00,720 --> 00:20:02,710
+concepts that you can do kind of
+hundreds of things with just those base
+
+1080
+00:20:02,710 --> 00:20:02,720
+hundreds of things with just those base
+ 
+
+1081
+00:20:02,720 --> 00:20:05,110
+hundreds of things with just those base
+ideas on how to change logos. Of course,
+
+1082
+00:20:05,110 --> 00:20:05,120
+ideas on how to change logos. Of course,
+ 
+
+1083
+00:20:05,120 --> 00:20:07,750
+ideas on how to change logos. Of course,
+logo and Blender just means geometry in
+
+1084
+00:20:07,750 --> 00:20:07,760
+logo and Blender just means geometry in
+ 
+
+1085
+00:20:07,760 --> 00:20:09,270
+logo and Blender just means geometry in
+the shape of a logo. So, that's kind of
+
+1086
+00:20:09,270 --> 00:20:09,280
+the shape of a logo. So, that's kind of
+ 
+
+1087
+00:20:09,280 --> 00:20:10,789
+the shape of a logo. So, that's kind of
+the way to look at it. You can sculpt,
+
+1088
+00:20:10,789 --> 00:20:10,799
+the way to look at it. You can sculpt,
+ 
+
+1089
+00:20:10,799 --> 00:20:12,870
+the way to look at it. You can sculpt,
+you can weight paint, you can do so many
+
+1090
+00:20:12,870 --> 00:20:12,880
+you can weight paint, you can do so many
+ 
+
+1091
+00:20:12,880 --> 00:20:15,909
+you can weight paint, you can do so many
+things with logos to really bring brands
+
+1092
+00:20:15,909 --> 00:20:15,919
+things with logos to really bring brands
+ 
+
+1093
+00:20:15,919 --> 00:20:17,669
+things with logos to really bring brands
+to life and make them look awesome. And
+
+1094
+00:20:17,669 --> 00:20:17,679
+to life and make them look awesome. And
+ 
+
+1095
+00:20:17,679 --> 00:20:19,430
+to life and make them look awesome. And
+as a graphic designer, this is my
+
+1096
+00:20:19,430 --> 00:20:19,440
+as a graphic designer, this is my
+ 
+
+1097
+00:20:19,440 --> 00:20:21,190
+as a graphic designer, this is my
+favorite topic. So, hope you learned
+
+1098
+00:20:21,190 --> 00:20:21,200
+favorite topic. So, hope you learned
+ 
+
+1099
+00:20:21,200 --> 00:20:22,549
+favorite topic. So, hope you learned
+some stuff. Again, if you want to check
+
+1100
+00:20:22,549 --> 00:20:22,559
+some stuff. Again, if you want to check
+ 
+
+1101
+00:20:22,559 --> 00:20:24,549
+some stuff. Again, if you want to check
+out the extended full tutorials on each
+
+1102
+00:20:24,549 --> 00:20:24,559
+out the extended full tutorials on each
+ 
+
+1103
+00:20:24,559 --> 00:20:25,909
+out the extended full tutorials on each
+of these concepts and making something
+
+1104
+00:20:25,909 --> 00:20:25,919
+of these concepts and making something
+ 
+
+1105
+00:20:25,919 --> 00:20:27,350
+of these concepts and making something
+really cool with it, you can check that
+
+1106
+00:20:27,350 --> 00:20:27,360
+really cool with it, you can check that
+ 
+
+1107
+00:20:27,360 --> 00:20:29,029
+really cool with it, you can check that
+out on my Patreon now. And you can get a
+
+1108
+00:20:29,029 --> 00:20:29,039
+out on my Patreon now. And you can get a
+ 
+
+1109
+00:20:29,039 --> 00:20:30,950
+out on my Patreon now. And you can get a
+discount if you subscribe annually. And
+
+1110
+00:20:30,950 --> 00:20:30,960
+discount if you subscribe annually. And
+ 
+
+1111
+00:20:30,960 --> 00:20:34,240
+discount if you subscribe annually. And
+I'll see you guys in the next
+

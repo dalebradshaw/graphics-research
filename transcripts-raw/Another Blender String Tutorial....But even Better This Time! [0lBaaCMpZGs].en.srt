@@ -1,0 +1,5245 @@
+1
+00:00:00,080 --> 00:00:01,910
+
+How's it going? In this tutorial, I'm
+
+2
+00:00:01,910 --> 00:00:01,920
+How's it going? In this tutorial, I'm
+ 
+
+3
+00:00:01,920 --> 00:00:03,590
+How's it going? In this tutorial, I'm
+going to show you how to create this
+
+4
+00:00:03,590 --> 00:00:03,600
+going to show you how to create this
+ 
+
+5
+00:00:03,600 --> 00:00:05,110
+going to show you how to create this
+animation right here. There's actually
+
+6
+00:00:05,110 --> 00:00:05,120
+animation right here. There's actually
+ 
+
+7
+00:00:05,120 --> 00:00:07,430
+animation right here. There's actually
+going to be two animations in this
+
+8
+00:00:07,430 --> 00:00:07,440
+going to be two animations in this
+ 
+
+9
+00:00:07,440 --> 00:00:08,790
+going to be two animations in this
+tutorial that you'll be able to pick
+
+10
+00:00:08,790 --> 00:00:08,800
+tutorial that you'll be able to pick
+ 
+
+11
+00:00:08,800 --> 00:00:10,629
+tutorial that you'll be able to pick
+from, or you can do both. Here's the
+
+12
+00:00:10,629 --> 00:00:10,639
+from, or you can do both. Here's the
+ 
+
+13
+00:00:10,639 --> 00:00:11,910
+from, or you can do both. Here's the
+steps that we're going to go through to
+
+14
+00:00:11,910 --> 00:00:11,920
+steps that we're going to go through to
+ 
+
+15
+00:00:11,920 --> 00:00:14,230
+steps that we're going to go through to
+create this animation. First, we need to
+
+16
+00:00:14,230 --> 00:00:14,240
+create this animation. First, we need to
+ 
+
+17
+00:00:14,240 --> 00:00:17,029
+create this animation. First, we need to
+simulate an array of curves. Then, we're
+
+18
+00:00:17,029 --> 00:00:17,039
+simulate an array of curves. Then, we're
+ 
+
+19
+00:00:17,039 --> 00:00:18,710
+simulate an array of curves. Then, we're
+going to go ahead and displace those
+
+20
+00:00:18,710 --> 00:00:18,720
+going to go ahead and displace those
+ 
+
+21
+00:00:18,720 --> 00:00:21,590
+going to go ahead and displace those
+curves. Each curve needs its own W value
+
+22
+00:00:21,590 --> 00:00:21,600
+curves. Each curve needs its own W value
+ 
+
+23
+00:00:21,600 --> 00:00:22,870
+curves. Each curve needs its own W value
+to give it a little bit more of a
+
+24
+00:00:22,870 --> 00:00:22,880
+to give it a little bit more of a
+ 
+
+25
+00:00:22,880 --> 00:00:24,870
+to give it a little bit more of a
+realistic stringy look. Then we can use
+
+26
+00:00:24,870 --> 00:00:24,880
+realistic stringy look. Then we can use
+ 
+
+27
+00:00:24,880 --> 00:00:26,550
+realistic stringy look. Then we can use
+a little bit of math to isolate the
+
+28
+00:00:26,550 --> 00:00:26,560
+a little bit of math to isolate the
+ 
+
+29
+00:00:26,560 --> 00:00:28,390
+a little bit of math to isolate the
+displacement to the center. Or we can
+
+30
+00:00:28,390 --> 00:00:28,400
+displacement to the center. Or we can
+ 
+
+31
+00:00:28,400 --> 00:00:30,070
+displacement to the center. Or we can
+use a different set of nodes to animate
+
+32
+00:00:30,070 --> 00:00:30,080
+use a different set of nodes to animate
+ 
+
+33
+00:00:30,080 --> 00:00:32,549
+use a different set of nodes to animate
+the string coming in and out. After
+
+34
+00:00:32,549 --> 00:00:32,559
+the string coming in and out. After
+ 
+
+35
+00:00:32,559 --> 00:00:34,790
+the string coming in and out. After
+that, we just need to add some color,
+
+36
+00:00:34,790 --> 00:00:34,800
+that, we just need to add some color,
+ 
+
+37
+00:00:34,800 --> 00:00:37,350
+that, we just need to add some color,
+add some lighting, and we'll be done.
+
+38
+00:00:37,350 --> 00:00:37,360
+add some lighting, and we'll be done.
+ 
+
+39
+00:00:37,360 --> 00:00:39,030
+add some lighting, and we'll be done.
+This is a geometry node tutorial. And if
+
+40
+00:00:39,030 --> 00:00:39,040
+This is a geometry node tutorial. And if
+ 
+
+41
+00:00:39,040 --> 00:00:40,790
+This is a geometry node tutorial. And if
+you are new to geometry nodes, don't
+
+42
+00:00:40,790 --> 00:00:40,800
+you are new to geometry nodes, don't
+ 
+
+43
+00:00:40,800 --> 00:00:41,990
+you are new to geometry nodes, don't
+worry. We're going to be going step by
+
+44
+00:00:41,990 --> 00:00:42,000
+worry. We're going to be going step by
+ 
+
+45
+00:00:42,000 --> 00:00:43,590
+worry. We're going to be going step by
+step, and I'll be explaining everything.
+
+46
+00:00:43,590 --> 00:00:43,600
+step, and I'll be explaining everything.
+ 
+
+47
+00:00:43,600 --> 00:00:45,190
+step, and I'll be explaining everything.
+This tutorial is actually a free lesson
+
+48
+00:00:45,190 --> 00:00:45,200
+This tutorial is actually a free lesson
+ 
+
+49
+00:00:45,200 --> 00:00:47,430
+This tutorial is actually a free lesson
+from a series of tutorials I just did on
+
+50
+00:00:47,430 --> 00:00:47,440
+from a series of tutorials I just did on
+ 
+
+51
+00:00:47,440 --> 00:00:49,590
+from a series of tutorials I just did on
+Patreon talking about using simulation
+
+52
+00:00:49,590 --> 00:00:49,600
+Patreon talking about using simulation
+ 
+
+53
+00:00:49,600 --> 00:00:52,150
+Patreon talking about using simulation
+zones as a way to create arrays which
+
+54
+00:00:52,150 --> 00:00:52,160
+zones as a way to create arrays which
+ 
+
+55
+00:00:52,160 --> 00:00:54,150
+zones as a way to create arrays which
+helped go around a few kind of stumbling
+
+56
+00:00:54,150 --> 00:00:54,160
+helped go around a few kind of stumbling
+ 
+
+57
+00:00:54,160 --> 00:00:55,990
+helped go around a few kind of stumbling
+blocks in geometry nodes to make some
+
+58
+00:00:55,990 --> 00:00:56,000
+blocks in geometry nodes to make some
+ 
+
+59
+00:00:56,000 --> 00:00:57,830
+blocks in geometry nodes to make some
+really really interesting animations.
+
+60
+00:00:57,830 --> 00:00:57,840
+really really interesting animations.
+ 
+
+61
+00:00:57,840 --> 00:00:59,110
+really really interesting animations.
+You can find the collection on my
+
+62
+00:00:59,110 --> 00:00:59,120
+You can find the collection on my
+ 
+
+63
+00:00:59,120 --> 00:01:01,029
+You can find the collection on my
+Patreon called the simulation arrays and
+
+64
+00:01:01,029 --> 00:01:01,039
+Patreon called the simulation arrays and
+ 
+
+65
+00:01:01,039 --> 00:01:02,869
+Patreon called the simulation arrays and
+it just dives into that idea. You can
+
+66
+00:01:02,869 --> 00:01:02,879
+it just dives into that idea. You can
+ 
+
+67
+00:01:02,879 --> 00:01:04,310
+it just dives into that idea. You can
+check out my Patreon linked in the
+
+68
+00:01:04,310 --> 00:01:04,320
+check out my Patreon linked in the
+ 
+
+69
+00:01:04,320 --> 00:01:05,990
+check out my Patreon linked in the
+description and let's dive into this
+
+70
+00:01:05,990 --> 00:01:06,000
+description and let's dive into this
+ 
+
+71
+00:01:06,000 --> 00:01:07,350
+description and let's dive into this
+tutorial. So, first we're going to go
+
+72
+00:01:07,350 --> 00:01:07,360
+tutorial. So, first we're going to go
+ 
+
+73
+00:01:07,360 --> 00:01:09,670
+tutorial. So, first we're going to go
+ahead and throw a piece of geometry into
+
+74
+00:01:09,670 --> 00:01:09,680
+ahead and throw a piece of geometry into
+ 
+
+75
+00:01:09,680 --> 00:01:11,109
+ahead and throw a piece of geometry into
+our scene. And I'm going to go and cut
+
+76
+00:01:11,109 --> 00:01:11,119
+our scene. And I'm going to go and cut
+ 
+
+77
+00:01:11,119 --> 00:01:13,510
+our scene. And I'm going to go and cut
+my window in half up here. We're going
+
+78
+00:01:13,510 --> 00:01:13,520
+my window in half up here. We're going
+ 
+
+79
+00:01:13,520 --> 00:01:15,109
+my window in half up here. We're going
+to switch it over to the geometry nodes
+
+80
+00:01:15,109 --> 00:01:15,119
+to switch it over to the geometry nodes
+ 
+
+81
+00:01:15,119 --> 00:01:17,109
+to switch it over to the geometry nodes
+editor. I'm going to hit N to move that.
+
+82
+00:01:17,109 --> 00:01:17,119
+editor. I'm going to hit N to move that.
+ 
+
+83
+00:01:17,119 --> 00:01:18,710
+editor. I'm going to hit N to move that.
+We're going to get a new window and
+
+84
+00:01:18,710 --> 00:01:18,720
+We're going to get a new window and
+ 
+
+85
+00:01:18,720 --> 00:01:20,390
+We're going to get a new window and
+we're going to go ahead and delete this
+
+86
+00:01:20,390 --> 00:01:20,400
+we're going to go ahead and delete this
+ 
+
+87
+00:01:20,400 --> 00:01:22,149
+we're going to go ahead and delete this
+input and we're going to go ahead and
+
+88
+00:01:22,149 --> 00:01:22,159
+input and we're going to go ahead and
+ 
+
+89
+00:01:22,159 --> 00:01:24,390
+input and we're going to go ahead and
+get a quadratic bezier. So, shift a
+
+90
+00:01:24,390 --> 00:01:24,400
+get a quadratic bezier. So, shift a
+ 
+
+91
+00:01:24,400 --> 00:01:26,789
+get a quadratic bezier. So, shift a
+search quadratic bezier. We're going to
+
+92
+00:01:26,789 --> 00:01:26,799
+search quadratic bezier. We're going to
+ 
+
+93
+00:01:26,799 --> 00:01:28,550
+search quadratic bezier. We're going to
+plug it right into here. First, what
+
+94
+00:01:28,550 --> 00:01:28,560
+plug it right into here. First, what
+ 
+
+95
+00:01:28,560 --> 00:01:29,510
+plug it right into here. First, what
+we're going to do is notice this
+
+96
+00:01:29,510 --> 00:01:29,520
+we're going to do is notice this
+ 
+
+97
+00:01:29,520 --> 00:01:31,670
+we're going to do is notice this
+quadratic bezier is just curved right
+
+98
+00:01:31,670 --> 00:01:31,680
+quadratic bezier is just curved right
+ 
+
+99
+00:01:31,680 --> 00:01:34,069
+quadratic bezier is just curved right
+now. I'm going to go ahead and click and
+
+100
+00:01:34,069 --> 00:01:34,079
+now. I'm going to go ahead and click and
+ 
+
+101
+00:01:34,079 --> 00:01:35,990
+now. I'm going to go ahead and click and
+drag. Bring it down to zero. And on the
+
+102
+00:01:35,990 --> 00:01:36,000
+drag. Bring it down to zero. And on the
+ 
+
+103
+00:01:36,000 --> 00:01:37,429
+drag. Bring it down to zero. And on the
+y-axis, we're going to give it a value
+
+104
+00:01:37,429 --> 00:01:37,439
+y-axis, we're going to give it a value
+ 
+
+105
+00:01:37,439 --> 00:01:39,670
+y-axis, we're going to give it a value
+of four. That's going to stretch that
+
+106
+00:01:39,670 --> 00:01:39,680
+of four. That's going to stretch that
+ 
+
+107
+00:01:39,680 --> 00:01:41,030
+of four. That's going to stretch that
+curve that direction. And we're going to
+
+108
+00:01:41,030 --> 00:01:41,040
+curve that direction. And we're going to
+ 
+
+109
+00:01:41,040 --> 00:01:43,830
+curve that direction. And we're going to
+give it a resolution of 400. Now, we're
+
+110
+00:01:43,830 --> 00:01:43,840
+give it a resolution of 400. Now, we're
+ 
+
+111
+00:01:43,840 --> 00:01:46,789
+give it a resolution of 400. Now, we're
+going to go ahead get a
+
+112
+00:01:46,789 --> 00:01:46,799
+going to go ahead get a
+ 
+
+113
+00:01:46,799 --> 00:01:49,749
+going to go ahead get a
+transform geometry node. And I just want
+
+114
+00:01:49,749 --> 00:01:49,759
+transform geometry node. And I just want
+ 
+
+115
+00:01:49,759 --> 00:01:51,749
+transform geometry node. And I just want
+to bring this curve here to the center
+
+116
+00:01:51,749 --> 00:01:51,759
+to bring this curve here to the center
+ 
+
+117
+00:01:51,759 --> 00:01:53,510
+to bring this curve here to the center
+of the scene. Not necessary, but it's
+
+118
+00:01:53,510 --> 00:01:53,520
+of the scene. Not necessary, but it's
+ 
+
+119
+00:01:53,520 --> 00:01:55,270
+of the scene. Not necessary, but it's
+just something that I like uh to have
+
+120
+00:01:55,270 --> 00:01:55,280
+just something that I like uh to have
+ 
+
+121
+00:01:55,280 --> 00:01:57,109
+just something that I like uh to have
+everything centered out. And then now
+
+122
+00:01:57,109 --> 00:01:57,119
+everything centered out. And then now
+ 
+
+123
+00:01:57,119 --> 00:01:58,469
+everything centered out. And then now
+we're going to go ahead and add the
+
+124
+00:01:58,469 --> 00:01:58,479
+we're going to go ahead and add the
+ 
+
+125
+00:01:58,479 --> 00:02:00,310
+we're going to go ahead and add the
+simulation zone. Now, if this is your
+
+126
+00:02:00,310 --> 00:02:00,320
+simulation zone. Now, if this is your
+ 
+
+127
+00:02:00,320 --> 00:02:02,389
+simulation zone. Now, if this is your
+first time using simulation zones, this
+
+128
+00:02:02,389 --> 00:02:02,399
+first time using simulation zones, this
+ 
+
+129
+00:02:02,399 --> 00:02:04,550
+first time using simulation zones, this
+is actually a perfect gateway into it.
+
+130
+00:02:04,550 --> 00:02:04,560
+is actually a perfect gateway into it.
+ 
+
+131
+00:02:04,560 --> 00:02:07,830
+is actually a perfect gateway into it.
+So just search simulation
+
+132
+00:02:07,830 --> 00:02:07,840
+So just search simulation
+ 
+
+133
+00:02:07,840 --> 00:02:10,550
+So just search simulation
+and we're going to go ahead and plug
+
+134
+00:02:10,550 --> 00:02:10,560
+and we're going to go ahead and plug
+ 
+
+135
+00:02:10,560 --> 00:02:15,030
+and we're going to go ahead and plug
+these here. So what we want to do
+
+136
+00:02:15,030 --> 00:02:15,040
+these here. So what we want to do
+ 
+
+137
+00:02:15,040 --> 00:02:17,430
+these here. So what we want to do
+is simulate a movement. And what I want
+
+138
+00:02:17,430 --> 00:02:17,440
+is simulate a movement. And what I want
+ 
+
+139
+00:02:17,440 --> 00:02:21,350
+is simulate a movement. And what I want
+to do is get a transform geometry. And I
+
+140
+00:02:21,350 --> 00:02:21,360
+to do is get a transform geometry. And I
+ 
+
+141
+00:02:21,360 --> 00:02:23,270
+to do is get a transform geometry. And I
+want to simulate it going this
+
+142
+00:02:23,270 --> 00:02:23,280
+want to simulate it going this
+ 
+
+143
+00:02:23,280 --> 00:02:24,949
+want to simulate it going this
+direction. And what a simulation is
+
+144
+00:02:24,949 --> 00:02:24,959
+direction. And what a simulation is
+ 
+
+145
+00:02:24,959 --> 00:02:27,589
+direction. And what a simulation is
+going to do is repeat an action every
+
+146
+00:02:27,589 --> 00:02:27,599
+going to do is repeat an action every
+ 
+
+147
+00:02:27,599 --> 00:02:30,070
+going to do is repeat an action every
+single frame. And so what I want to do
+
+148
+00:02:30,070 --> 00:02:30,080
+single frame. And so what I want to do
+ 
+
+149
+00:02:30,080 --> 00:02:33,750
+single frame. And so what I want to do
+is to go 01, duplicate another one at
+
+150
+00:02:33,750 --> 00:02:33,760
+is to go 01, duplicate another one at
+ 
+
+151
+00:02:33,760 --> 00:02:36,550
+is to go 01, duplicate another one at
+that distance every frame. And so what
+
+152
+00:02:36,550 --> 00:02:36,560
+that distance every frame. And so what
+ 
+
+153
+00:02:36,560 --> 00:02:38,630
+that distance every frame. And so what
+we need to do is get a join geometry
+
+154
+00:02:38,630 --> 00:02:38,640
+we need to do is get a join geometry
+ 
+
+155
+00:02:38,640 --> 00:02:41,270
+we need to do is get a join geometry
+node. And then we we're just going to go
+
+156
+00:02:41,270 --> 00:02:41,280
+node. And then we we're just going to go
+ 
+
+157
+00:02:41,280 --> 00:02:43,589
+node. And then we we're just going to go
+ahead from outside of the simulation
+
+158
+00:02:43,589 --> 00:02:43,599
+ahead from outside of the simulation
+ 
+
+159
+00:02:43,599 --> 00:02:47,750
+ahead from outside of the simulation
+zone do that. Now make sure you're not
+
+160
+00:02:47,750 --> 00:02:47,760
+zone do that. Now make sure you're not
+ 
+
+161
+00:02:47,760 --> 00:02:50,470
+zone do that. Now make sure you're not
+doing this. That's going to in be insane
+
+162
+00:02:50,470 --> 00:02:50,480
+doing this. That's going to in be insane
+ 
+
+163
+00:02:50,480 --> 00:02:52,229
+doing this. That's going to in be insane
+for your computer. We want to go outside
+
+164
+00:02:52,229 --> 00:02:52,239
+for your computer. We want to go outside
+ 
+
+165
+00:02:52,239 --> 00:02:53,270
+for your computer. We want to go outside
+of it. Otherwise, it's going to be
+
+166
+00:02:53,270 --> 00:02:53,280
+of it. Otherwise, it's going to be
+ 
+
+167
+00:02:53,280 --> 00:02:55,750
+of it. Otherwise, it's going to be
+duplicating geometry way too much. So,
+
+168
+00:02:55,750 --> 00:02:55,760
+duplicating geometry way too much. So,
+ 
+
+169
+00:02:55,760 --> 00:02:57,830
+duplicating geometry way too much. So,
+now that we have this, if I press play,
+
+170
+00:02:57,830 --> 00:02:57,840
+now that we have this, if I press play,
+ 
+
+171
+00:02:57,840 --> 00:03:00,150
+now that we have this, if I press play,
+we're now getting an array. Now, the way
+
+172
+00:03:00,150 --> 00:03:00,160
+we're now getting an array. Now, the way
+ 
+
+173
+00:03:00,160 --> 00:03:02,949
+we're now getting an array. Now, the way
+that I used to do this is to get a a
+
+174
+00:03:02,949 --> 00:03:02,959
+that I used to do this is to get a a
+ 
+
+175
+00:03:02,959 --> 00:03:05,830
+that I used to do this is to get a a
+line and then instance objects on the
+
+176
+00:03:05,830 --> 00:03:05,840
+line and then instance objects on the
+ 
+
+177
+00:03:05,840 --> 00:03:07,670
+line and then instance objects on the
+points of that line. The problem is when
+
+178
+00:03:07,670 --> 00:03:07,680
+points of that line. The problem is when
+ 
+
+179
+00:03:07,680 --> 00:03:09,430
+points of that line. The problem is when
+I want to go ahead and displace the
+
+180
+00:03:09,430 --> 00:03:09,440
+I want to go ahead and displace the
+ 
+
+181
+00:03:09,440 --> 00:03:11,350
+I want to go ahead and displace the
+curves that are instance on that line,
+
+182
+00:03:11,350 --> 00:03:11,360
+curves that are instance on that line,
+ 
+
+183
+00:03:11,360 --> 00:03:13,910
+curves that are instance on that line,
+it displaces the line, not the curves on
+
+184
+00:03:13,910 --> 00:03:13,920
+it displaces the line, not the curves on
+ 
+
+185
+00:03:13,920 --> 00:03:16,390
+it displaces the line, not the curves on
+the line. Hope that makes sense. This
+
+186
+00:03:16,390 --> 00:03:16,400
+the line. Hope that makes sense. This
+ 
+
+187
+00:03:16,400 --> 00:03:18,710
+the line. Hope that makes sense. This
+goes around it and offers some really,
+
+188
+00:03:18,710 --> 00:03:18,720
+goes around it and offers some really,
+ 
+
+189
+00:03:18,720 --> 00:03:21,030
+goes around it and offers some really,
+really cool things that I dived into on
+
+190
+00:03:21,030 --> 00:03:21,040
+really cool things that I dived into on
+ 
+
+191
+00:03:21,040 --> 00:03:22,710
+really cool things that I dived into on
+Patreon. So, a lot of really cool things
+
+192
+00:03:22,710 --> 00:03:22,720
+Patreon. So, a lot of really cool things
+ 
+
+193
+00:03:22,720 --> 00:03:24,309
+Patreon. So, a lot of really cool things
+to explore just with the simple idea
+
+194
+00:03:24,309 --> 00:03:24,319
+to explore just with the simple idea
+ 
+
+195
+00:03:24,319 --> 00:03:26,710
+to explore just with the simple idea
+with simulations. Now, with me, you can
+
+196
+00:03:26,710 --> 00:03:26,720
+with simulations. Now, with me, you can
+ 
+
+197
+00:03:26,720 --> 00:03:28,470
+with simulations. Now, with me, you can
+see I have 46 frames. That means I have
+
+198
+00:03:28,470 --> 00:03:28,480
+see I have 46 frames. That means I have
+ 
+
+199
+00:03:28,480 --> 00:03:31,910
+see I have 46 frames. That means I have
+46 objects. I want to get about 38.
+
+200
+00:03:31,910 --> 00:03:31,920
+46 objects. I want to get about 38.
+ 
+
+201
+00:03:31,920 --> 00:03:35,110
+46 objects. I want to get about 38.
+And then we can
+
+202
+00:03:35,110 --> 00:03:35,120
+And then we can
+ 
+
+203
+00:03:35,120 --> 00:03:37,910
+And then we can
+we can bake this in just like that. And
+
+204
+00:03:37,910 --> 00:03:37,920
+we can bake this in just like that. And
+ 
+
+205
+00:03:37,920 --> 00:03:39,509
+we can bake this in just like that. And
+it's going to tell you we have baked
+
+206
+00:03:39,509 --> 00:03:39,519
+it's going to tell you we have baked
+ 
+
+207
+00:03:39,519 --> 00:03:41,350
+it's going to tell you we have baked
+frame 38. In this case, that means we
+
+208
+00:03:41,350 --> 00:03:41,360
+frame 38. In this case, that means we
+ 
+
+209
+00:03:41,360 --> 00:03:43,750
+frame 38. In this case, that means we
+have 38 instances. Now, what I want to
+
+210
+00:03:43,750 --> 00:03:43,760
+have 38 instances. Now, what I want to
+ 
+
+211
+00:03:43,760 --> 00:03:47,190
+have 38 instances. Now, what I want to
+do is get another transform geometry and
+
+212
+00:03:47,190 --> 00:03:47,200
+do is get another transform geometry and
+ 
+
+213
+00:03:47,200 --> 00:03:50,309
+do is get another transform geometry and
+just bring this guy to the center as
+
+214
+00:03:50,309 --> 00:03:50,319
+just bring this guy to the center as
+ 
+
+215
+00:03:50,319 --> 00:03:52,390
+just bring this guy to the center as
+well. Again, not necessary. It's really
+
+216
+00:03:52,390 --> 00:03:52,400
+well. Again, not necessary. It's really
+ 
+
+217
+00:03:52,400 --> 00:03:56,550
+well. Again, not necessary. It's really
+just for me. Um, now let's go ahead and
+
+218
+00:03:56,550 --> 00:03:56,560
+just for me. Um, now let's go ahead and
+ 
+
+219
+00:03:56,560 --> 00:03:59,670
+just for me. Um, now let's go ahead and
+displace this. So, we're going to get a
+
+220
+00:03:59,670 --> 00:03:59,680
+displace this. So, we're going to get a
+ 
+
+221
+00:03:59,680 --> 00:04:01,990
+displace this. So, we're going to get a
+set position node and we're going to get
+
+222
+00:04:01,990 --> 00:04:02,000
+set position node and we're going to get
+ 
+
+223
+00:04:02,000 --> 00:04:05,110
+set position node and we're going to get
+a noise texture. So, what I want is to
+
+224
+00:04:05,110 --> 00:04:05,120
+a noise texture. So, what I want is to
+ 
+
+225
+00:04:05,120 --> 00:04:07,030
+a noise texture. So, what I want is to
+displace it only on the X. So, we need
+
+226
+00:04:07,030 --> 00:04:07,040
+displace it only on the X. So, we need
+ 
+
+227
+00:04:07,040 --> 00:04:09,350
+displace it only on the X. So, we need
+to get a combine
+
+228
+00:04:09,350 --> 00:04:09,360
+to get a combine
+ 
+
+229
+00:04:09,360 --> 00:04:12,470
+to get a combine
+XYZ node which will allow us to now have
+
+230
+00:04:12,470 --> 00:04:12,480
+XYZ node which will allow us to now have
+ 
+
+231
+00:04:12,480 --> 00:04:15,990
+XYZ node which will allow us to now have
+access to one single axis. Plug factor
+
+232
+00:04:15,990 --> 00:04:16,000
+access to one single axis. Plug factor
+ 
+
+233
+00:04:16,000 --> 00:04:17,830
+access to one single axis. Plug factor
+into Z. And then I'm going to use the
+
+234
+00:04:17,830 --> 00:04:17,840
+into Z. And then I'm going to use the
+ 
+
+235
+00:04:17,840 --> 00:04:19,590
+into Z. And then I'm going to use the
+normalize. Notice how it kind of went
+
+236
+00:04:19,590 --> 00:04:19,600
+normalize. Notice how it kind of went
+ 
+
+237
+00:04:19,600 --> 00:04:22,069
+normalize. Notice how it kind of went
+above. Normalize will keep it centered.
+
+238
+00:04:22,069 --> 00:04:22,079
+above. Normalize will keep it centered.
+ 
+
+239
+00:04:22,079 --> 00:04:24,550
+above. Normalize will keep it centered.
+But now this is far far too strong. So
+
+240
+00:04:24,550 --> 00:04:24,560
+But now this is far far too strong. So
+ 
+
+241
+00:04:24,560 --> 00:04:28,550
+But now this is far far too strong. So
+we can use a math node to edit the
+
+242
+00:04:28,550 --> 00:04:28,560
+we can use a math node to edit the
+ 
+
+243
+00:04:28,560 --> 00:04:29,990
+we can use a math node to edit the
+strength of this effect with the
+
+244
+00:04:29,990 --> 00:04:30,000
+strength of this effect with the
+ 
+
+245
+00:04:30,000 --> 00:04:32,950
+strength of this effect with the
+multiply function. Multiply is going to
+
+246
+00:04:32,950 --> 00:04:32,960
+multiply function. Multiply is going to
+ 
+
+247
+00:04:32,960 --> 00:04:34,870
+multiply function. Multiply is going to
+play with the strength of a particular
+
+248
+00:04:34,870 --> 00:04:34,880
+play with the strength of a particular
+ 
+
+249
+00:04:34,880 --> 00:04:37,590
+play with the strength of a particular
+action. So now we can bring the detail
+
+250
+00:04:37,590 --> 00:04:37,600
+action. So now we can bring the detail
+ 
+
+251
+00:04:37,600 --> 00:04:39,510
+action. So now we can bring the detail
+down to zero. We can bring that scale
+
+252
+00:04:39,510 --> 00:04:39,520
+down to zero. We can bring that scale
+ 
+
+253
+00:04:39,520 --> 00:04:41,110
+down to zero. We can bring that scale
+up. Actually, maybe bring the detail a
+
+254
+00:04:41,110 --> 00:04:41,120
+up. Actually, maybe bring the detail a
+ 
+
+255
+00:04:41,120 --> 00:04:43,110
+up. Actually, maybe bring the detail a
+little bit up. And then switch this over
+
+256
+00:04:43,110 --> 00:04:43,120
+little bit up. And then switch this over
+ 
+
+257
+00:04:43,120 --> 00:04:46,629
+little bit up. And then switch this over
+to 4D. And we can look at that movement.
+
+258
+00:04:46,629 --> 00:04:46,639
+to 4D. And we can look at that movement.
+ 
+
+259
+00:04:46,639 --> 00:04:49,350
+to 4D. And we can look at that movement.
+There is one thing that I don't
+
+260
+00:04:49,350 --> 00:04:49,360
+There is one thing that I don't
+ 
+
+261
+00:04:49,360 --> 00:04:53,350
+There is one thing that I don't
+particularly like with this idea. Notice
+
+262
+00:04:53,350 --> 00:04:53,360
+particularly like with this idea. Notice
+ 
+
+263
+00:04:53,360 --> 00:04:57,030
+particularly like with this idea. Notice
+how all of the strings are kind of all
+
+264
+00:04:57,030 --> 00:04:57,040
+how all of the strings are kind of all
+ 
+
+265
+00:04:57,040 --> 00:04:58,950
+how all of the strings are kind of all
+the strings are being affected by the
+
+266
+00:04:58,950 --> 00:04:58,960
+the strings are being affected by the
+ 
+
+267
+00:04:58,960 --> 00:05:01,990
+the strings are being affected by the
+same exact noise texture, specifically
+
+268
+00:05:01,990 --> 00:05:02,000
+same exact noise texture, specifically
+ 
+
+269
+00:05:02,000 --> 00:05:04,629
+same exact noise texture, specifically
+the same value of the W. All these
+
+270
+00:05:04,629 --> 00:05:04,639
+the same value of the W. All these
+ 
+
+271
+00:05:04,639 --> 00:05:06,550
+the same value of the W. All these
+things are the same, right? And so the
+
+272
+00:05:06,550 --> 00:05:06,560
+things are the same, right? And so the
+ 
+
+273
+00:05:06,560 --> 00:05:09,189
+things are the same, right? And so the
+value of the W is like a seed value, but
+
+274
+00:05:09,189 --> 00:05:09,199
+value of the W is like a seed value, but
+ 
+
+275
+00:05:09,199 --> 00:05:10,710
+value of the W is like a seed value, but
+all of them are being animated. So they
+
+276
+00:05:10,710 --> 00:05:10,720
+all of them are being animated. So they
+ 
+
+277
+00:05:10,720 --> 00:05:12,629
+all of them are being animated. So they
+kind of look connected like a like this
+
+278
+00:05:12,629 --> 00:05:12,639
+kind of look connected like a like this
+ 
+
+279
+00:05:12,639 --> 00:05:14,550
+kind of look connected like a like this
+wave. All of them have this wave this
+
+280
+00:05:14,550 --> 00:05:14,560
+wave. All of them have this wave this
+ 
+
+281
+00:05:14,560 --> 00:05:17,510
+wave. All of them have this wave this
+way and this way and it's all you know
+
+282
+00:05:17,510 --> 00:05:17,520
+way and this way and it's all you know
+ 
+
+283
+00:05:17,520 --> 00:05:20,550
+way and this way and it's all you know
+they all look in relation to each other
+
+284
+00:05:20,550 --> 00:05:20,560
+they all look in relation to each other
+ 
+
+285
+00:05:20,560 --> 00:05:23,749
+they all look in relation to each other
+way in in this wave together that
+
+286
+00:05:23,749 --> 00:05:23,759
+way in in this wave together that
+ 
+
+287
+00:05:23,759 --> 00:05:27,590
+way in in this wave together that
+doesn't give this really stringy organic
+
+288
+00:05:27,590 --> 00:05:27,600
+doesn't give this really stringy organic
+ 
+
+289
+00:05:27,600 --> 00:05:30,790
+doesn't give this really stringy organic
+look that I personally want for this
+
+290
+00:05:30,790 --> 00:05:30,800
+look that I personally want for this
+ 
+
+291
+00:05:30,800 --> 00:05:32,710
+look that I personally want for this
+which means I want each one of these
+
+292
+00:05:32,710 --> 00:05:32,720
+which means I want each one of these
+ 
+
+293
+00:05:32,720 --> 00:05:36,629
+which means I want each one of these
+strings to have its own value of the W.
+
+294
+00:05:36,629 --> 00:05:36,639
+strings to have its own value of the W.
+ 
+
+295
+00:05:36,639 --> 00:05:39,270
+strings to have its own value of the W.
+So say like this string is on this value
+
+296
+00:05:39,270 --> 00:05:39,280
+So say like this string is on this value
+ 
+
+297
+00:05:39,280 --> 00:05:41,270
+So say like this string is on this value
+2.48 48 and another string is going to
+
+298
+00:05:41,270 --> 00:05:41,280
+2.48 48 and another string is going to
+ 
+
+299
+00:05:41,280 --> 00:05:43,189
+2.48 48 and another string is going to
+have this value which will put them at
+
+300
+00:05:43,189 --> 00:05:43,199
+have this value which will put them at
+ 
+
+301
+00:05:43,199 --> 00:05:46,390
+have this value which will put them at
+random points which is what I want. Now
+
+302
+00:05:46,390 --> 00:05:46,400
+random points which is what I want. Now
+ 
+
+303
+00:05:46,400 --> 00:05:48,710
+random points which is what I want. Now
+how do you do that? I'm going to go
+
+304
+00:05:48,710 --> 00:05:48,720
+how do you do that? I'm going to go
+ 
+
+305
+00:05:48,720 --> 00:05:50,950
+how do you do that? I'm going to go
+ahead and give myself a little bit more
+
+306
+00:05:50,950 --> 00:05:50,960
+ahead and give myself a little bit more
+ 
+
+307
+00:05:50,960 --> 00:05:52,710
+ahead and give myself a little bit more
+space here and we're going to get an
+
+308
+00:05:52,710 --> 00:05:52,720
+space here and we're going to get an
+ 
+
+309
+00:05:52,720 --> 00:05:55,270
+space here and we're going to get an
+attribute. So we're going to get a store
+
+310
+00:05:55,270 --> 00:05:55,280
+attribute. So we're going to get a store
+ 
+
+311
+00:05:55,280 --> 00:05:57,830
+attribute. So we're going to get a store
+named attribute node. We're going to get
+
+312
+00:05:57,830 --> 00:05:57,840
+named attribute node. We're going to get
+ 
+
+313
+00:05:57,840 --> 00:06:00,629
+named attribute node. We're going to get
+a random value and we want to use a
+
+314
+00:06:00,629 --> 00:06:00,639
+a random value and we want to use a
+ 
+
+315
+00:06:00,639 --> 00:06:03,990
+a random value and we want to use a
+random value for the W giving each one
+
+316
+00:06:03,990 --> 00:06:04,000
+random value for the W giving each one
+ 
+
+317
+00:06:04,000 --> 00:06:07,189
+random value for the W giving each one
+of these strings its own random W value.
+
+318
+00:06:07,189 --> 00:06:07,199
+of these strings its own random W value.
+ 
+
+319
+00:06:07,199 --> 00:06:08,870
+of these strings its own random W value.
+How do you do that? So here in the store
+
+320
+00:06:08,870 --> 00:06:08,880
+How do you do that? So here in the store
+ 
+
+321
+00:06:08,880 --> 00:06:10,390
+How do you do that? So here in the store
+named attribute, I want it to recognize
+
+322
+00:06:10,390 --> 00:06:10,400
+named attribute, I want it to recognize
+ 
+
+323
+00:06:10,400 --> 00:06:12,390
+named attribute, I want it to recognize
+the splines. We're just going to give it
+
+324
+00:06:12,390 --> 00:06:12,400
+the splines. We're just going to give it
+ 
+
+325
+00:06:12,400 --> 00:06:14,150
+the splines. We're just going to give it
+a name of R just for random. And you can
+
+326
+00:06:14,150 --> 00:06:14,160
+a name of R just for random. And you can
+ 
+
+327
+00:06:14,160 --> 00:06:15,909
+a name of R just for random. And you can
+plug this right here. So now that we
+
+328
+00:06:15,909 --> 00:06:15,919
+plug this right here. So now that we
+ 
+
+329
+00:06:15,919 --> 00:06:18,309
+plug this right here. So now that we
+have an attribute that is assigning a a
+
+330
+00:06:18,309 --> 00:06:18,319
+have an attribute that is assigning a a
+ 
+
+331
+00:06:18,319 --> 00:06:20,469
+have an attribute that is assigning a a
+unique value to each one of these
+
+332
+00:06:20,469 --> 00:06:20,479
+unique value to each one of these
+ 
+
+333
+00:06:20,479 --> 00:06:22,950
+unique value to each one of these
+strings cuz it recognizes each one of
+
+334
+00:06:22,950 --> 00:06:22,960
+strings cuz it recognizes each one of
+ 
+
+335
+00:06:22,960 --> 00:06:24,950
+strings cuz it recognizes each one of
+those curves through telling it to
+
+336
+00:06:24,950 --> 00:06:24,960
+those curves through telling it to
+ 
+
+337
+00:06:24,960 --> 00:06:26,870
+those curves through telling it to
+recognize curves and assign a random
+
+338
+00:06:26,870 --> 00:06:26,880
+recognize curves and assign a random
+ 
+
+339
+00:06:26,880 --> 00:06:28,469
+recognize curves and assign a random
+value to each one of those curves.
+
+340
+00:06:28,469 --> 00:06:28,479
+value to each one of those curves.
+ 
+
+341
+00:06:28,479 --> 00:06:30,629
+value to each one of those curves.
+That's what this does. So now we can get
+
+342
+00:06:30,629 --> 00:06:30,639
+That's what this does. So now we can get
+ 
+
+343
+00:06:30,639 --> 00:06:33,749
+That's what this does. So now we can get
+a attribute node, a named attribute
+
+344
+00:06:33,749 --> 00:06:33,759
+a attribute node, a named attribute
+ 
+
+345
+00:06:33,759 --> 00:06:35,990
+a attribute node, a named attribute
+call. Looks like it's a capital R. I
+
+346
+00:06:35,990 --> 00:06:36,000
+call. Looks like it's a capital R. I
+ 
+
+347
+00:06:36,000 --> 00:06:38,469
+call. Looks like it's a capital R. I
+don't know why I did a capital. And then
+
+348
+00:06:38,469 --> 00:06:38,479
+don't know why I did a capital. And then
+ 
+
+349
+00:06:38,479 --> 00:06:40,790
+don't know why I did a capital. And then
+watch what happens if I go ahead and
+
+350
+00:06:40,790 --> 00:06:40,800
+watch what happens if I go ahead and
+ 
+
+351
+00:06:40,800 --> 00:06:43,029
+watch what happens if I go ahead and
+plug this attribute into the W. Instead
+
+352
+00:06:43,029 --> 00:06:43,039
+plug this attribute into the W. Instead
+ 
+
+353
+00:06:43,039 --> 00:06:45,270
+plug this attribute into the W. Instead
+of now just one value, we're getting
+
+354
+00:06:45,270 --> 00:06:45,280
+of now just one value, we're getting
+ 
+
+355
+00:06:45,280 --> 00:06:48,070
+of now just one value, we're getting
+multiple values in the W. And this is
+
+356
+00:06:48,070 --> 00:06:48,080
+multiple values in the W. And this is
+ 
+
+357
+00:06:48,080 --> 00:06:51,909
+multiple values in the W. And this is
+awesome. Two things. We can't adjust the
+
+358
+00:06:51,909 --> 00:06:51,919
+awesome. Two things. We can't adjust the
+ 
+
+359
+00:06:51,919 --> 00:06:54,710
+awesome. Two things. We can't adjust the
+strength of this effect. And we also no
+
+360
+00:06:54,710 --> 00:06:54,720
+strength of this effect. And we also no
+ 
+
+361
+00:06:54,720 --> 00:06:56,469
+strength of this effect. And we also no
+longer have an ability to animate the W.
+
+362
+00:06:56,469 --> 00:06:56,479
+longer have an ability to animate the W.
+ 
+
+363
+00:06:56,479 --> 00:06:58,070
+longer have an ability to animate the W.
+But we could fix that with a math node
+
+364
+00:06:58,070 --> 00:06:58,080
+But we could fix that with a math node
+ 
+
+365
+00:06:58,080 --> 00:07:01,270
+But we could fix that with a math node
+right here. So if you play with add, if
+
+366
+00:07:01,270 --> 00:07:01,280
+right here. So if you play with add, if
+ 
+
+367
+00:07:01,280 --> 00:07:03,510
+right here. So if you play with add, if
+you just want to animate, the add
+
+368
+00:07:03,510 --> 00:07:03,520
+you just want to animate, the add
+ 
+
+369
+00:07:03,520 --> 00:07:06,870
+you just want to animate, the add
+function right here is exactly
+
+370
+00:07:06,870 --> 00:07:06,880
+function right here is exactly
+ 
+
+371
+00:07:06,880 --> 00:07:09,110
+function right here is exactly
+the W slider. See that? It does the same
+
+372
+00:07:09,110 --> 00:07:09,120
+the W slider. See that? It does the same
+ 
+
+373
+00:07:09,120 --> 00:07:10,469
+the W slider. See that? It does the same
+exact thing, but in case we now have
+
+374
+00:07:10,469 --> 00:07:10,479
+exact thing, but in case we now have
+ 
+
+375
+00:07:10,479 --> 00:07:13,749
+exact thing, but in case we now have
+access to it. So now it's randomly uh
+
+376
+00:07:13,749 --> 00:07:13,759
+access to it. So now it's randomly uh
+ 
+
+377
+00:07:13,759 --> 00:07:15,670
+access to it. So now it's randomly uh
+animating the W of all these random
+
+378
+00:07:15,670 --> 00:07:15,680
+animating the W of all these random
+ 
+
+379
+00:07:15,680 --> 00:07:17,589
+animating the W of all these random
+values. But what we can do is actually
+
+380
+00:07:17,589 --> 00:07:17,599
+values. But what we can do is actually
+ 
+
+381
+00:07:17,599 --> 00:07:19,909
+values. But what we can do is actually
+get a multiply add node. And if you
+
+382
+00:07:19,909 --> 00:07:19,919
+get a multiply add node. And if you
+ 
+
+383
+00:07:19,919 --> 00:07:21,990
+get a multiply add node. And if you
+bring the multiply to zero, it's like,
+
+384
+00:07:21,990 --> 00:07:22,000
+bring the multiply to zero, it's like,
+ 
+
+385
+00:07:22,000 --> 00:07:24,230
+bring the multiply to zero, it's like,
+okay, we're no longer random randomizing
+
+386
+00:07:24,230 --> 00:07:24,240
+okay, we're no longer random randomizing
+ 
+
+387
+00:07:24,240 --> 00:07:25,749
+okay, we're no longer random randomizing
+it. And so you can just kind of bring in
+
+388
+00:07:25,749 --> 00:07:25,759
+it. And so you can just kind of bring in
+ 
+
+389
+00:07:25,759 --> 00:07:29,029
+it. And so you can just kind of bring in
+a little bit of randomization. So it
+
+390
+00:07:29,029 --> 00:07:29,039
+a little bit of randomization. So it
+ 
+
+391
+00:07:29,039 --> 00:07:30,390
+a little bit of randomization. So it
+still looks like they're all kind of a
+
+392
+00:07:30,390 --> 00:07:30,400
+still looks like they're all kind of a
+ 
+
+393
+00:07:30,400 --> 00:07:32,790
+still looks like they're all kind of a
+part of this big wave, but they still
+
+394
+00:07:32,790 --> 00:07:32,800
+part of this big wave, but they still
+ 
+
+395
+00:07:32,800 --> 00:07:35,110
+part of this big wave, but they still
+have a little bit of individuality to
+
+396
+00:07:35,110 --> 00:07:35,120
+have a little bit of individuality to
+ 
+
+397
+00:07:35,120 --> 00:07:36,629
+have a little bit of individuality to
+them. Or you can kind of go crazy with
+
+398
+00:07:36,629 --> 00:07:36,639
+them. Or you can kind of go crazy with
+ 
+
+399
+00:07:36,639 --> 00:07:38,230
+them. Or you can kind of go crazy with
+it and have them all just look like
+
+400
+00:07:38,230 --> 00:07:38,240
+it and have them all just look like
+ 
+
+401
+00:07:38,240 --> 00:07:39,990
+it and have them all just look like
+they're doing their own thing. I do kind
+
+402
+00:07:39,990 --> 00:07:40,000
+they're doing their own thing. I do kind
+ 
+
+403
+00:07:40,000 --> 00:07:43,589
+they're doing their own thing. I do kind
+of like a mix of this and that, giving
+
+404
+00:07:43,589 --> 00:07:43,599
+of like a mix of this and that, giving
+ 
+
+405
+00:07:43,599 --> 00:07:45,749
+of like a mix of this and that, giving
+it just a little bit of this organic
+
+406
+00:07:45,749 --> 00:07:45,759
+it just a little bit of this organic
+ 
+
+407
+00:07:45,759 --> 00:07:47,270
+it just a little bit of this organic
+stringy motion, but they're all kind of
+
+408
+00:07:47,270 --> 00:07:47,280
+stringy motion, but they're all kind of
+ 
+
+409
+00:07:47,280 --> 00:07:49,670
+stringy motion, but they're all kind of
+wave and a wave together in this kind of
+
+410
+00:07:49,670 --> 00:07:49,680
+wave and a wave together in this kind of
+ 
+
+411
+00:07:49,680 --> 00:07:51,110
+wave and a wave together in this kind of
+interesting way. We're going to go ahead
+
+412
+00:07:51,110 --> 00:07:51,120
+interesting way. We're going to go ahead
+ 
+
+413
+00:07:51,120 --> 00:07:53,350
+interesting way. We're going to go ahead
+and isolate this uh displacement. But
+
+414
+00:07:53,350 --> 00:07:53,360
+and isolate this uh displacement. But
+ 
+
+415
+00:07:53,360 --> 00:07:54,469
+and isolate this uh displacement. But
+first, I kind of want to look at some
+
+416
+00:07:54,469 --> 00:07:54,479
+first, I kind of want to look at some
+ 
+
+417
+00:07:54,479 --> 00:07:56,230
+first, I kind of want to look at some
+geometry to make it look better. So,
+
+418
+00:07:56,230 --> 00:07:56,240
+geometry to make it look better. So,
+ 
+
+419
+00:07:56,240 --> 00:07:57,990
+geometry to make it look better. So,
+we're going to go ahead and get a curve
+
+420
+00:07:57,990 --> 00:07:58,000
+we're going to go ahead and get a curve
+ 
+
+421
+00:07:58,000 --> 00:08:01,990
+we're going to go ahead and get a curve
+to mesh
+
+422
+00:08:01,990 --> 00:08:02,000
+
+ 
+
+423
+00:08:02,000 --> 00:08:03,909
+
+and we're going to get a curve circle
+
+424
+00:08:03,909 --> 00:08:03,919
+and we're going to get a curve circle
+ 
+
+425
+00:08:03,919 --> 00:08:05,510
+and we're going to get a curve circle
+for the geometry. So, I'm going to give
+
+426
+00:08:05,510 --> 00:08:05,520
+for the geometry. So, I'm going to give
+ 
+
+427
+00:08:05,520 --> 00:08:09,029
+for the geometry. So, I'm going to give
+it a radius of 0.4 and plug curve into
+
+428
+00:08:09,029 --> 00:08:09,039
+it a radius of 0.4 and plug curve into
+ 
+
+429
+00:08:09,039 --> 00:08:12,550
+it a radius of 0.4 and plug curve into
+profile. Now, we have our strings and we
+
+430
+00:08:12,550 --> 00:08:12,560
+profile. Now, we have our strings and we
+ 
+
+431
+00:08:12,560 --> 00:08:16,150
+profile. Now, we have our strings and we
+can go back and kind of look at how that
+
+432
+00:08:16,150 --> 00:08:16,160
+can go back and kind of look at how that
+ 
+
+433
+00:08:16,160 --> 00:08:17,510
+can go back and kind of look at how that
+looks. It looks really cool and I love
+
+434
+00:08:17,510 --> 00:08:17,520
+looks. It looks really cool and I love
+ 
+
+435
+00:08:17,520 --> 00:08:21,029
+looks. It looks really cool and I love
+it. So, what I want to do is just have
+
+436
+00:08:21,029 --> 00:08:21,039
+it. So, what I want to do is just have
+ 
+
+437
+00:08:21,039 --> 00:08:23,749
+it. So, what I want to do is just have
+the displacement centered right here to
+
+438
+00:08:23,749 --> 00:08:23,759
+the displacement centered right here to
+ 
+
+439
+00:08:23,759 --> 00:08:25,029
+the displacement centered right here to
+the middle. So, we're going to go ahead
+
+440
+00:08:25,029 --> 00:08:25,039
+the middle. So, we're going to go ahead
+ 
+
+441
+00:08:25,039 --> 00:08:28,230
+the middle. So, we're going to go ahead
+and mix two things. We're going to mix a
+
+442
+00:08:28,230 --> 00:08:28,240
+and mix two things. We're going to mix a
+ 
+
+443
+00:08:28,240 --> 00:08:30,230
+and mix two things. We're going to mix a
+flat
+
+444
+00:08:30,230 --> 00:08:30,240
+flat
+ 
+
+445
+00:08:30,240 --> 00:08:32,709
+flat
+value and this whole situation here. So,
+
+446
+00:08:32,709 --> 00:08:32,719
+value and this whole situation here. So,
+ 
+
+447
+00:08:32,719 --> 00:08:35,589
+value and this whole situation here. So,
+what I'm going to do is going to mix
+
+448
+00:08:35,589 --> 00:08:35,599
+what I'm going to do is going to mix
+ 
+
+449
+00:08:35,599 --> 00:08:37,509
+what I'm going to do is going to mix
+vector. Now, we could use vector if we
+
+450
+00:08:37,509 --> 00:08:37,519
+vector. Now, we could use vector if we
+ 
+
+451
+00:08:37,519 --> 00:08:39,589
+vector. Now, we could use vector if we
+want. Uh, these are floats, so we're
+
+452
+00:08:39,589 --> 00:08:39,599
+want. Uh, these are floats, so we're
+ 
+
+453
+00:08:39,599 --> 00:08:41,110
+want. Uh, these are floats, so we're
+just going to use mix float just to keep
+
+454
+00:08:41,110 --> 00:08:41,120
+just going to use mix float just to keep
+ 
+
+455
+00:08:41,120 --> 00:08:44,389
+just going to use mix float just to keep
+it all uh technically correct, but the
+
+456
+00:08:44,389 --> 00:08:44,399
+it all uh technically correct, but the
+ 
+
+457
+00:08:44,399 --> 00:08:47,750
+it all uh technically correct, but the
+the vector would work, too.
+
+458
+00:08:47,750 --> 00:08:47,760
+the vector would work, too.
+ 
+
+459
+00:08:47,760 --> 00:08:50,790
+the vector would work, too.
+Now, we're going to mix this state with
+
+460
+00:08:50,790 --> 00:08:50,800
+Now, we're going to mix this state with
+ 
+
+461
+00:08:50,800 --> 00:08:53,030
+Now, we're going to mix this state with
+this state, and we're going to do that
+
+462
+00:08:53,030 --> 00:08:53,040
+this state, and we're going to do that
+ 
+
+463
+00:08:53,040 --> 00:08:55,190
+this state, and we're going to do that
+with the factor. So, what we can do, I'm
+
+464
+00:08:55,190 --> 00:08:55,200
+with the factor. So, what we can do, I'm
+ 
+
+465
+00:08:55,200 --> 00:08:58,310
+with the factor. So, what we can do, I'm
+just bring this down here.
+
+466
+00:08:58,310 --> 00:08:58,320
+just bring this down here.
+ 
+
+467
+00:08:58,320 --> 00:09:01,910
+just bring this down here.
+We're going to get a position node, and
+
+468
+00:09:01,910 --> 00:09:01,920
+We're going to get a position node, and
+ 
+
+469
+00:09:01,920 --> 00:09:04,710
+We're going to get a position node, and
+we're going to get a math node. I'm
+
+470
+00:09:04,710 --> 00:09:04,720
+we're going to get a math node. I'm
+ 
+
+471
+00:09:04,720 --> 00:09:06,230
+we're going to get a math node. I'm
+going to plug position into value and
+
+472
+00:09:06,230 --> 00:09:06,240
+going to plug position into value and
+ 
+
+473
+00:09:06,240 --> 00:09:08,470
+going to plug position into value and
+value into factor. And it's going to do
+
+474
+00:09:08,470 --> 00:09:08,480
+value into factor. And it's going to do
+ 
+
+475
+00:09:08,480 --> 00:09:11,590
+value into factor. And it's going to do
+this. If I play with the value,
+
+476
+00:09:11,590 --> 00:09:11,600
+this. If I play with the value,
+ 
+
+477
+00:09:11,600 --> 00:09:14,790
+this. If I play with the value,
+you can notice
+
+478
+00:09:14,790 --> 00:09:14,800
+you can notice
+ 
+
+479
+00:09:14,800 --> 00:09:16,550
+you can notice
+it's animating in. It's animating this
+
+480
+00:09:16,550 --> 00:09:16,560
+it's animating in. It's animating this
+ 
+
+481
+00:09:16,560 --> 00:09:18,870
+it's animating in. It's animating this
+dis this displacement in. Now, one thing
+
+482
+00:09:18,870 --> 00:09:18,880
+dis this displacement in. Now, one thing
+ 
+
+483
+00:09:18,880 --> 00:09:20,949
+dis this displacement in. Now, one thing
+I want to do is make sure any effect I
+
+484
+00:09:20,949 --> 00:09:20,959
+I want to do is make sure any effect I
+ 
+
+485
+00:09:20,959 --> 00:09:24,470
+I want to do is make sure any effect I
+do is actually moving this direction.
+
+486
+00:09:24,470 --> 00:09:24,480
+do is actually moving this direction.
+ 
+
+487
+00:09:24,480 --> 00:09:26,710
+do is actually moving this direction.
+So, what we're going to do is get a
+
+488
+00:09:26,710 --> 00:09:26,720
+So, what we're going to do is get a
+ 
+
+489
+00:09:26,720 --> 00:09:28,790
+So, what we're going to do is get a
+separate XYZ
+
+490
+00:09:28,790 --> 00:09:28,800
+separate XYZ
+ 
+
+491
+00:09:28,800 --> 00:09:30,710
+separate XYZ
+and
+
+492
+00:09:30,710 --> 00:09:30,720
+and
+ 
+
+493
+00:09:30,720 --> 00:09:32,870
+and
+confine it to the Y. Because if I play
+
+494
+00:09:32,870 --> 00:09:32,880
+confine it to the Y. Because if I play
+ 
+
+495
+00:09:32,880 --> 00:09:35,190
+confine it to the Y. Because if I play
+with the value now, you can see it's
+
+496
+00:09:35,190 --> 00:09:35,200
+with the value now, you can see it's
+ 
+
+497
+00:09:35,200 --> 00:09:37,590
+with the value now, you can see it's
+going the other direction from left to
+
+498
+00:09:37,590 --> 00:09:37,600
+going the other direction from left to
+ 
+
+499
+00:09:37,600 --> 00:09:39,829
+going the other direction from left to
+right. So, I wanted to make sure because
+
+500
+00:09:39,829 --> 00:09:39,839
+right. So, I wanted to make sure because
+ 
+
+501
+00:09:39,839 --> 00:09:42,790
+right. So, I wanted to make sure because
+once we add our pingpong function, it is
+
+502
+00:09:42,790 --> 00:09:42,800
+once we add our pingpong function, it is
+ 
+
+503
+00:09:42,800 --> 00:09:45,670
+once we add our pingpong function, it is
+going to
+
+504
+00:09:45,670 --> 00:09:45,680
+going to
+ 
+
+505
+00:09:45,680 --> 00:09:47,750
+going to
+need to be told which way to go. So, now
+
+506
+00:09:47,750 --> 00:09:47,760
+need to be told which way to go. So, now
+ 
+
+507
+00:09:47,760 --> 00:09:49,350
+need to be told which way to go. So, now
+we have this really cool function which
+
+508
+00:09:49,350 --> 00:09:49,360
+we have this really cool function which
+ 
+
+509
+00:09:49,360 --> 00:09:51,269
+we have this really cool function which
+you can also animate automatically. This
+
+510
+00:09:51,269 --> 00:09:51,279
+you can also animate automatically. This
+ 
+
+511
+00:09:51,279 --> 00:09:53,350
+you can also animate automatically. This
+is really cool and fun. So, we have this
+
+512
+00:09:53,350 --> 00:09:53,360
+is really cool and fun. So, we have this
+ 
+
+513
+00:09:53,360 --> 00:09:54,949
+is really cool and fun. So, we have this
+and now we're going to go ahead and add
+
+514
+00:09:54,949 --> 00:09:54,959
+and now we're going to go ahead and add
+ 
+
+515
+00:09:54,959 --> 00:09:58,389
+and now we're going to go ahead and add
+in a pingpong function to make sure that
+
+516
+00:09:58,389 --> 00:09:58,399
+in a pingpong function to make sure that
+ 
+
+517
+00:09:58,399 --> 00:10:01,030
+in a pingpong function to make sure that
+we can go from displacement flat
+
+518
+00:10:01,030 --> 00:10:01,040
+we can go from displacement flat
+ 
+
+519
+00:10:01,040 --> 00:10:02,710
+we can go from displacement flat
+essentially go flat displacement flat.
+
+520
+00:10:02,710 --> 00:10:02,720
+essentially go flat displacement flat.
+ 
+
+521
+00:10:02,720 --> 00:10:04,150
+essentially go flat displacement flat.
+And that is a ping-pong function if
+
+522
+00:10:04,150 --> 00:10:04,160
+And that is a ping-pong function if
+ 
+
+523
+00:10:04,160 --> 00:10:07,190
+And that is a ping-pong function if
+you're going one back to another. And so
+
+524
+00:10:07,190 --> 00:10:07,200
+you're going one back to another. And so
+ 
+
+525
+00:10:07,200 --> 00:10:08,790
+you're going one back to another. And so
+we're going to go ahead and get another
+
+526
+00:10:08,790 --> 00:10:08,800
+we're going to go ahead and get another
+ 
+
+527
+00:10:08,800 --> 00:10:13,750
+we're going to go ahead and get another
+math node and we're going to get D, if
+
+528
+00:10:13,750 --> 00:10:13,760
+math node and we're going to get D, if
+ 
+
+529
+00:10:13,760 --> 00:10:15,670
+math node and we're going to get D, if
+we can find it, ping pong. So if I bring
+
+530
+00:10:15,670 --> 00:10:15,680
+we can find it, ping pong. So if I bring
+ 
+
+531
+00:10:15,680 --> 00:10:19,670
+we can find it, ping pong. So if I bring
+that value up, you'll notice,
+
+532
+00:10:19,670 --> 00:10:19,680
+that value up, you'll notice,
+ 
+
+533
+00:10:19,680 --> 00:10:21,910
+that value up, you'll notice,
+bring that value into the negative, it's
+
+534
+00:10:21,910 --> 00:10:21,920
+bring that value into the negative, it's
+ 
+
+535
+00:10:21,920 --> 00:10:24,550
+bring that value into the negative, it's
+going to kind of isolate this. And so we
+
+536
+00:10:24,550 --> 00:10:24,560
+going to kind of isolate this. And so we
+ 
+
+537
+00:10:24,560 --> 00:10:26,230
+going to kind of isolate this. And so we
+can just bring this guy to the center
+
+538
+00:10:26,230 --> 00:10:26,240
+can just bring this guy to the center
+ 
+
+539
+00:10:26,240 --> 00:10:29,030
+can just bring this guy to the center
+with our value. But notice what this
+
+540
+00:10:29,030 --> 00:10:29,040
+with our value. But notice what this
+ 
+
+541
+00:10:29,040 --> 00:10:31,670
+with our value. But notice what this
+ping pong is doing. So it is doing a lot
+
+542
+00:10:31,670 --> 00:10:31,680
+ping pong is doing. So it is doing a lot
+ 
+
+543
+00:10:31,680 --> 00:10:33,190
+ping pong is doing. So it is doing a lot
+of like multiple ping pongs, which just
+
+544
+00:10:33,190 --> 00:10:33,200
+of like multiple ping pongs, which just
+ 
+
+545
+00:10:33,200 --> 00:10:36,230
+of like multiple ping pongs, which just
+makes it look regular. um bring that to
+
+546
+00:10:36,230 --> 00:10:36,240
+makes it look regular. um bring that to
+ 
+
+547
+00:10:36,240 --> 00:10:38,550
+makes it look regular. um bring that to
+a larger negative value. And now what
+
+548
+00:10:38,550 --> 00:10:38,560
+a larger negative value. And now what
+ 
+
+549
+00:10:38,560 --> 00:10:40,389
+a larger negative value. And now what
+it's taking is flat going to
+
+550
+00:10:40,389 --> 00:10:40,399
+it's taking is flat going to
+ 
+
+551
+00:10:40,399 --> 00:10:42,470
+it's taking is flat going to
+displacement and then going back to
+
+552
+00:10:42,470 --> 00:10:42,480
+displacement and then going back to
+ 
+
+553
+00:10:42,480 --> 00:10:45,350
+displacement and then going back to
+flat. That's what this function is doing
+
+554
+00:10:45,350 --> 00:10:45,360
+flat. That's what this function is doing
+ 
+
+555
+00:10:45,360 --> 00:10:47,990
+flat. That's what this function is doing
+in a really sort of layman's turn term
+
+556
+00:10:47,990 --> 00:10:48,000
+in a really sort of layman's turn term
+ 
+
+557
+00:10:48,000 --> 00:10:50,870
+in a really sort of layman's turn term
+way. So what we can do now is we can get
+
+558
+00:10:50,870 --> 00:10:50,880
+way. So what we can do now is we can get
+ 
+
+559
+00:10:50,880 --> 00:10:53,670
+way. So what we can do now is we can get
+another math node
+
+560
+00:10:53,670 --> 00:10:53,680
+another math node
+ 
+
+561
+00:10:53,680 --> 00:10:58,310
+another math node
+to edit the size
+
+562
+00:10:58,310 --> 00:10:58,320
+to edit the size
+ 
+
+563
+00:10:58,320 --> 00:11:01,750
+to edit the size
+of this ping pong function. So this add
+
+564
+00:11:01,750 --> 00:11:01,760
+of this ping pong function. So this add
+ 
+
+565
+00:11:01,760 --> 00:11:04,710
+of this ping pong function. So this add
+function plays with the position of
+
+566
+00:11:04,710 --> 00:11:04,720
+function plays with the position of
+ 
+
+567
+00:11:04,720 --> 00:11:07,030
+function plays with the position of
+where it's happening and this plays with
+
+568
+00:11:07,030 --> 00:11:07,040
+where it's happening and this plays with
+ 
+
+569
+00:11:07,040 --> 00:11:09,350
+where it's happening and this plays with
+the size which opens up an ability to
+
+570
+00:11:09,350 --> 00:11:09,360
+the size which opens up an ability to
+ 
+
+571
+00:11:09,360 --> 00:11:11,829
+the size which opens up an ability to
+actually animate it coming in. So I want
+
+572
+00:11:11,829 --> 00:11:11,839
+actually animate it coming in. So I want
+ 
+
+573
+00:11:11,839 --> 00:11:13,910
+actually animate it coming in. So I want
+to isolate it to somewhere around there.
+
+574
+00:11:13,910 --> 00:11:13,920
+to isolate it to somewhere around there.
+ 
+
+575
+00:11:13,920 --> 00:11:15,829
+to isolate it to somewhere around there.
+And then you can play with your multiply
+
+576
+00:11:15,829 --> 00:11:15,839
+And then you can play with your multiply
+ 
+
+577
+00:11:15,839 --> 00:11:18,630
+And then you can play with your multiply
+down here to say how strong you want
+
+578
+00:11:18,630 --> 00:11:18,640
+down here to say how strong you want
+ 
+
+579
+00:11:18,640 --> 00:11:23,190
+down here to say how strong you want
+that effect. And then you can animate it
+
+580
+00:11:23,190 --> 00:11:23,200
+that effect. And then you can animate it
+ 
+
+581
+00:11:23,200 --> 00:11:25,509
+that effect. And then you can animate it
+right here. And it's really really
+
+582
+00:11:25,509 --> 00:11:25,519
+right here. And it's really really
+ 
+
+583
+00:11:25,519 --> 00:11:27,350
+right here. And it's really really
+controllable and fun. So that's the
+
+584
+00:11:27,350 --> 00:11:27,360
+controllable and fun. So that's the
+ 
+
+585
+00:11:27,360 --> 00:11:30,630
+controllable and fun. So that's the
+first animation. You can just go ahead
+
+586
+00:11:30,630 --> 00:11:30,640
+first animation. You can just go ahead
+ 
+
+587
+00:11:30,640 --> 00:11:32,710
+first animation. You can just go ahead
+do that if you want. Now, I'm going to
+
+588
+00:11:32,710 --> 00:11:32,720
+do that if you want. Now, I'm going to
+ 
+
+589
+00:11:32,720 --> 00:11:35,030
+do that if you want. Now, I'm going to
+bring this all the way to the to the I'm
+
+590
+00:11:35,030 --> 00:11:35,040
+bring this all the way to the to the I'm
+ 
+
+591
+00:11:35,040 --> 00:11:36,069
+bring this all the way to the to the I'm
+going to bring this one all the way out
+
+592
+00:11:36,069 --> 00:11:36,079
+going to bring this one all the way out
+ 
+
+593
+00:11:36,079 --> 00:11:38,230
+going to bring this one all the way out
+so we can see all the displacement. What
+
+594
+00:11:38,230 --> 00:11:38,240
+so we can see all the displacement. What
+ 
+
+595
+00:11:38,240 --> 00:11:42,150
+so we can see all the displacement. What
+we can also do is trim it. So, what I
+
+596
+00:11:42,150 --> 00:11:42,160
+we can also do is trim it. So, what I
+ 
+
+597
+00:11:42,160 --> 00:11:43,350
+we can also do is trim it. So, what I
+can do is I'm going to just bring these
+
+598
+00:11:43,350 --> 00:11:43,360
+can do is I'm going to just bring these
+ 
+
+599
+00:11:43,360 --> 00:11:48,069
+can do is I'm going to just bring these
+guys over here and get a trim curves
+
+600
+00:11:48,069 --> 00:11:48,079
+
+ 
+
+601
+00:11:48,079 --> 00:11:50,710
+
+node. And if you play with the end,
+
+602
+00:11:50,710 --> 00:11:50,720
+node. And if you play with the end,
+ 
+
+603
+00:11:50,720 --> 00:11:52,550
+node. And if you play with the end,
+notice
+
+604
+00:11:52,550 --> 00:11:52,560
+notice
+ 
+
+605
+00:11:52,560 --> 00:11:54,630
+notice
+you can animate these guys actually
+
+606
+00:11:54,630 --> 00:11:54,640
+you can animate these guys actually
+ 
+
+607
+00:11:54,640 --> 00:11:58,470
+you can animate these guys actually
+coming in. Now, notice these are hollow.
+
+608
+00:11:58,470 --> 00:11:58,480
+coming in. Now, notice these are hollow.
+ 
+
+609
+00:11:58,480 --> 00:12:01,110
+coming in. Now, notice these are hollow.
+If you go here to the uh curve to mesh,
+
+610
+00:12:01,110 --> 00:12:01,120
+If you go here to the uh curve to mesh,
+ 
+
+611
+00:12:01,120 --> 00:12:03,670
+If you go here to the uh curve to mesh,
+it'll fill that up. But it's pretty
+
+612
+00:12:03,670 --> 00:12:03,680
+it'll fill that up. But it's pretty
+ 
+
+613
+00:12:03,680 --> 00:12:06,470
+it'll fill that up. But it's pretty
+cool. We can now animate this in. But
+
+614
+00:12:06,470 --> 00:12:06,480
+cool. We can now animate this in. But
+ 
+
+615
+00:12:06,480 --> 00:12:09,110
+cool. We can now animate this in. But
+what's not cool, at least with the style
+
+616
+00:12:09,110 --> 00:12:09,120
+what's not cool, at least with the style
+ 
+
+617
+00:12:09,120 --> 00:12:11,110
+what's not cool, at least with the style
+that I want, is that just it's just like
+
+618
+00:12:11,110 --> 00:12:11,120
+that I want, is that just it's just like
+ 
+
+619
+00:12:11,120 --> 00:12:12,870
+that I want, is that just it's just like
+you took scissors and cut it. I want to
+
+620
+00:12:12,870 --> 00:12:12,880
+you took scissors and cut it. I want to
+ 
+
+621
+00:12:12,880 --> 00:12:14,870
+you took scissors and cut it. I want to
+randomize
+
+622
+00:12:14,870 --> 00:12:14,880
+randomize
+ 
+
+623
+00:12:14,880 --> 00:12:16,550
+randomize
+um where they're at. And you could do
+
+624
+00:12:16,550 --> 00:12:16,560
+um where they're at. And you could do
+ 
+
+625
+00:12:16,560 --> 00:12:18,790
+um where they're at. And you could do
+that with a
+
+626
+00:12:18,790 --> 00:12:18,800
+that with a
+ 
+
+627
+00:12:18,800 --> 00:12:20,870
+that with a
+random value. Just plug a random value
+
+628
+00:12:20,870 --> 00:12:20,880
+random value. Just plug a random value
+ 
+
+629
+00:12:20,880 --> 00:12:22,949
+random value. Just plug a random value
+into the end function. And let's just
+
+630
+00:12:22,949 --> 00:12:22,959
+into the end function. And let's just
+ 
+
+631
+00:12:22,959 --> 00:12:24,870
+into the end function. And let's just
+give them both a value of zero and
+
+632
+00:12:24,870 --> 00:12:24,880
+give them both a value of zero and
+ 
+
+633
+00:12:24,880 --> 00:12:27,910
+give them both a value of zero and
+animate it in. So, see that? You just
+
+634
+00:12:27,910 --> 00:12:27,920
+animate it in. So, see that? You just
+ 
+
+635
+00:12:27,920 --> 00:12:29,509
+animate it in. So, see that? You just
+click and drag if you want them both to
+
+636
+00:12:29,509 --> 00:12:29,519
+click and drag if you want them both to
+ 
+
+637
+00:12:29,519 --> 00:12:31,269
+click and drag if you want them both to
+go together. And then I'll just pull one
+
+638
+00:12:31,269 --> 00:12:31,279
+go together. And then I'll just pull one
+ 
+
+639
+00:12:31,279 --> 00:12:33,269
+go together. And then I'll just pull one
+back.
+
+640
+00:12:33,269 --> 00:12:33,279
+back.
+ 
+
+641
+00:12:33,279 --> 00:12:36,550
+back.
+And now you have a little bit more of a
+
+642
+00:12:36,550 --> 00:12:36,560
+And now you have a little bit more of a
+ 
+
+643
+00:12:36,560 --> 00:12:38,389
+And now you have a little bit more of a
+natural look. And then if you click and
+
+644
+00:12:38,389 --> 00:12:38,399
+natural look. And then if you click and
+ 
+
+645
+00:12:38,399 --> 00:12:40,629
+natural look. And then if you click and
+drag them both, they'll just travel
+
+646
+00:12:40,629 --> 00:12:40,639
+drag them both, they'll just travel
+ 
+
+647
+00:12:40,639 --> 00:12:44,389
+drag them both, they'll just travel
+together. And now we have a really,
+
+648
+00:12:44,389 --> 00:12:44,399
+together. And now we have a really,
+ 
+
+649
+00:12:44,399 --> 00:12:47,670
+together. And now we have a really,
+really cool thing. So there you have
+
+650
+00:12:47,670 --> 00:12:47,680
+really cool thing. So there you have
+ 
+
+651
+00:12:47,680 --> 00:12:49,110
+really cool thing. So there you have
+that. I'm going to give them a value of
+
+652
+00:12:49,110 --> 00:12:49,120
+that. I'm going to give them a value of
+ 
+
+653
+00:12:49,120 --> 00:12:52,150
+that. I'm going to give them a value of
+one. And I'm going to go back to uh this
+
+654
+00:12:52,150 --> 00:12:52,160
+one. And I'm going to go back to uh this
+ 
+
+655
+00:12:52,160 --> 00:12:54,710
+one. And I'm going to go back to uh this
+effect. I'm going to go ahead and add
+
+656
+00:12:54,710 --> 00:12:54,720
+effect. I'm going to go ahead and add
+ 
+
+657
+00:12:54,720 --> 00:12:57,190
+effect. I'm going to go ahead and add
+our lighting. and all that stuff uh with
+
+658
+00:12:57,190 --> 00:12:57,200
+our lighting. and all that stuff uh with
+ 
+
+659
+00:12:57,200 --> 00:12:59,990
+our lighting. and all that stuff uh with
+this this look. This is my favorite look
+
+660
+00:12:59,990 --> 00:13:00,000
+this this look. This is my favorite look
+ 
+
+661
+00:13:00,000 --> 00:13:02,470
+this this look. This is my favorite look
+of the two, but both animations I can
+
+662
+00:13:02,470 --> 00:13:02,480
+of the two, but both animations I can
+ 
+
+663
+00:13:02,480 --> 00:13:04,389
+of the two, but both animations I can
+see, you know, people wanting and I
+
+664
+00:13:04,389 --> 00:13:04,399
+see, you know, people wanting and I
+ 
+
+665
+00:13:04,399 --> 00:13:06,550
+see, you know, people wanting and I
+wanted to show you guys you could do uh
+
+666
+00:13:06,550 --> 00:13:06,560
+wanted to show you guys you could do uh
+ 
+
+667
+00:13:06,560 --> 00:13:09,990
+wanted to show you guys you could do uh
+multiple things here. So, now we have
+
+668
+00:13:09,990 --> 00:13:10,000
+multiple things here. So, now we have
+ 
+
+669
+00:13:10,000 --> 00:13:12,069
+multiple things here. So, now we have
+this really cool effect. So, I think I'm
+
+670
+00:13:12,069 --> 00:13:12,079
+this really cool effect. So, I think I'm
+ 
+
+671
+00:13:12,079 --> 00:13:14,150
+this really cool effect. So, I think I'm
+ready to go ahead and add a camera, add
+
+672
+00:13:14,150 --> 00:13:14,160
+ready to go ahead and add a camera, add
+ 
+
+673
+00:13:14,160 --> 00:13:17,030
+ready to go ahead and add a camera, add
+some lighting, have a little bit of of
+
+674
+00:13:17,030 --> 00:13:17,040
+some lighting, have a little bit of of
+ 
+
+675
+00:13:17,040 --> 00:13:19,110
+some lighting, have a little bit of of
+fun with it.
+
+676
+00:13:19,110 --> 00:13:19,120
+fun with it.
+ 
+
+677
+00:13:19,120 --> 00:13:20,870
+fun with it.
+Just making some adjustments personally.
+
+678
+00:13:20,870 --> 00:13:20,880
+Just making some adjustments personally.
+ 
+
+679
+00:13:20,880 --> 00:13:24,230
+Just making some adjustments personally.
+Okay, let's go ahead and add a material
+
+680
+00:13:24,230 --> 00:13:24,240
+Okay, let's go ahead and add a material
+ 
+
+681
+00:13:24,240 --> 00:13:26,150
+Okay, let's go ahead and add a material
+to this. So, I'm going to go here to the
+
+682
+00:13:26,150 --> 00:13:26,160
+to this. So, I'm going to go here to the
+ 
+
+683
+00:13:26,160 --> 00:13:29,430
+to this. So, I'm going to go here to the
+end, get a
+
+684
+00:13:29,430 --> 00:13:29,440
+end, get a
+ 
+
+685
+00:13:29,440 --> 00:13:32,310
+end, get a
+set material node. And before we switch
+
+686
+00:13:32,310 --> 00:13:32,320
+set material node. And before we switch
+ 
+
+687
+00:13:32,320 --> 00:13:34,389
+set material node. And before we switch
+over to the shading, I do Let's go ahead
+
+688
+00:13:34,389 --> 00:13:34,399
+over to the shading, I do Let's go ahead
+ 
+
+689
+00:13:34,399 --> 00:13:36,550
+over to the shading, I do Let's go ahead
+and create a material. Before we switch
+
+690
+00:13:36,550 --> 00:13:36,560
+and create a material. Before we switch
+ 
+
+691
+00:13:36,560 --> 00:13:38,790
+and create a material. Before we switch
+over to the shading, I want to remind
+
+692
+00:13:38,790 --> 00:13:38,800
+over to the shading, I want to remind
+ 
+
+693
+00:13:38,800 --> 00:13:40,949
+over to the shading, I want to remind
+you we have an attribute over here that
+
+694
+00:13:40,949 --> 00:13:40,959
+you we have an attribute over here that
+ 
+
+695
+00:13:40,959 --> 00:13:43,110
+you we have an attribute over here that
+creates a random value. So, just
+
+696
+00:13:43,110 --> 00:13:43,120
+creates a random value. So, just
+ 
+
+697
+00:13:43,120 --> 00:13:44,230
+creates a random value. So, just
+remember that because we are going to
+
+698
+00:13:44,230 --> 00:13:44,240
+remember that because we are going to
+ 
+
+699
+00:13:44,240 --> 00:13:46,710
+remember that because we are going to
+use that in just a second um in the
+
+700
+00:13:46,710 --> 00:13:46,720
+use that in just a second um in the
+ 
+
+701
+00:13:46,720 --> 00:13:48,150
+use that in just a second um in the
+shading. So, there's nothing I want to
+
+702
+00:13:48,150 --> 00:13:48,160
+shading. So, there's nothing I want to
+ 
+
+703
+00:13:48,160 --> 00:13:49,750
+shading. So, there's nothing I want to
+do in this window right now. So, I'm
+
+704
+00:13:49,750 --> 00:13:49,760
+do in this window right now. So, I'm
+ 
+
+705
+00:13:49,760 --> 00:13:50,790
+do in this window right now. So, I'm
+just going to go ahead and switch it
+
+706
+00:13:50,790 --> 00:13:50,800
+just going to go ahead and switch it
+ 
+
+707
+00:13:50,800 --> 00:13:52,870
+just going to go ahead and switch it
+over to the shader editor. And now we
+
+708
+00:13:52,870 --> 00:13:52,880
+over to the shader editor. And now we
+ 
+
+709
+00:13:52,880 --> 00:13:55,190
+over to the shader editor. And now we
+have that material material 001. You can
+
+710
+00:13:55,190 --> 00:13:55,200
+have that material material 001. You can
+ 
+
+711
+00:13:55,200 --> 00:13:57,350
+have that material material 001. You can
+see we're using it by seeing that up
+
+712
+00:13:57,350 --> 00:13:57,360
+see we're using it by seeing that up
+ 
+
+713
+00:13:57,360 --> 00:13:59,829
+see we're using it by seeing that up
+there. So first let's get that attribute
+
+714
+00:13:59,829 --> 00:13:59,839
+there. So first let's get that attribute
+ 
+
+715
+00:13:59,839 --> 00:14:01,269
+there. So first let's get that attribute
+node and I'm going to switch this over
+
+716
+00:14:01,269 --> 00:14:01,279
+node and I'm going to switch this over
+ 
+
+717
+00:14:01,279 --> 00:14:03,670
+node and I'm going to switch this over
+to the material preview.
+
+718
+00:14:03,670 --> 00:14:03,680
+to the material preview.
+ 
+
+719
+00:14:03,680 --> 00:14:06,310
+to the material preview.
+If I plug So if I type in the letter R,
+
+720
+00:14:06,310 --> 00:14:06,320
+If I plug So if I type in the letter R,
+ 
+
+721
+00:14:06,320 --> 00:14:08,310
+If I plug So if I type in the letter R,
+which is going to call that attribute
+
+722
+00:14:08,310 --> 00:14:08,320
+which is going to call that attribute
+ 
+
+723
+00:14:08,320 --> 00:14:10,470
+which is going to call that attribute
+that we called to create the randomness,
+
+724
+00:14:10,470 --> 00:14:10,480
+that we called to create the randomness,
+ 
+
+725
+00:14:10,480 --> 00:14:12,069
+that we called to create the randomness,
+and we plug factor right into base
+
+726
+00:14:12,069 --> 00:14:12,079
+and we plug factor right into base
+ 
+
+727
+00:14:12,079 --> 00:14:15,030
+and we plug factor right into base
+color, we can see it's actually creating
+
+728
+00:14:15,030 --> 00:14:15,040
+color, we can see it's actually creating
+ 
+
+729
+00:14:15,040 --> 00:14:16,870
+color, we can see it's actually creating
+a little bit of randomness, random
+
+730
+00:14:16,870 --> 00:14:16,880
+a little bit of randomness, random
+ 
+
+731
+00:14:16,880 --> 00:14:18,629
+a little bit of randomness, random
+color, which is great. That's what I
+
+732
+00:14:18,629 --> 00:14:18,639
+color, which is great. That's what I
+ 
+
+733
+00:14:18,639 --> 00:14:21,269
+color, which is great. That's what I
+want. Um, in this particular style,
+
+734
+00:14:21,269 --> 00:14:21,279
+want. Um, in this particular style,
+ 
+
+735
+00:14:21,279 --> 00:14:22,949
+want. Um, in this particular style,
+we're just making it look cool with some
+
+736
+00:14:22,949 --> 00:14:22,959
+we're just making it look cool with some
+ 
+
+737
+00:14:22,959 --> 00:14:24,790
+we're just making it look cool with some
+random color.
+
+738
+00:14:24,790 --> 00:14:24,800
+random color.
+ 
+
+739
+00:14:24,800 --> 00:14:26,150
+random color.
+So, I'm going to go ahead and get my
+
+740
+00:14:26,150 --> 00:14:26,160
+So, I'm going to go ahead and get my
+ 
+
+741
+00:14:26,160 --> 00:14:28,069
+So, I'm going to go ahead and get my
+color ramp. We're going to get two
+
+742
+00:14:28,069 --> 00:14:28,079
+color ramp. We're going to get two
+ 
+
+743
+00:14:28,079 --> 00:14:31,110
+color ramp. We're going to get two
+colors. We're going to get kind of a a
+
+744
+00:14:31,110 --> 00:14:31,120
+colors. We're going to get kind of a a
+ 
+
+745
+00:14:31,120 --> 00:14:34,629
+colors. We're going to get kind of a a
+lightish gray. And then we're also going
+
+746
+00:14:34,629 --> 00:14:34,639
+lightish gray. And then we're also going
+ 
+
+747
+00:14:34,639 --> 00:14:38,790
+lightish gray. And then we're also going
+to go ahead and get
+
+748
+00:14:38,790 --> 00:14:38,800
+
+ 
+
+749
+00:14:38,800 --> 00:14:40,710
+
+something like that. And then we're just
+
+750
+00:14:40,710 --> 00:14:40,720
+something like that. And then we're just
+ 
+
+751
+00:14:40,720 --> 00:14:44,389
+something like that. And then we're just
+going to bring these two in.
+
+752
+00:14:44,389 --> 00:14:44,399
+going to bring these two in.
+ 
+
+753
+00:14:44,399 --> 00:14:47,030
+going to bring these two in.
+So, now we have pretty cool style. What
+
+754
+00:14:47,030 --> 00:14:47,040
+So, now we have pretty cool style. What
+ 
+
+755
+00:14:47,040 --> 00:14:48,470
+So, now we have pretty cool style. What
+I want to do is I'm going to go here to
+
+756
+00:14:48,470 --> 00:14:48,480
+I want to do is I'm going to go here to
+ 
+
+757
+00:14:48,480 --> 00:14:51,030
+I want to do is I'm going to go here to
+cycles. Give myself some lights for now.
+
+758
+00:14:51,030 --> 00:14:51,040
+cycles. Give myself some lights for now.
+ 
+
+759
+00:14:51,040 --> 00:14:53,750
+cycles. Give myself some lights for now.
+And here in the subsurface, I'm going to
+
+760
+00:14:53,750 --> 00:14:53,760
+And here in the subsurface, I'm going to
+ 
+
+761
+00:14:53,760 --> 00:14:55,269
+And here in the subsurface, I'm going to
+bring that weight up. Now, you can
+
+762
+00:14:55,269 --> 00:14:55,279
+bring that weight up. Now, you can
+ 
+
+763
+00:14:55,279 --> 00:14:56,550
+bring that weight up. Now, you can
+notice it kind of looks like skin,
+
+764
+00:14:56,550 --> 00:14:56,560
+notice it kind of looks like skin,
+ 
+
+765
+00:14:56,560 --> 00:14:57,829
+notice it kind of looks like skin,
+especially in the parts where there's
+
+766
+00:14:57,829 --> 00:14:57,839
+especially in the parts where there's
+ 
+
+767
+00:14:57,839 --> 00:14:59,910
+especially in the parts where there's
+shadow. That's just cuz these auto these
+
+768
+00:14:59,910 --> 00:14:59,920
+shadow. That's just cuz these auto these
+ 
+
+769
+00:14:59,920 --> 00:15:03,350
+shadow. That's just cuz these auto these
+default settings are uh set up for skin.
+
+770
+00:15:03,350 --> 00:15:03,360
+default settings are uh set up for skin.
+ 
+
+771
+00:15:03,360 --> 00:15:04,790
+default settings are uh set up for skin.
+If you just give them all a value of
+
+772
+00:15:04,790 --> 00:15:04,800
+If you just give them all a value of
+ 
+
+773
+00:15:04,800 --> 00:15:07,590
+If you just give them all a value of
+one, it'll just make them look normal
+
+774
+00:15:07,590 --> 00:15:07,600
+one, it'll just make them look normal
+ 
+
+775
+00:15:07,600 --> 00:15:09,189
+one, it'll just make them look normal
+quote unquote normal. It just doesn't
+
+776
+00:15:09,189 --> 00:15:09,199
+quote unquote normal. It just doesn't
+ 
+
+777
+00:15:09,199 --> 00:15:10,790
+quote unquote normal. It just doesn't
+add that skin kind of look. And then if
+
+778
+00:15:10,790 --> 00:15:10,800
+add that skin kind of look. And then if
+ 
+
+779
+00:15:10,800 --> 00:15:13,269
+add that skin kind of look. And then if
+you bring that scale up,
+
+780
+00:15:13,269 --> 00:15:13,279
+you bring that scale up,
+ 
+
+781
+00:15:13,279 --> 00:15:15,829
+you bring that scale up,
+it this scale is what says how much
+
+782
+00:15:15,829 --> 00:15:15,839
+it this scale is what says how much
+ 
+
+783
+00:15:15,839 --> 00:15:17,990
+it this scale is what says how much
+light we're letting into this. So this
+
+784
+00:15:17,990 --> 00:15:18,000
+light we're letting into this. So this
+ 
+
+785
+00:15:18,000 --> 00:15:19,910
+light we're letting into this. So this
+looks really nice. I'm going to go ahead
+
+786
+00:15:19,910 --> 00:15:19,920
+looks really nice. I'm going to go ahead
+ 
+
+787
+00:15:19,920 --> 00:15:23,189
+looks really nice. I'm going to go ahead
+and park with this and bring this window
+
+788
+00:15:23,189 --> 00:15:23,199
+and park with this and bring this window
+ 
+
+789
+00:15:23,199 --> 00:15:24,629
+and park with this and bring this window
+over. We're now going to deal with
+
+790
+00:15:24,629 --> 00:15:24,639
+over. We're now going to deal with
+ 
+
+791
+00:15:24,639 --> 00:15:28,069
+over. We're now going to deal with
+lighting. So I'm going to go and select
+
+792
+00:15:28,069 --> 00:15:28,079
+lighting. So I'm going to go and select
+ 
+
+793
+00:15:28,079 --> 00:15:30,470
+lighting. So I'm going to go and select
+my camera angle.
+
+794
+00:15:30,470 --> 00:15:30,480
+my camera angle.
+ 
+
+795
+00:15:30,480 --> 00:15:32,629
+my camera angle.
+Probably something like this. I'm going
+
+796
+00:15:32,629 --> 00:15:32,639
+Probably something like this. I'm going
+ 
+
+797
+00:15:32,639 --> 00:15:35,750
+Probably something like this. I'm going
+hit control alt0. Snap it to view. And
+
+798
+00:15:35,750 --> 00:15:35,760
+hit control alt0. Snap it to view. And
+ 
+
+799
+00:15:35,760 --> 00:15:37,670
+hit control alt0. Snap it to view. And
+I'm going to give myself a focal length
+
+800
+00:15:37,670 --> 00:15:37,680
+I'm going to give myself a focal length
+ 
+
+801
+00:15:37,680 --> 00:15:41,030
+I'm going to give myself a focal length
+focal length of like 120. I want this to
+
+802
+00:15:41,030 --> 00:15:41,040
+focal length of like 120. I want this to
+ 
+
+803
+00:15:41,040 --> 00:15:43,430
+focal length of like 120. I want this to
+look really flat
+
+804
+00:15:43,430 --> 00:15:43,440
+look really flat
+ 
+
+805
+00:15:43,440 --> 00:15:45,910
+look really flat
+in terms of the the the lens
+
+806
+00:15:45,910 --> 00:15:45,920
+in terms of the the the lens
+ 
+
+807
+00:15:45,920 --> 00:15:51,829
+in terms of the the the lens
+essentially. And so maybe something like
+
+808
+00:15:51,829 --> 00:15:51,839
+
+ 
+
+809
+00:15:51,839 --> 00:15:56,069
+
+that.
+
+810
+00:15:56,069 --> 00:15:56,079
+
+ 
+
+811
+00:15:56,079 --> 00:15:59,030
+
+Cool. Okay. So, we're going to go ahead
+
+812
+00:15:59,030 --> 00:15:59,040
+Cool. Okay. So, we're going to go ahead
+ 
+
+813
+00:15:59,040 --> 00:16:00,470
+Cool. Okay. So, we're going to go ahead
+and add some lighting. So, I'm going to
+
+814
+00:16:00,470 --> 00:16:00,480
+and add some lighting. So, I'm going to
+ 
+
+815
+00:16:00,480 --> 00:16:02,150
+and add some lighting. So, I'm going to
+bring this down and go just the scene
+
+816
+00:16:02,150 --> 00:16:02,160
+bring this down and go just the scene
+ 
+
+817
+00:16:02,160 --> 00:16:04,949
+bring this down and go just the scene
+world scene lights. So, we're going to
+
+818
+00:16:04,949 --> 00:16:04,959
+world scene lights. So, we're going to
+ 
+
+819
+00:16:04,959 --> 00:16:07,030
+world scene lights. So, we're going to
+get a light hitting it directly that
+
+820
+00:16:07,030 --> 00:16:07,040
+get a light hitting it directly that
+ 
+
+821
+00:16:07,040 --> 00:16:09,829
+get a light hitting it directly that
+way. So, let's go ahead and get an area
+
+822
+00:16:09,829 --> 00:16:09,839
+way. So, let's go ahead and get an area
+ 
+
+823
+00:16:09,839 --> 00:16:12,389
+way. So, let's go ahead and get an area
+light. I'm going to switch it over to a
+
+824
+00:16:12,389 --> 00:16:12,399
+light. I'm going to switch it over to a
+ 
+
+825
+00:16:12,399 --> 00:16:14,550
+light. I'm going to switch it over to a
+disc.
+
+826
+00:16:14,550 --> 00:16:14,560
+disc.
+ 
+
+827
+00:16:14,560 --> 00:16:19,350
+disc.
+Bring it over.
+
+828
+00:16:19,350 --> 00:16:19,360
+
+ 
+
+829
+00:16:19,360 --> 00:16:23,430
+
+I'm going hit R twice
+
+830
+00:16:23,430 --> 00:16:23,440
+
+ 
+
+831
+00:16:23,440 --> 00:16:25,430
+
+and then bring that give it a power of
+
+832
+00:16:25,430 --> 00:16:25,440
+and then bring that give it a power of
+ 
+
+833
+00:16:25,440 --> 00:16:27,590
+and then bring that give it a power of
+like I don't know 80. And then we can
+
+834
+00:16:27,590 --> 00:16:27,600
+like I don't know 80. And then we can
+ 
+
+835
+00:16:27,600 --> 00:16:30,150
+like I don't know 80. And then we can
+bring that spread down
+
+836
+00:16:30,150 --> 00:16:30,160
+bring that spread down
+ 
+
+837
+00:16:30,160 --> 00:16:32,790
+bring that spread down
+to something around
+
+838
+00:16:32,790 --> 00:16:32,800
+to something around
+ 
+
+839
+00:16:32,800 --> 00:16:35,189
+to something around
+these lines. And then maybe bring that
+
+840
+00:16:35,189 --> 00:16:35,199
+these lines. And then maybe bring that
+ 
+
+841
+00:16:35,199 --> 00:16:37,350
+these lines. And then maybe bring that
+power back down a little bit. And then
+
+842
+00:16:37,350 --> 00:16:37,360
+power back down a little bit. And then
+ 
+
+843
+00:16:37,360 --> 00:16:39,670
+power back down a little bit. And then
+bring that scale up some, too. Okay. So,
+
+844
+00:16:39,670 --> 00:16:39,680
+bring that scale up some, too. Okay. So,
+ 
+
+845
+00:16:39,680 --> 00:16:41,670
+bring that scale up some, too. Okay. So,
+we kind of have some soft lighting.
+
+846
+00:16:41,670 --> 00:16:41,680
+we kind of have some soft lighting.
+ 
+
+847
+00:16:41,680 --> 00:16:43,350
+we kind of have some soft lighting.
+Maybe bring that power up. What I want
+
+848
+00:16:43,350 --> 00:16:43,360
+Maybe bring that power up. What I want
+ 
+
+849
+00:16:43,360 --> 00:16:46,069
+Maybe bring that power up. What I want
+to do, I'm going just turn on my
+
+850
+00:16:46,069 --> 00:16:46,079
+to do, I'm going just turn on my
+ 
+
+851
+00:16:46,079 --> 00:16:48,150
+to do, I'm going just turn on my
+denoising. And I want to get a
+
+852
+00:16:48,150 --> 00:16:48,160
+denoising. And I want to get a
+ 
+
+853
+00:16:48,160 --> 00:16:49,990
+denoising. And I want to get a
+background, a nice soft background. And
+
+854
+00:16:49,990 --> 00:16:50,000
+background, a nice soft background. And
+ 
+
+855
+00:16:50,000 --> 00:16:52,230
+background, a nice soft background. And
+so, we're going to kind of do it maybe
+
+856
+00:16:52,230 --> 00:16:52,240
+so, we're going to kind of do it maybe
+ 
+
+857
+00:16:52,240 --> 00:16:54,069
+so, we're going to kind of do it maybe
+not in a totally traditional way. So,
+
+858
+00:16:54,069 --> 00:16:54,079
+not in a totally traditional way. So,
+ 
+
+859
+00:16:54,079 --> 00:16:55,910
+not in a totally traditional way. So,
+I'm going to take this. I'm going to do
+
+860
+00:16:55,910 --> 00:16:55,920
+I'm going to take this. I'm going to do
+ 
+
+861
+00:16:55,920 --> 00:16:57,509
+I'm going to take this. I'm going to do
+RX.
+
+862
+00:16:57,509 --> 00:16:57,519
+RX.
+ 
+
+863
+00:16:57,519 --> 00:17:00,550
+RX.
+I'm going hit R Y90.
+
+864
+00:17:00,550 --> 00:17:00,560
+I'm going hit R Y90.
+ 
+
+865
+00:17:00,560 --> 00:17:03,189
+I'm going hit R Y90.
+And then I want to bring this back far
+
+866
+00:17:03,189 --> 00:17:03,199
+And then I want to bring this back far
+ 
+
+867
+00:17:03,199 --> 00:17:04,710
+And then I want to bring this back far
+enough to where it can't it can't be
+
+868
+00:17:04,710 --> 00:17:04,720
+enough to where it can't it can't be
+ 
+
+869
+00:17:04,720 --> 00:17:07,270
+enough to where it can't it can't be
+affected by this light anymore. I want
+
+870
+00:17:07,270 --> 00:17:07,280
+affected by this light anymore. I want
+ 
+
+871
+00:17:07,280 --> 00:17:10,390
+affected by this light anymore. I want
+to be able to control it uh independent.
+
+872
+00:17:10,390 --> 00:17:10,400
+to be able to control it uh independent.
+ 
+
+873
+00:17:10,400 --> 00:17:12,069
+to be able to control it uh independent.
+And then I'm going to bring it down to a
+
+874
+00:17:12,069 --> 00:17:12,079
+And then I'm going to bring it down to a
+ 
+
+875
+00:17:12,079 --> 00:17:17,270
+And then I'm going to bring it down to a
+point where we can see it in the camera.
+
+876
+00:17:17,270 --> 00:17:17,280
+point where we can see it in the camera.
+ 
+
+877
+00:17:17,280 --> 00:17:18,949
+point where we can see it in the camera.
+And then we're going to get a point
+
+878
+00:17:18,949 --> 00:17:18,959
+And then we're going to get a point
+ 
+
+879
+00:17:18,959 --> 00:17:21,829
+And then we're going to get a point
+light.
+
+880
+00:17:21,829 --> 00:17:21,839
+light.
+ 
+
+881
+00:17:21,839 --> 00:17:24,549
+light.
+I hit G
+
+882
+00:17:24,549 --> 00:17:24,559
+I hit G
+ 
+
+883
+00:17:24,559 --> 00:17:26,870
+I hit G
+and just get this point light to be
+
+884
+00:17:26,870 --> 00:17:26,880
+and just get this point light to be
+ 
+
+885
+00:17:26,880 --> 00:17:28,390
+and just get this point light to be
+affecting
+
+886
+00:17:28,390 --> 00:17:28,400
+affecting
+ 
+
+887
+00:17:28,400 --> 00:17:30,710
+affecting
+our background. So, I'm gonna get a
+
+888
+00:17:30,710 --> 00:17:30,720
+our background. So, I'm gonna get a
+ 
+
+889
+00:17:30,720 --> 00:17:34,150
+our background. So, I'm gonna get a
+render region.
+
+890
+00:17:34,150 --> 00:17:34,160
+
+ 
+
+891
+00:17:34,160 --> 00:17:35,750
+
+And so, now we can play with this point
+
+892
+00:17:35,750 --> 00:17:35,760
+And so, now we can play with this point
+ 
+
+893
+00:17:35,760 --> 00:17:37,830
+And so, now we can play with this point
+light
+
+894
+00:17:37,830 --> 00:17:37,840
+light
+ 
+
+895
+00:17:37,840 --> 00:17:41,029
+light
+to be a nice highlight in the
+
+896
+00:17:41,029 --> 00:17:41,039
+to be a nice highlight in the
+ 
+
+897
+00:17:41,039 --> 00:17:43,029
+to be a nice highlight in the
+background. And if you want, which I'm
+
+898
+00:17:43,029 --> 00:17:43,039
+background. And if you want, which I'm
+ 
+
+899
+00:17:43,039 --> 00:17:44,630
+background. And if you want, which I'm
+going to do, I'm going to go over here.
+
+900
+00:17:44,630 --> 00:17:44,640
+going to do, I'm going to go over here.
+ 
+
+901
+00:17:44,640 --> 00:17:46,310
+going to do, I'm going to go over here.
+I'm going to go back to the shading and
+
+902
+00:17:46,310 --> 00:17:46,320
+I'm going to go back to the shading and
+ 
+
+903
+00:17:46,320 --> 00:17:48,070
+I'm going to go back to the shading and
+I'm going to hover over here and copy
+
+904
+00:17:48,070 --> 00:17:48,080
+I'm going to hover over here and copy
+ 
+
+905
+00:17:48,080 --> 00:17:51,270
+I'm going to hover over here and copy
+that color. And then in the point light,
+
+906
+00:17:51,270 --> 00:17:51,280
+that color. And then in the point light,
+ 
+
+907
+00:17:51,280 --> 00:17:52,549
+that color. And then in the point light,
+I'm going to go ahead and paste that
+
+908
+00:17:52,549 --> 00:17:52,559
+I'm going to go ahead and paste that
+ 
+
+909
+00:17:52,559 --> 00:17:53,830
+I'm going to go ahead and paste that
+color. And then just bring the
+
+910
+00:17:53,830 --> 00:17:53,840
+color. And then just bring the
+ 
+
+911
+00:17:53,840 --> 00:17:56,870
+color. And then just bring the
+saturation down.
+
+912
+00:17:56,870 --> 00:17:56,880
+saturation down.
+ 
+
+913
+00:17:56,880 --> 00:17:59,510
+saturation down.
+That's just a good look.
+
+914
+00:17:59,510 --> 00:17:59,520
+That's just a good look.
+ 
+
+915
+00:17:59,520 --> 00:18:00,870
+That's just a good look.
+And there we have it. If you want to
+
+916
+00:18:00,870 --> 00:18:00,880
+And there we have it. If you want to
+ 
+
+917
+00:18:00,880 --> 00:18:02,150
+And there we have it. If you want to
+bring that world brightness down to
+
+918
+00:18:02,150 --> 00:18:02,160
+bring that world brightness down to
+ 
+
+919
+00:18:02,160 --> 00:18:03,590
+bring that world brightness down to
+black, you can. That's going to give it
+
+920
+00:18:03,590 --> 00:18:03,600
+black, you can. That's going to give it
+ 
+
+921
+00:18:03,600 --> 00:18:05,190
+black, you can. That's going to give it
+more of a dramatic look, which again
+
+922
+00:18:05,190 --> 00:18:05,200
+more of a dramatic look, which again
+ 
+
+923
+00:18:05,200 --> 00:18:06,870
+more of a dramatic look, which again
+could be something you want. Then of
+
+924
+00:18:06,870 --> 00:18:06,880
+could be something you want. Then of
+ 
+
+925
+00:18:06,880 --> 00:18:10,070
+could be something you want. Then of
+course, if you don't like the sort of
+
+926
+00:18:10,070 --> 00:18:10,080
+course, if you don't like the sort of
+ 
+
+927
+00:18:10,080 --> 00:18:12,150
+course, if you don't like the sort of
+how dramatic these dark shadows are
+
+928
+00:18:12,150 --> 00:18:12,160
+how dramatic these dark shadows are
+ 
+
+929
+00:18:12,160 --> 00:18:15,590
+how dramatic these dark shadows are
+here, you can add another light, another
+
+930
+00:18:15,590 --> 00:18:15,600
+here, you can add another light, another
+ 
+
+931
+00:18:15,600 --> 00:18:18,150
+here, you can add another light, another
+area light
+
+932
+00:18:18,150 --> 00:18:18,160
+area light
+ 
+
+933
+00:18:18,160 --> 00:18:24,789
+area light
+down here. just to point at the bottom.
+
+934
+00:18:24,789 --> 00:18:24,799
+
+ 
+
+935
+00:18:24,799 --> 00:18:28,710
+
+And then you can control that.
+
+936
+00:18:28,710 --> 00:18:28,720
+And then you can control that.
+ 
+
+937
+00:18:28,720 --> 00:18:31,350
+And then you can control that.
+So something like this. There we go. Now
+
+938
+00:18:31,350 --> 00:18:31,360
+So something like this. There we go. Now
+ 
+
+939
+00:18:31,360 --> 00:18:32,710
+So something like this. There we go. Now
+you have a lot of control. So I'm going
+
+940
+00:18:32,710 --> 00:18:32,720
+you have a lot of control. So I'm going
+ 
+
+941
+00:18:32,720 --> 00:18:33,990
+you have a lot of control. So I'm going
+to go ahead and render this frame just
+
+942
+00:18:33,990 --> 00:18:34,000
+to go ahead and render this frame just
+ 
+
+943
+00:18:34,000 --> 00:18:36,230
+to go ahead and render this frame just
+to see how it looks as a final. So this
+
+944
+00:18:36,230 --> 00:18:36,240
+to see how it looks as a final. So this
+ 
+
+945
+00:18:36,240 --> 00:18:39,029
+to see how it looks as a final. So this
+is our final look. You can play with the
+
+946
+00:18:39,029 --> 00:18:39,039
+is our final look. You can play with the
+ 
+
+947
+00:18:39,039 --> 00:18:40,390
+is our final look. You can play with the
+lighting. I mean everything. You can
+
+948
+00:18:40,390 --> 00:18:40,400
+lighting. I mean everything. You can
+ 
+
+949
+00:18:40,400 --> 00:18:42,150
+lighting. I mean everything. You can
+play with everything to get it to be
+
+950
+00:18:42,150 --> 00:18:42,160
+play with everything to get it to be
+ 
+
+951
+00:18:42,160 --> 00:18:44,390
+play with everything to get it to be
+exactly how you want it to be. So, I
+
+952
+00:18:44,390 --> 00:18:44,400
+exactly how you want it to be. So, I
+ 
+
+953
+00:18:44,400 --> 00:18:46,630
+exactly how you want it to be. So, I
+want to go back to geometry nodes just
+
+954
+00:18:46,630 --> 00:18:46,640
+want to go back to geometry nodes just
+ 
+
+955
+00:18:46,640 --> 00:18:48,470
+want to go back to geometry nodes just
+to show you where you can animate it and
+
+956
+00:18:48,470 --> 00:18:48,480
+to show you where you can animate it and
+ 
+
+957
+00:18:48,480 --> 00:18:50,549
+to show you where you can animate it and
+just allow you to kind of make that
+
+958
+00:18:50,549 --> 00:18:50,559
+just allow you to kind of make that
+ 
+
+959
+00:18:50,559 --> 00:18:52,070
+just allow you to kind of make that
+decision for yourself. So, we can go
+
+960
+00:18:52,070 --> 00:18:52,080
+decision for yourself. So, we can go
+ 
+
+961
+00:18:52,080 --> 00:18:53,590
+decision for yourself. So, we can go
+back to the geometry nodes editor and
+
+962
+00:18:53,590 --> 00:18:53,600
+back to the geometry nodes editor and
+ 
+
+963
+00:18:53,600 --> 00:18:55,110
+back to the geometry nodes editor and
+look at all of our animation
+
+964
+00:18:55,110 --> 00:18:55,120
+look at all of our animation
+ 
+
+965
+00:18:55,120 --> 00:18:56,789
+look at all of our animation
+possibilities.
+
+966
+00:18:56,789 --> 00:18:56,799
+possibilities.
+ 
+
+967
+00:18:56,799 --> 00:19:00,150
+possibilities.
+If we go here to this big mix of math,
+
+968
+00:19:00,150 --> 00:19:00,160
+If we go here to this big mix of math,
+ 
+
+969
+00:19:00,160 --> 00:19:03,029
+If we go here to this big mix of math,
+we have this string of guys up here. You
+
+970
+00:19:03,029 --> 00:19:03,039
+we have this string of guys up here. You
+ 
+
+971
+00:19:03,039 --> 00:19:06,070
+we have this string of guys up here. You
+can play with this first value node to
+
+972
+00:19:06,070 --> 00:19:06,080
+can play with this first value node to
+ 
+
+973
+00:19:06,080 --> 00:19:10,070
+can play with this first value node to
+kind of bring this effect in like that.
+
+974
+00:19:10,070 --> 00:19:10,080
+kind of bring this effect in like that.
+ 
+
+975
+00:19:10,080 --> 00:19:12,630
+kind of bring this effect in like that.
+Now, if you do that, if you animate from
+
+976
+00:19:12,630 --> 00:19:12,640
+Now, if you do that, if you animate from
+ 
+
+977
+00:19:12,640 --> 00:19:14,950
+Now, if you do that, if you animate from
+here to here, I would recommend do it
+
+978
+00:19:14,950 --> 00:19:14,960
+here to here, I would recommend do it
+ 
+
+979
+00:19:14,960 --> 00:19:17,110
+here to here, I would recommend do it
+while simultaneously
+
+980
+00:19:17,110 --> 00:19:17,120
+while simultaneously
+ 
+
+981
+00:19:17,120 --> 00:19:19,669
+while simultaneously
+animating this W value on the ad end.
+
+982
+00:19:19,669 --> 00:19:19,679
+animating this W value on the ad end.
+ 
+
+983
+00:19:19,679 --> 00:19:21,510
+animating this W value on the ad end.
+So, it gives it way more life. So, you
+
+984
+00:19:21,510 --> 00:19:21,520
+So, it gives it way more life. So, you
+ 
+
+985
+00:19:21,520 --> 00:19:24,630
+So, it gives it way more life. So, you
+can do that. You also have this add node
+
+986
+00:19:24,630 --> 00:19:24,640
+can do that. You also have this add node
+ 
+
+987
+00:19:24,640 --> 00:19:27,990
+can do that. You also have this add node
+animating this growth
+
+988
+00:19:27,990 --> 00:19:28,000
+animating this growth
+ 
+
+989
+00:19:28,000 --> 00:19:30,549
+animating this growth
+just like that. And again, if you're
+
+990
+00:19:30,549 --> 00:19:30,559
+just like that. And again, if you're
+ 
+
+991
+00:19:30,559 --> 00:19:33,029
+just like that. And again, if you're
+going to do that, I would say have this
+
+992
+00:19:33,029 --> 00:19:33,039
+going to do that, I would say have this
+ 
+
+993
+00:19:33,039 --> 00:19:36,710
+going to do that, I would say have this
+W value moving while this guy comes in
+
+994
+00:19:36,710 --> 00:19:36,720
+W value moving while this guy comes in
+ 
+
+995
+00:19:36,720 --> 00:19:40,390
+W value moving while this guy comes in
+and out. And then of course
+
+996
+00:19:40,390 --> 00:19:40,400
+and out. And then of course
+ 
+
+997
+00:19:40,400 --> 00:19:43,909
+and out. And then of course
+you have this trim curve node.
+
+998
+00:19:43,909 --> 00:19:43,919
+you have this trim curve node.
+ 
+
+999
+00:19:43,919 --> 00:19:45,990
+you have this trim curve node.
+You can go ahead and give it a little
+
+1000
+00:19:45,990 --> 00:19:46,000
+You can go ahead and give it a little
+ 
+
+1001
+00:19:46,000 --> 00:19:47,830
+You can go ahead and give it a little
+bit of randomness.
+
+1002
+00:19:47,830 --> 00:19:47,840
+bit of randomness.
+ 
+
+1003
+00:19:47,840 --> 00:19:50,789
+bit of randomness.
+And then I would say bring the strength
+
+1004
+00:19:50,789 --> 00:19:50,799
+And then I would say bring the strength
+ 
+
+1005
+00:19:50,799 --> 00:19:53,110
+And then I would say bring the strength
+down a little bit for this effect. And
+
+1006
+00:19:53,110 --> 00:19:53,120
+down a little bit for this effect. And
+ 
+
+1007
+00:19:53,120 --> 00:19:56,470
+down a little bit for this effect. And
+then you can play with that trim curves
+
+1008
+00:19:56,470 --> 00:19:56,480
+then you can play with that trim curves
+ 
+
+1009
+00:19:56,480 --> 00:19:59,190
+then you can play with that trim curves
+to animate in just like that. And this
+
+1010
+00:19:59,190 --> 00:19:59,200
+to animate in just like that. And this
+ 
+
+1011
+00:19:59,200 --> 00:20:00,950
+to animate in just like that. And this
+is the one that I would say maybe don't
+
+1012
+00:20:00,950 --> 00:20:00,960
+is the one that I would say maybe don't
+ 
+
+1013
+00:20:00,960 --> 00:20:05,029
+is the one that I would say maybe don't
+animate the W value. I do like this,
+
+1014
+00:20:05,029 --> 00:20:05,039
+animate the W value. I do like this,
+ 
+
+1015
+00:20:05,039 --> 00:20:07,270
+animate the W value. I do like this,
+you know, I like how that looks. But
+
+1016
+00:20:07,270 --> 00:20:07,280
+you know, I like how that looks. But
+ 
+
+1017
+00:20:07,280 --> 00:20:10,549
+you know, I like how that looks. But
+again, it is all completely up to what
+
+1018
+00:20:10,549 --> 00:20:10,559
+again, it is all completely up to what
+ 
+
+1019
+00:20:10,559 --> 00:20:11,909
+again, it is all completely up to what
+you want to do, how you want to animate
+
+1020
+00:20:11,909 --> 00:20:11,919
+you want to do, how you want to animate
+ 
+
+1021
+00:20:11,919 --> 00:20:13,270
+you want to do, how you want to animate
+it, and I'll leave that completely up to
+
+1022
+00:20:13,270 --> 00:20:13,280
+it, and I'll leave that completely up to
+ 
+
+1023
+00:20:13,280 --> 00:20:15,430
+it, and I'll leave that completely up to
+you. So, that is how you create this
+
+1024
+00:20:15,430 --> 00:20:15,440
+you. So, that is how you create this
+ 
+
+1025
+00:20:15,440 --> 00:20:17,590
+you. So, that is how you create this
+string effect. It's really, really
+
+1026
+00:20:17,590 --> 00:20:17,600
+string effect. It's really, really
+ 
+
+1027
+00:20:17,600 --> 00:20:19,510
+string effect. It's really, really
+powerful. Tons of different ways you can
+
+1028
+00:20:19,510 --> 00:20:19,520
+powerful. Tons of different ways you can
+ 
+
+1029
+00:20:19,520 --> 00:20:21,029
+powerful. Tons of different ways you can
+do this, controlling the curves, adding
+
+1030
+00:20:21,029 --> 00:20:21,039
+do this, controlling the curves, adding
+ 
+
+1031
+00:20:21,039 --> 00:20:22,710
+do this, controlling the curves, adding
+textures, adding materials, different
+
+1032
+00:20:22,710 --> 00:20:22,720
+textures, adding materials, different
+ 
+
+1033
+00:20:22,720 --> 00:20:24,950
+textures, adding materials, different
+context to make this really, really
+
+1034
+00:20:24,950 --> 00:20:24,960
+context to make this really, really
+ 
+
+1035
+00:20:24,960 --> 00:20:26,870
+context to make this really, really
+useful in your own animations. But with
+
+1036
+00:20:26,870 --> 00:20:26,880
+useful in your own animations. But with
+ 
+
+1037
+00:20:26,880 --> 00:20:28,390
+useful in your own animations. But with
+that being said, thank you guys for
+
+1038
+00:20:28,390 --> 00:20:28,400
+that being said, thank you guys for
+ 
+
+1039
+00:20:28,400 --> 00:20:29,510
+that being said, thank you guys for
+watching. Again, if you want to check
+
+1040
+00:20:29,510 --> 00:20:29,520
+watching. Again, if you want to check
+ 
+
+1041
+00:20:29,520 --> 00:20:31,350
+watching. Again, if you want to check
+out the full collection of tutorials on
+
+1042
+00:20:31,350 --> 00:20:31,360
+out the full collection of tutorials on
+ 
+
+1043
+00:20:31,360 --> 00:20:33,029
+out the full collection of tutorials on
+my Patreon, that is linked in the
+
+1044
+00:20:33,029 --> 00:20:33,039
+my Patreon, that is linked in the
+ 
+
+1045
+00:20:33,039 --> 00:20:34,310
+my Patreon, that is linked in the
+description, and you can get a discount
+
+1046
+00:20:34,310 --> 00:20:34,320
+description, and you can get a discount
+ 
+
+1047
+00:20:34,320 --> 00:20:36,549
+description, and you can get a discount
+if you subscribe annually. And I'll see
+
+1048
+00:20:36,549 --> 00:20:36,559
+if you subscribe annually. And I'll see
+ 
+
+1049
+00:20:36,559 --> 00:20:39,520
+if you subscribe annually. And I'll see
+you guys in the next
+
