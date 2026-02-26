@@ -7,3 +7,6 @@ data/
 
 # Build artifacts
 *.tsbuildinfo
+
+# Ruff (Python linter) cache
+.ruff_cache/
