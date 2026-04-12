@@ -26,6 +26,14 @@ const FULL_PLOT_SVG_PATH = path.resolve(
   path.dirname(fileURLToPath(import.meta.url)),
   "../fixtures/plotter/full-plot.svg"
 );
+const FOUR_INCH_DIAGONAL_SVG_PATH = path.resolve(
+  path.dirname(fileURLToPath(import.meta.url)),
+  "../fixtures/plotter/four-inch-diagonal.svg"
+);
+const ONE_INCH_BOX_SVG_PATH = path.resolve(
+  path.dirname(fileURLToPath(import.meta.url)),
+  "../fixtures/plotter/one-inch-box.svg"
+);
 
 test("plotter manifest parses the canonical test SVG input", async () => {
   const report = await buildManifestReport(TEST_SVG_PATH);
@@ -88,6 +96,44 @@ test("plotter toolpath generates draw and travel commands from the full fixture"
   assert.equal(commands[2]?.command, "G0 Z6");
   assert.match(commands.map((item) => item.command).join("\n"), /G0 X290 Y200/);
   assert.match(commands.map((item) => item.command).join("\n"), /G1 X250 Y200 F600/);
+  assert.match(commands.map((item) => item.command).join("\n"), /G0 Z0/);
+});
+
+test("plotter toolpath generates a four inch diagonal line from home", async () => {
+  const report = await buildManifestReport(FOUR_INCH_DIAGONAL_SVG_PATH);
+  const commands = buildPlotCommands(report, {
+    penUpZ: 6,
+    penDownZ: 0,
+    feedMmPerMin: 240
+  });
+
+  assert.equal(report.geometry.segmentCount, 1);
+  assert.equal(report.geometry.outOfBounds, false);
+  assert.equal(commands[0]?.command, "G21");
+  assert.equal(commands[1]?.command, "G90");
+  assert.equal(commands[2]?.command, "G0 Z6");
+  assert.match(commands.map((item) => item.command).join("\n"), /G0 X300 Y210/);
+  assert.match(commands.map((item) => item.command).join("\n"), /G1 X198\.4 Y108\.4 F240/);
+  assert.match(commands.map((item) => item.command).join("\n"), /G0 Z0/);
+});
+
+test("plotter toolpath generates a one inch box at normal speed", async () => {
+  const report = await buildManifestReport(ONE_INCH_BOX_SVG_PATH);
+  const commands = buildPlotCommands(report, {
+    penUpZ: 6,
+    penDownZ: 0,
+    feedMmPerMin: 600
+  });
+
+  assert.equal(report.geometry.segmentCount, 4);
+  assert.equal(report.geometry.outOfBounds, false);
+  assert.equal(commands[0]?.command, "G21");
+  assert.equal(commands[1]?.command, "G90");
+  assert.equal(commands[2]?.command, "G0 Z6");
+  assert.match(commands.map((item) => item.command).join("\n"), /G0 X25\.4 Y25\.4/);
+  assert.match(commands.map((item) => item.command).join("\n"), /G1 X0 Y25\.4 F600/);
+  assert.match(commands.map((item) => item.command).join("\n"), /G1 X0 Y0 F600/);
+  assert.match(commands.map((item) => item.command).join("\n"), /G1 X25\.4 Y0 F600/);
   assert.match(commands.map((item) => item.command).join("\n"), /G0 Z0/);
 });
 
