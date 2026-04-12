@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="300mm" height="210mm" viewBox="0 0 300 210">
+  <g id="registration" transform="translate(10 10)">
+    <line id="baseline" x1="0" y1="0" x2="40" y2="0" stroke="black" fill="none" />
+    <rect id="box" x="0" y="10" width="50" height="30" stroke="black" fill="none" />
+  </g>
+  <path id="fold-path" d="M 90 20 L 130 20 l 0 40 Q 110 80 90 60 Z" stroke="black" fill="none" />
+  <polyline id="zigzag" points="170,20 190,35 170,50 190,65" stroke="black" fill="none" />
+  <circle id="locator" cx="240" cy="60" r="10" stroke="black" fill="none" />
+  <text id="label" x="20" y="180">convert text before plotting</text>
+</svg>

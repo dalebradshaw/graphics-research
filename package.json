@@ -4,6 +4,8 @@
   "private": true,
   "type": "module",
   "scripts": {
+    "test": "node --import tsx --test tests/plotter.test.ts",
+    "test:plotter": "node --import tsx --test tests/plotter.test.ts",
     "build:md": "tsx scripts/build-md.ts",
     "add:x": "tsx scripts/fetch-x-bookmarks.ts",
     "add:x:all": "tsx scripts/fetch-x-bookmarks.ts --all",
@@ -15,15 +17,23 @@
     "import:channel:enhanced": "tsx scripts/import-youtube-channel-enhanced.ts",
     "transcript:cache:clear": "rm -rf .transcript-cache",
     "search": "tsx src/search.ts",
+    "plotter": "bash tools/plotter/plotter.sh",
+    "plotter:probe": "tsx tools/plotter/probe.ts",
+    "plotter:manifest": "tsx tools/plotter/manifest.ts",
+    "plotter:cycle": "tsx tools/plotter/cycle.ts",
+    "plotter:calibrate-x": "tsx tools/plotter/calibrate-x.ts",
+    "plotter:plot": "tsx tools/plotter/plot.ts",
     "blender:mcp:setup": "./scripts/setup-blender-mcp.sh",
     "blender:mcp:install": "uv tool install blender-mcp || echo 'Already installed'",
     "blender:mcp:claude": "cat .claude/mcp.json",
     "blender:mcp:cursor": "cat .cursor/mcp.json"
   },
   "dependencies": {
-    "youtube-transcript": "^1.2.1",
     "@anthropic-ai/sdk": "^0.24.3",
-    "chalk": "^5.3.0"
+    "chalk": "^5.3.0",
+    "fast-xml-parser": "^5.5.11",
+    "serialport": "^13.0.0",
+    "youtube-transcript": "^1.2.1"
   },
   "devDependencies": {
     "@types/node": "^22.7.5",
