@@ -31,4 +31,10 @@ G90
 
 The earlier 220 mm and 280 mm X spans reached the mechanical X extent. Do not treat them as safe viewport bounds.
 
-The current SVG plot transform is not yet calibrated to this active viewport. For live tests, prefer explicit machine-relative calibration moves until the plot transform is updated.
+The SVG executor now has a calibrated viewport mode for this profile:
+
+```bash
+tools/plotter/plotter.sh plot --svg fixtures/plotter/full-plot.svg --calibrated-viewport --live --markdown
+```
+
+That mode scales and centers the SVG geometry inside the 180 x 250 mm active viewport, uses a default 10 mm inset, emits relative XY moves into the drawing area, keeps Z moves absolute, and returns to the active origin with the pen up. Override the inset with `--viewport-margin <mm>` when a test intentionally needs a different margin.

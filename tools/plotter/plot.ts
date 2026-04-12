@@ -6,6 +6,16 @@ import { SerialPort } from "serialport";
 import { buildManifestReport, formatManifestMarkdown, type ManifestReport, type Point } from "./manifest.js";
 import { buildProbeReport, formatProbeMarkdown } from "./probe.js";
 
+type PlotCoordinateMode = "legacy" | "calibratedViewport";
+
+type ActiveViewportProfile = {
+  widthMm: number;
+  heightMm: number;
+  marginMm: number;
+  origin: string;
+  drawDirection: "negative-x-negative-y";
+};
+
 type CliArgs = {
   svgPath?: string;
   port?: string;
@@ -16,6 +26,8 @@ type CliArgs = {
   penUpZ: number;
   penDownZ: number;
   feedMmPerMin: number;
+  coordinateMode: PlotCoordinateMode;
+  viewportMarginMm: number;
 };
 
 type PlotCommand = {
@@ -36,6 +48,8 @@ type PlotReport = {
   feedMmPerMin: number;
   penUpZ: number;
   penDownZ: number;
+  coordinateMode: PlotCoordinateMode;
+  activeViewport?: ActiveViewportProfile;
   probe: Awaited<ReturnType<typeof buildProbeReport>>;
   manifest: ManifestReport;
   commands: PlotCommand[];
@@ -45,6 +59,14 @@ type PlotReport = {
 const DEFAULT_PEN_UP_Z = 6;
 const DEFAULT_PEN_DOWN_Z = 0;
 const DEFAULT_FEED_MM_PER_MIN = 600;
+const DEFAULT_VIEWPORT_MARGIN_MM = 10;
+const CALIBRATED_ACTIVE_VIEWPORT: ActiveViewportProfile = {
+  widthMm: 180,
+  heightMm: 250,
+  marginMm: DEFAULT_VIEWPORT_MARGIN_MM,
+  origin: "shifted active origin from 2026-04-12 live calibration",
+  drawDirection: "negative-x-negative-y"
+};
 
 function parseArgs(): CliArgs {
   const args = process.argv.slice(2);
@@ -64,7 +86,9 @@ function parseArgs(): CliArgs {
     force: args.includes("--force"),
     penUpZ: Number(getValue("--pen-up-z") ?? DEFAULT_PEN_UP_Z),
     penDownZ: Number(getValue("--pen-down-z") ?? DEFAULT_PEN_DOWN_Z),
-    feedMmPerMin: Number(getValue("--feed") ?? DEFAULT_FEED_MM_PER_MIN)
+    feedMmPerMin: Number(getValue("--feed") ?? DEFAULT_FEED_MM_PER_MIN),
+    coordinateMode: args.includes("--calibrated-viewport") ? "calibratedViewport" : "legacy",
+    viewportMarginMm: Number(getValue("--viewport-margin") ?? DEFAULT_VIEWPORT_MARGIN_MM)
   };
 }
 
@@ -72,7 +96,16 @@ function buildPlotCommands(report: ManifestReport, options: {
   penUpZ: number;
   penDownZ: number;
   feedMmPerMin: number;
+  coordinateMode?: PlotCoordinateMode;
+  activeViewport?: ActiveViewportProfile;
 }): PlotCommand[] {
+  if (options.coordinateMode === "calibratedViewport") {
+    return buildCalibratedViewportCommands(report, {
+      ...options,
+      activeViewport: options.activeViewport ?? CALIBRATED_ACTIVE_VIEWPORT
+    });
+  }
+
   const commands: PlotCommand[] = [
     { label: "units", command: "G21" },
     { label: "positioning", command: "G90" },
@@ -115,6 +148,118 @@ function buildPlotCommands(report: ManifestReport, options: {
   return commands;
 }
 
+function buildCalibratedViewportCommands(report: ManifestReport, options: {
+  penUpZ: number;
+  penDownZ: number;
+  feedMmPerMin: number;
+  activeViewport: ActiveViewportProfile;
+}): PlotCommand[] {
+  const viewport = {
+    ...options.activeViewport,
+    marginMm: Math.max(0, options.activeViewport.marginMm)
+  };
+  const transform = buildCalibratedViewportTransform(report, viewport);
+  const commands: PlotCommand[] = [
+    { label: "units", command: "G21" },
+    { label: "absolute-positioning", command: "G90" },
+    { label: "pen-up", command: `G0 Z${formatNumber(options.penUpZ)}` },
+    { label: "relative-positioning", command: "G91" }
+  ];
+  let currentPoint: Point = { x: 0, y: 0 };
+  let previousPoint: Point | undefined;
+  let penDown = false;
+
+  for (const segment of report.toolpath) {
+    const start = mapPointToCalibratedViewport(segment.from, transform);
+    const end = mapPointToCalibratedViewport(segment.to, transform);
+    const connected = previousPoint ? samePoint(previousPoint, start) : false;
+
+    if (!connected) {
+      if (penDown) {
+        pushPenZ(commands, "pen-up", options.penUpZ);
+        penDown = false;
+      }
+
+      const travel = subtractPoint(start, currentPoint);
+      if (!samePoint(travel, { x: 0, y: 0 })) {
+        commands.push({
+          label: `travel-to-${segment.source}-start`,
+          command: formatRelativeMotion("G0", travel)
+        });
+      }
+
+      currentPoint = start;
+      pushPenZ(commands, "pen-down", options.penDownZ);
+      penDown = true;
+    }
+
+    const draw = subtractPoint(end, currentPoint);
+    commands.push({
+      label: `draw-${segment.source}`,
+      command: `${formatRelativeMotion("G1", draw)} F${formatNumber(options.feedMmPerMin)}`
+    });
+
+    currentPoint = end;
+    previousPoint = end;
+  }
+
+  if (penDown) {
+    pushPenZ(commands, "pen-up", options.penUpZ);
+  }
+
+  const returnHome = subtractPoint({ x: 0, y: 0 }, currentPoint);
+  if (!samePoint(returnHome, { x: 0, y: 0 })) {
+    commands.push({
+      label: "return-to-active-origin",
+      command: formatRelativeMotion("G0", returnHome)
+    });
+  }
+  commands.push({ label: "absolute-positioning", command: "G90" });
+
+  return commands;
+}
+
+function buildCalibratedViewportTransform(report: ManifestReport, viewport: ActiveViewportProfile): {
+  bounds: NonNullable<ManifestReport["geometry"]["boundsMm"]>;
+  scale: number;
+  offsetX: number;
+  offsetY: number;
+} {
+  const bounds = report.geometry.boundsMm;
+  if (!bounds) {
+    throw new Error("Cannot build calibrated viewport plot commands without SVG geometry bounds.");
+  }
+
+  const drawableWidth = viewport.widthMm - viewport.marginMm * 2;
+  const drawableHeight = viewport.heightMm - viewport.marginMm * 2;
+  if (drawableWidth <= 0 || drawableHeight <= 0) {
+    throw new Error(`Viewport margin ${viewport.marginMm} leaves no drawable area.`);
+  }
+
+  const scaleX = bounds.width > 0 ? drawableWidth / bounds.width : Number.POSITIVE_INFINITY;
+  const scaleY = bounds.height > 0 ? drawableHeight / bounds.height : Number.POSITIVE_INFINITY;
+  const scale = Math.min(scaleX, scaleY);
+  if (!Number.isFinite(scale) || scale <= 0) {
+    throw new Error("Cannot scale SVG geometry with zero-width and zero-height bounds.");
+  }
+
+  return {
+    bounds,
+    scale,
+    offsetX: viewport.marginMm + (drawableWidth - bounds.width * scale) / 2,
+    offsetY: viewport.marginMm + (drawableHeight - bounds.height * scale) / 2
+  };
+}
+
+function mapPointToCalibratedViewport(point: Point, transform: ReturnType<typeof buildCalibratedViewportTransform>): Point {
+  const localX = (point.x - transform.bounds.minX) * transform.scale + transform.offsetX;
+  const localY = (point.y - transform.bounds.minY) * transform.scale + transform.offsetY;
+  return {
+    x: -localX,
+    y: -localY
+  };
+}
+
 function mapPoint(point: Point, pageWidthMm: number | undefined, pageHeightMm: number | undefined): Point {
   if (pageWidthMm === undefined || pageHeightMm === undefined) {
     return point;
@@ -125,8 +270,30 @@ function mapPoint(point: Point, pageWidthMm: number | undefined, pageHeightMm: n
   };
 }
 
+function subtractPoint(a: Point, b: Point): Point {
+  return {
+    x: a.x - b.x,
+    y: a.y - b.y
+  };
+}
+
 function samePoint(a: Point, b: Point): boolean {
   return Math.abs(a.x - b.x) < 0.000001 && Math.abs(a.y - b.y) < 0.000001;
+}
+
+function pushPenZ(commands: PlotCommand[], label: "pen-up" | "pen-down", z: number): void {
+  commands.push(
+    { label: "absolute-positioning", command: "G90" },
+    { label, command: `G0 Z${formatNumber(z)}` },
+    { label: "relative-positioning", command: "G91" }
+  );
+}
+
+function formatRelativeMotion(prefix: "G0" | "G1", point: Point): string {
+  const axes: string[] = [];
+  if (Math.abs(point.x) >= 0.000001) axes.push(`X${formatNumber(point.x)}`);
+  if (Math.abs(point.y) >= 0.000001) axes.push(`Y${formatNumber(point.y)}`);
+  return axes.length ? `${prefix} ${axes.join(" ")}` : `${prefix} X0 Y0`;
 }
 
 function formatNumber(value: number): string {
@@ -178,14 +345,26 @@ async function buildReport(args: CliArgs): Promise<PlotReport> {
     feedMmPerMin: args.feedMmPerMin,
     penUpZ: args.penUpZ,
     penDownZ: args.penDownZ,
+    coordinateMode: args.coordinateMode,
+    activeViewport: args.coordinateMode === "calibratedViewport"
+      ? { ...CALIBRATED_ACTIVE_VIEWPORT, marginMm: args.viewportMarginMm }
+      : undefined,
     probe,
     manifest,
     commands: buildPlotCommands(manifest, {
       penUpZ: args.penUpZ,
       penDownZ: args.penDownZ,
-      feedMmPerMin: args.feedMmPerMin
+      feedMmPerMin: args.feedMmPerMin,
+      coordinateMode: args.coordinateMode,
+      activeViewport: { ...CALIBRATED_ACTIVE_VIEWPORT, marginMm: args.viewportMarginMm }
     }),
-    notes: [
+    notes: args.coordinateMode === "calibratedViewport" ? [
+      "This command executes the SVG toolpath as a live plot sequence.",
+      "The calibrated viewport mode scales and centers SVG geometry inside the 180 x 250 mm active viewport.",
+      "The active viewport uses relative XY moves away from the calibrated origin; negative X and negative Y move into the drawing area.",
+      "Z moves are emitted in absolute mode so pen up/down remains stable while XY plotting remains relative.",
+      "The final travel returns to the calibrated active origin with the pen up."
+    ] : [
       "This command executes the SVG toolpath as a live plot sequence.",
       "The current profile mirrors SVG coordinates into machine coordinates to land the toolpath in the viewport.",
       "Use the empty-pen fixture for an observation-only motion test before attaching ink."
@@ -212,6 +391,11 @@ function formatMarkdown(report: PlotReport): string {
   lines.push(`- Feed: ${report.feedMmPerMin} mm/min`);
   lines.push(`- Pen up Z: ${report.penUpZ}`);
   lines.push(`- Pen down Z: ${report.penDownZ}`);
+  lines.push(`- Coordinate mode: ${report.coordinateMode}`);
+  if (report.activeViewport) {
+    lines.push(`- Active viewport: ${report.activeViewport.widthMm} x ${report.activeViewport.heightMm} mm`);
+    lines.push(`- Active viewport margin: ${report.activeViewport.marginMm} mm`);
+  }
   lines.push("");
   lines.push("## Manifest");
   lines.push("");
@@ -377,10 +561,11 @@ if (process.argv[1] && import.meta.url === pathToFileURL(process.argv[1]).href) 
 }
 
 export {
+  CALIBRATED_ACTIVE_VIEWPORT,
   buildPlotCommands,
   buildReport as buildPlotReport,
   formatMarkdown as formatPlotMarkdown,
   writeReport as writePlotReport
 };
 
-export type { PlotCommand, PlotReport };
+export type { ActiveViewportProfile, PlotCommand, PlotCoordinateMode, PlotReport };

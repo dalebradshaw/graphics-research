@@ -99,6 +99,30 @@ test("plotter toolpath generates draw and travel commands from the full fixture"
   assert.match(commands.map((item) => item.command).join("\n"), /G0 Z0/);
 });
 
+test("plotter toolpath fits the full fixture inside the calibrated active viewport", async () => {
+  const report = await buildManifestReport(FULL_PLOT_SVG_PATH);
+  const commands = buildPlotCommands(report, {
+    penUpZ: 6,
+    penDownZ: 0,
+    feedMmPerMin: 600,
+    coordinateMode: "calibratedViewport"
+  });
+  const extents = accumulateRelativeExtents(commands.map((item) => item.command));
+
+  assert.equal(commands[0]?.command, "G21");
+  assert.equal(commands[1]?.command, "G90");
+  assert.equal(commands[2]?.command, "G0 Z6");
+  assert.match(commands.map((item) => item.command).join("\n"), /G91/);
+  assert.match(commands.map((item) => item.command).join("\n"), /G0 Z0/);
+  assert.match(commands.map((item) => item.label).join("\n"), /return-to-active-origin/);
+  assert.equal(Math.abs(extents.finalX) < 0.01, true);
+  assert.equal(Math.abs(extents.finalY) < 0.01, true);
+  assert.equal(Math.abs(extents.minX - -170) < 0.01, true);
+  assert.equal(Math.abs(extents.maxX) < 0.01, true);
+  assert.equal(extents.minY >= -250, true);
+  assert.equal(extents.maxY <= 0, true);
+});
+
 test("plotter toolpath generates a four inch diagonal line from home", async () => {
   const report = await buildManifestReport(FOUR_INCH_DIAGONAL_SVG_PATH);
   const commands = buildPlotCommands(report, {
@@ -216,3 +240,46 @@ test("probe report stays passive by default", { skip: process.platform !== "darw
   assert.match(formatProbeMarkdown(report), /Plotter Probe Report/);
   assert.match(formatProbeMarkdown(report), /Opens serial ports: false/);
 });
+
+function accumulateRelativeExtents(commands: string[]): {
+  minX: number;
+  maxX: number;
+  minY: number;
+  maxY: number;
+  finalX: number;
+  finalY: number;
+} {
+  let relative = false;
+  let x = 0;
+  let y = 0;
+  let minX = 0;
+  let maxX = 0;
+  let minY = 0;
+  let maxY = 0;
+
+  for (const command of commands) {
+    if (command === "G91") {
+      relative = true;
+      continue;
+    }
+    if (command === "G90") {
+      relative = false;
+      continue;
+    }
+    if (!relative || !/^G[01]\b/.test(command)) continue;
+
+    x += readAxis(command, "X");
+    y += readAxis(command, "Y");
+    minX = Math.min(minX, x);
+    maxX = Math.max(maxX, x);
+    minY = Math.min(minY, y);
+    maxY = Math.max(maxY, y);
+  }
+
+  return { minX, maxX, minY, maxY, finalX: x, finalY: y };
+}
+
+function readAxis(command: string, axis: "X" | "Y"): number {
+  const match = command.match(new RegExp(`\\b${axis}(-?\\d+(?:\\.\\d+)?)\\b`));
+  return match ? Number(match[1]) : 0;
+}

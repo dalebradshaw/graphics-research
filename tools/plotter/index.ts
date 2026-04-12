@@ -23,6 +23,7 @@ export type {
 } from "./calibrate-x.js";
 
 export {
+  CALIBRATED_ACTIVE_VIEWPORT,
   buildPlotCommands,
   buildPlotReport,
   formatPlotMarkdown,
@@ -30,7 +31,9 @@ export {
 } from "./plot.js";
 
 export type {
+  ActiveViewportProfile,
   PlotCommand,
+  PlotCoordinateMode,
   PlotReport
 } from "./plot.js";
 

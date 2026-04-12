@@ -1,6 +1,6 @@
 # Plotter Tools
 
-This folder contains the no-motion Writing Robot T-A4 toolchain surface.
+This folder contains the Writing Robot T-A4 toolchain surface.
 
 ## TypeScript API
 
@@ -49,6 +49,7 @@ tools/plotter/plotter.sh cycle --svg fixtures/plotter/pen-cycle.svg --live --mar
 tools/plotter/plotter.sh calibrate-x --live --markdown
 tools/plotter/plotter.sh calibrate-x --axis y --live --markdown
 tools/plotter/plotter.sh plot --svg fixtures/plotter/full-plot.svg --live --markdown
+tools/plotter/plotter.sh plot --svg fixtures/plotter/full-plot.svg --calibrated-viewport --live --markdown
 ```
 
 `preflight` runs a passive device probe followed by an SVG manifest dry run. It does not send serial commands unless you explicitly pass `--query-device` to the `probe` command separately.
@@ -59,9 +60,11 @@ tools/plotter/plotter.sh plot --svg fixtures/plotter/full-plot.svg --live --mark
 
 `plot` executes the SVG toolpath through the device with pen up/down transitions. Use `fixtures/plotter/full-plot.svg` for the supported multi-shape live test input.
 
+Use `--calibrated-viewport` for the live 2026-04-12 active viewport profile. That mode centers and scales the SVG geometry inside the calibrated 180 x 250 mm viewport, emits relative XY moves into the drawing area, keeps Z moves absolute, and returns to the active origin with the pen up. It uses a 10 mm margin by default; override with `--viewport-margin <mm>` when a tighter or wider inset is needed.
+
 The current T-A4 profile assumes pen-up is the higher Z clearance and pen-down is the lower contact position.
 
-The live calibrated viewport profile is tracked in `tools/plotter/CALIBRATION.md`. Until the SVG transform is updated, use that profile for machine-relative live tests instead of assuming raw SVG page dimensions map to the active plotting area.
+The live calibrated viewport profile is tracked in `tools/plotter/CALIBRATION.md`. Use `--calibrated-viewport` for live SVG plots that should respect that profile instead of assuming raw SVG page dimensions map to the active plotting area.
 
 ## Tests
 
