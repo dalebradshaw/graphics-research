@@ -66,6 +66,8 @@ The current T-A4 profile assumes pen-up is the higher Z clearance and pen-down i
 
 The live calibrated viewport profile is tracked in `tools/plotter/CALIBRATION.md`. Use `--calibrated-viewport` for live SVG plots that should respect that profile instead of assuming raw SVG page dimensions map to the active plotting area.
 
+The phase 1 milestone summary is tracked in `tools/plotter/PHASE_1_MILESTONE.md`.
+
 ## Tests
 
 The canonical SVG test input lives at `fixtures/plotter/simple-shapes.svg`.
