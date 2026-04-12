@@ -61,6 +61,8 @@ tools/plotter/plotter.sh plot --svg fixtures/plotter/full-plot.svg --live --mark
 
 The current T-A4 profile assumes pen-up is the higher Z clearance and pen-down is the lower contact position.
 
+The live calibrated viewport profile is tracked in `tools/plotter/CALIBRATION.md`. Until the SVG transform is updated, use that profile for machine-relative live tests instead of assuming raw SVG page dimensions map to the active plotting area.
+
 ## Tests
 
 The canonical SVG test input lives at `fixtures/plotter/simple-shapes.svg`.
