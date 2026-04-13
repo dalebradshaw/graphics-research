@@ -1,5 +1,6 @@
 node_modules/
 media-score-studio/
+tools/blender-mcp/
 dist/
 .DS_Store
 .env
