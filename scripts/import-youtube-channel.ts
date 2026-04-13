@@ -337,8 +337,7 @@ async function fetchTranscript(videoId: string, lang?: string): Promise<string> 
   for (const candidate of langs) {
     try {
       const transcript = await YoutubeTranscript.fetchTranscript(videoId, {
-        lang: candidate,
-        country: "US"
+        lang: candidate
       });
       if (transcript?.length) {
         return transcript.map((item) => item.text).join(" ").replace(/\s+/g, " ").trim();

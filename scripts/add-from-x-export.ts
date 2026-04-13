@@ -326,7 +326,7 @@ async function main() {
   await upsertCorpus(additions);
 
   if (args.build) {
-    await import("./build-md.ts");
+    await import("./build-md.js");
   }
 
   console.log(`✅ Processed ${additions.length} bookmarks from ${path.relative(ROOT, args.input)}`);

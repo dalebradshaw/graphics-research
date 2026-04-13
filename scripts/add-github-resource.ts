@@ -252,7 +252,7 @@ async function main() {
   });
 
   if (args.build) {
-    await import("./build-md.ts");
+    await import("./build-md.js");
   }
 
   console.log(`✅ Added GitHub resource ${id}`);

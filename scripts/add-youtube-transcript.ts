@@ -158,6 +158,8 @@ async function upsertCorpusEntry(entry: {
   tags: string[];
   createdAt: string;
   summary?: string;
+  notes?: string;
+  hasTranscript?: boolean;
 }) {
   const raw = await fs.readFile(CORPUS_JSON_PATH, "utf-8");
   const corpus = JSON.parse(raw) as Array<Record<string, unknown>>;
@@ -252,7 +254,7 @@ async function main() {
   });
 
   if (args.build) {
-    await import("./build-md.ts");
+    await import("./build-md.js");
   }
 
   console.log(`✅ Added YouTube transcript ${relativeTranscript}`);
