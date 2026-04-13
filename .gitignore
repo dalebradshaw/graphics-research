@@ -1,9 +1,14 @@
 node_modules/
+media-score-studio/
 dist/
 .DS_Store
 .env
 *.log
 data/
+.vscode/
+.transcript-cache/
+.build/
+**/.build/
 
 # Build artifacts
 *.tsbuildinfo
