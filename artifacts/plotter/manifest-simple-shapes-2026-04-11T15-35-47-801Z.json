@@ -1,0 +1,148 @@
+{
+  "generatedAt": "2026-04-11T15:35:47.801Z",
+  "sourceSvg": "/Users/dalebradshaw/graphics_research/fixtures/plotter/simple-shapes.svg",
+  "safety": {
+    "opensSerialPorts": false,
+    "sendsDeviceCommands": false,
+    "motion": false
+  },
+  "deviceProfile": {
+    "name": "Writing Robot T-A4 DrawCore",
+    "workingAreaMm": {
+      "width": 300,
+      "height": 210
+    },
+    "origin": "unresolved-svg-coordinate-space"
+  },
+  "svg": {
+    "width": {
+      "raw": "300mm",
+      "value": 300,
+      "unit": "mm",
+      "mm": 300
+    },
+    "height": {
+      "raw": "210mm",
+      "value": 210,
+      "unit": "mm",
+      "mm": 210
+    },
+    "viewBox": {
+      "x": 0,
+      "y": 0,
+      "width": 300,
+      "height": 210
+    },
+    "coordinateMapping": "viewBox scaled into declared page size"
+  },
+  "geometry": {
+    "shapeCount": 5,
+    "segmentCount": 91,
+    "penLiftCount": 5,
+    "drawDistanceMm": 503.6999455972127,
+    "travelDistanceMm": 261.4390291501381,
+    "boundsMm": {
+      "minX": 10,
+      "minY": 10,
+      "maxX": 250,
+      "maxY": 70,
+      "width": 240,
+      "height": 60
+    },
+    "outOfBounds": false
+  },
+  "shapes": [
+    {
+      "type": "line",
+      "id": "baseline",
+      "segmentCount": 1,
+      "drawDistanceMm": 40,
+      "boundsMm": {
+        "minX": 10,
+        "minY": 10,
+        "maxX": 50,
+        "maxY": 10,
+        "width": 40,
+        "height": 0
+      },
+      "warnings": []
+    },
+    {
+      "type": "rect",
+      "id": "box",
+      "segmentCount": 4,
+      "drawDistanceMm": 160,
+      "boundsMm": {
+        "minX": 10,
+        "minY": 20,
+        "maxX": 60,
+        "maxY": 50,
+        "width": 50,
+        "height": 30
+      },
+      "warnings": []
+    },
+    {
+      "type": "path",
+      "id": "fold-path",
+      "segmentCount": 19,
+      "drawDistanceMm": 165.89332245811792,
+      "boundsMm": {
+        "minX": 90,
+        "minY": 20,
+        "maxX": 130,
+        "maxY": 70,
+        "width": 40,
+        "height": 50
+      },
+      "warnings": []
+    },
+    {
+      "type": "polyline",
+      "id": "zigzag",
+      "segmentCount": 3,
+      "drawDistanceMm": 75,
+      "boundsMm": {
+        "minX": 170,
+        "minY": 20,
+        "maxX": 190,
+        "maxY": 65,
+        "width": 20,
+        "height": 45
+      },
+      "warnings": []
+    },
+    {
+      "type": "circle",
+      "id": "locator",
+      "segmentCount": 64,
+      "drawDistanceMm": 62.80662313909505,
+      "boundsMm": {
+        "minX": 230,
+        "minY": 50,
+        "maxX": 250,
+        "maxY": 70,
+        "width": 20,
+        "height": 20
+      },
+      "warnings": []
+    }
+  ],
+  "unsupportedFeatures": [
+    {
+      "feature": "text",
+      "count": 1,
+      "examples": [
+        "<text id=\"label\">"
+      ]
+    }
+  ],
+  "warnings": [
+    "Unsupported SVG features were detected; review before plotting."
+  ],
+  "nextSteps": [
+    "Confirm origin convention before converting manifest geometry into machine moves.",
+    "Review unsupported SVG features and convert text/images/fills to explicit paths where needed.",
+    "Keep real motion behind a separate armed command after dry-run reports are stable."
+  ]
+}

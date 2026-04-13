@@ -1,14 +1,68 @@
 # graphics-research
 
-Corpus for graphics research on three.js, React Three Fiber, shaders, and Blender. Bookmarks, tutorials, transcripts, and supporting notes are normalised into TypeScript + Markdown so they can power future tooling, documentation, and search.
+Workspace for two connected lines of work:
 
-## Project layout
-- `corpus/` – canonical dataset (`corpus.json`), generated TypeScript helpers, Markdown knowledge base, and evolving glossary.
-- `transcripts/` – cleaned transcripts for long-form resources (YouTube talks, tutorials, etc.).
-- `notes/` – optional README or documentation snapshots for GitHub resources.
-- `scripts/` – TypeScript CLIs to ingest exports from X, YouTube transcripts, and GitHub repos.
-- `src/search.ts` – lightweight CLI search over the corpus.
-- `.github/` – issue templates + Actions that open pull requests whenever you file an ingestion issue.
+1. a corpus/transcript pipeline for graphics research on three.js, React Three Fiber, shaders, and Blender
+2. a newer papercraft reverse-engineering and app-design track centered on plotter/cutter-aware media artifacts
+
+The corpus side still matters, but the active product research now lives around papercraft analysis, clean-room converted app structure, and `Media Score Studio`.
+
+## Current workstreams
+
+### Papercraft and fabrication research
+
+This is the most active stream right now.
+
+- `notes/papercraft-research-map-2026-04-10.md` – entry point for the papercraft workstream, reading order, and research backlog
+- `notes/papercraft-unfolder-experiment-2026-04-09.md` – first framing note from the Unfolder session
+- `notes/papercraft-cube-fixture-research-2026-04-10.md` – first fixture-grade rule set for the cube
+- `notes/pepakura-research-run-2026-04-10.md` – local package and official-site research pass on Pepakura
+- `notes/pepakura-static-analysis-2026-04-10.md` – deeper binary-oriented Pepakura findings
+- `unfolder-static-analysis/` – practical static disassembly trail for `/Applications/Unfolder.app`
+- `unfolder-converted-base/` – clean-room, human-named converted base derived from the Unfolder analysis
+- `pepakura-static-analysis/` – extracted Pepakura payload and static-analysis trail
+- `media-score-studio/` – native macOS workstation scaffold that absorbs the research into app structure
+
+### Corpus and transcript tooling
+
+This remains the intake and normalization layer for broader graphics research.
+
+- `corpus/` – canonical dataset (`corpus.json`), generated TypeScript helpers, Markdown knowledge base, and glossary
+- `transcripts/` – cleaned transcripts for long-form resources
+- `transcripts-raw/` – downloaded caption/source transcript files before cleanup
+- `notes/` – research notes, summaries, and local investigation writeups
+- `scripts/` – TypeScript and shell CLIs for ingestion, transcript handling, and bookmark processing
+- `src/search.ts` – lightweight CLI search over the corpus
+- `.github/` – issue templates and Actions for ingestion workflows
+
+### Experiments
+
+- `experiments/` – graphics experiments that are still useful as technical references, but are not the current papercraft focus
+
+## Suggested reading order
+
+If you are continuing the papercraft/app work, read in this order:
+
+1. `notes/papercraft-research-map-2026-04-10.md`
+2. `notes/papercraft-unfolder-experiment-2026-04-09.md`
+3. `notes/pepakura-research-run-2026-04-10.md`
+4. `notes/pepakura-static-analysis-2026-04-10.md`
+5. `notes/papercraft-cube-fixture-research-2026-04-10.md`
+6. `media-score-studio/Docs/V1-Scope.md`
+7. `media-score-studio/Docs/Research-Inputs.md`
+
+## Where to deepen next
+
+The repo has enough high-level understanding already. The places that still need deeper treatment are:
+
+- seam graph algorithms and shortest-path cutline selection
+- flap geometry rules and merge behavior
+- fixture ladder beyond the cube: tetrahedron, then cylinder
+- page layout and packing heuristics
+- export semantics for SVG, PDF, and later G-code
+- shared geometry kernel concepts that can move from research into the app
+
+Those decisions are captured more explicitly in `notes/papercraft-research-map-2026-04-10.md`.
 
 ## Prerequisites
 - Node.js 18+ (workflows use Node 20).
