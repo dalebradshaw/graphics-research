@@ -1,0 +1,4972 @@
+[
+  {
+    "name": "Apps in Space.fxcore",
+    "path": "/Users/dalebradshaw/Documents/fxcore/sample_plugins/Apps in Space.fxcore",
+    "bytes": 184320,
+    "node_count": 44,
+    "connection_count": 57,
+    "role": "data-driven 3D sprites",
+    "root_identifier": "com.fxfactory.FxCore.FxCorePlugIn3DRenderToTexture",
+    "identifier_counts": {
+      "com.fxfactory.FxCore.FxCorePlugIn3DRenderToTexture": 1,
+      "com.fxfactory.FxCore.DirectoryScannerPlugIn": 1,
+      "com.fxfactory.FxCore.FxCorePlugInCIBillboard": 1,
+      "com.fxfactory.FxCore.FxCorePlugInWaveGenerator": 4,
+      "com.fxfactory.FxCore.FxCorePlugInCISunbeamsGenerator": 1,
+      "com.fxfactory.FxCore.FxCorePlugIn3DTransform": 1,
+      "com.fxfactory.FxCore.FxCorePlugInLocalTime": 2,
+      "com.fxfactory.FxCore.FxCorePlugInOutputInfo": 2,
+      "com.fxfactory.FxCore.FxCorePlugInMathExpression": 12,
+      "com.fxfactory.FxCore.FxCorePlugInSplitter": 3,
+      "com.fxfactory.FxCore.FxCorePlugInNIThresholdWithColors": 1,
+      "com.fxfactory.FxCore.FxCorePlugInNIPerlinNoise": 1,
+      "com.fxfactory.FxCore.FxCorePlugInNIAffineTransformUnit": 2,
+      "com.fxfactory.FxCore.FxCorePlugIn3DSprite": 1,
+      "com.fxfactory.FxCore.FxCorePlugInRandomValueGenerator": 1,
+      "com.fxfactory.FxCore.FxCorePlugInIteratorVariables": 1,
+      "com.fxfactory.FxCore.FxCorePlugInArrayValueAtIndex": 1,
+      "com.fxfactory.FxCore.FinderIconPlugIn": 1,
+      "com.fxfactory.FxCore.FxCorePlugInValuesCount": 1,
+      "com.fxfactory.FxCore.FxCorePlugInCIGaussianBlur": 1,
+      "com.fxfactory.FxCore.FxCorePlugInCIExposureAdjust": 1,
+      "com.fxfactory.FxCore.FxCorePlugInNIColorOver": 1,
+      "com.fxfactory.FxCore.ColorChangeAlphaPlugIn": 1,
+      "com.fxfactory.FxCore.FxCorePlugInCIMotionBlur": 1,
+      "com.fxfactory.FxCore.FxCorePlugInIterator": 1
+    },
+    "notable_identifiers": [
+      "FxCorePlugIn3DRenderToTexture",
+      "DirectoryScannerPlugIn",
+      "FxCorePlugIn3DSprite",
+      "FxCorePlugInIteratorVariables",
+      "FinderIconPlugIn",
+      "FxCorePlugInIterator"
+    ],
+    "nodes": [
+      {
+        "pk": 7,
+        "title": "Root",
+        "identifier": "com.fxfactory.FxCore.FxCorePlugIn3DRenderToTexture",
+        "parent": null,
+        "index": 0,
+        "is_iterator": false,
+        "is_consumer": false
+      },
+      {
+        "pk": 20,
+        "title": "Scan",
+        "identifier": "com.fxfactory.FxCore.DirectoryScannerPlugIn",
+        "parent": 7,
+        "index": 0,
+        "is_iterator": false,
+        "is_consumer": false
+      },
+      {
+        "pk": 64,
+        "title": "2D",
+        "identifier": "com.fxfactory.FxCore.FxCorePlugInCIBillboard",
+        "parent": 7,
+        "index": 1,
+        "is_iterator": false,
+        "is_consumer": true
+      },
+      {
+        "pk": 62,
+        "title": "Wave",
+        "identifier": "com.fxfactory.FxCore.FxCorePlugInWaveGenerator",
+        "parent": 7,
+        "index": 2,
+        "is_iterator": false,
+        "is_consumer": false
+      },
+      {
+        "pk": 63,
+        "title": "Wave",
+        "identifier": "com.fxfactory.FxCore.FxCorePlugInWaveGenerator",
+        "parent": 7,
+        "index": 3,
+        "is_iterator": false,
+        "is_consumer": false
+      },
+      {
+        "pk": 66,
+        "title": "Sunbeams",
+        "identifier": "com.fxfactory.FxCore.FxCorePlugInCISunbeamsGenerator",
+        "parent": 7,
+        "index": 4,
+        "is_iterator": false,
+        "is_consumer": false
+      },
+      {
+        "pk": 56,
+        "title": "Transformation",
+        "identifier": "com.fxfactory.FxCore.FxCorePlugIn3DTransform",
+        "parent": 7,
+        "index": 5,
+        "is_iterator": false,
+        "is_consumer": true
+      },
+      {
+        "pk": 65,
+        "title": "Time",
+        "identifier": "com.fxfactory.FxCore.FxCorePlugInLocalTime",
+        "parent": 7,
+        "index": 6,
+        "is_iterator": false,
+        "is_consumer": false
+      },
+      {
+        "pk": 67,
+        "title": "Output",
+        "identifier": "com.fxfactory.FxCore.FxCorePlugInOutputInfo",
+        "parent": 7,
+        "index": 7,
+        "is_iterator": false,
+        "is_consumer": false
+      },
+      {
+        "pk": 68,
+        "title": "Expression",
+        "identifier": "com.fxfactory.FxCore.FxCorePlugInMathExpression",
+        "parent": 7,
+        "index": 8,
+        "is_iterator": false,
+        "is_consumer": false
+      },
+      {
+        "pk": 72,
+        "title": "Expression",
+        "identifier": "com.fxfactory.FxCore.FxCorePlugInMathExpression",
+        "parent": 7,
+        "index": 9,
+        "is_iterator": false,
+        "is_consumer": false
+      },
+      {
+        "pk": 74,
+        "title": "Split",
+        "identifier": "com.fxfactory.FxCore.FxCorePlugInSplitter",
+        "parent": 7,
+        "index": 10,
+        "is_iterator": false,
+        "is_consumer": false
+      },
+      {
+        "pk": 80,
+        "title": "Threshold",
+        "identifier": "com.fxfactory.FxCore.FxCorePlugInNIThresholdWithColors",
+        "parent": 7,
+        "index": 11,
+        "is_iterator": false,
+        "is_consumer": false
+      },
+      {
+        "pk": 82,
+        "title": "Noise (Perlin)",
+        "identifier": "com.fxfactory.FxCore.FxCorePlugInNIPerlinNoise",
+        "parent": 7,
+        "index": 12,
+        "is_iterator": false,
+        "is_consumer": false
+      },
+      {
+        "pk": 83,
+        "title": "Expression",
+        "identifier": "com.fxfactory.FxCore.FxCorePlugInMathExpression",
+        "parent": 7,
+        "index": 13,
+        "is_iterator": false,
+        "is_consumer": false
+      },
+      {
+        "pk": 84,
+        "title": "Expression",
+        "identifier": "com.fxfactory.FxCore.FxCorePlugInMathExpression",
+        "parent": 7,
+        "index": 14,
+        "is_iterator": false,
+        "is_consumer": false
+      },
+      {
+        "pk": 85,
+        "title": "Transform",
+        "identifier": "com.fxfactory.FxCore.FxCorePlugInNIAffineTransformUnit",
+        "parent": 7,
+        "index": 15,
+        "is_iterator": false,
+        "is_consumer": false
+      },
+      {
+        "pk": 86,
+        "title": "Wave",
+        "identifier": "com.fxfactory.FxCore.FxCorePlugInWaveGenerator",
+        "parent": 7,
+        "index": 16,
+        "is_iterator": false,
+        "is_consumer": false
+      },
+      {
+        "pk": 89,
+        "title": "Wave",
+        "identifier": "com.fxfactory.FxCore.FxCorePlugInWaveGenerator",
+        "parent": 7,
+        "index": 17,
+        "is_iterator": false,
+        "is_consumer": false
+      },
+      {
+        "pk": 51,
+        "title": "Sprite",
+        "identifier": "com.fxfactory.FxCore.FxCorePlugIn3DSprite",
+        "parent": 49,
+        "index": 0,
+        "is_iterator": false,
+        "is_consumer": true
+      },
+      {
+        "pk": 60,
+        "title": "Random",
+        "identifier": "com.fxfactory.FxCore.FxCorePlugInRandomValueGenerator",
+        "parent": 49,
+        "index": 1,
+        "is_iterator": false,
+        "is_consumer": false
+      },
+      {
+        "pk": 47,
+        "title": "Iterator Variables",
+        "identifier": "com.fxfactory.FxCore.FxCorePlugInIteratorVariables",
+        "parent": 49,
+        "index": 2,
+        "is_iterator": false,
+        "is_consumer": false
+      },
+      {
+        "pk": 50,
+        "title": "Time",
+        "identifier": "com.fxfactory.FxCore.FxCorePlugInLocalTime",
+        "parent": 49,
+        "index": 3,
+        "is_iterator": false,
+        "is_consumer": false
+      },
+      {
+        "pk": 45,
+        "title": "Index \u2192 Value",
+        "identifier": "com.fxfactory.FxCore.FxCorePlugInArrayValueAtIndex",
+        "parent": 49,
+        "index": 4,
+        "is_iterator": false,
+        "is_consumer": false
+      },
+      {
+        "pk": 55,
+        "title": "Icon",
+        "identifier": "com.fxfactory.FxCore.FinderIconPlugIn",
+        "parent": 49,
+        "index": 5,
+        "is_iterator": false,
+        "is_consumer": false
+      },
+      {
+        "pk": 48,
+        "title": "Count",
+        "identifier": "com.fxfactory.FxCore.FxCorePlugInValuesCount",
+        "parent": 49,
+        "index": 6,
+        "is_iterator": false,
+        "is_consumer": false
+      },
+      {
+        "pk": 58,
+        "title": "Split",
+        "identifier": "com.fxfactory.FxCore.FxCorePlugInSplitter",
+        "parent": 49,
+        "index": 7,
+        "is_iterator": false,
+        "is_consumer": false
+      },
+      {
+        "pk": 57,
+        "title": "Expression",
+        "identifier": "com.fxfactory.FxCore.FxCorePlugInMathExpression",
+        "parent": 49,
+        "index": 8,
+        "is_iterator": false,
+        "is_consumer": false
+      },
+      {
+        "pk": 53,
+        "title": "Output",
+        "identifier": "com.fxfactory.FxCore.FxCorePlugInOutputInfo",
+        "parent": 49,
+        "index": 9,
+        "is_iterator": false,
+        "is_consumer": false
+      },
+      {
+        "pk": 54,
+        "title": "Expression",
+        "identifier": "com.fxfactory.FxCore.FxCorePlugInMathExpression",
+        "parent": 49,
+        "index": 10,
+        "is_iterator": false,
+        "is_consumer": false
+      },
+      {
+        "pk": 52,
+        "title": "Expression",
+        "identifier": "com.fxfactory.FxCore.FxCorePlugInMathExpression",
+        "parent": 49,
+        "index": 11,
+        "is_iterator": false,
+        "is_consumer": false
+      },
+      {
+        "pk": 59,
+        "title": "Gaussian Blur",
+        "identifier": "com.fxfactory.FxCore.FxCorePlugInCIGaussianBlur",
+        "parent": 49,
+        "index": 12,
+        "is_iterator": false,
+        "is_consumer": false
+      },
+      {
+        "pk": 46,
+        "title": "Expression",
+        "identifier": "com.fxfactory.FxCore.FxCorePlugInMathExpression",
+        "parent": 49,
+        "index": 13,
+        "is_iterator": false,
+        "is_consumer": false
+      },
+      {
+        "pk": 61,
+        "title": "Exposure",
+        "identifier": "com.fxfactory.FxCore.FxCorePlugInCIExposureAdjust",
+        "parent": 49,
+        "index": 14,
+        "is_iterator": false,
+        "is_consumer": false
+      },
+      {
+        "pk": 44,
+        "title": "Expression",
+        "identifier": "com.fxfactory.FxCore.FxCorePlugInMathExpression",
+        "parent": 49,
+        "index": 15,
+        "is_iterator": false,
+        "is_consumer": false
+      },
+      {
+        "pk": 69,
+        "title": "Expression",
+        "identifier": "com.fxfactory.FxCore.FxCorePlugInMathExpression",
+        "parent": 49,
+        "index": 16,
+        "is_iterator": false,
+        "is_consumer": false
+      },
+      {
+        "pk": 75,
+        "title": "Color Over Source",
+        "identifier": "com.fxfactory.FxCore.FxCorePlugInNIColorOver",
+        "parent": 49,
+        "index": 17,
+        "is_iterator": false,
+        "is_consumer": false
+      },
+      {
+        "pk": 76,
+        "title": "Alpha",
+        "identifier": "com.fxfactory.FxCore.ColorChangeAlphaPlugIn",
+        "parent": 49,
+        "index": 18,
+        "is_iterator": false,
+        "is_consumer": false
+      },
+      {
+        "pk": 77,
+        "title": "Transform",
+        "identifier": "com.fxfactory.FxCore.FxCorePlugInNIAffineTransformUnit",
+        "parent": 49,
+        "index": 19,
+        "is_iterator": false,
+        "is_consumer": false
+      },
+      {
+        "pk": 78,
+        "title": "Expression",
+        "identifier": "com.fxfactory.FxCore.FxCorePlugInMathExpression",
+        "parent": 49,
+        "index": 20,
+        "is_iterator": false,
+        "is_consumer": false
+      },
+      {
+        "pk": 87,
+        "title": "Motion Blur",
+        "identifier": "com.fxfactory.FxCore.FxCorePlugInCIMotionBlur",
+        "parent": 49,
+        "index": 21,
+        "is_iterator": false,
+        "is_consumer": false
+      },
+      {
+        "pk": 88,
+        "title": "Expression",
+        "identifier": "com.fxfactory.FxCore.FxCorePlugInMathExpression",
+        "parent": 49,
+        "index": 22,
+        "is_iterator": false,
+        "is_consumer": false
+      },
+      {
+        "pk": 49,
+        "title": "Container",
+        "identifier": "com.fxfactory.FxCore.FxCorePlugInIterator",
+        "parent": 56,
+        "index": 0,
+        "is_iterator": true,
+        "is_consumer": true
+      },
+      {
+        "pk": 71,
+        "title": "Split",
+        "identifier": "com.fxfactory.FxCore.FxCorePlugInSplitter",
+        "parent": 56,
+        "index": 1,
+        "is_iterator": false,
+        "is_consumer": false
+      }
+    ],
+    "connections": [
+      {
+        "pk": 89,
+        "from_node": "Iterator Variables",
+        "from_output": "Current Index",
+        "to_node": "Random",
+        "to_input": "Time"
+      },
+      {
+        "pk": 91,
+        "from_node": "Output",
+        "from_output": "Width",
+        "to_node": "Expression",
+        "to_input": "W"
+      },
+      {
+        "pk": 92,
+        "from_node": "Iterator Variables",
+        "from_output": "Current Index",
+        "to_node": "Index \u2192 Value",
+        "to_input": "Index 0"
+      },
+      {
+        "pk": 93,
+        "from_node": "Random",
+        "from_output": "",
+        "to_node": "Expression",
+        "to_input": "Y"
+      },
+      {
+        "pk": 94,
+        "from_node": "Split",
+        "from_output": "",
+        "to_node": "Index \u2192 Value",
+        "to_input": "Array"
+      },
+      {
+        "pk": 95,
+        "from_node": "Split",
+        "from_output": "",
+        "to_node": "Count",
+        "to_input": "Collection"
+      },
+      {
+        "pk": 96,
+        "from_node": "Expression",
+        "from_output": "=",
+        "to_node": "Sprite",
+        "to_input": "Position X"
+      },
+      {
+        "pk": 98,
+        "from_node": "Expression",
+        "from_output": "=",
+        "to_node": "Sprite",
+        "to_input": "Position Z"
+      },
+      {
+        "pk": 99,
+        "from_node": "Random",
+        "from_output": "",
+        "to_node": "Expression",
+        "to_input": "Speed"
+      },
+      {
+        "pk": 101,
+        "from_node": "Expression",
+        "from_output": "=",
+        "to_node": "Exposure",
+        "to_input": "EV"
+      },
+      {
+        "pk": 102,
+        "from_node": "Index \u2192 Value",
+        "from_output": "",
+        "to_node": "Icon",
+        "to_input": "URL"
+      },
+      {
+        "pk": 103,
+        "from_node": "Expression",
+        "from_output": "=",
+        "to_node": "Expression",
+        "to_input": "Z"
+      },
+      {
+        "pk": 104,
+        "from_node": "Exposure",
+        "from_output": "Image",
+        "to_node": "Gaussian Blur",
+        "to_input": "Image"
+      },
+      {
+        "pk": 105,
+        "from_node": "Time",
+        "from_output": "Time",
+        "to_node": "Expression",
+        "to_input": "Time"
+      },
+      {
+        "pk": 106,
+        "from_node": "Expression",
+        "from_output": "=",
+        "to_node": "Gaussian Blur",
+        "to_input": "Radius"
+      },
+      {
+        "pk": 107,
+        "from_node": "Expression",
+        "from_output": "=",
+        "to_node": "Expression",
+        "to_input": "Z"
+      },
+      {
+        "pk": 108,
+        "from_node": "Expression",
+        "from_output": "=",
+        "to_node": "Sprite",
+        "to_input": "Position Y"
+      },
+      {
+        "pk": 109,
+        "from_node": "Count",
+        "from_output": "Count",
+        "to_node": "Icon",
+        "to_input": "Cache Size"
+      },
+      {
+        "pk": 110,
+        "from_node": "Output",
+        "from_output": "Height",
+        "to_node": "Expression",
+        "to_input": "H"
+      },
+      {
+        "pk": 111,
+        "from_node": "Iterator Variables",
+        "from_output": "Progress",
+        "to_node": "Expression",
+        "to_input": "Z"
+      },
+      {
+        "pk": 112,
+        "from_node": "Random",
+        "from_output": "",
+        "to_node": "Expression",
+        "to_input": "X"
+      },
+      {
+        "pk": 113,
+        "from_node": "Wave",
+        "from_output": "Value",
+        "to_node": "Transformation",
+        "to_input": "Rotation Y"
+      },
+      {
+        "pk": 114,
+        "from_node": "Wave",
+        "from_output": "Value",
+        "to_node": "Transformation",
+        "to_input": "Rotation X"
+      },
+      {
+        "pk": 117,
+        "from_node": "Output",
+        "from_output": "Diagonal",
+        "to_node": "Expression",
+        "to_input": "Diagonal"
+      },
+      {
+        "pk": 118,
+        "from_node": "Expression",
+        "from_output": "=",
+        "to_node": "Sunbeams",
+        "to_input": "Sun Radius"
+      },
+      {
+        "pk": 119,
+        "from_node": "Output",
+        "from_output": "Diagonal",
+        "to_node": "Expression",
+        "to_input": "Diagonal"
+      },
+      {
+        "pk": 120,
+        "from_node": "Expression",
+        "from_output": "=",
+        "to_node": "Icon",
+        "to_input": "Size"
+      },
+      {
+        "pk": 123,
+        "from_node": "Scan",
+        "from_output": "URLs",
+        "to_node": "Transformation",
+        "to_input": "Array"
+      },
+      {
+        "pk": 124,
+        "from_node": "Split",
+        "from_output": "",
+        "to_node": "Container",
+        "to_input": "Array"
+      },
+      {
+        "pk": 126,
+        "from_node": "Time",
+        "from_output": "Time",
+        "to_node": "Expression",
+        "to_input": "Time"
+      },
+      {
+        "pk": 128,
+        "from_node": "Split",
+        "from_output": "",
+        "to_node": "Sunbeams",
+        "to_input": "Color"
+      },
+      {
+        "pk": 131,
+        "from_node": "Alpha",
+        "from_output": "Color",
+        "to_node": "Color Over Source",
+        "to_input": "Color"
+      },
+      {
+        "pk": 137,
+        "from_node": "Color Over Source",
+        "from_output": "Image",
+        "to_node": "Exposure",
+        "to_input": "Image"
+      },
+      {
+        "pk": 138,
+        "from_node": "Transform",
+        "from_output": "Image",
+        "to_node": "Color Over Source",
+        "to_input": "Top"
+      },
+      {
+        "pk": 139,
+        "from_node": "Icon",
+        "from_output": "Image",
+        "to_node": "Transform",
+        "to_input": "Image"
+      },
+      {
+        "pk": 140,
+        "from_node": "Time",
+        "from_output": "Time",
+        "to_node": "Expression",
+        "to_input": "Time"
+      },
+      {
+        "pk": 141,
+        "from_node": "Expression",
+        "from_output": "=",
+        "to_node": "Transform",
+        "to_input": "Angle"
+      },
+      {
+        "pk": 142,
+        "from_node": "Random",
+        "from_output": "",
+        "to_node": "Expression",
+        "to_input": "A"
+      },
+      {
+        "pk": 143,
+        "from_node": "Split",
+        "from_output": "",
+        "to_node": "Transformation",
+        "to_input": "Blend Color"
+      },
+      {
+        "pk": 147,
+        "from_node": "Noise (Perlin)",
+        "from_output": "Image",
+        "to_node": "Threshold",
+        "to_input": "Image"
+      },
+      {
+        "pk": 149,
+        "from_node": "Time",
+        "from_output": "Time",
+        "to_node": "Expression",
+        "to_input": "Time"
+      },
+      {
+        "pk": 150,
+        "from_node": "Expression",
+        "from_output": "=",
+        "to_node": "Noise (Perlin)",
+        "to_input": "Seed"
+      },
+      {
+        "pk": 151,
+        "from_node": "Output",
+        "from_output": "Diagonal",
+        "to_node": "Expression",
+        "to_input": "Diagonal"
+      },
+      {
+        "pk": 152,
+        "from_node": "Expression",
+        "from_output": "=",
+        "to_node": "Sunbeams",
+        "to_input": "Center"
+      },
+      {
+        "pk": 153,
+        "from_node": "Sunbeams",
+        "from_output": "Image",
+        "to_node": "Transform",
+        "to_input": "Image"
+      },
+      {
+        "pk": 154,
+        "from_node": "Expression",
+        "from_output": "=",
+        "to_node": "Transform",
+        "to_input": "Origin"
+      },
+      {
+        "pk": 155,
+        "from_node": "Expression",
+        "from_output": "=",
+        "to_node": "Transform",
+        "to_input": "Angle"
+      },
+      {
+        "pk": 157,
+        "from_node": "Wave",
+        "from_output": "Value",
+        "to_node": "Sunbeams",
+        "to_input": "Striation Strength"
+      },
+      {
+        "pk": 159,
+        "from_node": "Random",
+        "from_output": "",
+        "to_node": "Expression",
+        "to_input": "Speed"
+      },
+      {
+        "pk": 160,
+        "from_node": "Expression",
+        "from_output": "=",
+        "to_node": "Motion Blur",
+        "to_input": "Radius"
+      },
+      {
+        "pk": 161,
+        "from_node": "Motion Blur",
+        "from_output": "Image",
+        "to_node": "Sprite",
+        "to_input": "Image"
+      },
+      {
+        "pk": 162,
+        "from_node": "Gaussian Blur",
+        "from_output": "Image",
+        "to_node": "Motion Blur",
+        "to_input": "Image"
+      },
+      {
+        "pk": 163,
+        "from_node": "Output",
+        "from_output": "Diagonal",
+        "to_node": "Expression",
+        "to_input": "Diagonal"
+      },
+      {
+        "pk": 164,
+        "from_node": "Transform",
+        "from_output": "Image",
+        "to_node": "2D",
+        "to_input": "Image"
+      },
+      {
+        "pk": 165,
+        "from_node": "Threshold",
+        "from_output": "Image",
+        "to_node": "2D",
+        "to_input": "Image 2"
+      },
+      {
+        "pk": 166,
+        "from_node": "Split",
+        "from_output": "",
+        "to_node": "Container",
+        "to_input": "Iterations"
+      },
+      {
+        "pk": 167,
+        "from_node": "Wave",
+        "from_output": "Value",
+        "to_node": "Transformation",
+        "to_input": "Rotation Z"
+      }
+    ],
+    "decoded_values": [
+      {
+        "source": "nodeKeyValue",
+        "node": "Expression",
+        "category": "expression",
+        "key": "candidateString",
+        "value": "lerp(0, 10, -2 * z)"
+      },
+      {
+        "source": "nodeKeyValue",
+        "node": "Expression",
+        "category": "expression",
+        "key": "expressionString",
+        "value": "lerp(0, -1, -2 * z)"
+      },
+      {
+        "source": "nodeKeyValue",
+        "node": "Expression",
+        "category": "expression",
+        "key": "candidateString",
+        "value": "lerp(-1.2, 1.2, y)"
+      },
+      {
+        "source": "nodeKeyValue",
+        "node": "Expression",
+        "category": "expression",
+        "key": "expressionString",
+        "value": "-w/h + abs(fract(x + time * speed * 0.2)) * 2 * w/h"
+      },
+      {
+        "source": "nodeKeyValue",
+        "node": "Expression",
+        "category": "expression",
+        "key": "candidateString",
+        "value": "lerp(-0.5, 0.5, z)"
+      },
+      {
+        "source": "nodeKeyValue",
+        "node": "Expression",
+        "category": "expression",
+        "key": "candidateString",
+        "value": "lerp(0, -1, -2 * z)"
+      },
+      {
+        "source": "nodeKeyValue",
+        "node": "Expression",
+        "category": "expression",
+        "key": "expressionString",
+        "value": "lerp(-0.5, 0.5, z)"
+      },
+      {
+        "source": "nodeKeyValue",
+        "node": "Expression",
+        "category": "expression",
+        "key": "expressionString",
+        "value": "lerp(-1.2, 1.2, y)"
+      },
+      {
+        "source": "nodeKeyValue",
+        "node": "Expression",
+        "category": "expression",
+        "key": "candidateString",
+        "value": "-w/h + abs(fract(x + time * speed * 0.2)) * 2 * w/h"
+      },
+      {
+        "source": "nodeKeyValue",
+        "node": "Expression",
+        "category": "expression",
+        "key": "expressionString",
+        "value": "lerp(0, 10, -2 * z)"
+      },
+      {
+        "source": "nodeKeyValue",
+        "node": "Expression",
+        "category": "expression",
+        "key": "expressionString",
+        "value": "diagonal"
+      },
+      {
+        "source": "nodeKeyValue",
+        "node": "Expression",
+        "category": "expression",
+        "key": "candidateString",
+        "value": "diagonal"
+      },
+      {
+        "source": "nodeKeyValue",
+        "node": "Expression",
+        "category": "expression",
+        "key": "candidateString",
+        "value": "diagonal * 0.1"
+      },
+      {
+        "source": "nodeKeyValue",
+        "node": "Expression",
+        "category": "expression",
+        "key": "expressionString",
+        "value": "diagonal * 0.1"
+      },
+      {
+        "source": "nodeKeyValue",
+        "node": "Expression",
+        "category": "expression",
+        "key": "expressionString",
+        "value": "time * 0.5"
+      },
+      {
+        "source": "nodeKeyValue",
+        "node": "Expression",
+        "category": "expression",
+        "key": "candidateString",
+        "value": "time * 0.5"
+      },
+      {
+        "source": "nodeKeyValue",
+        "node": "Expression",
+        "category": "expression",
+        "key": "expressionString",
+        "value": "(max(0.5, a) - 0.5) * 360 * time"
+      },
+      {
+        "source": "nodeKeyValue",
+        "node": "Expression",
+        "category": "expression",
+        "key": "candidateString",
+        "value": "(max(0.5, a) - 0.5) * 360 * time"
+      },
+      {
+        "source": "nodeKeyValue",
+        "node": "Expression",
+        "category": "expression",
+        "key": "expressionString",
+        "value": "time * 0.05"
+      },
+      {
+        "source": "nodeKeyValue",
+        "node": "Expression",
+        "category": "expression",
+        "key": "candidateString",
+        "value": "time * 0.05"
+      },
+      {
+        "source": "nodeKeyValue",
+        "node": "Expression",
+        "category": "expression",
+        "key": "candidateString",
+        "value": "diagonal * -0.1"
+      },
+      {
+        "source": "nodeKeyValue",
+        "node": "Expression",
+        "category": "expression",
+        "key": "expressionString",
+        "value": "diagonal * -0.1"
+      },
+      {
+        "source": "nodeKeyValue",
+        "node": "Expression",
+        "category": "expression",
+        "key": "expressionString",
+        "value": "speed * diagonal * 0.0005"
+      },
+      {
+        "source": "nodeKeyValue",
+        "node": "Expression",
+        "category": "expression",
+        "key": "candidateString",
+        "value": "speed * diagonal * 0.0005"
+      },
+      {
+        "source": "input",
+        "node": "Scan",
+        "category": "url",
+        "key": "inputURL",
+        "value": "file:///Applications/"
+      }
+    ],
+    "host_safety_notes": []
+  },
+  {
+    "name": "Baseline Anchored Text.fxcore",
+    "path": "/Users/dalebradshaw/Documents/fxcore/sample_plugins/Baseline Anchored Text.fxcore",
+    "bytes": 143360,
+    "node_count": 8,
+    "connection_count": 8,
+    "role": "anchored text layout",
+    "root_identifier": "com.fxfactory.FxCore.FxCorePlugInCIContainer",
+    "identifier_counts": {
+      "com.fxfactory.FxCore.FxCorePlugInCIContainer": 1,
+      "com.fxfactory.FxCore.FxCorePlugInCIBillboard": 1,
+      "com.fxfactory.FxCore.ImageWithStringPlugIn": 1,
+      "com.fxfactory.FxCore.FxCorePlugInCIRoundedRectangleGenerator": 1,
+      "com.fxfactory.FxCore.FxCorePlugInLocalTime": 1,
+      "com.fxfactory.FxCore.FxCorePlugInSplitter": 1,
+      "com.fxfactory.FxCore.FxCorePlugInNISmoothCircle": 1,
+      "com.fxfactory.FxCore.TimeStringPlugIn": 1
+    },
+    "notable_identifiers": [],
+    "nodes": [
+      {
+        "pk": 2,
+        "title": "Root",
+        "identifier": "com.fxfactory.FxCore.FxCorePlugInCIContainer",
+        "parent": null,
+        "index": 0,
+        "is_iterator": false,
+        "is_consumer": false
+      },
+      {
+        "pk": 3,
+        "title": "2D",
+        "identifier": "com.fxfactory.FxCore.FxCorePlugInCIBillboard",
+        "parent": 2,
+        "index": 0,
+        "is_iterator": false,
+        "is_consumer": true
+      },
+      {
+        "pk": 4,
+        "title": "Image With String",
+        "identifier": "com.fxfactory.FxCore.ImageWithStringPlugIn",
+        "parent": 2,
+        "index": 1,
+        "is_iterator": false,
+        "is_consumer": false
+      },
+      {
+        "pk": 5,
+        "title": "Rounded Rectangle (Fill)",
+        "identifier": "com.fxfactory.FxCore.FxCorePlugInCIRoundedRectangleGenerator",
+        "parent": 2,
+        "index": 2,
+        "is_iterator": false,
+        "is_consumer": false
+      },
+      {
+        "pk": 6,
+        "title": "Time",
+        "identifier": "com.fxfactory.FxCore.FxCorePlugInLocalTime",
+        "parent": 2,
+        "index": 3,
+        "is_iterator": false,
+        "is_consumer": false
+      },
+      {
+        "pk": 8,
+        "title": "Split",
+        "identifier": "com.fxfactory.FxCore.FxCorePlugInSplitter",
+        "parent": 2,
+        "index": 4,
+        "is_iterator": false,
+        "is_consumer": false
+      },
+      {
+        "pk": 7,
+        "title": "Circle",
+        "identifier": "com.fxfactory.FxCore.FxCorePlugInNISmoothCircle",
+        "parent": 2,
+        "index": 5,
+        "is_iterator": false,
+        "is_consumer": false
+      },
+      {
+        "pk": 10,
+        "title": "Time String",
+        "identifier": "com.fxfactory.FxCore.TimeStringPlugIn",
+        "parent": 2,
+        "index": 6,
+        "is_iterator": false,
+        "is_consumer": false
+      }
+    ],
+    "connections": [
+      {
+        "pk": 4,
+        "from_node": "Rounded Rectangle (Fill)",
+        "from_output": "Image",
+        "to_node": "2D",
+        "to_input": "Image"
+      },
+      {
+        "pk": 5,
+        "from_node": "Image With String",
+        "from_output": "Image",
+        "to_node": "2D",
+        "to_input": "Image 2"
+      },
+      {
+        "pk": 9,
+        "from_node": "Circle",
+        "from_output": "Image",
+        "to_node": "2D",
+        "to_input": "Image 3"
+      },
+      {
+        "pk": 11,
+        "from_node": "Image With String",
+        "from_output": "Extent",
+        "to_node": "Rounded Rectangle (Fill)",
+        "to_input": "Extent"
+      },
+      {
+        "pk": 16,
+        "from_node": "Split",
+        "from_output": "",
+        "to_node": "Circle",
+        "to_input": "Center"
+      },
+      {
+        "pk": 17,
+        "from_node": "Split",
+        "from_output": "",
+        "to_node": "Image With String",
+        "to_input": "Baseline"
+      },
+      {
+        "pk": 18,
+        "from_node": "Time",
+        "from_output": "Time",
+        "to_node": "Time String",
+        "to_input": "Time"
+      },
+      {
+        "pk": 19,
+        "from_node": "Time String",
+        "from_output": "String",
+        "to_node": "Image With String",
+        "to_input": "String"
+      }
+    ],
+    "decoded_values": [
+      {
+        "source": "input",
+        "node": "Image With String",
+        "category": "text",
+        "key": "inputString",
+        "value": "1 Infinite Loop"
+      }
+    ],
+    "host_safety_notes": []
+  },
+  {
+    "name": "Composite Stack Accumulator.fxcore",
+    "path": "/Users/dalebradshaw/Documents/fxcore/sample_plugins/Composite Stack Accumulator.fxcore",
+    "bytes": 135168,
+    "node_count": 15,
+    "connection_count": 12,
+    "role": "iterator accumulation",
+    "root_identifier": "com.fxfactory.FxCore.FxCorePlugInCIContainer",
+    "identifier_counts": {
+      "com.fxfactory.FxCore.FxCorePlugInCIContainer": 1,
+      "com.fxfactory.FxCore.FxCorePlugInIterator": 2,
+      "com.fxfactory.FxCore.AVCaptureDevicePlugIn": 1,
+      "com.fxfactory.FxCore.FxCorePlugInImageFitInsideDestination": 1,
+      "com.fxfactory.FxCore.FxCorePlugInCIBillboard": 1,
+      "com.fxfactory.FxCore.FxCorePlugInCICompositeOperation": 1,
+      "com.fxfactory.FxCore.FxCorePlugInSplitter": 1,
+      "com.fxfactory.FxCore.FxCorePlugInRandomValueGenerator": 1,
+      "com.fxfactory.FxCore.FxCorePlugInOutputInfo": 1,
+      "com.fxfactory.FxCore.FxCorePlugInMathExpression": 2,
+      "com.fxfactory.FxCore.FxCorePlugInNICenterImageTransform": 1,
+      "com.fxfactory.FxCore.FxCorePlugInIteratorVariables": 1,
+      "com.fxfactory.FxCore.FxCorePlugInCreateArray": 1
+    },
+    "notable_identifiers": [
+      "FxCorePlugInIterator",
+      "AVCaptureDevicePlugIn",
+      "FxCorePlugInIteratorVariables"
+    ],
+    "nodes": [
+      {
+        "pk": 1,
+        "title": "Root",
+        "identifier": "com.fxfactory.FxCore.FxCorePlugInCIContainer",
+        "parent": null,
+        "index": 0,
+        "is_iterator": false,
+        "is_consumer": false
+      },
+      {
+        "pk": 5,
+        "title": "Container",
+        "identifier": "com.fxfactory.FxCore.FxCorePlugInIterator",
+        "parent": null,
+        "index": 2,
+        "is_iterator": false,
+        "is_consumer": false
+      },
+      {
+        "pk": 3,
+        "title": "\udbc0\udf4a",
+        "identifier": "com.fxfactory.FxCore.AVCaptureDevicePlugIn",
+        "parent": 1,
+        "index": 0,
+        "is_iterator": false,
+        "is_consumer": false
+      },
+      {
+        "pk": 4,
+        "title": "Resize",
+        "identifier": "com.fxfactory.FxCore.FxCorePlugInImageFitInsideDestination",
+        "parent": 1,
+        "index": 1,
+        "is_iterator": false,
+        "is_consumer": false
+      },
+      {
+        "pk": 7,
+        "title": "Container",
+        "identifier": "com.fxfactory.FxCore.FxCorePlugInIterator",
+        "parent": 1,
+        "index": 2,
+        "is_iterator": true,
+        "is_consumer": false
+      },
+      {
+        "pk": 8,
+        "title": "2D",
+        "identifier": "com.fxfactory.FxCore.FxCorePlugInCIBillboard",
+        "parent": 1,
+        "index": 3,
+        "is_iterator": false,
+        "is_consumer": true
+      },
+      {
+        "pk": 6,
+        "title": "Stack (check Options out)",
+        "identifier": "com.fxfactory.FxCore.FxCorePlugInCICompositeOperation",
+        "parent": 7,
+        "index": 0,
+        "is_iterator": false,
+        "is_consumer": false
+      },
+      {
+        "pk": 2,
+        "title": "Splitter",
+        "identifier": "com.fxfactory.FxCore.FxCorePlugInSplitter",
+        "parent": 7,
+        "index": 1,
+        "is_iterator": false,
+        "is_consumer": false
+      },
+      {
+        "pk": 10,
+        "title": "Random",
+        "identifier": "com.fxfactory.FxCore.FxCorePlugInRandomValueGenerator",
+        "parent": 7,
+        "index": 2,
+        "is_iterator": false,
+        "is_consumer": false
+      },
+      {
+        "pk": 9,
+        "title": "Destination",
+        "identifier": "com.fxfactory.FxCore.FxCorePlugInOutputInfo",
+        "parent": 7,
+        "index": 3,
+        "is_iterator": false,
+        "is_consumer": false
+      },
+      {
+        "pk": 12,
+        "title": "Expression",
+        "identifier": "com.fxfactory.FxCore.FxCorePlugInMathExpression",
+        "parent": 7,
+        "index": 4,
+        "is_iterator": false,
+        "is_consumer": false
+      },
+      {
+        "pk": 11,
+        "title": "Expression",
+        "identifier": "com.fxfactory.FxCore.FxCorePlugInMathExpression",
+        "parent": 7,
+        "index": 5,
+        "is_iterator": false,
+        "is_consumer": false
+      },
+      {
+        "pk": 13,
+        "title": "Center",
+        "identifier": "com.fxfactory.FxCore.FxCorePlugInNICenterImageTransform",
+        "parent": 7,
+        "index": 6,
+        "is_iterator": false,
+        "is_consumer": false
+      },
+      {
+        "pk": 14,
+        "title": "Iterator",
+        "identifier": "com.fxfactory.FxCore.FxCorePlugInIteratorVariables",
+        "parent": 7,
+        "index": 7,
+        "is_iterator": false,
+        "is_consumer": false
+      },
+      {
+        "pk": 15,
+        "title": "Create Array (This too can work as an Accumulator... check Options)",
+        "identifier": "com.fxfactory.FxCore.FxCorePlugInCreateArray",
+        "parent": 7,
+        "index": 8,
+        "is_iterator": false,
+        "is_consumer": false
+      }
+    ],
+    "connections": [
+      {
+        "pk": 1,
+        "from_node": "\udbc0\udf4a",
+        "from_output": "",
+        "to_node": "Resize",
+        "to_input": "Image"
+      },
+      {
+        "pk": 2,
+        "from_node": "Resize",
+        "from_output": "",
+        "to_node": "Container",
+        "to_input": "Image"
+      },
+      {
+        "pk": 3,
+        "from_node": "Container",
+        "from_output": "",
+        "to_node": "2D",
+        "to_input": "Image"
+      },
+      {
+        "pk": 4,
+        "from_node": "Random",
+        "from_output": "",
+        "to_node": "Expression",
+        "to_input": "Random Delta Y"
+      },
+      {
+        "pk": 5,
+        "from_node": "Random",
+        "from_output": "",
+        "to_node": "Expression",
+        "to_input": "Random Delta X"
+      },
+      {
+        "pk": 6,
+        "from_node": "Destination",
+        "from_output": "Center Y",
+        "to_node": "Expression",
+        "to_input": "Center Y"
+      },
+      {
+        "pk": 7,
+        "from_node": "Expression",
+        "from_output": "=",
+        "to_node": "Center",
+        "to_input": "Y"
+      },
+      {
+        "pk": 8,
+        "from_node": "Expression",
+        "from_output": "=",
+        "to_node": "Center",
+        "to_input": "X"
+      },
+      {
+        "pk": 9,
+        "from_node": "Center",
+        "from_output": "",
+        "to_node": "Stack (check Options out)",
+        "to_input": "Image"
+      },
+      {
+        "pk": 10,
+        "from_node": "Splitter",
+        "from_output": "",
+        "to_node": "Center",
+        "to_input": ""
+      },
+      {
+        "pk": 11,
+        "from_node": "Destination",
+        "from_output": "Center X",
+        "to_node": "Expression",
+        "to_input": "Center X"
+      },
+      {
+        "pk": 12,
+        "from_node": "Iterator",
+        "from_output": "Index",
+        "to_node": "Random",
+        "to_input": "Time"
+      }
+    ],
+    "decoded_values": [
+      {
+        "source": "nodeKeyValue",
+        "node": "Expression",
+        "category": "expression",
+        "key": "expressionString",
+        "value": "centerX + randomDeltaX"
+      },
+      {
+        "source": "nodeKeyValue",
+        "node": "Expression",
+        "category": "expression",
+        "key": "candidateString",
+        "value": "centerX + randomDeltaX"
+      },
+      {
+        "source": "nodeKeyValue",
+        "node": "Expression",
+        "category": "expression",
+        "key": "expressionString",
+        "value": "centerY + randomDeltaY"
+      },
+      {
+        "source": "nodeKeyValue",
+        "node": "Expression",
+        "category": "expression",
+        "key": "candidateString",
+        "value": "centerY + randomDeltaY"
+      }
+    ],
+    "host_safety_notes": []
+  },
+  {
+    "name": "DepthAnything.fxcore",
+    "path": "/Users/dalebradshaw/Documents/fxcore/sample_plugins/DepthAnything.fxcore",
+    "bytes": 159744,
+    "node_count": 11,
+    "connection_count": 8,
+    "role": "CoreML depth mask",
+    "root_identifier": "com.fxfactory.FxCore.FxCorePlugInCIContainer",
+    "identifier_counts": {
+      "com.fxfactory.FxCore.FxCorePlugInCIContainer": 1,
+      "com.fxfactory.FxCore.FxCorePlugInMLModelImporter": 1,
+      "com.fxfactory.FxCore.AVCaptureDevicePlugIn": 1,
+      "com.fxfactory.FxCore.FxCorePlugInNotes": 3,
+      "com.fxfactory.FxCore.FxCorePlugInImageFitInsideDestination": 2,
+      "com.fxfactory.FxCore.FxCorePlugInCIBillboard": 1,
+      "com.fxfactory.FxCore.FxCorePlugInCIMaskedVariableBlur": 1,
+      "com.fxfactory.FxCore.FxCorePlugInCIColorInvert": 1
+    },
+    "notable_identifiers": [
+      "FxCorePlugInMLModelImporter",
+      "AVCaptureDevicePlugIn"
+    ],
+    "nodes": [
+      {
+        "pk": 2,
+        "title": "Root",
+        "identifier": "com.fxfactory.FxCore.FxCorePlugInCIContainer",
+        "parent": null,
+        "index": 0,
+        "is_iterator": false,
+        "is_consumer": false
+      },
+      {
+        "pk": 3,
+        "title": "DepthAnythingSmallF16",
+        "identifier": "com.fxfactory.FxCore.FxCorePlugInMLModelImporter",
+        "parent": 2,
+        "index": 0,
+        "is_iterator": false,
+        "is_consumer": false
+      },
+      {
+        "pk": 1,
+        "title": "Video",
+        "identifier": "com.fxfactory.FxCore.AVCaptureDevicePlugIn",
+        "parent": 2,
+        "index": 1,
+        "is_iterator": false,
+        "is_consumer": false
+      },
+      {
+        "pk": 5,
+        "title": "Notes",
+        "identifier": "com.fxfactory.FxCore.FxCorePlugInNotes",
+        "parent": 2,
+        "index": 2,
+        "is_iterator": false,
+        "is_consumer": false
+      },
+      {
+        "pk": 10,
+        "title": "Scale",
+        "identifier": "com.fxfactory.FxCore.FxCorePlugInImageFitInsideDestination",
+        "parent": 2,
+        "index": 3,
+        "is_iterator": false,
+        "is_consumer": false
+      },
+      {
+        "pk": 7,
+        "title": "Scale",
+        "identifier": "com.fxfactory.FxCore.FxCorePlugInImageFitInsideDestination",
+        "parent": 2,
+        "index": 4,
+        "is_iterator": false,
+        "is_consumer": false
+      },
+      {
+        "pk": 8,
+        "title": "2D",
+        "identifier": "com.fxfactory.FxCore.FxCorePlugInCIBillboard",
+        "parent": 2,
+        "index": 5,
+        "is_iterator": false,
+        "is_consumer": true
+      },
+      {
+        "pk": 9,
+        "title": "Variable Blur",
+        "identifier": "com.fxfactory.FxCore.FxCorePlugInCIMaskedVariableBlur",
+        "parent": 2,
+        "index": 6,
+        "is_iterator": false,
+        "is_consumer": false
+      },
+      {
+        "pk": 6,
+        "title": "Invert",
+        "identifier": "com.fxfactory.FxCore.FxCorePlugInCIColorInvert",
+        "parent": 2,
+        "index": 7,
+        "is_iterator": false,
+        "is_consumer": false
+      },
+      {
+        "pk": 11,
+        "title": "Notes",
+        "identifier": "com.fxfactory.FxCore.FxCorePlugInNotes",
+        "parent": 2,
+        "index": 8,
+        "is_iterator": false,
+        "is_consumer": false
+      },
+      {
+        "pk": 12,
+        "title": "Notes",
+        "identifier": "com.fxfactory.FxCore.FxCorePlugInNotes",
+        "parent": 2,
+        "index": 9,
+        "is_iterator": false,
+        "is_consumer": false
+      }
+    ],
+    "connections": [
+      {
+        "pk": 3,
+        "from_node": "Video",
+        "from_output": "Image",
+        "to_node": "DepthAnythingSmallF16",
+        "to_input": "Image"
+      },
+      {
+        "pk": 4,
+        "from_node": "DepthAnythingSmallF16",
+        "from_output": "Depth",
+        "to_node": "Scale",
+        "to_input": "Image"
+      },
+      {
+        "pk": 5,
+        "from_node": "Scale",
+        "from_output": "Image",
+        "to_node": "Variable Blur",
+        "to_input": "Image"
+      },
+      {
+        "pk": 6,
+        "from_node": "Invert",
+        "from_output": "Image",
+        "to_node": "Variable Blur",
+        "to_input": "Mask"
+      },
+      {
+        "pk": 7,
+        "from_node": "Scale",
+        "from_output": "Rectangle",
+        "to_node": "Scale",
+        "to_input": "Extent (Destination)"
+      },
+      {
+        "pk": 8,
+        "from_node": "Video",
+        "from_output": "Image",
+        "to_node": "Scale",
+        "to_input": "Image"
+      },
+      {
+        "pk": 9,
+        "from_node": "Scale",
+        "from_output": "Image",
+        "to_node": "Invert",
+        "to_input": "Image"
+      },
+      {
+        "pk": 10,
+        "from_node": "Variable Blur",
+        "from_output": "Image",
+        "to_node": "2D",
+        "to_input": "Image"
+      }
+    ],
+    "decoded_values": [
+      {
+        "source": "nodeKeyValue",
+        "node": "DepthAnythingSmallF16",
+        "category": "model",
+        "key": "modelPorts",
+        "value": "description"
+      },
+      {
+        "source": "nodeKeyValue",
+        "node": "DepthAnythingSmallF16",
+        "category": "model",
+        "key": "modelPorts",
+        "value": "image"
+      },
+      {
+        "source": "nodeKeyValue",
+        "node": "DepthAnythingSmallF16",
+        "category": "model",
+        "key": "modelPorts",
+        "value": "inputFeatureImage"
+      },
+      {
+        "source": "nodeKeyValue",
+        "node": "DepthAnythingSmallF16",
+        "category": "model",
+        "key": "modelPorts",
+        "value": "Image"
+      },
+      {
+        "source": "nodeKeyValue",
+        "node": "DepthAnythingSmallF16",
+        "category": "model",
+        "key": "modelPorts",
+        "value": "Image supports 518x396 images by default. This is a required input feature."
+      },
+      {
+        "source": "nodeKeyValue",
+        "node": "DepthAnythingSmallF16",
+        "category": "model",
+        "key": "modelPorts",
+        "value": "menuItems"
+      },
+      {
+        "source": "nodeKeyValue",
+        "node": "DepthAnythingSmallF16",
+        "category": "model",
+        "key": "modelPorts",
+        "value": "menuItemsRepresentedObjects"
+      },
+      {
+        "source": "nodeKeyValue",
+        "node": "DepthAnythingSmallF16",
+        "category": "model",
+        "key": "modelPorts",
+        "value": "Default"
+      },
+      {
+        "source": "nodeKeyValue",
+        "node": "DepthAnythingSmallF16",
+        "category": "model",
+        "key": "modelPorts",
+        "value": "Lanczos"
+      },
+      {
+        "source": "nodeKeyValue",
+        "node": "DepthAnythingSmallF16",
+        "category": "model",
+        "key": "modelPorts",
+        "value": "Bicubic"
+      },
+      {
+        "source": "nodeKeyValue",
+        "node": "DepthAnythingSmallF16",
+        "category": "model",
+        "key": "modelPorts",
+        "value": "inputFeatureImageResamplingFilter"
+      },
+      {
+        "source": "nodeKeyValue",
+        "node": "DepthAnythingSmallF16",
+        "category": "model",
+        "key": "modelPorts",
+        "value": "Image Resampling"
+      },
+      {
+        "source": "nodeKeyValue",
+        "node": "DepthAnythingSmallF16",
+        "category": "model",
+        "key": "modelPorts",
+        "value": "Algorithm used to scale the input to Image to one of the sizes supported by the model."
+      },
+      {
+        "source": "nodeKeyValue",
+        "node": "DepthAnythingSmallF16",
+        "category": "model",
+        "key": "modelPorts",
+        "value": "depth"
+      },
+      {
+        "source": "nodeKeyValue",
+        "node": "DepthAnythingSmallF16",
+        "category": "model",
+        "key": "modelPorts",
+        "value": "outputPredictionDepth"
+      },
+      {
+        "source": "nodeKeyValue",
+        "node": "DepthAnythingSmallF16",
+        "category": "model",
+        "key": "modelPorts",
+        "value": "Depth"
+      },
+      {
+        "source": "nodeKeyValue",
+        "node": "DepthAnythingSmallF16",
+        "category": "model",
+        "key": "modelPorts",
+        "value": "Depth supports 518x392 images by default. This is a required output prediction."
+      },
+      {
+        "source": "nodeKeyValue",
+        "node": "DepthAnythingSmallF16",
+        "category": "model",
+        "key": "modelName",
+        "value": "DepthAnythingSmallF16.mlpackage"
+      },
+      {
+        "source": "input",
+        "node": "DepthAnythingSmallF16",
+        "category": "model",
+        "key": "inputURL",
+        "value": "file:///Users/gds/Desktop/ML/DepthAnythingSmallF16P8.mlpackage/"
+      }
+    ],
+    "host_safety_notes": []
+  },
+  {
+    "name": "Directory Scanner.fxcore",
+    "path": "/Users/dalebradshaw/Documents/fxcore/sample_plugins/Directory Scanner.fxcore",
+    "bytes": 139264,
+    "node_count": 14,
+    "connection_count": 13,
+    "role": "filesystem image scan",
+    "root_identifier": "com.fxfactory.FxCore.FxCorePlugIn3DRenderToTexture",
+    "identifier_counts": {
+      "com.fxfactory.FxCore.FxCorePlugIn3DRenderToTexture": 1,
+      "com.fxfactory.FxCore.DirectoryScannerPlugIn": 1,
+      "com.fxfactory.FxCore.RandomElementPlugIn": 1,
+      "com.fxfactory.FxCore.FxCorePlugInLocalTime": 1,
+      "com.fxfactory.FxCore.FxCorePlugInMathExpression": 1,
+      "com.fxfactory.FxCore.FxCorePlugInImageImporter": 1,
+      "com.fxfactory.FxCore.FxCorePlugInCIBillboard": 2,
+      "com.fxfactory.FxCore.FxCorePlugInImageFitInsideDestination": 1,
+      "com.fxfactory.FxCore.FxCorePlugInImageWithString": 1,
+      "com.fxfactory.FxCore.FxCorePlugInNICenterImageTransform": 1,
+      "com.fxfactory.FxCore.FxCorePlugInOutputInfo": 1,
+      "com.fxfactory.FxCore.FxCorePlugInManipulateURL": 2
+    },
+    "notable_identifiers": [
+      "FxCorePlugIn3DRenderToTexture",
+      "DirectoryScannerPlugIn"
+    ],
+    "nodes": [
+      {
+        "pk": 1,
+        "title": "Root",
+        "identifier": "com.fxfactory.FxCore.FxCorePlugIn3DRenderToTexture",
+        "parent": null,
+        "index": 0,
+        "is_iterator": false,
+        "is_consumer": false
+      },
+      {
+        "pk": 10,
+        "title": "Directory",
+        "identifier": "com.fxfactory.FxCore.DirectoryScannerPlugIn",
+        "parent": 1,
+        "index": 0,
+        "is_iterator": false,
+        "is_consumer": false
+      },
+      {
+        "pk": 4,
+        "title": "Random",
+        "identifier": "com.fxfactory.FxCore.RandomElementPlugIn",
+        "parent": 1,
+        "index": 1,
+        "is_iterator": false,
+        "is_consumer": false
+      },
+      {
+        "pk": 7,
+        "title": "Local Time",
+        "identifier": "com.fxfactory.FxCore.FxCorePlugInLocalTime",
+        "parent": 1,
+        "index": 2,
+        "is_iterator": false,
+        "is_consumer": false
+      },
+      {
+        "pk": 12,
+        "title": "Expression",
+        "identifier": "com.fxfactory.FxCore.FxCorePlugInMathExpression",
+        "parent": 1,
+        "index": 3,
+        "is_iterator": false,
+        "is_consumer": false
+      },
+      {
+        "pk": 6,
+        "title": "Image Importer",
+        "identifier": "com.fxfactory.FxCore.FxCorePlugInImageImporter",
+        "parent": 1,
+        "index": 4,
+        "is_iterator": false,
+        "is_consumer": false
+      },
+      {
+        "pk": 11,
+        "title": "Billboard",
+        "identifier": "com.fxfactory.FxCore.FxCorePlugInCIBillboard",
+        "parent": 1,
+        "index": 5,
+        "is_iterator": false,
+        "is_consumer": true
+      },
+      {
+        "pk": 8,
+        "title": "Fit Image",
+        "identifier": "com.fxfactory.FxCore.FxCorePlugInImageFitInsideDestination",
+        "parent": 1,
+        "index": 6,
+        "is_iterator": false,
+        "is_consumer": false
+      },
+      {
+        "pk": 2,
+        "title": "Image With String",
+        "identifier": "com.fxfactory.FxCore.FxCorePlugInImageWithString",
+        "parent": 1,
+        "index": 7,
+        "is_iterator": false,
+        "is_consumer": false
+      },
+      {
+        "pk": 9,
+        "title": "Center Image",
+        "identifier": "com.fxfactory.FxCore.FxCorePlugInNICenterImageTransform",
+        "parent": 1,
+        "index": 8,
+        "is_iterator": false,
+        "is_consumer": false
+      },
+      {
+        "pk": 5,
+        "title": "Destination",
+        "identifier": "com.fxfactory.FxCore.FxCorePlugInOutputInfo",
+        "parent": 1,
+        "index": 9,
+        "is_iterator": false,
+        "is_consumer": false
+      },
+      {
+        "pk": 13,
+        "title": "Billboard",
+        "identifier": "com.fxfactory.FxCore.FxCorePlugInCIBillboard",
+        "parent": 1,
+        "index": 10,
+        "is_iterator": false,
+        "is_consumer": true
+      },
+      {
+        "pk": 14,
+        "title": "URL",
+        "identifier": "com.fxfactory.FxCore.FxCorePlugInManipulateURL",
+        "parent": 1,
+        "index": 11,
+        "is_iterator": false,
+        "is_consumer": false
+      },
+      {
+        "pk": 15,
+        "title": "URL",
+        "identifier": "com.fxfactory.FxCore.FxCorePlugInManipulateURL",
+        "parent": 1,
+        "index": 12,
+        "is_iterator": false,
+        "is_consumer": false
+      }
+    ],
+    "connections": [
+      {
+        "pk": 1,
+        "from_node": "Local Time",
+        "from_output": "Time",
+        "to_node": "Expression",
+        "to_input": "Time"
+      },
+      {
+        "pk": 5,
+        "from_node": "Image With String",
+        "from_output": "Image",
+        "to_node": "Center Image",
+        "to_input": "Image"
+      },
+      {
+        "pk": 6,
+        "from_node": "Destination",
+        "from_output": "Center",
+        "to_node": "Center Image",
+        "to_input": "Center"
+      },
+      {
+        "pk": 7,
+        "from_node": "Directory",
+        "from_output": "",
+        "to_node": "Random",
+        "to_input": "Array"
+      },
+      {
+        "pk": 8,
+        "from_node": "Image Importer",
+        "from_output": "Image",
+        "to_node": "Fit Image",
+        "to_input": "Image"
+      },
+      {
+        "pk": 9,
+        "from_node": "Expression",
+        "from_output": "=",
+        "to_node": "Random",
+        "to_input": "Time"
+      },
+      {
+        "pk": 10,
+        "from_node": "Fit Image",
+        "from_output": "Image",
+        "to_node": "Billboard",
+        "to_input": "Image"
+      },
+      {
+        "pk": 11,
+        "from_node": "Center Image",
+        "from_output": "",
+        "to_node": "Billboard",
+        "to_input": "Image"
+      },
+      {
+        "pk": 12,
+        "from_node": "Destination",
+        "from_output": "Width",
+        "to_node": "Image With String",
+        "to_input": "Max Width"
+      },
+      {
+        "pk": 16,
+        "from_node": "URL",
+        "from_output": "Component",
+        "to_node": "Image With String",
+        "to_input": "String"
+      },
+      {
+        "pk": 17,
+        "from_node": "URL",
+        "from_output": "URL",
+        "to_node": "URL",
+        "to_input": "URL"
+      },
+      {
+        "pk": 18,
+        "from_node": "Random",
+        "from_output": "",
+        "to_node": "Image Importer",
+        "to_input": "URL"
+      },
+      {
+        "pk": 19,
+        "from_node": "Random",
+        "from_output": "",
+        "to_node": "URL",
+        "to_input": "URL"
+      }
+    ],
+    "decoded_values": [
+      {
+        "source": "nodeKeyValue",
+        "node": "Expression",
+        "category": "expression",
+        "key": "expressionString",
+        "value": "floor(time / 3)"
+      },
+      {
+        "source": "nodeKeyValue",
+        "node": "Expression",
+        "category": "expression",
+        "key": "candidateString",
+        "value": "floor(time / 3)"
+      },
+      {
+        "source": "input",
+        "node": "Image Importer",
+        "category": "url",
+        "key": "inputURL",
+        "value": "file:///System/Library/Desktop%20Pictures/hello%20Grey.heic"
+      },
+      {
+        "source": "input",
+        "node": "Directory",
+        "category": "url",
+        "key": "inputURL",
+        "value": "file:///System/Library/Desktop%20Pictures/"
+      },
+      {
+        "source": "input",
+        "node": "Image With String",
+        "category": "text",
+        "key": "inputString",
+        "value": "hello Grey"
+      },
+      {
+        "source": "input",
+        "node": "URL",
+        "category": "url",
+        "key": "inputURL",
+        "value": "file:///System/Library/Desktop%20Pictures/hello%20Grey.heic"
+      },
+      {
+        "source": "input",
+        "node": "URL",
+        "category": "url",
+        "key": "inputURL",
+        "value": "file:///System/Library/Desktop%20Pictures/hello%20Blue"
+      }
+    ],
+    "host_safety_notes": []
+  },
+  {
+    "name": "Eagly.fxcore",
+    "path": "/Users/dalebradshaw/Documents/fxcore/sample_plugins/Eagly.fxcore",
+    "bytes": 1150976,
+    "node_count": 4,
+    "connection_count": 2,
+    "role": "animated image source",
+    "root_identifier": "com.fxfactory.FxCore.FxCorePlugInCIContainer",
+    "identifier_counts": {
+      "com.fxfactory.FxCore.FxCorePlugInCIContainer": 1,
+      "com.fxfactory.FxCore.FxCorePlugInCIBillboard": 1,
+      "com.fxfactory.FxCore.CGImageSourcePlugIn": 1,
+      "com.fxfactory.FxCore.FxCorePlugInImageFitInsideDestination": 1
+    },
+    "notable_identifiers": [
+      "CGImageSourcePlugIn"
+    ],
+    "nodes": [
+      {
+        "pk": 1,
+        "title": "Root",
+        "identifier": "com.fxfactory.FxCore.FxCorePlugInCIContainer",
+        "parent": null,
+        "index": 0,
+        "is_iterator": false,
+        "is_consumer": false
+      },
+      {
+        "pk": 5,
+        "title": "2D",
+        "identifier": "com.fxfactory.FxCore.FxCorePlugInCIBillboard",
+        "parent": 1,
+        "index": 0,
+        "is_iterator": false,
+        "is_consumer": true
+      },
+      {
+        "pk": 12,
+        "title": "Animation",
+        "identifier": "com.fxfactory.FxCore.CGImageSourcePlugIn",
+        "parent": 1,
+        "index": 1,
+        "is_iterator": false,
+        "is_consumer": false
+      },
+      {
+        "pk": 13,
+        "title": "Resize",
+        "identifier": "com.fxfactory.FxCore.FxCorePlugInImageFitInsideDestination",
+        "parent": 1,
+        "index": 2,
+        "is_iterator": false,
+        "is_consumer": false
+      }
+    ],
+    "connections": [
+      {
+        "pk": 15,
+        "from_node": "Resize",
+        "from_output": "Image",
+        "to_node": "2D",
+        "to_input": "Image"
+      },
+      {
+        "pk": 16,
+        "from_node": "Animation",
+        "from_output": "",
+        "to_node": "Resize",
+        "to_input": "Image"
+      }
+    ],
+    "decoded_values": [],
+    "host_safety_notes": []
+  },
+  {
+    "name": "Events.fxcore",
+    "path": "/Users/dalebradshaw/Documents/fxcore/sample_plugins/Events.fxcore",
+    "bytes": 139264,
+    "node_count": 7,
+    "connection_count": 18,
+    "role": "standalone mouse/keyboard input",
+    "root_identifier": "com.fxfactory.FxCore.FxCorePlugInCIContainer",
+    "identifier_counts": {
+      "com.fxfactory.FxCore.FxCorePlugInCIContainer": 1,
+      "com.fxfactory.FxCore.FxCorePlugInMouseInfo": 1,
+      "com.fxfactory.FxCore.FxCorePlugInStringWithFormat": 1,
+      "com.fxfactory.FxCore.FxCorePlugInImageWithString": 1,
+      "com.fxfactory.FxCore.FxCorePlugInKeyboardInfo": 1,
+      "com.fxfactory.FxCore.FxCorePlugInSystemFont": 1,
+      "com.fxfactory.FxCore.FxCorePlugInCIBillboard": 1
+    },
+    "notable_identifiers": [
+      "FxCorePlugInMouseInfo",
+      "FxCorePlugInKeyboardInfo"
+    ],
+    "nodes": [
+      {
+        "pk": 1,
+        "title": "Root",
+        "identifier": "com.fxfactory.FxCore.FxCorePlugInCIContainer",
+        "parent": null,
+        "index": 0,
+        "is_iterator": false,
+        "is_consumer": false
+      },
+      {
+        "pk": 2,
+        "title": "Mouse",
+        "identifier": "com.fxfactory.FxCore.FxCorePlugInMouseInfo",
+        "parent": 1,
+        "index": 0,
+        "is_iterator": false,
+        "is_consumer": false
+      },
+      {
+        "pk": 3,
+        "title": "Create String",
+        "identifier": "com.fxfactory.FxCore.FxCorePlugInStringWithFormat",
+        "parent": 1,
+        "index": 1,
+        "is_iterator": false,
+        "is_consumer": false
+      },
+      {
+        "pk": 6,
+        "title": "Image With String",
+        "identifier": "com.fxfactory.FxCore.FxCorePlugInImageWithString",
+        "parent": 1,
+        "index": 2,
+        "is_iterator": false,
+        "is_consumer": false
+      },
+      {
+        "pk": 8,
+        "title": "Keys",
+        "identifier": "com.fxfactory.FxCore.FxCorePlugInKeyboardInfo",
+        "parent": 1,
+        "index": 3,
+        "is_iterator": false,
+        "is_consumer": false
+      },
+      {
+        "pk": 9,
+        "title": "System Font",
+        "identifier": "com.fxfactory.FxCore.FxCorePlugInSystemFont",
+        "parent": 1,
+        "index": 4,
+        "is_iterator": false,
+        "is_consumer": false
+      },
+      {
+        "pk": 10,
+        "title": "2D",
+        "identifier": "com.fxfactory.FxCore.FxCorePlugInCIBillboard",
+        "parent": 1,
+        "index": 5,
+        "is_iterator": false,
+        "is_consumer": true
+      }
+    ],
+    "connections": [
+      {
+        "pk": 1,
+        "from_node": "Mouse",
+        "from_output": "Window Width",
+        "to_node": "Create String",
+        "to_input": "String 3"
+      },
+      {
+        "pk": 2,
+        "from_node": "Mouse",
+        "from_output": "Right Drag Delta (X)",
+        "to_node": "Create String",
+        "to_input": "String 9"
+      },
+      {
+        "pk": 3,
+        "from_node": "Mouse",
+        "from_output": "Left Drag (Delta Y)",
+        "to_node": "Create String",
+        "to_input": "String 7"
+      },
+      {
+        "pk": 4,
+        "from_node": "Mouse",
+        "from_output": "Left Drag Delta (X)",
+        "to_node": "Create String",
+        "to_input": "String 6"
+      },
+      {
+        "pk": 5,
+        "from_node": "Mouse",
+        "from_output": "Left Button",
+        "to_node": "Create String",
+        "to_input": "String 5"
+      },
+      {
+        "pk": 6,
+        "from_node": "Mouse",
+        "from_output": "Window Height",
+        "to_node": "Create String",
+        "to_input": "String 4"
+      },
+      {
+        "pk": 8,
+        "from_node": "Mouse",
+        "from_output": "Scroll Delta (X)",
+        "to_node": "Create String",
+        "to_input": "String 11"
+      },
+      {
+        "pk": 9,
+        "from_node": "Mouse",
+        "from_output": "Right Drag Delta (Y)",
+        "to_node": "Create String",
+        "to_input": "String 10"
+      },
+      {
+        "pk": 10,
+        "from_node": "Mouse",
+        "from_output": "Scroll Delta (Y)",
+        "to_node": "Create String",
+        "to_input": "String 12"
+      },
+      {
+        "pk": 11,
+        "from_node": "Mouse",
+        "from_output": "Right Button Pressed",
+        "to_node": "Create String",
+        "to_input": "String 8"
+      },
+      {
+        "pk": 16,
+        "from_node": "Create String",
+        "from_output": "String",
+        "to_node": "Image With String",
+        "to_input": "String"
+      },
+      {
+        "pk": 19,
+        "from_node": "Keys",
+        "from_output": "\u2303",
+        "to_node": "Create String",
+        "to_input": "String 15"
+      },
+      {
+        "pk": 20,
+        "from_node": "Keys",
+        "from_output": "\u2325",
+        "to_node": "Create String",
+        "to_input": "String 14"
+      },
+      {
+        "pk": 21,
+        "from_node": "Keys",
+        "from_output": "\u2318",
+        "to_node": "Create String",
+        "to_input": "String 13"
+      },
+      {
+        "pk": 22,
+        "from_node": "System Font",
+        "from_output": "",
+        "to_node": "Image With String",
+        "to_input": "Font Name"
+      },
+      {
+        "pk": 23,
+        "from_node": "Image With String",
+        "from_output": "Image",
+        "to_node": "2D",
+        "to_input": "Image"
+      },
+      {
+        "pk": 24,
+        "from_node": "Mouse",
+        "from_output": "Location (Y)",
+        "to_node": "Create String",
+        "to_input": "String 2"
+      },
+      {
+        "pk": 25,
+        "from_node": "Mouse",
+        "from_output": "Location (X)",
+        "to_node": "Create String",
+        "to_input": "String 1"
+      }
+    ],
+    "decoded_values": [
+      {
+        "source": "nodeKeyValue",
+        "node": "Create String",
+        "category": "format",
+        "key": "formatString",
+        "value": "Mouse x%@ y%@\nWindow %@ x %@ points\nLeft button %@\nLeft drag x%@ y%@\nRight button %@\nRight drag x%@ y%@\nScroll x%@ y%@\n\u2318 %@ \u2325 %@ \u2303 %@"
+      },
+      {
+        "source": "input",
+        "node": "Create String",
+        "category": "text",
+        "key": "inputString5",
+        "value": "0"
+      },
+      {
+        "source": "input",
+        "node": "Create String",
+        "category": "text",
+        "key": "inputString8",
+        "value": "0"
+      },
+      {
+        "source": "input",
+        "node": "Create String",
+        "category": "text",
+        "key": "inputString4",
+        "value": "0"
+      },
+      {
+        "source": "input",
+        "node": "Create String",
+        "category": "text",
+        "key": "inputString3",
+        "value": "360"
+      },
+      {
+        "source": "input",
+        "node": "Create String",
+        "category": "text",
+        "key": "inputString9",
+        "value": "0"
+      },
+      {
+        "source": "input",
+        "node": "Create String",
+        "category": "text",
+        "key": "inputString11",
+        "value": "0"
+      },
+      {
+        "source": "input",
+        "node": "Create String",
+        "category": "text",
+        "key": "inputString10",
+        "value": "0"
+      },
+      {
+        "source": "input",
+        "node": "Create String",
+        "category": "text",
+        "key": "inputString2",
+        "value": "640"
+      },
+      {
+        "source": "input",
+        "node": "Create String",
+        "category": "text",
+        "key": "inputString6",
+        "value": "0"
+      },
+      {
+        "source": "input",
+        "node": "Create String",
+        "category": "text",
+        "key": "inputString7",
+        "value": "0"
+      },
+      {
+        "source": "input",
+        "node": "Create String",
+        "category": "text",
+        "key": "inputString13",
+        "value": "0"
+      },
+      {
+        "source": "input",
+        "node": "Image With String",
+        "category": "text",
+        "key": "inputString",
+        "value": "Mouse x0 y205\nWindow 640 x 360 points\nLeft button 0\nLeft drag x0 y0\nRight button 0\nRight drag x0 y0\nScroll x0 y0\n\u2318 0 \u2325 0 \u2303 0"
+      },
+      {
+        "source": "input",
+        "node": "Create String",
+        "category": "text",
+        "key": "inputString12",
+        "value": "0"
+      },
+      {
+        "source": "input",
+        "node": "Create String",
+        "category": "text",
+        "key": "inputString14",
+        "value": "0"
+      }
+    ],
+    "host_safety_notes": [
+      "captures mouse state, which is not available during video-frame rendering",
+      "captures keyboard state, which is not available during video-frame rendering"
+    ]
+  },
+  {
+    "name": "Feedback.fxcore",
+    "path": "/Users/dalebradshaw/Documents/fxcore/sample_plugins/Feedback.fxcore",
+    "bytes": 118784,
+    "node_count": 4,
+    "connection_count": 3,
+    "role": "standalone temporal feedback",
+    "root_identifier": "com.fxfactory.FxCore.FxCorePlugIn3DRenderToTexture",
+    "identifier_counts": {
+      "com.fxfactory.FxCore.FxCorePlugIn3DRenderToTexture": 1,
+      "com.fxfactory.FxCore.FxCorePlugInCIKernel": 1,
+      "com.fxfactory.FxCore.AVCaptureDevicePlugIn": 1,
+      "com.fxfactory.FxCore.FxCorePlugInCIBillboard": 1
+    },
+    "notable_identifiers": [
+      "FxCorePlugIn3DRenderToTexture",
+      "FxCorePlugInCIKernel",
+      "AVCaptureDevicePlugIn"
+    ],
+    "nodes": [
+      {
+        "pk": 1,
+        "title": "Root",
+        "identifier": "com.fxfactory.FxCore.FxCorePlugIn3DRenderToTexture",
+        "parent": null,
+        "index": 0,
+        "is_iterator": false,
+        "is_consumer": false
+      },
+      {
+        "pk": 2,
+        "title": "Simple Feedback",
+        "identifier": "com.fxfactory.FxCore.FxCorePlugInCIKernel",
+        "parent": 1,
+        "index": 0,
+        "is_iterator": false,
+        "is_consumer": false
+      },
+      {
+        "pk": 4,
+        "title": "\udbc0\udf4a",
+        "identifier": "com.fxfactory.FxCore.AVCaptureDevicePlugIn",
+        "parent": 1,
+        "index": 1,
+        "is_iterator": false,
+        "is_consumer": false
+      },
+      {
+        "pk": 3,
+        "title": "2D",
+        "identifier": "com.fxfactory.FxCore.FxCorePlugInCIBillboard",
+        "parent": 1,
+        "index": 2,
+        "is_iterator": false,
+        "is_consumer": true
+      }
+    ],
+    "connections": [
+      {
+        "pk": 1,
+        "from_node": "\udbc0\udf4a",
+        "from_output": "",
+        "to_node": "Simple Feedback",
+        "to_input": "Image"
+      },
+      {
+        "pk": 3,
+        "from_node": "Simple Feedback",
+        "from_output": "",
+        "to_node": "Simple Feedback",
+        "to_input": "Previous Image"
+      },
+      {
+        "pk": 4,
+        "from_node": "Simple Feedback",
+        "from_output": "",
+        "to_node": "2D",
+        "to_input": "Image"
+      }
+    ],
+    "decoded_values": [
+      {
+        "source": "nodeKeyValue",
+        "node": "Simple Feedback",
+        "category": "kernel",
+        "key": "kernelString",
+        "value": "kernel vec4 myFilter(__sample image, __sample previousImage) {\n    return mix(image, previousImage, -0.5);\n}"
+      },
+      {
+        "source": "nodeKeyValue",
+        "node": "Simple Feedback",
+        "category": "kernel",
+        "key": "candidateString",
+        "value": "kernel vec4 myFilter(__sample image, __sample previousImage) {\n    return mix(image, previousImage, -0.5);\n}"
+      },
+      {
+        "source": "nodeKeyValue",
+        "node": "Simple Feedback",
+        "category": "kernel",
+        "key": "activeKernelName",
+        "value": "myFilter"
+      }
+    ],
+    "host_safety_notes": [
+      "uses previousImage feedback; video hosts may render frames out of sequence"
+    ]
+  },
+  {
+    "name": "Fire.fxcore",
+    "path": "/Users/dalebradshaw/Documents/fxcore/sample_plugins/Fire.fxcore",
+    "bytes": 155648,
+    "node_count": 7,
+    "connection_count": 3,
+    "role": "GLSL to Core Image shader",
+    "root_identifier": "com.fxfactory.FxCore.FxCorePlugInCIContainer",
+    "identifier_counts": {
+      "com.fxfactory.FxCore.FxCorePlugInCIContainer": 1,
+      "com.fxfactory.FxCore.FxCorePlugInCIBillboard": 1,
+      "com.fxfactory.FxCore.FxCorePlugInLocalTime": 1,
+      "com.fxfactory.FxCore.FxCorePlugInOutputInfo": 1,
+      "com.fxfactory.FxCore.FxCorePlugInCIShader": 1,
+      "com.fxfactory.FxCore.FxCorePlugInNotes": 2
+    },
+    "notable_identifiers": [
+      "FxCorePlugInCIShader"
+    ],
+    "nodes": [
+      {
+        "pk": 1,
+        "title": "Root",
+        "identifier": "com.fxfactory.FxCore.FxCorePlugInCIContainer",
+        "parent": null,
+        "index": 0,
+        "is_iterator": false,
+        "is_consumer": false
+      },
+      {
+        "pk": 3,
+        "title": "2D",
+        "identifier": "com.fxfactory.FxCore.FxCorePlugInCIBillboard",
+        "parent": 1,
+        "index": 0,
+        "is_iterator": false,
+        "is_consumer": true
+      },
+      {
+        "pk": 4,
+        "title": "Time",
+        "identifier": "com.fxfactory.FxCore.FxCorePlugInLocalTime",
+        "parent": 1,
+        "index": 1,
+        "is_iterator": false,
+        "is_consumer": false
+      },
+      {
+        "pk": 5,
+        "title": "Output",
+        "identifier": "com.fxfactory.FxCore.FxCorePlugInOutputInfo",
+        "parent": 1,
+        "index": 2,
+        "is_iterator": false,
+        "is_consumer": false
+      },
+      {
+        "pk": 8,
+        "title": "Shader",
+        "identifier": "com.fxfactory.FxCore.FxCorePlugInCIShader",
+        "parent": 1,
+        "index": 3,
+        "is_iterator": false,
+        "is_consumer": false
+      },
+      {
+        "pk": 9,
+        "title": "Notes",
+        "identifier": "com.fxfactory.FxCore.FxCorePlugInNotes",
+        "parent": 1,
+        "index": 4,
+        "is_iterator": false,
+        "is_consumer": false
+      },
+      {
+        "pk": 10,
+        "title": "Notes",
+        "identifier": "com.fxfactory.FxCore.FxCorePlugInNotes",
+        "parent": 1,
+        "index": 5,
+        "is_iterator": false,
+        "is_consumer": false
+      }
+    ],
+    "connections": [
+      {
+        "pk": 11,
+        "from_node": "Time",
+        "from_output": "Time",
+        "to_node": "Shader",
+        "to_input": "U Time"
+      },
+      {
+        "pk": 12,
+        "from_node": "Output",
+        "from_output": "Size",
+        "to_node": "Shader",
+        "to_input": "U Resolution"
+      },
+      {
+        "pk": 16,
+        "from_node": "Shader",
+        "from_output": "Image",
+        "to_node": "2D",
+        "to_input": "Image"
+      }
+    ],
+    "decoded_values": [
+      {
+        "source": "nodeKeyValue",
+        "node": "Shader",
+        "category": "kernel",
+        "key": "candidateString",
+        "value": "// Original shader: https://fragcoord.xyz/s/3zoe0vgo\n// Copyright Xor\n\n[[stitchable]] float4 fireKernel(vec2 u_resolution, float u_time, destination dest) {\n    const vec4 gl_FragCoord = vec4(dest.coord(), 0.5, 0.0);\n    vec4 fragColor = vec4(0.0);\n    for(float i=0, z=0, d=0, j=0; i++ < 5e1; fragColor += (sin(z / 3.0 + vec4(7, 2, 3, 0)) + 1.1) / d) {\n        vec3 p = z * normalize(gl_FragCoord.rgb * 2.0 - vec3(u_resolution, 1.0).xyy);\n        p.z += 5.0 + cos(u_time);\n        vec4 m = cos(u_time+p.y * 0.5 + vec4(0, 33, 11, 0));\n        mat2 n = mat2(m.x, m.y, m.z, m.w);\n        float v = max(p.y * 0.1 + 1.0, 0.1);\n        p.xz = p.xz * (n / v);        \n        for(j = 2.0; j < 15.0; j /= 0.6) {\n            p += cos((p.yzx - vec3(u_time, 0, 0) / 0.1) * j + u_time) / j;\n        }\n        z += d = 0.01 + abs(length(p.xz) + p.y * 0.3 - 0.5) / 7.0;\n    }\n    fragColor = tanh(fragColor / 1e3);\n    return fragColor;\n}"
+      },
+      {
+        "source": "nodeKeyValue",
+        "node": "Shader",
+        "category": "kernel",
+        "key": "activeKernelName",
+        "value": "fireKernel"
+      },
+      {
+        "source": "nodeKeyValue",
+        "node": "Shader",
+        "category": "kernel",
+        "key": "kernelString",
+        "value": "#include <metal_stdlib>\n    #include <CoreImage/CoreImage.h>\n    using namespace metal; extern \"C\" { namespace coreimage { // FxCore: Begin User Content\n// Original shader: https://fragcoord.xyz/s/3zoe0vgo\n// Copyright Xor\n\n[[stitchable]] float4 fireKernel(vec2 u_resolution, float u_time, destination dest) {\n    const vec4 gl_FragCoord = vec4(dest.coord(), 0.5, 0.0);\n    vec4 fragColor = vec4(0.0);\n    for(float i=0, z=0, d=0, j=0; i++ < 5e1; fragColor += (sin(z / 3.0 + vec4(7, 2, 3, 0)) + 1.1) / d) {\n        vec3 p = z * normalize(gl_FragCoord.rgb * 2.0 - vec3(u_resolution, 1.0).xyy);\n        p.z += 5.0 + cos(u_time);\n        vec4 m = cos(u_time+p.y * 0.5 + vec4(0, 33, 11, 0));\n        mat2 n = mat2(m.x, m.y, m.z, m.w);\n        float v = max(p.y * 0.1 + 1.0, 0.1);\n        p.xz = p.xz * (n / v);        \n        for(j = 2.0; j < 15.0; j /= 0.6) {\n            p += cos((p.yzx - vec3(u_time, 0, 0) / 0.1) * j + u_time) / j;\n        }\n        z += d = 0.01 + abs(length(p.xz) + p.y * 0.3 - 0.5) / 7.0;\n    }\n    fragColor = tanh(fragColor / 1e3);\n    return fragColor;\n}\n} }"
+      }
+    ],
+    "host_safety_notes": []
+  },
+  {
+    "name": "Human.fxcore",
+    "path": "/Users/dalebradshaw/Documents/fxcore/sample_plugins/Human.fxcore",
+    "bytes": 565248,
+    "node_count": 19,
+    "connection_count": 16,
+    "role": "Vision body pose",
+    "root_identifier": "com.fxfactory.FxCore.FxCorePlugIn3DRenderToTexture",
+    "identifier_counts": {
+      "com.fxfactory.FxCore.FxCorePlugIn3DRenderToTexture": 1,
+      "com.fxfactory.FxCore.FxCorePlugInIterator": 3,
+      "com.fxfactory.FxCore.FxCorePlugInCIBillboard": 2,
+      "com.fxfactory.FxCore.HumanBodyPosePlugIn": 1,
+      "com.fxfactory.FxCore.FxCorePlugInImageFitInsideDestination": 1,
+      "com.fxfactory.FxCore.FxCorePlugInImageImporter": 1,
+      "com.fxfactory.FxCore.FxCorePlugInSplitter": 2,
+      "com.fxfactory.FxCore.FxCorePlugInIteratorVariables": 2,
+      "com.fxfactory.FxCore.FxCorePlugInArrayValueAtIndex": 2,
+      "com.fxfactory.FxCore.HumanBodyJointsPlugIn": 2,
+      "com.fxfactory.FxCore.FxCorePlugInNISmoothCircle": 1,
+      "com.fxfactory.FxCore.FxCorePlugInInterpolation": 1
+    },
+    "notable_identifiers": [
+      "FxCorePlugIn3DRenderToTexture",
+      "FxCorePlugInIterator",
+      "HumanBodyPosePlugIn",
+      "FxCorePlugInIteratorVariables",
+      "HumanBodyJointsPlugIn"
+    ],
+    "nodes": [
+      {
+        "pk": 1,
+        "title": "Root",
+        "identifier": "com.fxfactory.FxCore.FxCorePlugIn3DRenderToTexture",
+        "parent": null,
+        "index": 0,
+        "is_iterator": false,
+        "is_consumer": false
+      },
+      {
+        "pk": 23,
+        "title": "Container",
+        "identifier": "com.fxfactory.FxCore.FxCorePlugInIterator",
+        "parent": null,
+        "index": 10,
+        "is_iterator": false,
+        "is_consumer": false
+      },
+      {
+        "pk": 4,
+        "title": "2D",
+        "identifier": "com.fxfactory.FxCore.FxCorePlugInCIBillboard",
+        "parent": 1,
+        "index": 0,
+        "is_iterator": false,
+        "is_consumer": true
+      },
+      {
+        "pk": 6,
+        "title": "Body Pose",
+        "identifier": "com.fxfactory.FxCore.HumanBodyPosePlugIn",
+        "parent": 1,
+        "index": 1,
+        "is_iterator": false,
+        "is_consumer": false
+      },
+      {
+        "pk": 9,
+        "title": "Container",
+        "identifier": "com.fxfactory.FxCore.FxCorePlugInIterator",
+        "parent": 1,
+        "index": 2,
+        "is_iterator": true,
+        "is_consumer": true
+      },
+      {
+        "pk": 43,
+        "title": "Resize",
+        "identifier": "com.fxfactory.FxCore.FxCorePlugInImageFitInsideDestination",
+        "parent": 1,
+        "index": 3,
+        "is_iterator": false,
+        "is_consumer": false
+      },
+      {
+        "pk": 45,
+        "title": "jakub-kusiow\u2026",
+        "identifier": "com.fxfactory.FxCore.FxCorePlugInImageImporter",
+        "parent": 1,
+        "index": 4,
+        "is_iterator": false,
+        "is_consumer": false
+      },
+      {
+        "pk": 10,
+        "title": "Splitter",
+        "identifier": "com.fxfactory.FxCore.FxCorePlugInSplitter",
+        "parent": 9,
+        "index": 0,
+        "is_iterator": false,
+        "is_consumer": false
+      },
+      {
+        "pk": 11,
+        "title": "Iterator",
+        "identifier": "com.fxfactory.FxCore.FxCorePlugInIteratorVariables",
+        "parent": 9,
+        "index": 1,
+        "is_iterator": false,
+        "is_consumer": false
+      },
+      {
+        "pk": 12,
+        "title": "Index \u2192 Value",
+        "identifier": "com.fxfactory.FxCore.FxCorePlugInArrayValueAtIndex",
+        "parent": 9,
+        "index": 2,
+        "is_iterator": false,
+        "is_consumer": false
+      },
+      {
+        "pk": 20,
+        "title": "Container",
+        "identifier": "com.fxfactory.FxCore.FxCorePlugInIterator",
+        "parent": 9,
+        "index": 3,
+        "is_iterator": true,
+        "is_consumer": true
+      },
+      {
+        "pk": 35,
+        "title": "Joints",
+        "identifier": "com.fxfactory.FxCore.HumanBodyJointsPlugIn",
+        "parent": 9,
+        "index": 4,
+        "is_iterator": false,
+        "is_consumer": false
+      },
+      {
+        "pk": 46,
+        "title": "Joints (when you need them individually)",
+        "identifier": "com.fxfactory.FxCore.HumanBodyJointsPlugIn",
+        "parent": 9,
+        "index": 5,
+        "is_iterator": false,
+        "is_consumer": false
+      },
+      {
+        "pk": 27,
+        "title": "Splitter",
+        "identifier": "com.fxfactory.FxCore.FxCorePlugInSplitter",
+        "parent": 20,
+        "index": 0,
+        "is_iterator": false,
+        "is_consumer": false
+      },
+      {
+        "pk": 24,
+        "title": "Iterator",
+        "identifier": "com.fxfactory.FxCore.FxCorePlugInIteratorVariables",
+        "parent": 20,
+        "index": 1,
+        "is_iterator": false,
+        "is_consumer": false
+      },
+      {
+        "pk": 21,
+        "title": "Index \u2192 Value",
+        "identifier": "com.fxfactory.FxCore.FxCorePlugInArrayValueAtIndex",
+        "parent": 20,
+        "index": 2,
+        "is_iterator": false,
+        "is_consumer": false
+      },
+      {
+        "pk": 29,
+        "title": "2D",
+        "identifier": "com.fxfactory.FxCore.FxCorePlugInCIBillboard",
+        "parent": 20,
+        "index": 3,
+        "is_iterator": false,
+        "is_consumer": true
+      },
+      {
+        "pk": 30,
+        "title": "Circle",
+        "identifier": "com.fxfactory.FxCore.FxCorePlugInNISmoothCircle",
+        "parent": 20,
+        "index": 4,
+        "is_iterator": false,
+        "is_consumer": false
+      },
+      {
+        "pk": 44,
+        "title": "Interpolation",
+        "identifier": "com.fxfactory.FxCore.FxCorePlugInInterpolation",
+        "parent": 20,
+        "index": 5,
+        "is_iterator": false,
+        "is_consumer": false
+      }
+    ],
+    "connections": [
+      {
+        "pk": 8,
+        "from_node": "Body Pose",
+        "from_output": "",
+        "to_node": "Container",
+        "to_input": "Iterations"
+      },
+      {
+        "pk": 9,
+        "from_node": "Body Pose",
+        "from_output": "",
+        "to_node": "Container",
+        "to_input": "Poses"
+      },
+      {
+        "pk": 10,
+        "from_node": "Iterator",
+        "from_output": "Index",
+        "to_node": "Index \u2192 Value",
+        "to_input": "Index 0"
+      },
+      {
+        "pk": 11,
+        "from_node": "Splitter",
+        "from_output": "",
+        "to_node": "Index \u2192 Value",
+        "to_input": "Array"
+      },
+      {
+        "pk": 16,
+        "from_node": "Iterator",
+        "from_output": "Index",
+        "to_node": "Index \u2192 Value",
+        "to_input": "Index 0"
+      },
+      {
+        "pk": 22,
+        "from_node": "Splitter",
+        "from_output": "",
+        "to_node": "Index \u2192 Value",
+        "to_input": "Array"
+      },
+      {
+        "pk": 29,
+        "from_node": "Circle",
+        "from_output": "",
+        "to_node": "2D",
+        "to_input": "Image"
+      },
+      {
+        "pk": 41,
+        "from_node": "Index \u2192 Value",
+        "from_output": "",
+        "to_node": "Circle",
+        "to_input": "Center"
+      },
+      {
+        "pk": 43,
+        "from_node": "Index \u2192 Value",
+        "from_output": "",
+        "to_node": "Joints",
+        "to_input": "Pose"
+      },
+      {
+        "pk": 44,
+        "from_node": "Joints",
+        "from_output": "",
+        "to_node": "Container",
+        "to_input": "Points"
+      },
+      {
+        "pk": 45,
+        "from_node": "Joints",
+        "from_output": "",
+        "to_node": "Container",
+        "to_input": "Iterations"
+      },
+      {
+        "pk": 56,
+        "from_node": "Resize",
+        "from_output": "",
+        "to_node": "Body Pose",
+        "to_input": "Image"
+      },
+      {
+        "pk": 58,
+        "from_node": "Resize",
+        "from_output": "",
+        "to_node": "2D",
+        "to_input": "Image"
+      },
+      {
+        "pk": 59,
+        "from_node": "Interpolation",
+        "from_output": "",
+        "to_node": "Circle",
+        "to_input": "Radius"
+      },
+      {
+        "pk": 60,
+        "from_node": "jakub-kusiow\u2026",
+        "from_output": "",
+        "to_node": "Resize",
+        "to_input": "Image"
+      },
+      {
+        "pk": 61,
+        "from_node": "Index \u2192 Value",
+        "from_output": "",
+        "to_node": "Joints (when you need them individually)",
+        "to_input": "Pose"
+      }
+    ],
+    "decoded_values": [],
+    "host_safety_notes": []
+  },
+  {
+    "name": "Inferno.fxcore",
+    "path": "/Users/dalebradshaw/Documents/fxcore/sample_plugins/Inferno.fxcore",
+    "bytes": 163840,
+    "node_count": 13,
+    "connection_count": 16,
+    "role": "styled text animation",
+    "root_identifier": "com.fxfactory.FxCore.FxCorePlugInCIContainer",
+    "identifier_counts": {
+      "com.fxfactory.FxCore.FxCorePlugInCIContainer": 1,
+      "com.fxfactory.FxCore.FxCorePlugInStyledTextWithString": 1,
+      "com.fxfactory.FxCore.FxCorePlugInImageWithStyledText": 1,
+      "com.fxfactory.FxCore.FxCorePlugInCIBillboard": 1,
+      "com.fxfactory.FxCore.FxCorePlugInInterpolation": 1,
+      "com.fxfactory.FxCore.FxCorePlugInOutputInfo": 1,
+      "com.fxfactory.FxCore.FxCorePlugInLocalTime": 1,
+      "com.fxfactory.FxCore.FxCorePlugInCISourceOverCompositing": 1,
+      "com.fxfactory.FxCore.FxCorePlugInCIMaskedVariableBlur": 1,
+      "com.fxfactory.FxCore.FxCorePlugInNICircle": 1,
+      "com.fxfactory.FxCore.FxCorePlugInMathExpression": 1,
+      "com.fxfactory.FxCore.FxCorePlugInNICloudsGenerator": 1,
+      "com.fxfactory.FxCore.FxCorePlugInCIBumpDistortion": 1
+    },
+    "notable_identifiers": [],
+    "nodes": [
+      {
+        "pk": 5,
+        "title": "Root",
+        "identifier": "com.fxfactory.FxCore.FxCorePlugInCIContainer",
+        "parent": null,
+        "index": 0,
+        "is_iterator": false,
+        "is_consumer": false
+      },
+      {
+        "pk": 2,
+        "title": "Styled Text With String",
+        "identifier": "com.fxfactory.FxCore.FxCorePlugInStyledTextWithString",
+        "parent": 5,
+        "index": 0,
+        "is_iterator": false,
+        "is_consumer": false
+      },
+      {
+        "pk": 1,
+        "title": "Image With Styled Text",
+        "identifier": "com.fxfactory.FxCore.FxCorePlugInImageWithStyledText",
+        "parent": 5,
+        "index": 1,
+        "is_iterator": false,
+        "is_consumer": false
+      },
+      {
+        "pk": 4,
+        "title": "Billboard",
+        "identifier": "com.fxfactory.FxCore.FxCorePlugInCIBillboard",
+        "parent": 5,
+        "index": 2,
+        "is_iterator": false,
+        "is_consumer": true
+      },
+      {
+        "pk": 6,
+        "title": "Interpolation",
+        "identifier": "com.fxfactory.FxCore.FxCorePlugInInterpolation",
+        "parent": 5,
+        "index": 3,
+        "is_iterator": false,
+        "is_consumer": false
+      },
+      {
+        "pk": 11,
+        "title": "Destination",
+        "identifier": "com.fxfactory.FxCore.FxCorePlugInOutputInfo",
+        "parent": 5,
+        "index": 4,
+        "is_iterator": false,
+        "is_consumer": false
+      },
+      {
+        "pk": 9,
+        "title": "Local Time",
+        "identifier": "com.fxfactory.FxCore.FxCorePlugInLocalTime",
+        "parent": 5,
+        "index": 5,
+        "is_iterator": false,
+        "is_consumer": false
+      },
+      {
+        "pk": 10,
+        "title": "Source Over",
+        "identifier": "com.fxfactory.FxCore.FxCorePlugInCISourceOverCompositing",
+        "parent": 5,
+        "index": 6,
+        "is_iterator": false,
+        "is_consumer": false
+      },
+      {
+        "pk": 14,
+        "title": "Masked Variable Blur",
+        "identifier": "com.fxfactory.FxCore.FxCorePlugInCIMaskedVariableBlur",
+        "parent": 5,
+        "index": 7,
+        "is_iterator": false,
+        "is_consumer": false
+      },
+      {
+        "pk": 13,
+        "title": "Circle (Filled)",
+        "identifier": "com.fxfactory.FxCore.FxCorePlugInNICircle",
+        "parent": 5,
+        "index": 8,
+        "is_iterator": false,
+        "is_consumer": false
+      },
+      {
+        "pk": 15,
+        "title": "Expression",
+        "identifier": "com.fxfactory.FxCore.FxCorePlugInMathExpression",
+        "parent": 5,
+        "index": 9,
+        "is_iterator": false,
+        "is_consumer": false
+      },
+      {
+        "pk": 16,
+        "title": "Clouds",
+        "identifier": "com.fxfactory.FxCore.FxCorePlugInNICloudsGenerator",
+        "parent": 5,
+        "index": 10,
+        "is_iterator": false,
+        "is_consumer": false
+      },
+      {
+        "pk": 17,
+        "title": "Bump",
+        "identifier": "com.fxfactory.FxCore.FxCorePlugInCIBumpDistortion",
+        "parent": 5,
+        "index": 11,
+        "is_iterator": false,
+        "is_consumer": false
+      }
+    ],
+    "connections": [
+      {
+        "pk": 3,
+        "from_node": "Styled Text With String",
+        "from_output": "Styled Text",
+        "to_node": "Image With Styled Text",
+        "to_input": "Styled Text"
+      },
+      {
+        "pk": 4,
+        "from_node": "Interpolation",
+        "from_output": "Value",
+        "to_node": "Image With Styled Text",
+        "to_input": "Vertical Scroll"
+      },
+      {
+        "pk": 12,
+        "from_node": "Destination",
+        "from_output": "Center",
+        "to_node": "Circle (Filled)",
+        "to_input": "Center"
+      },
+      {
+        "pk": 13,
+        "from_node": "Source Over",
+        "from_output": "",
+        "to_node": "Masked Variable Blur",
+        "to_input": "Image"
+      },
+      {
+        "pk": 14,
+        "from_node": "Circle (Filled)",
+        "from_output": "",
+        "to_node": "Masked Variable Blur",
+        "to_input": "Mask"
+      },
+      {
+        "pk": 15,
+        "from_node": "Masked Variable Blur",
+        "from_output": "",
+        "to_node": "Billboard",
+        "to_input": "Image"
+      },
+      {
+        "pk": 17,
+        "from_node": "Destination",
+        "from_output": "Height",
+        "to_node": "Expression",
+        "to_input": "Height"
+      },
+      {
+        "pk": 18,
+        "from_node": "Expression",
+        "from_output": "=",
+        "to_node": "Circle (Filled)",
+        "to_input": "Radius"
+      },
+      {
+        "pk": 19,
+        "from_node": "Destination",
+        "from_output": "Width",
+        "to_node": "Expression",
+        "to_input": "Width"
+      },
+      {
+        "pk": 20,
+        "from_node": "Expression",
+        "from_output": "=",
+        "to_node": "Circle (Filled)",
+        "to_input": "Softness"
+      },
+      {
+        "pk": 22,
+        "from_node": "Local Time",
+        "from_output": "Time",
+        "to_node": "Clouds",
+        "to_input": "Time"
+      },
+      {
+        "pk": 23,
+        "from_node": "Clouds",
+        "from_output": "",
+        "to_node": "Source Over",
+        "to_input": "Bottom"
+      },
+      {
+        "pk": 24,
+        "from_node": "Destination",
+        "from_output": "Width",
+        "to_node": "Bump",
+        "to_input": "Radius"
+      },
+      {
+        "pk": 25,
+        "from_node": "Destination",
+        "from_output": "Center",
+        "to_node": "Bump",
+        "to_input": "Center"
+      },
+      {
+        "pk": 26,
+        "from_node": "Bump",
+        "from_output": "",
+        "to_node": "Source Over",
+        "to_input": "Top"
+      },
+      {
+        "pk": 27,
+        "from_node": "Image With Styled Text",
+        "from_output": "Image",
+        "to_node": "Bump",
+        "to_input": "Image"
+      }
+    ],
+    "decoded_values": [
+      {
+        "source": "nodeKeyValue",
+        "node": "Expression",
+        "category": "expression",
+        "key": "candidateString",
+        "value": "max(width, height)/3"
+      },
+      {
+        "source": "nodeKeyValue",
+        "node": "Expression",
+        "category": "expression",
+        "key": "expressionString",
+        "value": "max(width, height)/3"
+      },
+      {
+        "source": "input",
+        "node": "Styled Text With String",
+        "category": "text",
+        "key": "inputString",
+        "value": "Nel mezzo del cammin di nostra vita\nmi ritrovai per una selva oscura\nch\u00e9 la diritta via era smarrita.\nAhi quanto a dir qual era \u00e8 cosa dura\nesta selva selvaggia e aspra e forte\nche nel pensier rinova la paura!\nTant'\u00e8 amara che poco \u00e8 pi\u00f9 morte;\nma per trattar del ben ch'i' vi trovai,\ndir\u00f2 de l'altre cose ch'i' v'ho scorte.\nIo non so ben ridir com'i' v'intrai,\ntant'era pien di sonno a quel punto\nche la verace via abbandonai.\nMa poi ch'i' fui al pi\u00e8 d'un colle giunto,\nl\u00e0 dove terminava quella valle\nche m'avea di paura il cor compunto,\nguardai in alto, e vidi le sue spalle\nvestite gi\u00e0 de' raggi del pianeta\nche mena dritto altrui per ogne calle.\nAllor fu la paura un poco queta\nche nel lago del cor m'era durata\nla notte ch'i' passai con tanta pieta.\nE come quei che con lena affannata\nuscito fuor del pelago a la riva\nsi volge a l'acqua perigliosa e guata,\ncos\u00ec l'animo mio, ch'ancor fuggiva,\nsi volse a retro a rimirar lo passo\nche non lasci\u00f2 gi\u00e0 mai persona viva.\nPoi ch'\u00e8i posato un poco il corpo lasso,\nripresi via per la piaggia diserta,\ns\u00ec che 'l pi\u00e8 fermo sempre era 'l pi\u00f9 basso.\nEd ecco, quasi al cominciar de l'erta,\nuna lonza leggera e presta molto,\nche di pel macolato era coverta;\ne non mi si partia dinanzi al volto,\nanzi 'mpediva tanto il mio cammino,\nch'i' fui per ritornar pi\u00f9 volte v\u00f2lto.\nTemp'era dal principio del mattino,\ne 'l sol montava 'n s\u00f9 con quelle stelle\nch'eran con lui quando l'amor divino\nmosse di prima quelle cose belle;\ns\u00ec ch'a bene sperar m'era cagione\ndi quella fiera a la gaetta pelle\nl'ora del tempo e la dolce stagione;\nma non s\u00ec che paura non mi desse\nla vista che m'apparve d'un leone.\nQuesti parea che contra me venisse\ncon la test'alta e con rabbiosa fame,\ns\u00ec che parea che l'aere ne tremesse.\nEd una lupa, che di tutte brame\nsembiava carca ne la sua magrezza,\ne molte genti f\u00e9 gi\u00e0 viver grame,\nquesta mi porse tanto di gravezza\ncon la paura ch'uscia di sua vista,\nch'io perdei la speranza de l'altezza.\nE qual \u00e8 quei che volontieri acquista,\ne giugne 'l tempo che perder lo face,\nche 'n tutt'i suoi pensier piange e s'attrista;\ntal mi fece la bestia sanza pace,\nche, venendomi 'ncontro, a poco a poco\nmi ripigneva l\u00e0 dove 'l sol tace.\nMentre ch'i' rovinava in basso loco,\ndinanzi a li occhi mi si fu offerto\nchi per lungo silenzio parea fioco.\nQuando vidi costui nel gran diserto,\n\u00abMiserere di me\u00bb, gridai a lui,\n\u00abqual che tu sii, od ombra od omo certo!\u00bb.\nRispuosemi: \u00abNon omo, omo gi\u00e0 fui,\ne li parenti miei furon lombardi,\nmantoani per patria ambedui.\nNacqui sub Iulio, ancor che fosse tardi,\ne vissi a Roma sotto 'l buono Augusto\nnel tempo de li d\u00e8i falsi e bugiardi.\nPoeta fui, e cantai di quel giusto\nfigliuol d'Anchise che venne di Troia,\npoi che 'l superbo Ili\u00f3n fu combusto.\nMa tu perch\u00e9 ritorni a tanta noia?\nperch\u00e9 non sali il dilettoso monte\nch'\u00e8 principio e cagion di tutta gioia?\u00bb.\n\u00abOr se' tu quel Virgilio e quella fonte\nche spandi di parlar s\u00ec largo fiume?\u00bb,\nrispuos'io lui con vergognosa fronte.\n\u00abO de li altri poeti onore e lume\nvagliami 'l lungo studio e 'l grande amore\nche m'ha fatto cercar lo tuo volume.\nTu se' lo mio maestro e 'l mio autore;\ntu se' solo colui da cu' io tolsi\nlo bello stilo che m'ha fatto onore.\nVedi la bestia per cu' io mi volsi:\naiutami da lei, famoso saggio,\nch'ella mi fa tremar le vene e i polsi\u00bb.\n\u00abA te convien tenere altro viaggio\u00bb,\nrispuose poi che lagrimar mi vide,\n\u00abse vuo' campar d'esto loco selvaggio:\nch\u00e9 questa bestia, per la qual tu gride,\nnon lascia altrui passar per la sua via,\nma tanto lo 'mpedisce che l'uccide;\ne ha natura s\u00ec malvagia e ria,\nche mai non empie la bramosa voglia,\ne dopo 'l pasto ha pi\u00f9 fame che pria.\nMolti son li animali a cui s'ammoglia,\ne pi\u00f9 saranno ancora, infin che 'l veltro\nverr\u00e0, che la far\u00e0 morir con doglia.\nQuesti non ciber\u00e0 terra n\u00e9 peltro,\nma sapienza, amore e virtute,\ne sua nazion sar\u00e0 tra feltro e feltro.\nDi quella umile Italia fia salute\nper cui mor\u00ec la vergine Cammilla,\nEurialo e Turno e Niso di ferute.\nQuesti la caccer\u00e0 per ogne villa,\nfin che l'avr\u00e0 rimessa ne lo 'nferno,\nl\u00e0 onde 'nvidia prima dipartilla.\nOnd'io per lo tuo me' penso e discerno\nche tu mi segui, e io sar\u00f2 tua guida,\ne trarrotti di qui per loco etterno,\nove udirai le disperate strida,\nvedrai li antichi spiriti dolenti,\nch'a la seconda morte ciascun grida;\ne vederai color che son contenti\nnel foco, perch\u00e9 speran di venire\nquando che sia a le beate genti.\nA le quai poi se tu vorrai salire,\nanima fia a ci\u00f2 pi\u00f9 di me degna:\ncon lei ti lascer\u00f2 nel mio partire;\nch\u00e9 quello imperador che l\u00e0 s\u00f9 regna,\nperch'i' fu' ribellante a la sua legge,\nnon vuol che 'n sua citt\u00e0 per me si vegna.\nIn tutte parti impera e quivi regge;\nquivi \u00e8 la sua citt\u00e0 e l'alto seggio:\noh felice colui cu' ivi elegge!\u00bb.\nE io a lui: \u00abPoeta, io ti richeggio\nper quello Dio che tu non conoscesti,\nacci\u00f2 ch'io fugga questo male e peggio,\nche tu mi meni l\u00e0 dov'or dicesti,\ns\u00ec ch'io veggia la porta di san Pietro\ne color cui tu fai cotanto mesti\u00bb.\nAllor si mosse, e io li tenni dietro."
+      },
+      {
+        "source": "input",
+        "node": "Image With Styled Text",
+        "category": "text",
+        "key": "inputAttributedString",
+        "value": "Nel mezzo del cammin di nostra vita\nmi ritrovai per una selva oscura\nch\u00e9 la diritta via era smarrita.\nAhi quanto a dir qual era \u00e8 cosa dura\nesta selva selvaggia e aspra e forte\nche nel pensier rinova la paura!\nTant'\u00e8 amara che poco \u00e8 pi\u00f9 morte;\nma per trattar del ben ch'i' vi trovai,\ndir\u00f2 de l'altre cose ch'i' v'ho scorte.\nIo non so ben ridir com'i' v'intrai,\ntant'era pien di sonno a quel punto\nche la verace via abbandonai.\nMa poi ch'i' fui al pi\u00e8 d'un colle giunto,\nl\u00e0 dove terminava quella valle\nche m'avea di paura il cor compunto,\nguardai in alto, e vidi le sue spalle\nvestite gi\u00e0 de' raggi del pianeta\nche mena dritto altrui per ogne calle.\nAllor fu la paura un poco queta\nche nel lago del cor m'era durata\nla notte ch'i' passai con tanta pieta.\nE come quei che con lena affannata\nuscito fuor del pelago a la riva\nsi volge a l'acqua perigliosa e guata,\ncos\u00ec l'animo mio, ch'ancor fuggiva,\nsi volse a retro a rimirar lo passo\nche non lasci\u00f2 gi\u00e0 mai persona viva.\nPoi ch'\u00e8i posato un poco il corpo lasso,\nripresi via per la piaggia diserta,\ns\u00ec che 'l pi\u00e8 fermo sempre era 'l pi\u00f9 basso.\nEd ecco, quasi al cominciar de l'erta,\nuna lonza leggera e presta molto,\nche di pel macolato era coverta;\ne non mi si partia dinanzi al volto,\nanzi 'mpediva tanto il mio cammino,\nch'i' fui per ritornar pi\u00f9 volte v\u00f2lto.\nTemp'era dal principio del mattino,\ne 'l sol montava 'n s\u00f9 con quelle stelle\nch'eran con lui quando l'amor divino\nmosse di prima quelle cose belle;\ns\u00ec ch'a bene sperar m'era cagione\ndi quella fiera a la gaetta pelle\nl'ora del tempo e la dolce stagione;\nma non s\u00ec che paura non mi desse\nla vista che m'apparve d'un leone.\nQuesti parea che contra me venisse\ncon la test'alta e con rabbiosa fame,\ns\u00ec che parea che l'aere ne tremesse.\nEd una lupa, che di tutte brame\nsembiava carca ne la sua magrezza,\ne molte genti f\u00e9 gi\u00e0 viver grame,\nquesta mi porse tanto di gravezza\ncon la paura ch'uscia di sua vista,\nch'io perdei la speranza de l'altezza.\nE qual \u00e8 quei che volontieri acquista,\ne giugne 'l tempo che perder lo face,\nche 'n tutt'i suoi pensier piange e s'attrista;\ntal mi fece la bestia sanza pace,\nche, venendomi 'ncontro, a poco a poco\nmi ripigneva l\u00e0 dove 'l sol tace.\nMentre ch'i' rovinava in basso loco,\ndinanzi a li occhi mi si fu offerto\nchi per lungo silenzio parea fioco.\nQuando vidi costui nel gran diserto,\n\u00abMiserere di me\u00bb, gridai a lui,\n\u00abqual che tu sii, od ombra od omo certo!\u00bb.\nRispuosemi: \u00abNon omo, omo gi\u00e0 fui,\ne li parenti miei furon lombardi,\nmantoani per patria ambedui.\nNacqui sub Iulio, ancor che fosse tardi,\ne vissi a Roma sotto 'l buono Augusto\nnel tempo de li d\u00e8i falsi e bugiardi.\nPoeta fui, e cantai di quel giusto\nfigliuol d'Anchise che venne di Troia,\npoi che 'l superbo Ili\u00f3n fu combusto.\nMa tu perch\u00e9 ritorni a tanta noia?\nperch\u00e9 non sali il dilettoso monte\nch'\u00e8 principio e cagion di tutta gioia?\u00bb.\n\u00abOr se' tu quel Virgilio e quella fonte\nche spandi di parlar s\u00ec largo fiume?\u00bb,\nrispuos'io lui con vergognosa fronte.\n\u00abO de li altri poeti onore e lume\nvagliami 'l lungo studio e 'l grande amore\nche m'ha fatto cercar lo tuo volume.\nTu se' lo mio maestro e 'l mio autore;\ntu se' solo colui da cu' io tolsi\nlo bello stilo che m'ha fatto onore.\nVedi la bestia per cu' io mi volsi:\naiutami da lei, famoso saggio,\nch'ella mi fa tremar le vene e i polsi\u00bb.\n\u00abA te convien tenere altro viaggio\u00bb,\nrispuose poi che lagrimar mi vide,\n\u00abse vuo' campar d'esto loco selvaggio:\nch\u00e9 questa bestia, per la qual tu gride,\nnon lascia altrui passar per la sua via,\nma tanto lo 'mpedisce che l'uccide;\ne ha natura s\u00ec malvagia e ria,\nche mai non empie la bramosa voglia,\ne dopo 'l pasto ha pi\u00f9 fame che pria.\nMolti son li animali a cui s'ammoglia,\ne pi\u00f9 saranno ancora, infin che 'l veltro\nverr\u00e0, che la far\u00e0 morir con doglia.\nQuesti non ciber\u00e0 terra n\u00e9 peltro,\nma sapienza, amore e virtute,\ne sua nazion sar\u00e0 tra feltro e feltro.\nDi quella umile Italia fia salute\nper cui mor\u00ec la vergine Cammilla,\nEurialo e Turno e Niso di ferute.\nQuesti la caccer\u00e0 per ogne villa,\nfin che l'avr\u00e0 rimessa ne lo 'nferno,\nl\u00e0 onde 'nvidia prima dipartilla.\nOnd'io per lo tuo me' penso e discerno\nche tu mi segui, e io sar\u00f2 tua guida,\ne trarrotti di qui per loco etterno,\nove udirai le disperate strida,\nvedrai li antichi spiriti dolenti,\nch'a la seconda morte ciascun grida;\ne vederai color che son contenti\nnel foco, perch\u00e9 speran di venire\nquando che sia a le beate genti.\nA le quai poi se tu vorrai salire,\nanima fia a ci\u00f2 pi\u00f9 di me degna:\ncon lei ti lascer\u00f2 nel mio partire;\nch\u00e9 quello imperador che l\u00e0 s\u00f9 regna,\nperch'i' fu' ribellante a la sua legge,\nnon vuol che 'n sua citt\u00e0 per me si vegna.\nIn tutte parti impera e quivi regge;\nquivi \u00e8 la sua citt\u00e0 e l'alto seggio:\noh felice colui cu' ivi elegge!\u00bb.\nE io a lui: \u00abPoeta, io ti richeggio\nper quello Dio che tu non conoscesti,\nacci\u00f2 ch'io fugga questo male e peggio,\nche tu mi meni l\u00e0 dov'or dicesti,\ns\u00ec ch'io veggia la porta di san Pietro\ne color cui tu fai cotanto mesti\u00bb.\nAllor si mosse, e io li tenni dietro."
+      },
+      {
+        "source": "input",
+        "node": "Image With Styled Text",
+        "category": "text",
+        "key": "inputAttributedString",
+        "value": "Baskerville-Italic"
+      },
+      {
+        "source": "input",
+        "node": "Image With Styled Text",
+        "category": "text",
+        "key": "inputAttributedString",
+        "value": "1 1 1"
+      }
+    ],
+    "host_safety_notes": []
+  },
+  {
+    "name": "Interpolation.fxcore",
+    "path": "/Users/dalebradshaw/Documents/fxcore/sample_plugins/Interpolation.fxcore",
+    "bytes": 126976,
+    "node_count": 8,
+    "connection_count": 7,
+    "role": "timed interpolation",
+    "root_identifier": "com.fxfactory.FxCore.FxCorePlugIn3DRenderToTexture",
+    "identifier_counts": {
+      "com.fxfactory.FxCore.FxCorePlugIn3DRenderToTexture": 1,
+      "com.fxfactory.FxCore.FxCorePlugInInterpolation": 2,
+      "com.fxfactory.FxCore.FxCorePlugInNISmoothCircle": 1,
+      "com.fxfactory.FxCore.FxCorePlugInOutputInfo": 1,
+      "com.fxfactory.FxCore.FxCorePlugInMathExpression": 2,
+      "com.fxfactory.FxCore.FxCorePlugInCIBillboard": 1
+    },
+    "notable_identifiers": [
+      "FxCorePlugIn3DRenderToTexture"
+    ],
+    "nodes": [
+      {
+        "pk": 5,
+        "title": "Root",
+        "identifier": "com.fxfactory.FxCore.FxCorePlugIn3DRenderToTexture",
+        "parent": null,
+        "index": 0,
+        "is_iterator": false,
+        "is_consumer": false
+      },
+      {
+        "pk": 3,
+        "title": "Interpolation",
+        "identifier": "com.fxfactory.FxCore.FxCorePlugInInterpolation",
+        "parent": 5,
+        "index": 0,
+        "is_iterator": false,
+        "is_consumer": false
+      },
+      {
+        "pk": 2,
+        "title": "Circle",
+        "identifier": "com.fxfactory.FxCore.FxCorePlugInNISmoothCircle",
+        "parent": 5,
+        "index": 1,
+        "is_iterator": false,
+        "is_consumer": false
+      },
+      {
+        "pk": 1,
+        "title": "\udbc3\uddd8",
+        "identifier": "com.fxfactory.FxCore.FxCorePlugInOutputInfo",
+        "parent": 5,
+        "index": 2,
+        "is_iterator": false,
+        "is_consumer": false
+      },
+      {
+        "pk": 6,
+        "title": "Expression",
+        "identifier": "com.fxfactory.FxCore.FxCorePlugInMathExpression",
+        "parent": 5,
+        "index": 3,
+        "is_iterator": false,
+        "is_consumer": false
+      },
+      {
+        "pk": 4,
+        "title": "2D",
+        "identifier": "com.fxfactory.FxCore.FxCorePlugInCIBillboard",
+        "parent": 5,
+        "index": 4,
+        "is_iterator": false,
+        "is_consumer": true
+      },
+      {
+        "pk": 7,
+        "title": "Expression",
+        "identifier": "com.fxfactory.FxCore.FxCorePlugInMathExpression",
+        "parent": 5,
+        "index": 5,
+        "is_iterator": false,
+        "is_consumer": false
+      },
+      {
+        "pk": 9,
+        "title": "Interpolation",
+        "identifier": "com.fxfactory.FxCore.FxCorePlugInInterpolation",
+        "parent": 5,
+        "index": 6,
+        "is_iterator": false,
+        "is_consumer": false
+      }
+    ],
+    "connections": [
+      {
+        "pk": 2,
+        "from_node": "Expression",
+        "from_output": "=",
+        "to_node": "Circle",
+        "to_input": "Center X"
+      },
+      {
+        "pk": 3,
+        "from_node": "Interpolation",
+        "from_output": "Value",
+        "to_node": "Expression",
+        "to_input": "B"
+      },
+      {
+        "pk": 4,
+        "from_node": "Circle",
+        "from_output": "",
+        "to_node": "2D",
+        "to_input": "Image"
+      },
+      {
+        "pk": 8,
+        "from_node": "Expression",
+        "from_output": "=",
+        "to_node": "Circle",
+        "to_input": "Center Y"
+      },
+      {
+        "pk": 9,
+        "from_node": "\udbc3\uddd8",
+        "from_output": "Center X",
+        "to_node": "Expression",
+        "to_input": "A"
+      },
+      {
+        "pk": 10,
+        "from_node": "\udbc3\uddd8",
+        "from_output": "Center Y",
+        "to_node": "Expression",
+        "to_input": "A"
+      },
+      {
+        "pk": 11,
+        "from_node": "Interpolation",
+        "from_output": "Value",
+        "to_node": "Expression",
+        "to_input": "B"
+      }
+    ],
+    "decoded_values": [
+      {
+        "source": "nodeKeyValue",
+        "node": "Expression",
+        "category": "expression",
+        "key": "expressionString",
+        "value": "a + a*b"
+      },
+      {
+        "source": "nodeKeyValue",
+        "node": "Expression",
+        "category": "expression",
+        "key": "candidateString",
+        "value": "a + a*b"
+      },
+      {
+        "source": "nodeKeyValue",
+        "node": "Expression",
+        "category": "expression",
+        "key": "expressionString",
+        "value": "a + a * b"
+      },
+      {
+        "source": "nodeKeyValue",
+        "node": "Expression",
+        "category": "expression",
+        "key": "candidateString",
+        "value": "a + a * b"
+      }
+    ],
+    "host_safety_notes": []
+  },
+  {
+    "name": "Iterator 2.fxcore",
+    "path": "/Users/dalebradshaw/Documents/fxcore/sample_plugins/Iterator 2.fxcore",
+    "bytes": 139264,
+    "node_count": 13,
+    "connection_count": 15,
+    "role": "iterated camera feedback",
+    "root_identifier": "com.fxfactory.FxCore.FxCorePlugInCIContainer",
+    "identifier_counts": {
+      "com.fxfactory.FxCore.FxCorePlugInCIContainer": 1,
+      "com.fxfactory.FxCore.FxCorePlugInIterator": 1,
+      "com.fxfactory.FxCore.AVCaptureDevicePlugIn": 1,
+      "com.fxfactory.FxCore.FxCorePlugInCIBillboard": 1,
+      "com.fxfactory.FxCore.FxCorePlugInImageFitInsideDestination": 1,
+      "com.fxfactory.FxCore.FxCorePlugInIteratorVariables": 1,
+      "com.fxfactory.FxCore.FxCorePlugInMultiplexer": 1,
+      "com.fxfactory.FxCore.FxCorePlugInNIAffineTransformUnit": 1,
+      "com.fxfactory.FxCore.FxCorePlugInOutputInfo": 1,
+      "com.fxfactory.FxCore.FxCorePlugInCIKernel": 1,
+      "com.fxfactory.FxCore.FxCorePlugInCISourceOverCompositing": 1,
+      "com.fxfactory.FxCore.FxCorePlugInMathExpression": 2
+    },
+    "notable_identifiers": [
+      "FxCorePlugInIterator",
+      "AVCaptureDevicePlugIn",
+      "FxCorePlugInIteratorVariables",
+      "FxCorePlugInCIKernel"
+    ],
+    "nodes": [
+      {
+        "pk": 1,
+        "title": "Root",
+        "identifier": "com.fxfactory.FxCore.FxCorePlugInCIContainer",
+        "parent": null,
+        "index": 0,
+        "is_iterator": false,
+        "is_consumer": false
+      },
+      {
+        "pk": 3,
+        "title": "Container",
+        "identifier": "com.fxfactory.FxCore.FxCorePlugInIterator",
+        "parent": 1,
+        "index": 0,
+        "is_iterator": true,
+        "is_consumer": false
+      },
+      {
+        "pk": 5,
+        "title": "\udbc0\udf4a",
+        "identifier": "com.fxfactory.FxCore.AVCaptureDevicePlugIn",
+        "parent": 1,
+        "index": 1,
+        "is_iterator": false,
+        "is_consumer": false
+      },
+      {
+        "pk": 7,
+        "title": "2D",
+        "identifier": "com.fxfactory.FxCore.FxCorePlugInCIBillboard",
+        "parent": 1,
+        "index": 2,
+        "is_iterator": false,
+        "is_consumer": true
+      },
+      {
+        "pk": 9,
+        "title": "Resize",
+        "identifier": "com.fxfactory.FxCore.FxCorePlugInImageFitInsideDestination",
+        "parent": 1,
+        "index": 3,
+        "is_iterator": false,
+        "is_consumer": false
+      },
+      {
+        "pk": 2,
+        "title": "Iterator",
+        "identifier": "com.fxfactory.FxCore.FxCorePlugInIteratorVariables",
+        "parent": 3,
+        "index": 0,
+        "is_iterator": false,
+        "is_consumer": false
+      },
+      {
+        "pk": 4,
+        "title": "On Index > 1, it is clamped",
+        "identifier": "com.fxfactory.FxCore.FxCorePlugInMultiplexer",
+        "parent": 3,
+        "index": 1,
+        "is_iterator": false,
+        "is_consumer": false
+      },
+      {
+        "pk": 6,
+        "title": "Transform",
+        "identifier": "com.fxfactory.FxCore.FxCorePlugInNIAffineTransformUnit",
+        "parent": 3,
+        "index": 2,
+        "is_iterator": false,
+        "is_consumer": false
+      },
+      {
+        "pk": 8,
+        "title": "Destination",
+        "identifier": "com.fxfactory.FxCore.FxCorePlugInOutputInfo",
+        "parent": 3,
+        "index": 3,
+        "is_iterator": false,
+        "is_consumer": false
+      },
+      {
+        "pk": 10,
+        "title": "Kernel",
+        "identifier": "com.fxfactory.FxCore.FxCorePlugInCIKernel",
+        "parent": 3,
+        "index": 4,
+        "is_iterator": false,
+        "is_consumer": false
+      },
+      {
+        "pk": 11,
+        "title": "Over",
+        "identifier": "com.fxfactory.FxCore.FxCorePlugInCISourceOverCompositing",
+        "parent": 3,
+        "index": 5,
+        "is_iterator": false,
+        "is_consumer": false
+      },
+      {
+        "pk": 12,
+        "title": "Expression",
+        "identifier": "com.fxfactory.FxCore.FxCorePlugInMathExpression",
+        "parent": 3,
+        "index": 6,
+        "is_iterator": false,
+        "is_consumer": false
+      },
+      {
+        "pk": 13,
+        "title": "Expression",
+        "identifier": "com.fxfactory.FxCore.FxCorePlugInMathExpression",
+        "parent": 3,
+        "index": 7,
+        "is_iterator": false,
+        "is_consumer": false
+      }
+    ],
+    "connections": [
+      {
+        "pk": 1,
+        "from_node": "Iterator",
+        "from_output": "Index",
+        "to_node": "On Index > 1, it is clamped",
+        "to_input": "Index"
+      },
+      {
+        "pk": 6,
+        "from_node": "Destination",
+        "from_output": "Center",
+        "to_node": "Transform",
+        "to_input": "Origin"
+      },
+      {
+        "pk": 7,
+        "from_node": "Resize",
+        "from_output": "",
+        "to_node": "Container",
+        "to_input": "Image 0"
+      },
+      {
+        "pk": 8,
+        "from_node": "\udbc0\udf4a",
+        "from_output": "",
+        "to_node": "Resize",
+        "to_input": "Image"
+      },
+      {
+        "pk": 10,
+        "from_node": "On Index > 1, it is clamped",
+        "from_output": "",
+        "to_node": "Kernel",
+        "to_input": "Image"
+      },
+      {
+        "pk": 11,
+        "from_node": "On Index > 1, it is clamped",
+        "from_output": "",
+        "to_node": "Over",
+        "to_input": ""
+      },
+      {
+        "pk": 12,
+        "from_node": "Transform",
+        "from_output": "",
+        "to_node": "Over",
+        "to_input": ""
+      },
+      {
+        "pk": 13,
+        "from_node": "Container",
+        "from_output": "",
+        "to_node": "2D",
+        "to_input": "Image"
+      },
+      {
+        "pk": 14,
+        "from_node": "Kernel",
+        "from_output": "",
+        "to_node": "Transform",
+        "to_input": "Image"
+      },
+      {
+        "pk": 15,
+        "from_node": "Over",
+        "from_output": "",
+        "to_node": "On Index > 1, it is clamped",
+        "to_input": "Image 1"
+      },
+      {
+        "pk": 17,
+        "from_node": "Iterator",
+        "from_output": "Iterations",
+        "to_node": "Expression",
+        "to_input": "Iterations"
+      },
+      {
+        "pk": 18,
+        "from_node": "Expression",
+        "from_output": "=",
+        "to_node": "Transform",
+        "to_input": "Scale X"
+      },
+      {
+        "pk": 19,
+        "from_node": "Expression",
+        "from_output": "=",
+        "to_node": "Transform",
+        "to_input": "Scale Y"
+      },
+      {
+        "pk": 20,
+        "from_node": "Iterator",
+        "from_output": "Iterations",
+        "to_node": "Expression",
+        "to_input": "Iterations"
+      },
+      {
+        "pk": 21,
+        "from_node": "Expression",
+        "from_output": "=",
+        "to_node": "Transform",
+        "to_input": "Angle"
+      }
+    ],
+    "decoded_values": [
+      {
+        "source": "nodeKeyValue",
+        "node": "Kernel",
+        "category": "kernel",
+        "key": "activeKernelName",
+        "value": "myFilter"
+      },
+      {
+        "source": "nodeKeyValue",
+        "node": "Kernel",
+        "category": "kernel",
+        "key": "candidateString",
+        "value": "kernel vec4 myFilter(__sample image) {\n    return image * 0.9;\n}"
+      },
+      {
+        "source": "nodeKeyValue",
+        "node": "Kernel",
+        "category": "kernel",
+        "key": "kernelString",
+        "value": "kernel vec4 myFilter(__sample image) {\n    return image * 0.9;\n}"
+      },
+      {
+        "source": "nodeKeyValue",
+        "node": "Expression",
+        "category": "expression",
+        "key": "expressionString",
+        "value": "1.0 - 0.9 / iterations"
+      },
+      {
+        "source": "nodeKeyValue",
+        "node": "Expression",
+        "category": "expression",
+        "key": "candidateString",
+        "value": "1.0 - 0.9 / iterations"
+      },
+      {
+        "source": "nodeKeyValue",
+        "node": "Expression",
+        "category": "expression",
+        "key": "expressionString",
+        "value": "30 / iterations"
+      },
+      {
+        "source": "nodeKeyValue",
+        "node": "Expression",
+        "category": "expression",
+        "key": "candidateString",
+        "value": "30 / iterations"
+      }
+    ],
+    "host_safety_notes": []
+  },
+  {
+    "name": "Iterator.fxcore",
+    "path": "/Users/dalebradshaw/Documents/fxcore/sample_plugins/Iterator.fxcore",
+    "bytes": 135168,
+    "node_count": 10,
+    "connection_count": 13,
+    "role": "iterator text repetition",
+    "root_identifier": "com.fxfactory.FxCore.FxCorePlugIn3DRenderToTexture",
+    "identifier_counts": {
+      "com.fxfactory.FxCore.FxCorePlugIn3DRenderToTexture": 1,
+      "com.fxfactory.FxCore.FxCorePlugInImageWithString": 1,
+      "com.fxfactory.FxCore.FxCorePlugIn3DSprite": 1,
+      "com.fxfactory.FxCore.FxCorePlugInRandomValueGenerator": 2,
+      "com.fxfactory.FxCore.FxCorePlugInIteratorVariables": 1,
+      "com.fxfactory.FxCore.FxCorePlugInMathExpression": 1,
+      "com.fxfactory.FxCore.FxCorePlugInLocalTime": 1,
+      "com.fxfactory.FxCore.FxCorePlugInRGBValuesToColor": 1,
+      "com.fxfactory.FxCore.FxCorePlugInSystemFont": 1
+    },
+    "notable_identifiers": [
+      "FxCorePlugIn3DRenderToTexture",
+      "FxCorePlugIn3DSprite",
+      "FxCorePlugInIteratorVariables"
+    ],
+    "nodes": [
+      {
+        "pk": 7,
+        "title": "Root",
+        "identifier": "com.fxfactory.FxCore.FxCorePlugIn3DRenderToTexture",
+        "parent": null,
+        "index": 0,
+        "is_iterator": true,
+        "is_consumer": false
+      },
+      {
+        "pk": 2,
+        "title": "Image With String",
+        "identifier": "com.fxfactory.FxCore.FxCorePlugInImageWithString",
+        "parent": 7,
+        "index": 0,
+        "is_iterator": false,
+        "is_consumer": false
+      },
+      {
+        "pk": 3,
+        "title": "Sprite",
+        "identifier": "com.fxfactory.FxCore.FxCorePlugIn3DSprite",
+        "parent": 7,
+        "index": 1,
+        "is_iterator": false,
+        "is_consumer": true
+      },
+      {
+        "pk": 1,
+        "title": "Random",
+        "identifier": "com.fxfactory.FxCore.FxCorePlugInRandomValueGenerator",
+        "parent": 7,
+        "index": 2,
+        "is_iterator": false,
+        "is_consumer": false
+      },
+      {
+        "pk": 4,
+        "title": "Iterator Variables",
+        "identifier": "com.fxfactory.FxCore.FxCorePlugInIteratorVariables",
+        "parent": 7,
+        "index": 3,
+        "is_iterator": false,
+        "is_consumer": false
+      },
+      {
+        "pk": 5,
+        "title": "Expression",
+        "identifier": "com.fxfactory.FxCore.FxCorePlugInMathExpression",
+        "parent": 7,
+        "index": 4,
+        "is_iterator": false,
+        "is_consumer": false
+      },
+      {
+        "pk": 6,
+        "title": "Local Time",
+        "identifier": "com.fxfactory.FxCore.FxCorePlugInLocalTime",
+        "parent": 7,
+        "index": 5,
+        "is_iterator": false,
+        "is_consumer": false
+      },
+      {
+        "pk": 16,
+        "title": "Random",
+        "identifier": "com.fxfactory.FxCore.FxCorePlugInRandomValueGenerator",
+        "parent": 7,
+        "index": 6,
+        "is_iterator": false,
+        "is_consumer": false
+      },
+      {
+        "pk": 17,
+        "title": "Create Color",
+        "identifier": "com.fxfactory.FxCore.FxCorePlugInRGBValuesToColor",
+        "parent": 7,
+        "index": 7,
+        "is_iterator": false,
+        "is_consumer": false
+      },
+      {
+        "pk": 18,
+        "title": "System Font",
+        "identifier": "com.fxfactory.FxCore.FxCorePlugInSystemFont",
+        "parent": 7,
+        "index": 8,
+        "is_iterator": false,
+        "is_consumer": false
+      }
+    ],
+    "connections": [
+      {
+        "pk": 1,
+        "from_node": "Expression",
+        "from_output": "=",
+        "to_node": "Random",
+        "to_input": "Time"
+      },
+      {
+        "pk": 2,
+        "from_node": "Local Time",
+        "from_output": "Time",
+        "to_node": "Expression",
+        "to_input": "a"
+      },
+      {
+        "pk": 3,
+        "from_node": "Random",
+        "from_output": "",
+        "to_node": "Sprite",
+        "to_input": "Position Y"
+      },
+      {
+        "pk": 5,
+        "from_node": "Random",
+        "from_output": "",
+        "to_node": "Sprite",
+        "to_input": "Position X"
+      },
+      {
+        "pk": 6,
+        "from_node": "Iterator Variables",
+        "from_output": "Current Index",
+        "to_node": "Expression",
+        "to_input": "b"
+      },
+      {
+        "pk": 7,
+        "from_node": "Iterator Variables",
+        "from_output": "Current Index",
+        "to_node": "Image With String",
+        "to_input": "String"
+      },
+      {
+        "pk": 22,
+        "from_node": "Image With String",
+        "from_output": "Image",
+        "to_node": "Sprite",
+        "to_input": "Image"
+      },
+      {
+        "pk": 25,
+        "from_node": "Iterator Variables",
+        "from_output": "Progress",
+        "to_node": "Random",
+        "to_input": "Time"
+      },
+      {
+        "pk": 27,
+        "from_node": "Create Color",
+        "from_output": "",
+        "to_node": "Image With String",
+        "to_input": "Text Color"
+      },
+      {
+        "pk": 28,
+        "from_node": "System Font",
+        "from_output": "",
+        "to_node": "Image With String",
+        "to_input": "Font Name"
+      },
+      {
+        "pk": 29,
+        "from_node": "Random",
+        "from_output": "",
+        "to_node": "Create Color",
+        "to_input": "Green"
+      },
+      {
+        "pk": 31,
+        "from_node": "Random",
+        "from_output": "",
+        "to_node": "Create Color",
+        "to_input": "Blue"
+      },
+      {
+        "pk": 32,
+        "from_node": "Random",
+        "from_output": "",
+        "to_node": "Create Color",
+        "to_input": "Red"
+      }
+    ],
+    "decoded_values": [
+      {
+        "source": "nodeKeyValue",
+        "node": "Expression",
+        "category": "expression",
+        "key": "expressionString",
+        "value": "a + b"
+      },
+      {
+        "source": "nodeKeyValue",
+        "node": "Expression",
+        "category": "expression",
+        "key": "candidateString",
+        "value": "a + b"
+      },
+      {
+        "source": "input",
+        "node": "Image With String",
+        "category": "text",
+        "key": "inputString",
+        "value": "99"
+      }
+    ],
+    "host_safety_notes": []
+  },
+  {
+    "name": "Pac-Man.fxcore",
+    "path": "/Users/dalebradshaw/Documents/fxcore/sample_plugins/Pac-Man.fxcore",
+    "bytes": 131072,
+    "node_count": 9,
+    "connection_count": 14,
+    "role": "procedural CI chain",
+    "root_identifier": "com.fxfactory.FxCore.FxCorePlugIn3DRenderToTexture",
+    "identifier_counts": {
+      "com.fxfactory.FxCore.FxCorePlugIn3DRenderToTexture": 1,
+      "com.fxfactory.FxCore.FxCorePlugInNICircle": 1,
+      "com.fxfactory.FxCore.FxCorePlugInOutputInfo": 1,
+      "com.fxfactory.FxCore.FxCorePlugInNIRadialWipeTransition": 1,
+      "com.fxfactory.FxCore.FxCorePlugInCIBillboard": 1,
+      "com.fxfactory.FxCore.FxCorePlugInInterpolation": 2,
+      "com.fxfactory.FxCore.FxCorePlugInCIPixellate": 1,
+      "com.fxfactory.FxCore.FxCorePlugInNICRTScanlines": 1
+    },
+    "notable_identifiers": [
+      "FxCorePlugIn3DRenderToTexture"
+    ],
+    "nodes": [
+      {
+        "pk": 4,
+        "title": "Root",
+        "identifier": "com.fxfactory.FxCore.FxCorePlugIn3DRenderToTexture",
+        "parent": null,
+        "index": 0,
+        "is_iterator": false,
+        "is_consumer": false
+      },
+      {
+        "pk": 1,
+        "title": "Circle (Filled)",
+        "identifier": "com.fxfactory.FxCore.FxCorePlugInNICircle",
+        "parent": 4,
+        "index": 0,
+        "is_iterator": false,
+        "is_consumer": false
+      },
+      {
+        "pk": 7,
+        "title": "Destination",
+        "identifier": "com.fxfactory.FxCore.FxCorePlugInOutputInfo",
+        "parent": 4,
+        "index": 1,
+        "is_iterator": false,
+        "is_consumer": false
+      },
+      {
+        "pk": 6,
+        "title": "Radial Wipe",
+        "identifier": "com.fxfactory.FxCore.FxCorePlugInNIRadialWipeTransition",
+        "parent": 4,
+        "index": 2,
+        "is_iterator": false,
+        "is_consumer": false
+      },
+      {
+        "pk": 5,
+        "title": "Billboard",
+        "identifier": "com.fxfactory.FxCore.FxCorePlugInCIBillboard",
+        "parent": 4,
+        "index": 3,
+        "is_iterator": false,
+        "is_consumer": true
+      },
+      {
+        "pk": 2,
+        "title": "Interpolation",
+        "identifier": "com.fxfactory.FxCore.FxCorePlugInInterpolation",
+        "parent": 4,
+        "index": 4,
+        "is_iterator": false,
+        "is_consumer": false
+      },
+      {
+        "pk": 3,
+        "title": "Interpolation",
+        "identifier": "com.fxfactory.FxCore.FxCorePlugInInterpolation",
+        "parent": 4,
+        "index": 5,
+        "is_iterator": false,
+        "is_consumer": false
+      },
+      {
+        "pk": 8,
+        "title": "Pixelate",
+        "identifier": "com.fxfactory.FxCore.FxCorePlugInCIPixellate",
+        "parent": 4,
+        "index": 6,
+        "is_iterator": false,
+        "is_consumer": false
+      },
+      {
+        "pk": 9,
+        "title": "CRT Scanlines",
+        "identifier": "com.fxfactory.FxCore.FxCorePlugInNICRTScanlines",
+        "parent": 4,
+        "index": 7,
+        "is_iterator": false,
+        "is_consumer": false
+      }
+    ],
+    "connections": [
+      {
+        "pk": 2,
+        "from_node": "Destination",
+        "from_output": "Center Y",
+        "to_node": "Radial Wipe",
+        "to_input": "Center Y"
+      },
+      {
+        "pk": 3,
+        "from_node": "Destination",
+        "from_output": "Center Y",
+        "to_node": "Circle (Filled)",
+        "to_input": "Center Y"
+      },
+      {
+        "pk": 4,
+        "from_node": "Destination",
+        "from_output": "Center X",
+        "to_node": "Radial Wipe",
+        "to_input": "Center X"
+      },
+      {
+        "pk": 5,
+        "from_node": "Interpolation",
+        "from_output": "Value",
+        "to_node": "Radial Wipe",
+        "to_input": "Angle"
+      },
+      {
+        "pk": 6,
+        "from_node": "Circle (Filled)",
+        "from_output": "",
+        "to_node": "Radial Wipe",
+        "to_input": "Image"
+      },
+      {
+        "pk": 7,
+        "from_node": "Interpolation",
+        "from_output": "Value",
+        "to_node": "Radial Wipe",
+        "to_input": "Time"
+      },
+      {
+        "pk": 8,
+        "from_node": "Destination",
+        "from_output": "Center X",
+        "to_node": "Circle (Filled)",
+        "to_input": "Center X"
+      },
+      {
+        "pk": 10,
+        "from_node": "Destination",
+        "from_output": "Center X",
+        "to_node": "Pixelate",
+        "to_input": "Center X"
+      },
+      {
+        "pk": 11,
+        "from_node": "Radial Wipe",
+        "from_output": "",
+        "to_node": "Pixelate",
+        "to_input": "Image"
+      },
+      {
+        "pk": 12,
+        "from_node": "Destination",
+        "from_output": "Center Y",
+        "to_node": "Pixelate",
+        "to_input": "Center Y"
+      },
+      {
+        "pk": 13,
+        "from_node": "CRT Scanlines",
+        "from_output": "",
+        "to_node": "Billboard",
+        "to_input": "Image"
+      },
+      {
+        "pk": 14,
+        "from_node": "Pixelate",
+        "from_output": "",
+        "to_node": "CRT Scanlines",
+        "to_input": "Image"
+      },
+      {
+        "pk": 15,
+        "from_node": "Destination",
+        "from_output": "Center Y",
+        "to_node": "CRT Scanlines",
+        "to_input": "Center Y"
+      },
+      {
+        "pk": 16,
+        "from_node": "Destination",
+        "from_output": "Center X",
+        "to_node": "CRT Scanlines",
+        "to_input": "Center X"
+      }
+    ],
+    "decoded_values": [],
+    "host_safety_notes": []
+  },
+  {
+    "name": "Spaghetti Poetry.fxcore",
+    "path": "/Users/dalebradshaw/Documents/fxcore/sample_plugins/Spaghetti Poetry.fxcore",
+    "bytes": 192512,
+    "node_count": 20,
+    "connection_count": 31,
+    "role": "language model text graphics",
+    "root_identifier": "com.fxfactory.FxCore.FxCorePlugInCIContainer",
+    "identifier_counts": {
+      "com.fxfactory.FxCore.FxCorePlugInCIContainer": 1,
+      "com.fxfactory.FxCore.FxCorePlugInStyledTextWithString": 1,
+      "com.fxfactory.FxCore.FxCorePlugInImageWithStyledText": 1,
+      "com.fxfactory.FxCore.FxCorePlugInCIBillboard": 1,
+      "com.fxfactory.FxCore.FxCorePlugInInterpolation": 1,
+      "com.fxfactory.FxCore.FxCorePlugInOutputInfo": 1,
+      "com.fxfactory.FxCore.FxCorePlugInLocalTime": 1,
+      "com.fxfactory.FxCore.FxCorePlugInCIMaskedVariableBlur": 1,
+      "com.fxfactory.FxCore.FxCorePlugInMathExpression": 3,
+      "com.fxfactory.FxCore.FxCorePlugInCIBumpDistortion": 1,
+      "com.fxfactory.FxCore.LanguageModelPlugIn": 1,
+      "com.fxfactory.FxCore.AlertGeneratorPlugIn": 1,
+      "com.fxfactory.FxCore.FxCorePlugInNISmoothCircle": 1,
+      "com.fxfactory.FxCore.FxCorePlugInNIHyperspaceGenerator": 1,
+      "com.fxfactory.FxCore.FxCorePlugInNICompositeOverColor": 1,
+      "com.fxfactory.FxCore.FxCorePlugInCIBlendWithMask": 1,
+      "com.fxfactory.FxCore.FxCorePlugInNICenterImageTransform": 1,
+      "com.fxfactory.FxCore.FxCorePlugInCIGaussianBlur": 1
+    },
+    "notable_identifiers": [
+      "LanguageModelPlugIn"
+    ],
+    "nodes": [
+      {
+        "pk": 5,
+        "title": "Root",
+        "identifier": "com.fxfactory.FxCore.FxCorePlugInCIContainer",
+        "parent": null,
+        "index": 0,
+        "is_iterator": false,
+        "is_consumer": false
+      },
+      {
+        "pk": 2,
+        "title": "Styled Text With String",
+        "identifier": "com.fxfactory.FxCore.FxCorePlugInStyledTextWithString",
+        "parent": 5,
+        "index": 0,
+        "is_iterator": false,
+        "is_consumer": false
+      },
+      {
+        "pk": 1,
+        "title": "Image With Styled Text",
+        "identifier": "com.fxfactory.FxCore.FxCorePlugInImageWithStyledText",
+        "parent": 5,
+        "index": 1,
+        "is_iterator": false,
+        "is_consumer": false
+      },
+      {
+        "pk": 4,
+        "title": "2D",
+        "identifier": "com.fxfactory.FxCore.FxCorePlugInCIBillboard",
+        "parent": 5,
+        "index": 2,
+        "is_iterator": false,
+        "is_consumer": true
+      },
+      {
+        "pk": 6,
+        "title": "Interpolation",
+        "identifier": "com.fxfactory.FxCore.FxCorePlugInInterpolation",
+        "parent": 5,
+        "index": 3,
+        "is_iterator": false,
+        "is_consumer": false
+      },
+      {
+        "pk": 11,
+        "title": "Destination",
+        "identifier": "com.fxfactory.FxCore.FxCorePlugInOutputInfo",
+        "parent": 5,
+        "index": 4,
+        "is_iterator": false,
+        "is_consumer": false
+      },
+      {
+        "pk": 9,
+        "title": "Time",
+        "identifier": "com.fxfactory.FxCore.FxCorePlugInLocalTime",
+        "parent": 5,
+        "index": 5,
+        "is_iterator": false,
+        "is_consumer": false
+      },
+      {
+        "pk": 14,
+        "title": "Masked Variable Blur",
+        "identifier": "com.fxfactory.FxCore.FxCorePlugInCIMaskedVariableBlur",
+        "parent": 5,
+        "index": 6,
+        "is_iterator": false,
+        "is_consumer": false
+      },
+      {
+        "pk": 15,
+        "title": "Expression",
+        "identifier": "com.fxfactory.FxCore.FxCorePlugInMathExpression",
+        "parent": 5,
+        "index": 7,
+        "is_iterator": false,
+        "is_consumer": false
+      },
+      {
+        "pk": 17,
+        "title": "Bump",
+        "identifier": "com.fxfactory.FxCore.FxCorePlugInCIBumpDistortion",
+        "parent": 5,
+        "index": 8,
+        "is_iterator": false,
+        "is_consumer": false
+      },
+      {
+        "pk": 18,
+        "title": "Language Model",
+        "identifier": "com.fxfactory.FxCore.LanguageModelPlugIn",
+        "parent": 5,
+        "index": 9,
+        "is_iterator": false,
+        "is_consumer": false
+      },
+      {
+        "pk": 20,
+        "title": "Alert",
+        "identifier": "com.fxfactory.FxCore.AlertGeneratorPlugIn",
+        "parent": 5,
+        "index": 10,
+        "is_iterator": false,
+        "is_consumer": false
+      },
+      {
+        "pk": 21,
+        "title": "Circle",
+        "identifier": "com.fxfactory.FxCore.FxCorePlugInNISmoothCircle",
+        "parent": 5,
+        "index": 11,
+        "is_iterator": false,
+        "is_consumer": false
+      },
+      {
+        "pk": 30,
+        "title": "Hyperspace",
+        "identifier": "com.fxfactory.FxCore.FxCorePlugInNIHyperspaceGenerator",
+        "parent": 5,
+        "index": 12,
+        "is_iterator": false,
+        "is_consumer": false
+      },
+      {
+        "pk": 31,
+        "title": "Over Color",
+        "identifier": "com.fxfactory.FxCore.FxCorePlugInNICompositeOverColor",
+        "parent": 5,
+        "index": 13,
+        "is_iterator": false,
+        "is_consumer": false
+      },
+      {
+        "pk": 32,
+        "title": "Blend With Mask",
+        "identifier": "com.fxfactory.FxCore.FxCorePlugInCIBlendWithMask",
+        "parent": 5,
+        "index": 14,
+        "is_iterator": false,
+        "is_consumer": false
+      },
+      {
+        "pk": 33,
+        "title": "Expression",
+        "identifier": "com.fxfactory.FxCore.FxCorePlugInMathExpression",
+        "parent": 5,
+        "index": 15,
+        "is_iterator": false,
+        "is_consumer": false
+      },
+      {
+        "pk": 34,
+        "title": "Center",
+        "identifier": "com.fxfactory.FxCore.FxCorePlugInNICenterImageTransform",
+        "parent": 5,
+        "index": 16,
+        "is_iterator": false,
+        "is_consumer": false
+      },
+      {
+        "pk": 35,
+        "title": "Gaussian Blur",
+        "identifier": "com.fxfactory.FxCore.FxCorePlugInCIGaussianBlur",
+        "parent": 5,
+        "index": 17,
+        "is_iterator": false,
+        "is_consumer": false
+      },
+      {
+        "pk": 36,
+        "title": "Expression",
+        "identifier": "com.fxfactory.FxCore.FxCorePlugInMathExpression",
+        "parent": 5,
+        "index": 18,
+        "is_iterator": false,
+        "is_consumer": false
+      }
+    ],
+    "connections": [
+      {
+        "pk": 3,
+        "from_node": "Styled Text With String",
+        "from_output": "Styled Text",
+        "to_node": "Image With Styled Text",
+        "to_input": "Styled Text"
+      },
+      {
+        "pk": 4,
+        "from_node": "Interpolation",
+        "from_output": "Value",
+        "to_node": "Image With Styled Text",
+        "to_input": "Vertical Scroll"
+      },
+      {
+        "pk": 17,
+        "from_node": "Destination",
+        "from_output": "Height",
+        "to_node": "Expression",
+        "to_input": "Height"
+      },
+      {
+        "pk": 19,
+        "from_node": "Destination",
+        "from_output": "Width",
+        "to_node": "Expression",
+        "to_input": "Width"
+      },
+      {
+        "pk": 24,
+        "from_node": "Destination",
+        "from_output": "Width",
+        "to_node": "Bump",
+        "to_input": "Radius"
+      },
+      {
+        "pk": 25,
+        "from_node": "Destination",
+        "from_output": "Center",
+        "to_node": "Bump",
+        "to_input": "Center"
+      },
+      {
+        "pk": 35,
+        "from_node": "Language Model",
+        "from_output": "Message",
+        "to_node": "Alert",
+        "to_input": "Text"
+      },
+      {
+        "pk": 37,
+        "from_node": "Language Model",
+        "from_output": "Response",
+        "to_node": "Styled Text With String",
+        "to_input": "String"
+      },
+      {
+        "pk": 40,
+        "from_node": "Destination",
+        "from_output": "Center",
+        "to_node": "Circle",
+        "to_input": "Center"
+      },
+      {
+        "pk": 41,
+        "from_node": "Circle",
+        "from_output": "Image",
+        "to_node": "Masked Variable Blur",
+        "to_input": "Mask"
+      },
+      {
+        "pk": 42,
+        "from_node": "Expression",
+        "from_output": "=",
+        "to_node": "Circle",
+        "to_input": "Radius"
+      },
+      {
+        "pk": 43,
+        "from_node": "Expression",
+        "from_output": "=",
+        "to_node": "Circle",
+        "to_input": "Border"
+      },
+      {
+        "pk": 45,
+        "from_node": "Alert",
+        "from_output": "Image",
+        "to_node": "2D",
+        "to_input": "Image 3"
+      },
+      {
+        "pk": 47,
+        "from_node": "Masked Variable Blur",
+        "from_output": "",
+        "to_node": "2D",
+        "to_input": "Image 2"
+      },
+      {
+        "pk": 58,
+        "from_node": "Language Model",
+        "from_output": "Status",
+        "to_node": "2D",
+        "to_input": "Image 3"
+      },
+      {
+        "pk": 71,
+        "from_node": "Destination",
+        "from_output": "Center",
+        "to_node": "Hyperspace",
+        "to_input": "Center"
+      },
+      {
+        "pk": 76,
+        "from_node": "Hyperspace",
+        "from_output": "Image",
+        "to_node": "Blend With Mask",
+        "to_input": "Image"
+      },
+      {
+        "pk": 77,
+        "from_node": "Circle",
+        "from_output": "Image",
+        "to_node": "Blend With Mask",
+        "to_input": "Mask Image"
+      },
+      {
+        "pk": 78,
+        "from_node": "Time",
+        "from_output": "Time",
+        "to_node": "Hyperspace",
+        "to_input": "Time"
+      },
+      {
+        "pk": 79,
+        "from_node": "Blend With Mask",
+        "from_output": "Image",
+        "to_node": "Over Color",
+        "to_input": "Top"
+      },
+      {
+        "pk": 80,
+        "from_node": "Expression",
+        "from_output": "=",
+        "to_node": "Image With Styled Text",
+        "to_input": "Width"
+      },
+      {
+        "pk": 81,
+        "from_node": "Destination",
+        "from_output": "Width",
+        "to_node": "Expression",
+        "to_input": "Width"
+      },
+      {
+        "pk": 82,
+        "from_node": "Image With Styled Text",
+        "from_output": "Image",
+        "to_node": "Center",
+        "to_input": ""
+      },
+      {
+        "pk": 83,
+        "from_node": "Center",
+        "from_output": "Image",
+        "to_node": "Bump",
+        "to_input": "Image"
+      },
+      {
+        "pk": 84,
+        "from_node": "Destination",
+        "from_output": "Center",
+        "to_node": "Center",
+        "to_input": ""
+      },
+      {
+        "pk": 85,
+        "from_node": "Gaussian Blur",
+        "from_output": "Image",
+        "to_node": "2D",
+        "to_input": "Image"
+      },
+      {
+        "pk": 86,
+        "from_node": "Over Color",
+        "from_output": "Image",
+        "to_node": "Gaussian Blur",
+        "to_input": "Image"
+      },
+      {
+        "pk": 87,
+        "from_node": "Bump",
+        "from_output": "",
+        "to_node": "Masked Variable Blur",
+        "to_input": "Image"
+      },
+      {
+        "pk": 88,
+        "from_node": "Expression",
+        "from_output": "=",
+        "to_node": "Interpolation",
+        "to_input": "Time"
+      },
+      {
+        "pk": 89,
+        "from_node": "Time",
+        "from_output": "Time",
+        "to_node": "Expression",
+        "to_input": "Time"
+      },
+      {
+        "pk": 90,
+        "from_node": "Language Model",
+        "from_output": "Status",
+        "to_node": "Expression",
+        "to_input": "Status"
+      }
+    ],
+    "decoded_values": [
+      {
+        "source": "nodeKeyValue",
+        "node": "Expression",
+        "category": "expression",
+        "key": "candidateString",
+        "value": "max(width, height)/5"
+      },
+      {
+        "source": "nodeKeyValue",
+        "node": "Expression",
+        "category": "expression",
+        "key": "expressionString",
+        "value": "max(width, height)/5"
+      },
+      {
+        "source": "nodeKeyValue",
+        "node": "Expression",
+        "category": "expression",
+        "key": "expressionString",
+        "value": "width * 0.8"
+      },
+      {
+        "source": "nodeKeyValue",
+        "node": "Expression",
+        "category": "expression",
+        "key": "candidateString",
+        "value": "width * 0.8"
+      },
+      {
+        "source": "nodeKeyValue",
+        "node": "Expression",
+        "category": "expression",
+        "key": "candidateString",
+        "value": "(status == 0) * time"
+      },
+      {
+        "source": "nodeKeyValue",
+        "node": "Expression",
+        "category": "expression",
+        "key": "expressionString",
+        "value": "(status == 0) * time"
+      },
+      {
+        "source": "input",
+        "node": "Styled Text With String",
+        "category": "text",
+        "key": "inputString",
+        "value": "Infinite Loop"
+      },
+      {
+        "source": "input",
+        "node": "Image With Styled Text",
+        "category": "text",
+        "key": "inputAttributedString",
+        "value": "Nel mezzo del cammin di nostra vita\nmi ritrovai per una selva oscura\nch\u00e9 la diritta via era smarrita.\nAhi quanto a dir qual era \u00e8 cosa dura\nesta selva selvaggia e aspra e forte\nche nel pensier rinova la paura!\nTant'\u00e8 amara che poco \u00e8 pi\u00f9 morte;\nma per trattar del ben ch'i' vi trovai,\ndir\u00f2 de l'altre cose ch'i' v'ho scorte.\nIo non so ben ridir com'i' v'intrai,\ntant'era pien di sonno a quel punto\nche la verace via abbandonai.\nMa poi ch'i' fui al pi\u00e8 d'un colle giunto,\nl\u00e0 dove terminava quella valle\nche m'avea di paura il cor compunto,\nguardai in alto, e vidi le sue spalle\nvestite gi\u00e0 de' raggi del pianeta\nche mena dritto altrui per ogne calle.\nAllor fu la paura un poco queta\nche nel lago del cor m'era durata\nla notte ch'i' passai con tanta pieta.\nE come quei che con lena affannata\nuscito fuor del pelago a la riva\nsi volge a l'acqua perigliosa e guata,\ncos\u00ec l'animo mio, ch'ancor fuggiva,\nsi volse a retro a rimirar lo passo\nche non lasci\u00f2 gi\u00e0 mai persona viva.\nPoi ch'\u00e8i posato un poco il corpo lasso,\nripresi via per la piaggia diserta,\ns\u00ec che 'l pi\u00e8 fermo sempre era 'l pi\u00f9 basso.\nEd ecco, quasi al cominciar de l'erta,\nuna lonza leggera e presta molto,\nche di pel macolato era coverta;\ne non mi si partia dinanzi al volto,\nanzi 'mpediva tanto il mio cammino,\nch'i' fui per ritornar pi\u00f9 volte v\u00f2lto.\nTemp'era dal principio del mattino,\ne 'l sol montava 'n s\u00f9 con quelle stelle\nch'eran con lui quando l'amor divino\nmosse di prima quelle cose belle;\ns\u00ec ch'a bene sperar m'era cagione\ndi quella fiera a la gaetta pelle\nl'ora del tempo e la dolce stagione;\nma non s\u00ec che paura non mi desse\nla vista che m'apparve d'un leone.\nQuesti parea che contra me venisse\ncon la test'alta e con rabbiosa fame,\ns\u00ec che parea che l'aere ne tremesse.\nEd una lupa, che di tutte brame\nsembiava carca ne la sua magrezza,\ne molte genti f\u00e9 gi\u00e0 viver grame,\nquesta mi porse tanto di gravezza\ncon la paura ch'uscia di sua vista,\nch'io perdei la speranza de l'altezza.\nE qual \u00e8 quei che volontieri acquista,\ne giugne 'l tempo che perder lo face,\nche 'n tutt'i suoi pensier piange e s'attrista;\ntal mi fece la bestia sanza pace,\nche, venendomi 'ncontro, a poco a poco\nmi ripigneva l\u00e0 dove 'l sol tace.\nMentre ch'i' rovinava in basso loco,\ndinanzi a li occhi mi si fu offerto\nchi per lungo silenzio parea fioco.\nQuando vidi costui nel gran diserto,\n\u00abMiserere di me\u00bb, gridai a lui,\n\u00abqual che tu sii, od ombra od omo certo!\u00bb.\nRispuosemi: \u00abNon omo, omo gi\u00e0 fui,\ne li parenti miei furon lombardi,\nmantoani per patria ambedui.\nNacqui sub Iulio, ancor che fosse tardi,\ne vissi a Roma sotto 'l buono Augusto\nnel tempo de li d\u00e8i falsi e bugiardi.\nPoeta fui, e cantai di quel giusto\nfigliuol d'Anchise che venne di Troia,\npoi che 'l superbo Ili\u00f3n fu combusto.\nMa tu perch\u00e9 ritorni a tanta noia?\nperch\u00e9 non sali il dilettoso monte\nch'\u00e8 principio e cagion di tutta gioia?\u00bb.\n\u00abOr se' tu quel Virgilio e quella fonte\nche spandi di parlar s\u00ec largo fiume?\u00bb,\nrispuos'io lui con vergognosa fronte.\n\u00abO de li altri poeti onore e lume\nvagliami 'l lungo studio e 'l grande amore\nche m'ha fatto cercar lo tuo volume.\nTu se' lo mio maestro e 'l mio autore;\ntu se' solo colui da cu' io tolsi\nlo bello stilo che m'ha fatto onore.\nVedi la bestia per cu' io mi volsi:\naiutami da lei, famoso saggio,\nch'ella mi fa tremar le vene e i polsi\u00bb.\n\u00abA te convien tenere altro viaggio\u00bb,\nrispuose poi che lagrimar mi vide,\n\u00abse vuo' campar d'esto loco selvaggio:\nch\u00e9 questa bestia, per la qual tu gride,\nnon lascia altrui passar per la sua via,\nma tanto lo 'mpedisce che l'uccide;\ne ha natura s\u00ec malvagia e ria,\nche mai non empie la bramosa voglia,\ne dopo 'l pasto ha pi\u00f9 fame che pria.\nMolti son li animali a cui s'ammoglia,\ne pi\u00f9 saranno ancora, infin che 'l veltro\nverr\u00e0, che la far\u00e0 morir con doglia.\nQuesti non ciber\u00e0 terra n\u00e9 peltro,\nma sapienza, amore e virtute,\ne sua nazion sar\u00e0 tra feltro e feltro.\nDi quella umile Italia fia salute\nper cui mor\u00ec la vergine Cammilla,\nEurialo e Turno e Niso di ferute.\nQuesti la caccer\u00e0 per ogne villa,\nfin che l'avr\u00e0 rimessa ne lo 'nferno,\nl\u00e0 onde 'nvidia prima dipartilla.\nOnd'io per lo tuo me' penso e discerno\nche tu mi segui, e io sar\u00f2 tua guida,\ne trarrotti di qui per loco etterno,\nove udirai le disperate strida,\nvedrai li antichi spiriti dolenti,\nch'a la seconda morte ciascun grida;\ne vederai color che son contenti\nnel foco, perch\u00e9 speran di venire\nquando che sia a le beate genti.\nA le quai poi se tu vorrai salire,\nanima fia a ci\u00f2 pi\u00f9 di me degna:\ncon lei ti lascer\u00f2 nel mio partire;\nch\u00e9 quello imperador che l\u00e0 s\u00f9 regna,\nperch'i' fu' ribellante a la sua legge,\nnon vuol che 'n sua citt\u00e0 per me si vegna.\nIn tutte parti impera e quivi regge;\nquivi \u00e8 la sua citt\u00e0 e l'alto seggio:\noh felice colui cu' ivi elegge!\u00bb.\nE io a lui: \u00abPoeta, io ti richeggio\nper quello Dio che tu non conoscesti,\nacci\u00f2 ch'io fugga questo male e peggio,\nche tu mi meni l\u00e0 dov'or dicesti,\ns\u00ec ch'io veggia la porta di san Pietro\ne color cui tu fai cotanto mesti\u00bb.\nAllor si mosse, e io li tenni dietro."
+      },
+      {
+        "source": "input",
+        "node": "Image With Styled Text",
+        "category": "text",
+        "key": "inputAttributedString",
+        "value": "Baskerville-Italic"
+      },
+      {
+        "source": "input",
+        "node": "Image With Styled Text",
+        "category": "text",
+        "key": "inputAttributedString",
+        "value": "1 1 1 1"
+      },
+      {
+        "source": "input",
+        "node": "Image With Styled Text",
+        "category": "text",
+        "key": "inputAttributedString",
+        "value": "1 1 1"
+      },
+      {
+        "source": "input",
+        "node": "Language Model",
+        "category": "prompt",
+        "key": "inputPrompt",
+        "value": "Write a poem to the Flying Spaghetti Monster"
+      },
+      {
+        "source": "input",
+        "node": "Alert",
+        "category": "text",
+        "key": "inputString",
+        "value": "Sorry, there is a problem with Apple Music."
+      }
+    ],
+    "host_safety_notes": []
+  },
+  {
+    "name": "Sprite.fxcore",
+    "path": "/Users/dalebradshaw/Documents/fxcore/sample_plugins/Sprite.fxcore",
+    "bytes": 147456,
+    "node_count": 10,
+    "connection_count": 8,
+    "role": "nested render-to-texture",
+    "root_identifier": "com.fxfactory.FxCore.FxCorePlugIn3DRenderToTexture",
+    "identifier_counts": {
+      "com.fxfactory.FxCore.FxCorePlugIn3DRenderToTexture": 2,
+      "com.fxfactory.FxCore.FxCorePlugIn3DSprite": 2,
+      "com.fxfactory.FxCore.FxCorePlugInInterpolation": 2,
+      "com.fxfactory.FxCore.FxCorePlugInCICheckerboardGenerator": 1,
+      "com.fxfactory.FxCore.FxCorePlugInCICrop": 1,
+      "com.fxfactory.FxCore.FxCorePlugInOutputInfo": 1,
+      "com.fxfactory.FxCore.FxCorePlugInRGBValuesToColor": 1
+    },
+    "notable_identifiers": [
+      "FxCorePlugIn3DRenderToTexture",
+      "FxCorePlugIn3DSprite"
+    ],
+    "nodes": [
+      {
+        "pk": 2,
+        "title": "Root",
+        "identifier": "com.fxfactory.FxCore.FxCorePlugIn3DRenderToTexture",
+        "parent": null,
+        "index": 0,
+        "is_iterator": false,
+        "is_consumer": false
+      },
+      {
+        "pk": 4,
+        "title": "Render to Texture",
+        "identifier": "com.fxfactory.FxCore.FxCorePlugIn3DRenderToTexture",
+        "parent": 2,
+        "index": 0,
+        "is_iterator": false,
+        "is_consumer": false
+      },
+      {
+        "pk": 6,
+        "title": "Sprite",
+        "identifier": "com.fxfactory.FxCore.FxCorePlugIn3DSprite",
+        "parent": 2,
+        "index": 1,
+        "is_iterator": false,
+        "is_consumer": true
+      },
+      {
+        "pk": 7,
+        "title": "Interpolation",
+        "identifier": "com.fxfactory.FxCore.FxCorePlugInInterpolation",
+        "parent": 2,
+        "index": 2,
+        "is_iterator": false,
+        "is_consumer": false
+      },
+      {
+        "pk": 5,
+        "title": "Sprite",
+        "identifier": "com.fxfactory.FxCore.FxCorePlugIn3DSprite",
+        "parent": 4,
+        "index": 0,
+        "is_iterator": false,
+        "is_consumer": true
+      },
+      {
+        "pk": 11,
+        "title": "Interpolation",
+        "identifier": "com.fxfactory.FxCore.FxCorePlugInInterpolation",
+        "parent": 4,
+        "index": 1,
+        "is_iterator": false,
+        "is_consumer": false
+      },
+      {
+        "pk": 22,
+        "title": "Checkerboard",
+        "identifier": "com.fxfactory.FxCore.FxCorePlugInCICheckerboardGenerator",
+        "parent": 4,
+        "index": 2,
+        "is_iterator": false,
+        "is_consumer": false
+      },
+      {
+        "pk": 23,
+        "title": "Crop",
+        "identifier": "com.fxfactory.FxCore.FxCorePlugInCICrop",
+        "parent": 4,
+        "index": 3,
+        "is_iterator": false,
+        "is_consumer": false
+      },
+      {
+        "pk": 20,
+        "title": "\udbc3\uddd8",
+        "identifier": "com.fxfactory.FxCore.FxCorePlugInOutputInfo",
+        "parent": 4,
+        "index": 4,
+        "is_iterator": false,
+        "is_consumer": false
+      },
+      {
+        "pk": 21,
+        "title": "Create Color",
+        "identifier": "com.fxfactory.FxCore.FxCorePlugInRGBValuesToColor",
+        "parent": 4,
+        "index": 5,
+        "is_iterator": false,
+        "is_consumer": false
+      }
+    ],
+    "connections": [
+      {
+        "pk": 4,
+        "from_node": "Render to Texture",
+        "from_output": "Image",
+        "to_node": "Sprite",
+        "to_input": "Image"
+      },
+      {
+        "pk": 8,
+        "from_node": "Interpolation",
+        "from_output": "Value",
+        "to_node": "Sprite",
+        "to_input": "Rotation Y"
+      },
+      {
+        "pk": 20,
+        "from_node": "Crop",
+        "from_output": "Image",
+        "to_node": "Sprite",
+        "to_input": "Image"
+      },
+      {
+        "pk": 21,
+        "from_node": "\udbc3\uddd8",
+        "from_output": "Center",
+        "to_node": "Checkerboard",
+        "to_input": "Center"
+      },
+      {
+        "pk": 22,
+        "from_node": "Create Color",
+        "from_output": "Color",
+        "to_node": "Checkerboard",
+        "to_input": "Color 2"
+      },
+      {
+        "pk": 23,
+        "from_node": "\udbc3\uddd8",
+        "from_output": "Rectangle",
+        "to_node": "Crop",
+        "to_input": ""
+      },
+      {
+        "pk": 24,
+        "from_node": "Checkerboard",
+        "from_output": "Image",
+        "to_node": "Crop",
+        "to_input": ""
+      },
+      {
+        "pk": 25,
+        "from_node": "Interpolation",
+        "from_output": "Value",
+        "to_node": "Create Color",
+        "to_input": "Green"
+      }
+    ],
+    "decoded_values": [],
+    "host_safety_notes": []
+  }
+]
