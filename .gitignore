@@ -16,3 +16,7 @@ data/
 
 # Ruff (Python linter) cache
 .ruff_cache/
+
+# Python bytecode
+__pycache__/
+*.pyc
