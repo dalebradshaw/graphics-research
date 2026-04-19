@@ -2,6 +2,10 @@
 
 Date: 2026-04-15
 
+Continuation note:
+
+- Read `HANDOFF.md` first when resuming this work in a new Codex thread.
+
 Source:
 
 - Shader Lab homepage: <https://eng.basement.studio/tools/shader-lab/>
