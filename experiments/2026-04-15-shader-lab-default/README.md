@@ -126,6 +126,73 @@ Shader Lab gives us a useful bridge format for effect research because it separa
 
 The best first FxCore experiment is a `BayerDither4x4` node that accepts a source image plus `pixelSize`, `spread`, and `levels`. The second is a `TextStencil` workflow that verifies whether FxCore's built-in text and mask nodes can recreate the Shader Lab mask behavior. The CRT pass should wait until the static layers match because it can hide errors in the upstream passes.
 
+## Programmatic FxCore prototype
+
+Generated file:
+
+- `/Users/dalebradshaw/Documents/fxcore/Generated_ShaderLab_Default_5Layer.fxcore`
+
+Generator source:
+
+- `create_fxcore_shader_lab_default.py`
+- `shader_lab_default_composite.metal`
+- `shader_lab_default_5layer.metal` is retained for the older pass-chain/procedural fallback.
+
+Current default path:
+
+```text
+Root
+  Output -> Shader Lab Animated Field -> Glow Field Over Black -> Sharp Field Through Text -> 2D Output
+  Time   -> Shader Lab Animated Field
+  White Text Matte -> Native Text Matte -> Text Glow Mask
+  Opaque Black Background -> mask blends
+```
+
+The default composition uses FxCore's native text/matte nodes for the `basement` text and a source-style CIShader field for the animated gradient/pattern/dither/CRT approximation. This replaced the older procedural glyph mask as the working baseline.
+
+Validation performed:
+
+- `xcrun -sdk macosx metal -c shader_lab_default_composite.metal` passes syntax validation.
+- SQLite `PRAGMA integrity_check` returns `ok`.
+- Strict raw native-text baseline has 11 nodes, 47 inputs, 12 outputs, and 12 connections.
+- Default published-input native graph has 11 nodes, 64 inputs, 12 outputs, and 12 connections.
+- Visual pass on 2026-04-17: the output window opens with an opaque black background and visible red Shader Lab text/field output. Pulsing red output should be treated as an error state.
+
+Repeatable test loop:
+
+```bash
+python3 experiments/2026-04-15-shader-lab-default/create_fxcore_shader_lab_default.py --open
+```
+
+The command validates the Metal source, regenerates `/Users/dalebradshaw/Documents/fxcore/Generated_ShaderLab_Default_5Layer.fxcore`, checks SQLite integrity and graph counts, then opens the file in FxCore. Use `--output path/to/file.fxcore` to write a separate variant.
+
+Host slider UI is handled through FxFactory, not raw CIShader input ranges. The proven non-hack path is:
+
+```text
+FxFactory Slider -> published root inputDouble -> FxCore Splitter inputDouble0 -> shader float input
+```
+
+Verified POC files:
+
+- `/Users/dalebradshaw/Documents/fxcore/Generated_ShaderLab_Default_SplitterPOC_DefaultDouble.fxcore`
+- `/Users/dalebradshaw/Documents/fxcore/Generated_ShaderLab_Default_SplitterControls_All.fxcore`
+- `/Users/dalebradshaw/Library/Application Support/ShaderLabSliderPOC.fxpack`
+
+The earlier five-node sampled-CIShader chain remains available for debugging only:
+
+```bash
+python3 experiments/2026-04-15-shader-lab-default/create_fxcore_shader_lab_default.py --experimental-chain --open
+```
+
+That path is currently expected to be fragile because FxCore appears to accept source-style CIShader kernels more reliably than sampled image-filter CIShader kernels.
+
+Known compromises:
+
+- The text mask is now native FxCore text, but exact Shader Lab/browser canvas glyph fidelity still needs more tuning.
+- CRT persistence is approximated as static/timed distortion, scanlines, slot mask, chromatic aberration, vignette, and flicker. It does not yet use frame history.
+- Pattern and bloom are approximations, not a direct TSL port.
+- FxCore editor sliders for raw CIShader inputs remain unsupported; use typed published ports in an FxPack for host controls.
+
 ## Risks
 
 - Shader Lab uses Three.js WebGPU/TSL. FxCore and Blender ports need algorithmic translation, not direct code reuse.
