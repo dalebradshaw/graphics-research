@@ -1,0 +1,7 @@
+.venv/
+vendor/
+tmp/
+artifacts/inputs/
+artifacts/models/
+artifacts/coreml/
+artifacts/cache/

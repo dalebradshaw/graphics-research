@@ -1,0 +1,112 @@
+{
+  "updatedAtUnix": 1776795315.9326432,
+  "availableProviders": [
+    "CoreMLExecutionProvider",
+    "AzureExecutionProvider",
+    "CPUExecutionProvider"
+  ],
+  "modelCache": "/Users/dalebradshaw/graphics_research/experiments/2026-04-21-birefnet-fxcore-poc/artifacts/models",
+  "sampleImage": "/Users/dalebradshaw/graphics_research/experiments/2026-04-21-birefnet-fxcore-poc/artifacts/inputs/pytorch-hub-dog.jpg",
+  "runs": [
+    {
+      "modelPreset": "matting",
+      "modelFile": "/Users/dalebradshaw/graphics_research/experiments/2026-04-21-birefnet-fxcore-poc/artifacts/models/BiRefNet-matting-epoch_100.onnx",
+      "modelNotes": "973 MB ONNX. Better matte behavior, but much heavier for packaging.",
+      "imagePath": "/Users/dalebradshaw/graphics_research/experiments/2026-04-21-birefnet-fxcore-poc/artifacts/inputs/pytorch-hub-dog.jpg",
+      "originalSize": [
+        1546,
+        1213
+      ],
+      "modelInputSize": [
+        1024,
+        1024
+      ],
+      "availableProviders": [
+        "CoreMLExecutionProvider",
+        "AzureExecutionProvider",
+        "CPUExecutionProvider"
+      ],
+      "providers": [
+        "CPUExecutionProvider"
+      ],
+      "inputName": "input_image",
+      "inputType": "tensor(float)",
+      "inputShape": [
+        1,
+        3,
+        1024,
+        1024
+      ],
+      "outputName": "output_image",
+      "outputType": "tensor(float)",
+      "outputShape": [
+        1,
+        1,
+        1024,
+        1024
+      ],
+      "maskStats": {
+        "min": 0.0,
+        "max": 1.0,
+        "mean": 0.3435722887516022
+      },
+      "timingMs": {
+        "inference": 26186.39
+      },
+      "artifacts": {
+        "mask": "/Users/dalebradshaw/graphics_research/experiments/2026-04-21-birefnet-fxcore-poc/artifacts/masks/pytorch-hub-dog__matting.png",
+        "cutout": "/Users/dalebradshaw/graphics_research/experiments/2026-04-21-birefnet-fxcore-poc/artifacts/cutouts/pytorch-hub-dog__matting.png"
+      }
+    },
+    {
+      "modelPreset": "tiny-general",
+      "modelFile": "/Users/dalebradshaw/graphics_research/experiments/2026-04-21-birefnet-fxcore-poc/artifacts/models/BiRefNet-general-bb_swin_v1_tiny-epoch_232.onnx",
+      "modelNotes": "224 MB ONNX. Best first plugin-runtime target for packaging pressure.",
+      "imagePath": "/Users/dalebradshaw/graphics_research/experiments/2026-04-21-birefnet-fxcore-poc/artifacts/inputs/pytorch-hub-dog.jpg",
+      "originalSize": [
+        1546,
+        1213
+      ],
+      "modelInputSize": [
+        1024,
+        1024
+      ],
+      "availableProviders": [
+        "CoreMLExecutionProvider",
+        "AzureExecutionProvider",
+        "CPUExecutionProvider"
+      ],
+      "providers": [
+        "CPUExecutionProvider"
+      ],
+      "inputName": "input_image",
+      "inputType": "tensor(float)",
+      "inputShape": [
+        1,
+        3,
+        1024,
+        1024
+      ],
+      "outputName": "output_image",
+      "outputType": "tensor(float)",
+      "outputShape": [
+        1,
+        1,
+        1024,
+        1024
+      ],
+      "maskStats": {
+        "min": 0.0,
+        "max": 1.0,
+        "mean": 0.3498992323875427
+      },
+      "timingMs": {
+        "inference": 20007.26
+      },
+      "artifacts": {
+        "mask": "/Users/dalebradshaw/graphics_research/experiments/2026-04-21-birefnet-fxcore-poc/artifacts/masks/pytorch-hub-dog__tiny-general.png",
+        "cutout": "/Users/dalebradshaw/graphics_research/experiments/2026-04-21-birefnet-fxcore-poc/artifacts/cutouts/pytorch-hub-dog__tiny-general.png"
+      }
+    }
+  ]
+}
