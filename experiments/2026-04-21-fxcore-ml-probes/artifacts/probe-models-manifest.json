@@ -1,0 +1,180 @@
+{
+  "imageSize": 64,
+  "probeImage": "/Users/dalebradshaw/graphics_research/experiments/2026-04-21-fxcore-ml-probes/artifacts/images/probe_input_gradient.png",
+  "coremltoolsVersion": "9.0",
+  "torchVersion": "2.2.0",
+  "models": [
+    {
+      "kind": "image_passthrough_rgb",
+      "path": "/Users/dalebradshaw/graphics_research/experiments/2026-04-21-fxcore-ml-probes/artifacts/models/probe_image_passthrough_rgb.mlpackage",
+      "modelType": "mlProgram",
+      "localSitePackages": "/Users/dalebradshaw/graphics_research/experiments/2026-04-21-fxcore-ml-probes/.venv/lib/python3.11/site-packages",
+      "inputFeatures": [
+        {
+          "name": "x",
+          "type": "imageType",
+          "shortDescription": "",
+          "image": {
+            "width": 64,
+            "height": 64,
+            "colorSpace": 20
+          }
+        }
+      ],
+      "outputFeatures": [
+        {
+          "name": "outputImage",
+          "type": "imageType",
+          "shortDescription": "",
+          "image": {
+            "width": 64,
+            "height": 64,
+            "colorSpace": 20
+          }
+        }
+      ],
+      "predictionSample": {
+        "outputImage": {
+          "kind": "image",
+          "path": "/Users/dalebradshaw/graphics_research/experiments/2026-04-21-fxcore-ml-probes/artifacts/predictions/probe_image_passthrough_rgb__outputImage.png",
+          "size": [
+            64,
+            64
+          ],
+          "mode": "RGBA"
+        }
+      }
+    },
+    {
+      "kind": "image_mask_grayscale",
+      "path": "/Users/dalebradshaw/graphics_research/experiments/2026-04-21-fxcore-ml-probes/artifacts/models/probe_image_mask_grayscale.mlpackage",
+      "modelType": "mlProgram",
+      "localSitePackages": "/Users/dalebradshaw/graphics_research/experiments/2026-04-21-fxcore-ml-probes/.venv/lib/python3.11/site-packages",
+      "inputFeatures": [
+        {
+          "name": "x",
+          "type": "imageType",
+          "shortDescription": "",
+          "image": {
+            "width": 64,
+            "height": 64,
+            "colorSpace": 20
+          }
+        }
+      ],
+      "outputFeatures": [
+        {
+          "name": "maskImage",
+          "type": "imageType",
+          "shortDescription": "",
+          "image": {
+            "width": 64,
+            "height": 64,
+            "colorSpace": 10
+          }
+        }
+      ],
+      "predictionSample": {
+        "maskImage": {
+          "kind": "image",
+          "path": "/Users/dalebradshaw/graphics_research/experiments/2026-04-21-fxcore-ml-probes/artifacts/predictions/probe_image_mask_grayscale__maskImage.png",
+          "size": [
+            64,
+            64
+          ],
+          "mode": "L"
+        }
+      }
+    },
+    {
+      "kind": "image_channel_means",
+      "path": "/Users/dalebradshaw/graphics_research/experiments/2026-04-21-fxcore-ml-probes/artifacts/models/probe_image_channel_means.mlmodel",
+      "modelType": "neuralNetwork",
+      "localSitePackages": "/Users/dalebradshaw/graphics_research/experiments/2026-04-21-fxcore-ml-probes/.venv/lib/python3.11/site-packages",
+      "inputFeatures": [
+        {
+          "name": "image",
+          "type": "imageType",
+          "shortDescription": "",
+          "image": {
+            "width": 64,
+            "height": 64,
+            "colorSpace": 20
+          }
+        }
+      ],
+      "outputFeatures": [
+        {
+          "name": "channelMeans",
+          "type": "multiArrayType",
+          "shortDescription": "",
+          "multiArray": {
+            "shape": [
+              3
+            ],
+            "dataType": 65600
+          }
+        }
+      ],
+      "predictionSample": {
+        "channelMeans": {
+          "kind": "array",
+          "path": "/Users/dalebradshaw/graphics_research/experiments/2026-04-21-fxcore-ml-probes/artifacts/predictions/probe_image_channel_means__channelMeans.json",
+          "shape": [
+            3
+          ],
+          "dtype": "float64",
+          "min": 108.453125,
+          "max": 185.609375
+        }
+      }
+    },
+    {
+      "kind": "image_dominant_color_classifier",
+      "path": "/Users/dalebradshaw/graphics_research/experiments/2026-04-21-fxcore-ml-probes/artifacts/models/probe_image_dominant_color_classifier.mlmodel",
+      "modelType": "neuralNetworkClassifier",
+      "localSitePackages": "/Users/dalebradshaw/graphics_research/experiments/2026-04-21-fxcore-ml-probes/.venv/lib/python3.11/site-packages",
+      "inputFeatures": [
+        {
+          "name": "image",
+          "type": "imageType",
+          "shortDescription": "",
+          "image": {
+            "width": 64,
+            "height": 64,
+            "colorSpace": 20
+          }
+        }
+      ],
+      "outputFeatures": [
+        {
+          "name": "probs",
+          "type": "dictionaryType",
+          "shortDescription": "",
+          "dictionary": {
+            "keyType": "stringKeyType"
+          }
+        },
+        {
+          "name": "dominantColor",
+          "type": "stringType",
+          "shortDescription": ""
+        }
+      ],
+      "predictionSample": {
+        "probs": {
+          "kind": "dict",
+          "value": {
+            "red": 1.0,
+            "green": 3.1007472380140986e-34,
+            "blue": 5.448484162360272e-26
+          }
+        },
+        "dominantColor": {
+          "kind": "str",
+          "value": "red"
+        }
+      }
+    }
+  ]
+}
